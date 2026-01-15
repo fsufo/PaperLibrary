@@ -9,43 +9,51 @@
       "val": 1
     },
     {
-      "id": "Blender",
-      "label": "Blender",
-      "group": "Blender",
+      "id": "All_Notes_Outline",
+      "label": "All_Notes_Outline",
+      "group": "目录",
       "all_tags": [
-        "Blender"
+        "目录",
+        "GDC",
+        "paper",
+        "siggraph",
+        "渲染",
+        "shadertoy",
+        "games",
+        "games101",
+        "NS方程",
+        "Simulation",
+        "流体模拟",
+        "tools",
+        "Blender",
+        "GitHub",
+        "单词"
       ],
-      "content": "# Blender\n\n#Blender\n\n![1768274526885](posts/笔记图床/游戏开发/Blender相关/Blender/1768274526885.png)\n\n---\n\n## Blender 官方工程\n\n- Blender 源码\n\nhttps://github.com/blender/blender\n\n- Blender 官方工程下载\n\nhttps://www.blender.org/download/demo-files/\n\n![1768274452859](posts/笔记图床/游戏开发/Blender相关/Blender/1768274452859.png)\n\n---\n\n## Blender github项目\n\n### Blender中使用glsl创建Texture(N年前2.8项目,不知道现在还能不能用)\n\nhttps://github.com/patriciogonzalezvivo/glslTexture?tab=readme-ov-file\n\n---\n\n## Blender Geometry Node GN\n\n### 基本操作\n\n#### 快捷键\n- 节点Ctrl + x 可以删除的情况下保留连线\n- Shift + 右键添加中间节点\n- Ctrl + 右键快速切断\n- alt + 右键快速链接\n\n### Geometry Nodes 顶点色\n\n- 注意要用byteColor 和 Face Corner\n\n![1768286720945](posts/笔记图床/游戏开发/Blender相关/Blender/1768286720945.png)\n\n![1768286751113](posts/笔记图床/游戏开发/Blender相关/Blender/1768286751113.png)\n\n### 教程\n\n- 不错的Geometry Nodes 教程 Geometry Nodes for Beginners\n\nhttps://www.youtube.com/watch?v=szTYXk0t09A&list=PLzg4_2BrWAVzK4ORuEHz0RoE7Va3w6fBf\n\n![1768275683870](posts/笔记图床/游戏开发/Blender相关/Blender/1768275683870.png)\n\n- MaxEdge GN 教程\n\nhttps://www.youtube.com/@MaxEdge420/videos\n\n![1768275883405](posts/笔记图床/游戏开发/Blender相关/Blender/1768275883405.png)\n\n---\n\n## 小技巧Tips\n\n### Blender 快速切换语言\n\n![1768287376318](posts/笔记图床/游戏开发/Blender相关/Blender/1768287376318.png)\n\n新建个快捷键映射条目填wm.context_toggle\n属性填preferences.view.use_translate_interface\n\n---\n",
+      "content": "# 全部笔记大纲\n\n#目录\n\n> 自动生成位置: 笔记目录[脚本生成]\n\n### [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n#GDC #paper #siggraph #渲染\n\n---\n\n### [渲染相关网页链接.md](posts/游戏开发/渲染相关/渲染相关网页链接.md)\n#渲染\n\n---\n\n### [渲染文档汇总.md](posts/游戏开发/渲染相关/渲染文档汇总.md)\n#paper #渲染\n\n---\n\n### [ShaderToy.md](posts/游戏开发/渲染相关/ShaderToy.md)\n#shadertoy #渲染\n\n---\n\n### [Games101解析.md](posts/游戏开发/渲染相关/Games/Games101解析.md)\n#games #games101\n\n---\n\n### [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n#NS方程 #Simulation #流体模拟 #渲染\n\n---\n\n### [实用开发工具Tools.md](posts/游戏开发/实用Tools文档/实用开发工具Tools.md)\n#tools\n\n---\n\n### [在线实用工具OnlineTools.md](posts/游戏开发/实用Tools文档/在线实用工具OnlineTools.md)\n#tools\n\n---\n\n### [Blender.md](posts/游戏开发/Blender相关/Blender.md)\n#Blender\n\n---\n\n### [GitHub好项目.md](posts/游戏开发/GitHub相关/GitHub好项目.md)\n#GitHub\n\n---\n\n### [四六级高频词汇.md](posts/语言/English/四六级高频词汇.md)\n#单词\n\n---\n\n",
       "val": 1
     },
     {
-      "id": "GitHub好项目",
-      "label": "GitHub好项目",
-      "group": "GitHub",
+      "id": "Tag_Index",
+      "label": "Tag_Index",
+      "group": "目录",
       "all_tags": [
-        "GitHub"
+        "目录",
+        "Blender",
+        "GDC",
+        "GitHub",
+        "NS方程",
+        "Simulation",
+        "games",
+        "games101",
+        "paper",
+        "shadertoy",
+        "siggraph",
+        "tools",
+        "单词",
+        "流体模拟",
+        "渲染"
       ],
-      "content": "# GitHub\n\n#GitHub\n\n---\n\n## 好的git项目\n\n---\n\n### Blender 相关\n\n[BlenderGitHub md 文档](posts/游戏开发/Blender相关/Blender.md)\n\n![Blender](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768274526885.png)\n\n---\n\n### Volumetric fog\n\nhttps://github.com/rin-miku/SimpleVolumetricLighting\n\n![1768271723435](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768271723435.png)\n\n---\n\n### 波函数坍塌\n\nhttps://github.com/marian42/wavefunctioncollapse\n\n![1768271936593](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768271936593.png)\n\nhttps://github.com/mxgmn/WaveFunctionCollapse\n\n![1768272040866](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768272040866.png)\n\n---\n\n### Mix and jam\n\nhttps://github.com/mixandjam\n\n![1768272159047](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768272159047.png)\n\n---\n\n### ScreenSpaceLensFlareTest\n\nhttps://github.com/keijiro/ScreenSpaceLensFlareTest\n\n![1768272414589](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768272414589.png)\n\n---\n\n### Sebastian Lague\n\nhttps://github.com/SebLague\n\n![1768272522699](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768272522699.png)\n\n---\n\n### GTAO (AmplifyOcclusion)\n\nhttps://github.com/AmplifyCreations/AmplifyOcclusion\n\n![1768272673870](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768272673870.png)\n\n![1768272689502](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768272689502.png)\n\n---\n\n### 预积分大气散射 Brunetons-Improved-Atmospheric-Scattering\n\nhttps://github.com/Scrawk/Brunetons-Improved-Atmospheric-Scattering/tree/master\n\n![1768272781524](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768272781524.png)\n\n---\n\n### Cmake Tutorial (cmake-examples-Chinese)\n\nhttps://github.com/SFUMECJF/cmake-examples-Chinese\n\nhttps://sfumecjf.github.io/cmake-examples-Chinese/\n\n![1768272873336](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768272873336.png)\n\n---\n\n",
-      "val": 1
-    },
-    {
-      "id": "在线实用工具OnlineTools",
-      "label": "在线实用工具OnlineTools",
-      "group": "tools",
-      "all_tags": [
-        "tools"
-      ],
-      "content": "# 在线实用工具Online Tools\n#tools\n\n---\n\n## 数学类工具Tools\n\n### Desmos 函数可视化\n\nhttps://www.desmos.com/calculator?lang=zh-CN\n\n![1768290285214](posts/笔记图床/游戏开发/实用Tools文档/在线实用工具OnlineTools/1768290285214.png)\n\n---\n\n### Academo 2D函数可视化\n\nhttps://academo.org/demos/3d-surface-plotter/?expression=x*x-y*y*x&xRange=-50%2C%2050&yRange=-50%2C%2050&resolution=48\n\n![1768290346715](posts/笔记图床/游戏开发/实用Tools文档/在线实用工具OnlineTools/1768290346715.png)\n\n---",
-      "val": 1
-    },
-    {
-      "id": "实用开发工具Tools",
-      "label": "实用开发工具Tools",
-      "group": "tools",
-      "all_tags": [
-        "tools"
-      ],
-      "content": "# 实用开发工具Tools\n\n#tools\n\n---\n\n## Texture array\n\n### PVRTexTool\n\nhttps://developer.imaginationtech.com/downloads/\n\n![1768288536886](posts/笔记图床/游戏开发/实用Tools文档/实用开发工具Tools/1768288536886.png)\n![1768288287631](posts/笔记图床/游戏开发/实用Tools文档/实用开发工具Tools/1768288287631.png)\n\n---\n\n## cubemap cmftStudio\n\nhttps://github.com/dariomanesku/cmftStudio?tab=readme-ov-file\n\n![1768289069259](posts/笔记图床/游戏开发/实用Tools文档/实用开发工具Tools/1768289069259.png)\n\n---\n\n## vsCode 插件\n\n![1768289494796](posts/笔记图床/游戏开发/实用Tools文档/实用开发工具Tools/1768289494796.png)\n![1768289563585](posts/笔记图床/游戏开发/实用Tools文档/实用开发工具Tools/1768289563585.png)\n\n---\n\n## 油猴脚本\n\n### 网页复制公式 (公式上双击左键复制公式)\n\nhttps://github.com/3plus10i/TexCopyer\n\n![1768458898176](posts/笔记图床/游戏开发/实用Tools文档/实用开发工具Tools/1768458898176.png)\n\n---\n",
+      "content": "# 标签索引\n\n#目录\n\n## #Blender\n- [Blender.md](posts/游戏开发/Blender相关/Blender.md)\n\n## #GDC\n- [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n\n## #GitHub\n- [GitHub好项目.md](posts/游戏开发/GitHub相关/GitHub好项目.md)\n\n## #NS方程\n- [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n\n## #Simulation\n- [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n\n## #games\n- [Games101解析.md](posts/游戏开发/渲染相关/Games/Games101解析.md)\n\n## #games101\n- [Games101解析.md](posts/游戏开发/渲染相关/Games/Games101解析.md)\n\n## #paper\n- [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n- [渲染文档汇总.md](posts/游戏开发/渲染相关/渲染文档汇总.md)\n\n## #shadertoy\n- [ShaderToy.md](posts/游戏开发/渲染相关/ShaderToy.md)\n\n## #siggraph\n- [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n\n## #tools\n- [实用开发工具Tools.md](posts/游戏开发/实用Tools文档/实用开发工具Tools.md)\n- [在线实用工具OnlineTools.md](posts/游戏开发/实用Tools文档/在线实用工具OnlineTools.md)\n\n## #单词\n- [四六级高频词汇.md](posts/语言/English/四六级高频词汇.md)\n\n## #流体模拟\n- [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n\n## #渲染\n- [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n- [渲染相关网页链接.md](posts/游戏开发/渲染相关/渲染相关网页链接.md)\n- [渲染文档汇总.md](posts/游戏开发/渲染相关/渲染文档汇总.md)\n- [ShaderToy.md](posts/游戏开发/渲染相关/ShaderToy.md)\n- [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n\n",
       "val": 1
     },
     {
@@ -62,14 +70,13 @@
       "val": 1
     },
     {
-      "id": "ShaderToy",
-      "label": "ShaderToy",
-      "group": "shadertoy",
+      "id": "渲染相关网页链接",
+      "label": "渲染相关网页链接",
+      "group": "渲染",
       "all_tags": [
-        "shadertoy",
         "渲染"
       ],
-      "content": "# ShaderToy\n#shadertoy #渲染\n\n---\n\n## ShaderToy 有意思的链接\n\n### 油画绘图\n\nhttps://www.shadertoy.com/view/NlSBW3\n\n![1768372892751](posts/笔记图床/游戏开发/渲染相关/ShaderToy/1768372892751.png)\n\n---\n\n### 科幻球体\n\nhttps://www.shadertoy.com/view/fdGfW1\n\n![1768372960166](posts/笔记图床/游戏开发/渲染相关/ShaderToy/1768372960166.png)\n\n---\n\n### 简易模糊\n\nhttps://www.shadertoy.com/view/MsdGD2\n\n![1768372993805](posts/笔记图床/游戏开发/渲染相关/ShaderToy/1768372993805.png)\n\n---\n\n### 双线性柔和滤波\n\nhttps://www.shadertoy.com/view/XsfGDn\n\n![1768373013441](posts/笔记图床/游戏开发/渲染相关/ShaderToy/1768373013441.png)\n\n---\n\n### Noise库\n\nhttps://www.shadertoy.com/view/MslGR8\n\n![1768373046814](posts/笔记图床/游戏开发/渲染相关/ShaderToy/1768373046814.png)\n\n---\n\n### 梯度场\n\nhttps://www.shadertoy.com/view/4syGWK\n\n![1768373057421](posts/笔记图床/游戏开发/渲染相关/ShaderToy/1768373057421.png)\n\n---",
+      "content": "# 渲染相关网页链接\n#渲染\n\n---\n\n## 图形学学习\n\n### Games\n\nhttp://games-cn.org/\n\n![1768379551678](posts/笔记图床/游戏开发/渲染相关/渲染相关网页链接/1768379551678.png)\n\nhttps://space.bilibili.com/512313464?spm_id_from=333.337.search-card.all.click\n\n![1768378023698](posts/笔记图床/游戏开发/渲染相关/渲染相关网页链接/1768378023698.png)\n\n---\n\n### The Book of Shaders\n\nhttps://thebookofshaders.com/\n\n![1768377634670](posts/笔记图床/游戏开发/渲染相关/渲染相关网页链接/1768377634670.png)\n\n---\n---\n\n## 图形学技术文章\n\n### VDM粒子渲染\n\nhttps://zhuanlan.zhihu.com/p/24801448\n\n![1768378678937](posts/笔记图床/游戏开发/渲染相关/渲染相关网页链接/1768378678937.png)\n\n---",
       "val": 1
     },
     {
@@ -84,13 +91,14 @@
       "val": 1
     },
     {
-      "id": "渲染相关网页链接",
-      "label": "渲染相关网页链接",
-      "group": "渲染",
+      "id": "ShaderToy",
+      "label": "ShaderToy",
+      "group": "shadertoy",
       "all_tags": [
+        "shadertoy",
         "渲染"
       ],
-      "content": "# 渲染相关网页链接\n#渲染\n\n---\n\n## 图形学学习\n\n### Games\n\nhttp://games-cn.org/\n\n![1768379551678](posts/笔记图床/游戏开发/渲染相关/渲染相关网页链接/1768379551678.png)\n\nhttps://space.bilibili.com/512313464?spm_id_from=333.337.search-card.all.click\n\n![1768378023698](posts/笔记图床/游戏开发/渲染相关/渲染相关网页链接/1768378023698.png)\n\n---\n\n### The Book of Shaders\n\nhttps://thebookofshaders.com/\n\n![1768377634670](posts/笔记图床/游戏开发/渲染相关/渲染相关网页链接/1768377634670.png)\n\n---\n---\n\n## 图形学技术文章\n\n### VDM粒子渲染\n\nhttps://zhuanlan.zhihu.com/p/24801448\n\n![1768378678937](posts/笔记图床/游戏开发/渲染相关/渲染相关网页链接/1768378678937.png)\n\n---",
+      "content": "# ShaderToy\n#shadertoy #渲染\n\n---\n\n## ShaderToy 有意思的链接\n\n### 油画绘图\n\nhttps://www.shadertoy.com/view/NlSBW3\n\n![1768372892751](posts/笔记图床/游戏开发/渲染相关/ShaderToy/1768372892751.png)\n\n---\n\n### 科幻球体\n\nhttps://www.shadertoy.com/view/fdGfW1\n\n![1768372960166](posts/笔记图床/游戏开发/渲染相关/ShaderToy/1768372960166.png)\n\n---\n\n### 简易模糊\n\nhttps://www.shadertoy.com/view/MsdGD2\n\n![1768372993805](posts/笔记图床/游戏开发/渲染相关/ShaderToy/1768372993805.png)\n\n---\n\n### 双线性柔和滤波\n\nhttps://www.shadertoy.com/view/XsfGDn\n\n![1768373013441](posts/笔记图床/游戏开发/渲染相关/ShaderToy/1768373013441.png)\n\n---\n\n### Noise库\n\nhttps://www.shadertoy.com/view/MslGR8\n\n![1768373046814](posts/笔记图床/游戏开发/渲染相关/ShaderToy/1768373046814.png)\n\n---\n\n### 梯度场\n\nhttps://www.shadertoy.com/view/4syGWK\n\n![1768373057421](posts/笔记图床/游戏开发/渲染相关/ShaderToy/1768373057421.png)\n\n---",
       "val": 1
     },
     {
@@ -118,51 +126,43 @@
       "val": 1
     },
     {
-      "id": "All_Notes_Outline",
-      "label": "All_Notes_Outline",
-      "group": "目录",
+      "id": "实用开发工具Tools",
+      "label": "实用开发工具Tools",
+      "group": "tools",
       "all_tags": [
-        "目录",
-        "Blender",
-        "GitHub",
-        "tools",
-        "GDC",
-        "paper",
-        "siggraph",
-        "渲染",
-        "shadertoy",
-        "games",
-        "games101",
-        "NS方程",
-        "Simulation",
-        "流体模拟",
-        "单词"
+        "tools"
       ],
-      "content": "# 全部笔记大纲\n\n#目录\n\n> 自动生成位置: 笔记目录[脚本生成]\n\n### [Blender.md](posts/游戏开发/Blender相关/Blender.md)\n#Blender\n\n---\n\n### [GitHub好项目.md](posts/游戏开发/GitHub相关/GitHub好项目.md)\n#GitHub\n\n---\n\n### [在线实用工具OnlineTools.md](posts/游戏开发/实用Tools文档/在线实用工具OnlineTools.md)\n#tools\n\n---\n\n### [实用开发工具Tools.md](posts/游戏开发/实用Tools文档/实用开发工具Tools.md)\n#tools\n\n---\n\n### [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n#GDC #paper #siggraph #渲染\n\n---\n\n### [ShaderToy.md](posts/游戏开发/渲染相关/ShaderToy.md)\n#shadertoy #渲染\n\n---\n\n### [渲染文档汇总.md](posts/游戏开发/渲染相关/渲染文档汇总.md)\n#paper #渲染\n\n---\n\n### [渲染相关网页链接.md](posts/游戏开发/渲染相关/渲染相关网页链接.md)\n#渲染\n\n---\n\n### [Games101解析.md](posts/游戏开发/渲染相关/Games/Games101解析.md)\n#games #games101\n\n---\n\n### [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n#NS方程 #Simulation #流体模拟 #渲染\n\n---\n\n### [四六级高频词汇.md](posts/语言/English/四六级高频词汇.md)\n#单词\n\n---\n\n",
+      "content": "# 实用开发工具Tools\n\n#tools\n\n---\n\n## Texture array\n\n### PVRTexTool\n\nhttps://developer.imaginationtech.com/downloads/\n\n![1768288536886](posts/笔记图床/游戏开发/实用Tools文档/实用开发工具Tools/1768288536886.png)\n![1768288287631](posts/笔记图床/游戏开发/实用Tools文档/实用开发工具Tools/1768288287631.png)\n\n---\n\n## cubemap cmftStudio\n\nhttps://github.com/dariomanesku/cmftStudio?tab=readme-ov-file\n\n![1768289069259](posts/笔记图床/游戏开发/实用Tools文档/实用开发工具Tools/1768289069259.png)\n\n---\n\n## vsCode 插件\n\n![1768289494796](posts/笔记图床/游戏开发/实用Tools文档/实用开发工具Tools/1768289494796.png)\n![1768289563585](posts/笔记图床/游戏开发/实用Tools文档/实用开发工具Tools/1768289563585.png)\n\n---\n\n## 油猴脚本\n\n### 网页复制公式 (公式上双击左键复制公式)\n\nhttps://github.com/3plus10i/TexCopyer\n\n![1768458898176](posts/笔记图床/游戏开发/实用Tools文档/实用开发工具Tools/1768458898176.png)\n\n---\n",
       "val": 1
     },
     {
-      "id": "Tag_Index",
-      "label": "Tag_Index",
-      "group": "目录",
+      "id": "在线实用工具OnlineTools",
+      "label": "在线实用工具OnlineTools",
+      "group": "tools",
       "all_tags": [
-        "目录",
-        "Blender",
-        "GDC",
-        "GitHub",
-        "NS方程",
-        "Simulation",
-        "games",
-        "games101",
-        "paper",
-        "shadertoy",
-        "siggraph",
-        "tools",
-        "单词",
-        "流体模拟",
-        "渲染"
+        "tools"
       ],
-      "content": "# 标签索引\n\n#目录\n\n## #Blender\n- [Blender.md](posts/游戏开发/Blender相关/Blender.md)\n\n## #GDC\n- [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n\n## #GitHub\n- [GitHub好项目.md](posts/游戏开发/GitHub相关/GitHub好项目.md)\n\n## #NS方程\n- [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n\n## #Simulation\n- [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n\n## #games\n- [Games101解析.md](posts/游戏开发/渲染相关/Games/Games101解析.md)\n\n## #games101\n- [Games101解析.md](posts/游戏开发/渲染相关/Games/Games101解析.md)\n\n## #paper\n- [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n- [渲染文档汇总.md](posts/游戏开发/渲染相关/渲染文档汇总.md)\n\n## #shadertoy\n- [ShaderToy.md](posts/游戏开发/渲染相关/ShaderToy.md)\n\n## #siggraph\n- [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n\n## #tools\n- [在线实用工具OnlineTools.md](posts/游戏开发/实用Tools文档/在线实用工具OnlineTools.md)\n- [实用开发工具Tools.md](posts/游戏开发/实用Tools文档/实用开发工具Tools.md)\n\n## #单词\n- [四六级高频词汇.md](posts/语言/English/四六级高频词汇.md)\n\n## #流体模拟\n- [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n\n## #渲染\n- [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n- [ShaderToy.md](posts/游戏开发/渲染相关/ShaderToy.md)\n- [渲染文档汇总.md](posts/游戏开发/渲染相关/渲染文档汇总.md)\n- [渲染相关网页链接.md](posts/游戏开发/渲染相关/渲染相关网页链接.md)\n- [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n\n",
+      "content": "# 在线实用工具Online Tools\n#tools\n\n---\n\n## 数学类工具Tools\n\n### Desmos 函数可视化\n\nhttps://www.desmos.com/calculator?lang=zh-CN\n\n![1768290285214](posts/笔记图床/游戏开发/实用Tools文档/在线实用工具OnlineTools/1768290285214.png)\n\n---\n\n### Academo 2D函数可视化\n\nhttps://academo.org/demos/3d-surface-plotter/?expression=x*x-y*y*x&xRange=-50%2C%2050&yRange=-50%2C%2050&resolution=48\n\n![1768290346715](posts/笔记图床/游戏开发/实用Tools文档/在线实用工具OnlineTools/1768290346715.png)\n\n---",
+      "val": 1
+    },
+    {
+      "id": "Blender",
+      "label": "Blender",
+      "group": "Blender",
+      "all_tags": [
+        "Blender"
+      ],
+      "content": "# Blender\n\n#Blender\n\n![1768274526885](posts/笔记图床/游戏开发/Blender相关/Blender/1768274526885.png)\n\n---\n\n## Blender 官方工程\n\n- Blender 源码\n\nhttps://github.com/blender/blender\n\n- Blender 官方工程下载\n\nhttps://www.blender.org/download/demo-files/\n\n![1768274452859](posts/笔记图床/游戏开发/Blender相关/Blender/1768274452859.png)\n\n---\n\n## Blender github项目\n\n### Blender中使用glsl创建Texture(N年前2.8项目,不知道现在还能不能用)\n\nhttps://github.com/patriciogonzalezvivo/glslTexture?tab=readme-ov-file\n\n---\n\n## Blender Geometry Node GN\n\n### 基本操作\n\n#### 快捷键\n- 节点Ctrl + x 可以删除的情况下保留连线\n- Shift + 右键添加中间节点\n- Ctrl + 右键快速切断\n- alt + 右键快速链接\n\n### Geometry Nodes 顶点色\n\n- 注意要用byteColor 和 Face Corner\n\n![1768286720945](posts/笔记图床/游戏开发/Blender相关/Blender/1768286720945.png)\n\n![1768286751113](posts/笔记图床/游戏开发/Blender相关/Blender/1768286751113.png)\n\n### 教程\n\n- 不错的Geometry Nodes 教程 Geometry Nodes for Beginners\n\nhttps://www.youtube.com/watch?v=szTYXk0t09A&list=PLzg4_2BrWAVzK4ORuEHz0RoE7Va3w6fBf\n\n![1768275683870](posts/笔记图床/游戏开发/Blender相关/Blender/1768275683870.png)\n\n- MaxEdge GN 教程\n\nhttps://www.youtube.com/@MaxEdge420/videos\n\n![1768275883405](posts/笔记图床/游戏开发/Blender相关/Blender/1768275883405.png)\n\n---\n\n## 小技巧Tips\n\n### Blender 快速切换语言\n\n![1768287376318](posts/笔记图床/游戏开发/Blender相关/Blender/1768287376318.png)\n\n新建个快捷键映射条目填wm.context_toggle\n属性填preferences.view.use_translate_interface\n\n---\n",
+      "val": 1
+    },
+    {
+      "id": "GitHub好项目",
+      "label": "GitHub好项目",
+      "group": "GitHub",
+      "all_tags": [
+        "GitHub"
+      ],
+      "content": "# GitHub\n\n#GitHub\n\n---\n\n## 好的git项目\n\n---\n\n### Blender 相关\n\n[BlenderGitHub md 文档](posts/游戏开发/Blender相关/Blender.md)\n\n![Blender](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768274526885.png)\n\n---\n\n### Volumetric fog\n\nhttps://github.com/rin-miku/SimpleVolumetricLighting\n\n![1768271723435](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768271723435.png)\n\n---\n\n### 波函数坍塌\n\nhttps://github.com/marian42/wavefunctioncollapse\n\n![1768271936593](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768271936593.png)\n\nhttps://github.com/mxgmn/WaveFunctionCollapse\n\n![1768272040866](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768272040866.png)\n\n---\n\n### Mix and jam\n\nhttps://github.com/mixandjam\n\n![1768272159047](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768272159047.png)\n\n---\n\n### ScreenSpaceLensFlareTest\n\nhttps://github.com/keijiro/ScreenSpaceLensFlareTest\n\n![1768272414589](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768272414589.png)\n\n---\n\n### Sebastian Lague\n\nhttps://github.com/SebLague\n\n![1768272522699](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768272522699.png)\n\n---\n\n### GTAO (AmplifyOcclusion)\n\nhttps://github.com/AmplifyCreations/AmplifyOcclusion\n\n![1768272673870](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768272673870.png)\n\n![1768272689502](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768272689502.png)\n\n---\n\n### 预积分大气散射 Brunetons-Improved-Atmospheric-Scattering\n\nhttps://github.com/Scrawk/Brunetons-Improved-Atmospheric-Scattering/tree/master\n\n![1768272781524](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768272781524.png)\n\n---\n\n### Cmake Tutorial (cmake-examples-Chinese)\n\nhttps://github.com/SFUMECJF/cmake-examples-Chinese\n\nhttps://sfumecjf.github.io/cmake-examples-Chinese/\n\n![1768272873336](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768272873336.png)\n\n---\n\n",
       "val": 1
     },
     {
@@ -178,124 +178,119 @@
   ],
   "links": [
     {
+      "source": "All_Notes_Outline",
+      "target": "Paper网页链接",
+      "type": "md"
+    },
+    {
+      "source": "All_Notes_Outline",
+      "target": "渲染相关网页链接",
+      "type": "md"
+    },
+    {
+      "source": "All_Notes_Outline",
+      "target": "渲染文档汇总",
+      "type": "md"
+    },
+    {
+      "source": "All_Notes_Outline",
+      "target": "ShaderToy",
+      "type": "md"
+    },
+    {
+      "source": "All_Notes_Outline",
+      "target": "Games101解析",
+      "type": "md"
+    },
+    {
+      "source": "All_Notes_Outline",
+      "target": "GPU流体模拟",
+      "type": "md"
+    },
+    {
+      "source": "All_Notes_Outline",
+      "target": "实用开发工具Tools",
+      "type": "md"
+    },
+    {
+      "source": "All_Notes_Outline",
+      "target": "在线实用工具OnlineTools",
+      "type": "md"
+    },
+    {
+      "source": "All_Notes_Outline",
+      "target": "Blender",
+      "type": "md"
+    },
+    {
+      "source": "All_Notes_Outline",
+      "target": "GitHub好项目",
+      "type": "md"
+    },
+    {
+      "source": "All_Notes_Outline",
+      "target": "四六级高频词汇",
+      "type": "md"
+    },
+    {
+      "source": "Tag_Index",
+      "target": "Blender",
+      "type": "md"
+    },
+    {
+      "source": "Tag_Index",
+      "target": "Paper网页链接",
+      "type": "md"
+    },
+    {
+      "source": "Tag_Index",
+      "target": "GitHub好项目",
+      "type": "md"
+    },
+    {
+      "source": "Tag_Index",
+      "target": "GPU流体模拟",
+      "type": "md"
+    },
+    {
+      "source": "Tag_Index",
+      "target": "Games101解析",
+      "type": "md"
+    },
+    {
+      "source": "Tag_Index",
+      "target": "渲染文档汇总",
+      "type": "md"
+    },
+    {
+      "source": "Tag_Index",
+      "target": "ShaderToy",
+      "type": "md"
+    },
+    {
+      "source": "Tag_Index",
+      "target": "实用开发工具Tools",
+      "type": "md"
+    },
+    {
+      "source": "Tag_Index",
+      "target": "在线实用工具OnlineTools",
+      "type": "md"
+    },
+    {
+      "source": "Tag_Index",
+      "target": "四六级高频词汇",
+      "type": "md"
+    },
+    {
+      "source": "Tag_Index",
+      "target": "渲染相关网页链接",
+      "type": "md"
+    },
+    {
       "source": "GitHub好项目",
       "target": "Blender",
       "type": "md"
-    },
-    {
-      "source": "All_Notes_Outline",
-      "target": "Blender",
-      "type": "md"
-    },
-    {
-      "source": "All_Notes_Outline",
-      "target": "GitHub好项目",
-      "type": "md"
-    },
-    {
-      "source": "All_Notes_Outline",
-      "target": "在线实用工具OnlineTools",
-      "type": "md"
-    },
-    {
-      "source": "All_Notes_Outline",
-      "target": "实用开发工具Tools",
-      "type": "md"
-    },
-    {
-      "source": "All_Notes_Outline",
-      "target": "Paper网页链接",
-      "type": "md"
-    },
-    {
-      "source": "All_Notes_Outline",
-      "target": "ShaderToy",
-      "type": "md"
-    },
-    {
-      "source": "All_Notes_Outline",
-      "target": "渲染文档汇总",
-      "type": "md"
-    },
-    {
-      "source": "All_Notes_Outline",
-      "target": "渲染相关网页链接",
-      "type": "md"
-    },
-    {
-      "source": "All_Notes_Outline",
-      "target": "Games101解析",
-      "type": "md"
-    },
-    {
-      "source": "All_Notes_Outline",
-      "target": "GPU流体模拟",
-      "type": "md"
-    },
-    {
-      "source": "All_Notes_Outline",
-      "target": "四六级高频词汇",
-      "type": "md"
-    },
-    {
-      "source": "Tag_Index",
-      "target": "Blender",
-      "type": "md"
-    },
-    {
-      "source": "Tag_Index",
-      "target": "Paper网页链接",
-      "type": "md"
-    },
-    {
-      "source": "Tag_Index",
-      "target": "GitHub好项目",
-      "type": "md"
-    },
-    {
-      "source": "Tag_Index",
-      "target": "GPU流体模拟",
-      "type": "md"
-    },
-    {
-      "source": "Tag_Index",
-      "target": "Games101解析",
-      "type": "md"
-    },
-    {
-      "source": "Tag_Index",
-      "target": "渲染文档汇总",
-      "type": "md"
-    },
-    {
-      "source": "Tag_Index",
-      "target": "ShaderToy",
-      "type": "md"
-    },
-    {
-      "source": "Tag_Index",
-      "target": "在线实用工具OnlineTools",
-      "type": "md"
-    },
-    {
-      "source": "Tag_Index",
-      "target": "实用开发工具Tools",
-      "type": "md"
-    },
-    {
-      "source": "Tag_Index",
-      "target": "四六级高频词汇",
-      "type": "md"
-    },
-    {
-      "source": "Tag_Index",
-      "target": "渲染相关网页链接",
-      "type": "md"
-    },
-    {
-      "source": "Blender",
-      "target": "All_Notes_Outline",
-      "type": "tag_group"
     },
     {
       "source": "All_Notes_Outline",
@@ -303,18 +298,8 @@
       "type": "tag_group"
     },
     {
-      "source": "GitHub好项目",
-      "target": "All_Notes_Outline",
-      "type": "tag_group"
-    },
-    {
-      "source": "在线实用工具OnlineTools",
-      "target": "实用开发工具Tools",
-      "type": "tag_group"
-    },
-    {
-      "source": "实用开发工具Tools",
-      "target": "All_Notes_Outline",
+      "source": "Tag_Index",
+      "target": "Paper网页链接",
       "type": "tag_group"
     },
     {
@@ -323,48 +308,58 @@
       "type": "tag_group"
     },
     {
-      "source": "渲染文档汇总",
-      "target": "All_Notes_Outline",
-      "type": "tag_group"
-    },
-    {
       "source": "Paper网页链接",
-      "target": "ShaderToy",
-      "type": "tag_group"
-    },
-    {
-      "source": "ShaderToy",
-      "target": "渲染文档汇总",
-      "type": "tag_group"
-    },
-    {
-      "source": "渲染文档汇总",
       "target": "渲染相关网页链接",
       "type": "tag_group"
     },
     {
       "source": "渲染相关网页链接",
-      "target": "GPU流体模拟",
+      "target": "渲染文档汇总",
       "type": "tag_group"
     },
     {
-      "source": "GPU流体模拟",
-      "target": "All_Notes_Outline",
-      "type": "tag_group"
-    },
-    {
-      "source": "Paper网页链接",
-      "target": "All_Notes_Outline",
+      "source": "渲染文档汇总",
+      "target": "ShaderToy",
       "type": "tag_group"
     },
     {
       "source": "ShaderToy",
-      "target": "All_Notes_Outline",
+      "target": "GPU流体模拟",
       "type": "tag_group"
     },
     {
-      "source": "Games101解析",
-      "target": "All_Notes_Outline",
+      "source": "Tag_Index",
+      "target": "ShaderToy",
+      "type": "tag_group"
+    },
+    {
+      "source": "Tag_Index",
+      "target": "Games101解析",
+      "type": "tag_group"
+    },
+    {
+      "source": "Tag_Index",
+      "target": "GPU流体模拟",
+      "type": "tag_group"
+    },
+    {
+      "source": "Tag_Index",
+      "target": "实用开发工具Tools",
+      "type": "tag_group"
+    },
+    {
+      "source": "实用开发工具Tools",
+      "target": "在线实用工具OnlineTools",
+      "type": "tag_group"
+    },
+    {
+      "source": "Tag_Index",
+      "target": "Blender",
+      "type": "tag_group"
+    },
+    {
+      "source": "Tag_Index",
+      "target": "GitHub好项目",
       "type": "tag_group"
     },
     {
