@@ -68,12 +68,12 @@
         .tag-capsule:hover { background: rgba(100, 200, 255, 0.4); color: #fff; }
         #selected-tags-container { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 6px; width: 100%; }
 
-        /* === HUD (Preview Card) [REFINED] === */
+        /* === HUD (Preview Card) === */
         #node-preview-hud {
             position: absolute; top: 0; left: 0; width: 320px; max-height: 400px; 
             padding: 20px;
             
-            /* [UPDATED] High transparency + Strong blur */
+            /* High transparency + Strong blur */
             background: rgba(10, 15, 20, 0.25); 
             backdrop-filter: blur(20px); 
             -webkit-backdrop-filter: blur(20px);
@@ -96,18 +96,16 @@
         .hud-tags { display: flex; flex-wrap: wrap; gap: 6px; }
         .hud-tag { font-size: 10px; padding: 2px 8px; background: rgba(255, 255, 255, 0.15); border-radius: 12px; color: #ddd; }
         
-        /* [UPDATED] Scroll Frame with Mask for Content */
+        /* Scroll Frame with Mask for Content */
         .hud-scroll-frame {
             flex-grow: 1; overflow: hidden; position: relative;
-            
-            /* The mask applies to this container, cutting off anything bottom */
             -webkit-mask-image: linear-gradient(to bottom, black 65%, transparent 100%);
             mask-image: linear-gradient(to bottom, black 65%, transparent 100%);
         }
 
         .hud-markdown-content { 
             font-size: 13px; color: #d0d0d0; 
-            padding-bottom: 20px; /* Space for fade */
+            padding-bottom: 20px;
         }
         .hud-markdown-content img { max-width: 100%; border-radius: 6px; margin-top: 8px; border: 1px solid rgba(255,255,255,0.1); display: block; }
         .hud-markdown-content a { color: #58a6ff; text-decoration: none; }
@@ -188,7 +186,6 @@
         <div id="info-tag" style="font-size: 14px; color: #88ccff; margin-top: 4px; font-family: monospace;"></div>
     </div>
     
-    <!-- [UPDATED HUD STRUCTURE] -->
     <div id="node-preview-hud">
         <div class="hud-header">
             <div class="hud-title" id="hud-title"></div>
@@ -212,10 +209,9 @@
     
     <script>
         /**
-         * Universe Logic - Final Polish
-         * - Fixes Camera Dragging on Node Drag
-         * - Proper Image Fading in HUD
-         * - Enhanced Transparency for HUD
+         * Universe Logic - Refined Interaction
+         * - Fixes Keyboard Search Focus being stolen by passing stars (blockHover)
+         * - Fixes Search Dropdown re-opening on focus
          */
         const Universe = {
             // === Core Data ===
@@ -235,7 +231,10 @@
             selectedNode: null,   
             isNodeDragging: false,
             lastClickNode: null,  
-            lastClickTime: 0,     
+            lastClickTime: 0,
+            
+            // [NEW] Prevents mouse hover from overriding keyboard selection until mouse moves
+            blockHover: false, 
             
             searchIndex: -1,
             searchResultsList: [],
@@ -344,7 +343,6 @@
                     // Interactions
                     .onNodeHover(this.handleNodeHover.bind(this))
                     .onNodeClick(this.handleNodeClick.bind(this))
-                    // [FIX] Disable controls when dragging a node
                     .onNodeDrag(() => { 
                         this.isNodeDragging = true; 
                         if(this.graph.controls()) this.graph.controls().enabled = false;
@@ -454,8 +452,11 @@
             handleNodeHover(node) {
                 if(document.getElementById('article-modal').classList.contains('active')) return;
                 
-                // Ignore 3D hover if interacting with search UI
+                // [FIX] Ignore 3D hover if interacting with search UI
                 if (document.querySelector('.search-wrapper:hover')) return;
+
+                // [FIX] If blockHover is true (keyboard nav active), ignore passing stars
+                if (this.blockHover) return;
 
                 // 1. HUD logic
                 if (node) {
@@ -526,7 +527,7 @@
                         });
                     }
 
-                    // 3. Highlight existing links between highlighted nodes
+                    // 3. Highlight existing links
                     this.data.links.forEach(l => {
                         const sNode = l.sourceNode || l.source;
                         const tNode = l.targetNode || l.target;
@@ -673,6 +674,9 @@
                     this.hoverNode = node; 
                     this.updatePreviewCard(node, true);
                     
+                    // [FIX] Block passive hover during keyboard nav
+                    this.blockHover = true;
+
                     this.flyTo(node, 1000);
                 }
             },
@@ -687,6 +691,8 @@
                 }
                 document.getElementById('search-input').value='';
                 document.getElementById('search-results').classList.remove('active');
+                // Unlock hover after selection
+                this.blockHover = false;
             },
 
             toggleTag(tag) {
@@ -976,8 +982,17 @@
                 document.addEventListener('mousemove', e => {
                     this.mouseScreenPos.set((e.clientX / window.innerWidth) * 2 - 1, -(e.clientY / window.innerHeight) * 2 + 1);
                     if(this.graph.controls()) this.graph.controls().enabled = !e.target.closest('.search-wrapper');
+                    
+                    // [FIX] Physical mouse movement unlocks the hover state
+                    this.blockHover = false;
                 });
                 
+                // [FIX] Add focus/click listener to search input
+                const searchInput = document.getElementById('search-input');
+                const triggerSearch = () => { if(searchInput.value.trim().length > 0) this.handleSearch(searchInput.value); };
+                searchInput.addEventListener('focus', triggerSearch);
+                searchInput.addEventListener('click', triggerSearch);
+
                 document.addEventListener('wheel', e => {
                     if(document.getElementById('article-modal').classList.contains('active') || e.target.closest('.search-wrapper')) return;
                     this.stopCameraAnimation(); 
