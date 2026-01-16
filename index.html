@@ -621,22 +621,52 @@
             handleSearch(val) {
                 const res = document.getElementById('search-results');
                 if(!val) { res.classList.remove('active'); return; }
-                val = val.toLowerCase().trim(); const sVal = val.replace(/\s+/g,'');
+                
+                // 统一转换为小写，移除空格
+                const originalVal = val.trim();
+                val = originalVal.toLowerCase(); 
+                const sVal = val.replace(/\s+/g,'');
 
+                // 1. 搜索 Tags
                 const tags = window.searchableTags.filter(t => 
                     !this.selectedTags.has(t.label) && 
                     (t.label.toLowerCase().includes(val) || t._py_full.includes(sVal) || t._py_head.includes(sVal))
-                ).map(t => ({ type:'tag', val:t.label, score:30 }));
+                ).map(t => {
+                    // Tag 评分逻辑
+                    let s = 30; // 基础分
+                    if (t.label.toLowerCase().startsWith(val)) s += 20; // 前缀优先
+                    if (t.label === originalVal) s += 50; // 完全匹配
+                    return { type:'tag', val:t.label, score:s };
+                });
 
+                // 2. 搜索 Nodes (核心修复)
                 const nodes = this.graph.graphData().nodes.map(n => {
                     let s = 0;
-                    if(n.label === val) s+=50; 
-                    else if(n.label.includes(val)) s+=10;
-                    if(n._py_full.includes(sVal) || n._py_head.includes(sVal)) s+=15;
+                    const labelLower = n.label.toLowerCase(); // 预先转小写
+
+                    // A. 标题匹配
+                    if (labelLower === val) {
+                        s += 100; // 绝对完全匹配
+                    } else if (labelLower.startsWith(val)) {
+                        s += 60;  // 【核心修复】开头匹配权重很高 (Games101 vs Blog)
+                    } else if (labelLower.includes(val)) {
+                        s += 10;  // 仅仅是包含
+                    }
+
+                    // B. 拼音匹配
+                    if (n._py_full.includes(sVal) || n._py_head.includes(sVal)) {
+                        s += 15;
+                        // 如果拼音也是以输入开头的，额外加分
+                        if (n._py_full.startsWith(sVal) || n._py_head.startsWith(sVal)) {
+                            s += 10; 
+                        }
+                    }
+
                     return { type:'node', val:n, score:s, id:n.id };
                 }).filter(i => i.score > 0);
 
-                const all = [...tags, ...nodes].sort((a,b)=>b.score-a.score).slice(0,10);
+                // 3. 排序并取前 15 个（稍微增加显示数量）
+                const all = [...tags, ...nodes].sort((a,b) => b.score - a.score).slice(0, 15);
                 this.searchResultsList = all; 
                 
                 if(all.length) {
@@ -644,7 +674,8 @@
                         <div class="search-item" data-idx="${i}" onclick="Universe.confirmSearch(${i})">
                             ${m.type==='tag' ? 
                             `<div class="tag-capsule">#${m.val}</div><span>Tag</span>` : 
-                            `<span>${m.val.label}</span><span style="opacity:0.5;font-size:10px">${m.val.id}</span>`}
+                            // 下面这一行加入了 text-align:right 和 margin-left:auto
+                            `<span>${m.val.label}</span><span style="opacity:0.5;font-size:10px;text-align:right;margin-left:auto;">${m.val.id}</span>`}
                         </div>`).join('');
                     res.classList.add('active');
                     
