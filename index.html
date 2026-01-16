@@ -10,6 +10,9 @@
     <script src="https://unpkg.com/3d-force-graph@1.73.1/dist/3d-force-graph.min.js"></script>
     <script src="https://unpkg.com/three-spritetext@1.8.2/dist/three-spritetext.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- 引入拼音库 -->
+    <script src="https://unpkg.com/pinyin-pro"></script>
+    
     <!-- 公式渲染支持 MathJax -->
     <script>
     window.MathJax = {
@@ -138,7 +141,7 @@
             font-size: 12px;
         }
 
-/* --- 极简圆角悬浮预览卡片 --- */
+        /* --- 极简圆角悬浮预览卡片 --- */
         #node-preview-hud {
             position: absolute;
             top: 0; left: 0;
@@ -237,15 +240,22 @@
         // 0. 极速响应 Ctrl+F (Placed at top of body)
         window.addEventListener('keydown', function(e) {
             if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'f') {
+                // 新增优化：检测文章弹窗是否打开
+                const modal = document.getElementById('article-modal');
+                const isArticleOpen = modal && modal.classList.contains('active');
+
+                // 如果文章打开了，不拦截，允许浏览器默认搜索
+                if (isArticleOpen) {
+                    return;
+                }
+
+                // 否则（在宇宙视图），拦截并唤起自定义搜索
                 e.preventDefault();
-                e.stopPropagation(); // 阻止冒泡
+                e.stopPropagation(); 
                 const input = document.getElementById('search-input');
                 if(input) {
                     input.focus();
                     input.select();
-                    // 确保搜索栏可见
-                    const results = document.getElementById('search-results');
-                    // if(results) results.classList.add('active'); 
                 }
             }
         }, { capture: true });
@@ -911,14 +921,44 @@
             const map = {};
             allTags.clear();
 
-            // 1. 建立索引 & 收集所有 Tag (用于搜索)
+            // --- 新增：获取拼音处理函数 ---
+            // 确保库已加载，如果没加载则提供回退防止报错
+            const { pinyin } = window.pinyinPro || { pinyin: (s) => s };
+            
+            // 辅助函数：生成拼音元数据
+            const getPinyinData = (str) => {
+                if(!str) return { full: '', head: '' };
+                // 全拼 (toneType: none 去除声调, nonZh: consecutive 保持非中文连续)
+                // replace(/\s+/g, '') 去除空格，支持 "Bo Ke" 搜 "boke"
+                const full = pinyin(str, { toneType: 'none', nonZh: 'consecutive', v: true }).replace(/\s+/g, '').toLowerCase();
+                // 首字母
+                const head = pinyin(str, { pattern: 'first', toneType: 'none', nonZh: 'consecutive' }).replace(/\s+/g, '').toLowerCase();
+                return { full, head };
+            };
+
+            // 1. 建立索引 & 收集所有 Tag & 生成拼音
             data.nodes.forEach(n => { 
                 n.neighbors = []; 
                 map[n.id] = n; 
                 
-                // 仅收集 Tag 供搜索使用，不再进行前端聚类计算
+                // --- 新增：预计算节点的拼音 ---
+                const pyObj = getPinyinData(n.label);
+                n._py_full = pyObj.full; // 全拼
+                n._py_head = pyObj.head; // 首字母
+
+                // 仅收集 Tag 供搜索使用
                 const tagsToProcess = (n.all_tags && n.all_tags.length > 0) ? n.all_tags : [n.group || 'default'];
                 tagsToProcess.forEach(tag => allTags.add(tag));
+            });
+
+            // --- 新增：将 allTags Set 转换为带拼音的对象数组，供搜索使用 ---
+            window.searchableTags = Array.from(allTags).map(tag => {
+                const py = getPinyinData(tag);
+                return {
+                    label: tag,
+                    _py_full: py.full,
+                    _py_head: py.head
+                };
             });
 
             // 2. 处理实体链接 & 预处理 (MD Link & Tag Link)
@@ -1298,20 +1338,56 @@
 
         searchInput.addEventListener('input', (e) => {
             const val = e.target.value.toLowerCase().trim();
+            // 移除所有空格，支持 "bei jing" 搜 "beijing"
+            const searchVal = val.replace(/\s+/g, '');
+
             if(!val) { searchResults.classList.remove('active'); return; }
             
-            // 1. Search Tags
-            const validTags = Array.from(allTags).filter(t => 
-                t.toLowerCase().includes(val) && !selectedTags.has(t)
-            ).map(t => ({ type: 'tag', label: t, id: `TAG_${t}`, score: 30 })); // High priority for tags
+            // 1. Search Tags (支持拼音)
+            const validTags = (window.searchableTags || []).filter(t => {
+                // 已选中的不显示
+                if (selectedTags.has(t.label)) return false;
+                
+                // 匹配逻辑：中文原名 || 全拼 || 首字母
+                return t.label.toLowerCase().includes(val) || 
+                       (t._py_full && t._py_full.includes(searchVal)) || 
+                       (t._py_head && t._py_head.includes(searchVal));
+            }).map(t => ({ 
+                type: 'tag', 
+                label: t.label, 
+                id: `TAG_${t.label}`, 
+                score: 30 // High priority for tags
+            }));
 
             // 2. Search Nodes (Only in current graph view)
             const nodeMatches = Graph.graphData().nodes.map(n => {
-                let score = 0, l = (n.label||'').toLowerCase(), i = (n.id||'').toLowerCase();
-                if(l===val) score+=20; else if(l.startsWith(val)) score+=10; else if(l.includes(val)) score+=5;
-                if(i.includes(val)) score+=10; // Increased weight for filename match
+                let score = 0;
+                const label = (n.label||'').toLowerCase();
+                const id = (n.id||'').toLowerCase();
+                const pyFull = n._py_full || '';
+                const pyHead = n._py_head || '';
+
+                // 原始匹配
+                if(label === val) score += 50; // 精确匹配
+                else if(label.startsWith(val)) score += 30;
+                else if(label.includes(val)) score += 10;
+                
+                // ID/文件名匹配
+                if(id.includes(val)) score += 15;
+
+                // --- 拼音匹配 ---
+                if (searchVal.length > 0) {
+                    // 全拼匹配 (如 "yuzhou" -> "宇宙")
+                    if (pyFull.startsWith(searchVal)) score += 25;
+                    else if (pyFull.includes(searchVal)) score += 8;
+
+                    // 首字母匹配 (如 "yz" -> "宇宙")
+                    if (pyHead.startsWith(searchVal)) score += 20;
+                    else if (pyHead.includes(searchVal)) score += 5;
+                }
+
                 return { type: 'node', n, score, id: n.id };
-            }).filter(o => o.score>0);
+            }).filter(o => o.score > 0);
 
             // Merge & Sort
             const allMatches = [...validTags, ...nodeMatches].sort((a,b)=>b.score-a.score).slice(0, 10);
