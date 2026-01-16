@@ -10,6 +10,19 @@
     <script src="https://unpkg.com/3d-force-graph@1.73.1/dist/3d-force-graph.min.js"></script>
     <script src="https://unpkg.com/three-spritetext@1.8.2/dist/three-spritetext.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- 公式渲染支持 MathJax -->
+    <script>
+    window.MathJax = {
+      tex: { 
+          inlineMath: [['$', '$'], ['\\(', '\\)']], 
+          displayMath: [['$$', '$$']] 
+      },
+      startup: {
+        typeset: false // 手动调用渲染
+      }
+    };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     
     <style>
         /* 强制全局光标为自定义猫猫样式，覆盖默认 */
@@ -220,6 +233,23 @@
     </style>
 </head>
 <body>
+    <script>
+        // 0. 极速响应 Ctrl+F (Placed at top of body)
+        window.addEventListener('keydown', function(e) {
+            if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'f') {
+                e.preventDefault();
+                e.stopPropagation(); // 阻止冒泡
+                const input = document.getElementById('search-input');
+                if(input) {
+                    input.focus();
+                    input.select();
+                    // 确保搜索栏可见
+                    const results = document.getElementById('search-results');
+                    // if(results) results.classList.add('active'); 
+                }
+            }
+        }, { capture: true });
+    </script>
     <div id="3d-graph"></div>
     <div id="helicopter-cat"><div class="cat-body-container"><div id="zzz-bubble">Zzz...</div><div class="propeller"></div><div class="cat-ear left"></div><div class="cat-ear right"></div><div class="cat-body"><div class="cat-face"><div class="eye left"></div><div class="eye right"></div></div></div></div></div>
     
@@ -617,11 +647,40 @@
         // 核心交互：打开文章
         function openArticle(node) {
             if(!node) return;
-            const content = node.content || (node.data && node.data.content) || "# No Content";
-            box.innerHTML = marked.parse(content);
+            let content = node.content || (node.data && node.data.content) || "# No Content";
+            
+            // --- 公式保护逻辑 ---
+            const mathBlocks = [];
+            // 保护块级公式 $$...$$
+            content = content.replace(/(\$\$[\s\S]*?\$\$)/g, (match) => {
+                mathBlocks.push(match);
+                return `MATHBLOCKPLACEHOLDER${mathBlocks.length - 1}ENDMATHBLOCK`;
+            });
+            // 保护行内公式 $...$ (排除转义的 \$)
+            content = content.replace(/((?<!\\)\$[^\n$]+?(?<!\\)\$)/g, (match) => {
+                mathBlocks.push(match);
+                return `MATHBLOCKPLACEHOLDER${mathBlocks.length - 1}ENDMATHBLOCK`;
+            });
+
+            // Markdown 解析
+            let html = marked.parse(content);
+
+            // 还原公式
+            // 使用更鲁棒的正则，防止 marked 对纯文本占位符进行意外格式化
+            html = html.replace(/MATHBLOCKPLACEHOLDER(\d+)ENDMATHBLOCK/g, (match, id) => {
+                return mathBlocks[id];
+            });
+
+            box.innerHTML = html;
             modal.style.display = 'block';
             modal.offsetHeight; // Force reflow
             modal.classList.add('active');
+
+            // 触发 MathJax 渲染
+            if(window.MathJax) {
+                // 重置 MathJax 状态并渲染新内容
+                MathJax.typesetPromise([box]).catch(err => console.log('MathJax error:', err));
+            }
             
             // 打开文章时，让猫猫睡觉，避免遮挡
             const cat = document.getElementById('helicopter-cat');
