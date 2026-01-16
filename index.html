@@ -4,74 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galactic Blog</title>
-    <!-- Favicon: Super Cute Cat (Blush) -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PCEtLSBFYXJzIChMb3dlcmVkKSAtLT48cGF0aCBkPSJNNSAxMSBMMTEgMTEgTDggNiBaIiBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgdHJhbnNmb3JtPSJyb3RhdGUoLTE1IDggMTEpIi8+PHBhdGggZD0iTTI3IDExIEwyMSAxMSBMMjQgNiBaIiBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgdHJhbnNmb3JtPSJyb3RhdGUoMTUgMjQgMTEpIi8+PHJlY3QgeD0iMyIgeT0iNyIgd2lkdGg9IjI2IiBoZWlnaHQ9IjIwIiByeD0iMTMiIHJ5PSIxMyIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSJub25lIi8+PGVsbGlwc2UgY3g9IjciIGN5PSIyMCIgcng9IjIiIHJ5PSIxLjUiIGZpbGw9IiNmZmRhZGEiLz48ZWxsaXBzZSBjeD0iMjUiIGN5PSIyMCIgcng9IjIiIHJ5PSIxLjUiIGZpbGw9IiNmZmRhZGEiLz48Y2lyY2xlIGN4PSIxMC41IiBjeT0iMTciIHI9IjIuNSIgZmlsbD0iIzMzMzMzMyIvPjxjaXJjbGUgY3g9IjIxLjUiIGN5PSIxNyIgcj0iMi41IiBmaWxsPSIjMzMzMzMzIi8+PC9zdmc+">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHBhdGggZD0iTTUgMTEgTDExIDExIEw4IDYgWiIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoLTE1IDggMTEpIi8+PHBhdGggZD0iTTI3IDExIEwyMSAxMSBMMjQgNiBaIiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSgxNSAyNCAxMSkiLz48cmVjdCB4PSIzIiB5PSI3IiB3aWR0aD0iMjYiIGhlaWdodD0iMjAiIHJ4PSIxMyIgcnk9IjEzIiBmaWxsPSIjZmZmZmZmIi8+PGVsbGlwc2UgY3g9IjciIGN5PSIyMCIgcng9IjIiIHJ5PSIxLjUiIGZpbGw9IiNmZmRhZGEiLz48ZWxsaXBzZSBjeD0iMjUiIGN5PSIyMCIgcng9IjIiIHJ5PSIxLjUiIGZpbGw9IiNmZmRhZGEiLz48Y2lyY2xlIGN4PSIxMC41IiBjeT0iMTciIHI9IjIuNSIgZmlsbD0iIzMzMzMzMyIvPjxjaXJjbGUgY3g9IjIxLjUiIGN5PSIxNyIgcj0iMi41IiBmaWxsPSIjMzMzMzMzIi8+PC9zdmc+">
+    
+    <!-- Libraries -->
     <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
     <script src="https://unpkg.com/3d-force-graph@1.73.1/dist/3d-force-graph.min.js"></script>
     <script src="https://unpkg.com/three-spritetext@1.8.2/dist/three-spritetext.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <!-- 引入拼音库 -->
     <script src="https://unpkg.com/pinyin-pro"></script>
     
-    <!-- 公式渲染支持 MathJax -->
+    <!-- MathJax -->
     <script>
     window.MathJax = {
-      tex: { 
-          inlineMath: [['$', '$'], ['\\(', '\\)']], 
-          displayMath: [['$$', '$$']] 
-      },
-      startup: {
-        typeset: false // 手动调用渲染
-      }
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$']] },
+      startup: { typeset: false }
     };
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     
     <style>
-        /* 强制全局光标为自定义猫猫样式，覆盖默认 */
+        /* === Global === */
         :root {
             --custom-cursor: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNSA1TDEyIDIxTDE1LjUgMTMuNUwyMyAxMEw1IDVaIiBmaWxsPSJ3aGl0ZSIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjIuNSIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3R5bGU9ImZpbHRlcjpkcm9wLXNoYWRvdygwcHggMnB4IDNweCByZ2JhKDAsMCwwLDAuMykpOyIvPjwvc3ZnPg==') 6 6, auto;
         }
         
-        *, html, body, canvas, a, button, .clickable, .tag-capsule, .search-item {
-            cursor: var(--custom-cursor) !important;
-        }
+        *, html, body, canvas, a, button { cursor: var(--custom-cursor) !important; }
 
-        /* 优化背景：纯黑底色，由 WebGL Skybox 接管环境渲染 */
         body { 
             margin: 0; padding: 0; overflow: hidden; 
-            background-color: #000000; 
-            color: #fff; font-family: 'Segoe UI', sans-serif; 
+            background-color: #000000; color: #fff; 
+            font-family: 'Segoe UI', sans-serif; 
         }
+
         #3d-graph { width: 100vw; height: 100vh; position: absolute; z-index: 1; }
         
+        /* Scrollbar */
         ::-webkit-scrollbar { width: 6px; height: 6px; }
         ::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }
         ::-webkit-scrollbar-thumb { background: rgba(100, 150, 255, 0.3); border-radius: 3px; }
         ::-webkit-scrollbar-thumb:hover { background: rgba(100, 150, 255, 0.6); }
 
+        /* === Search UI === */
         .search-wrapper { position: fixed; top: 20px; right: 30px; z-index: 50; width: 240px; }
-        /* 移除 backdrop-filter 以大幅提升渲染性能 */
-        #search-container { background: rgba(15, 20, 30, 0.95); border: 1px solid rgba(100, 150, 255, 0.3); border-radius: 20px; padding: 8px 16px; display: flex; align-items: center; transition: all 0.3s; }
+        #search-container { 
+            background: rgba(15, 20, 30, 0.95); border: 1px solid rgba(100, 150, 255, 0.3); 
+            border-radius: 20px; padding: 8px 16px; display: flex; align-items: center; 
+            transition: all 0.3s; 
+        }
         #search-container:focus-within { border-color: rgba(100, 200, 255, 0.9); box-shadow: 0 0 20px rgba(0, 100, 255, 0.3); }
         #search-input { background: transparent; border: none; color: #fff; outline: none; font-size: 14px; width: 100%; margin-left: 8px; font-family: inherit; }
-        #search-results { margin-top: 10px; background: rgba(8, 10, 16, 0.95); border: 1px solid rgba(40, 50, 70, 0.8); border-radius: 12px; max-height: 400px; overflow-y: auto; display: none; box-shadow: 0 10px 40px rgba(0,0,0,0.8); }
+        #search-results { 
+            margin-top: 10px; background: rgba(8, 10, 16, 0.95); 
+            border: 1px solid rgba(40, 50, 70, 0.8); border-radius: 12px; 
+            max-height: 400px; overflow-y: auto; display: none; 
+            box-shadow: 0 10px 40px rgba(0,0,0,0.8); 
+        }
         #search-results.active { display: block; }
         .search-item { padding: 12px 15px; cursor: pointer; border-bottom: 1px solid rgba(255,255,255,0.05); font-size: 13px; color: #ccc; display: flex; justify-content: space-between; align-items: center; transition: background 0.2s; }
         .search-item:hover, .search-item.selected { background: rgba(30, 100, 200, 0.3); color: #fff; }
-        .search-tag { font-size: 11px; color: #88a; background: rgba(255,255,255,0.1); padding: 2px 6px; border-radius: 4px; }
 
+        /* Tags */
+        .tag-capsule { background: rgba(100, 200, 255, 0.2); border: 1px solid rgba(100, 200, 255, 0.4); border-radius: 12px; padding: 2px 8px; font-size: 11px; color: #ade; cursor: pointer; display: flex; align-items: center; gap: 4px; transition: all 0.2s; user-select: none; }
+        .tag-capsule:hover { background: rgba(100, 200, 255, 0.4); color: #fff; }
+        #selected-tags-container { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 6px; width: 100%; }
+
+        /* === HUD (Preview Card) [REFINED] === */
+        #node-preview-hud {
+            position: absolute; top: 0; left: 0; width: 320px; max-height: 400px; 
+            padding: 20px;
+            
+            /* [UPDATED] High transparency + Strong blur */
+            background: rgba(10, 15, 20, 0.25); 
+            backdrop-filter: blur(20px); 
+            -webkit-backdrop-filter: blur(20px);
+            
+            border-radius: 16px; 
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+            
+            /* Transition */
+            opacity: 0; transform: translate(20px, -50%) scale(0.95);
+            transition: opacity 0.2s ease, transform 0.2s ease;
+            
+            z-index: 100; overflow: hidden; pointer-events: none;
+            display: flex; flex-direction: column;
+        }
+        #node-preview-hud.visible { opacity: 1; transform: translate(20px, -50%) scale(1); }
+        
+        .hud-header { flex-shrink: 0; margin-bottom: 12px; }
+        .hud-title { font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 6px; line-height: 1.3; text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
+        .hud-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+        .hud-tag { font-size: 10px; padding: 2px 8px; background: rgba(255, 255, 255, 0.15); border-radius: 12px; color: #ddd; }
+        
+        /* [UPDATED] Scroll Frame with Mask for Content */
+        .hud-scroll-frame {
+            flex-grow: 1; overflow: hidden; position: relative;
+            
+            /* The mask applies to this container, cutting off anything bottom */
+            -webkit-mask-image: linear-gradient(to bottom, black 65%, transparent 100%);
+            mask-image: linear-gradient(to bottom, black 65%, transparent 100%);
+        }
+
+        .hud-markdown-content { 
+            font-size: 13px; color: #d0d0d0; 
+            padding-bottom: 20px; /* Space for fade */
+        }
+        .hud-markdown-content img { max-width: 100%; border-radius: 6px; margin-top: 8px; border: 1px solid rgba(255,255,255,0.1); display: block; }
+        .hud-markdown-content a { color: #58a6ff; text-decoration: none; }
+
+        /* === Flying Cat === */
         #helicopter-cat { position: fixed; pointer-events: none; z-index: 9999; transform: scale(0.65); transform-origin: top left; width: 32px; height: 24px; top: -100px; left: -100px; transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
         #helicopter-cat.excited .propeller { animation-duration: 0.04s; }
         #helicopter-cat.excited .cat-body { box-shadow: 0 0 25px rgba(255, 220, 100, 0.8); background: #fffdf0; }
         .cat-body-container { width: 100%; height: 100%; position: relative; animation: float 2.5s ease-in-out infinite; }
         .cat-body { width: 32px; height: 22px; background: #fff; border-radius: 16px 16px 12px 12px; box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); position: absolute; bottom: 0; display: flex; justify-content: center; align-items: center; transition: all 0.3s; }
         .cat-ear { position: absolute; top: -4px; width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-bottom: 10px solid #fff; }
-        .cat-ear.left { left: 3px; transform: rotate(-15deg); }
-        .cat-ear.right { right: 3px; transform: rotate(15deg); }
+        .cat-ear.left { left: 3px; transform: rotate(-15deg); } .cat-ear.right { right: 3px; transform: rotate(15deg); }
         .cat-face { position: absolute; top: 8px; width: 100%; display: flex; justify-content: center; gap: 6px; }
-        .eye { width: 3px; height: 3px; background: #333; border-radius: 50%; transition: 0.1s; }
-        .eye.closed { height: 1px; transform: scaleX(1.5); background: #555; }
+        .eye { width: 3px; height: 3px; background: #333; border-radius: 50%; transition: 0.1s; } .eye.closed { height: 1px; transform: scaleX(1.5); background: #555; }
         .propeller { position: absolute; top: -10px; left: 50%; width: 28px; height: 2px; background: rgba(255, 255, 255, 0.9); transform: translateX(-50%); animation: spin 0.08s linear infinite; }
         .propeller::after { content: ''; position: absolute; top: 100%; left: 50%; width: 2px; height: 6px; background: #ccc; transform: translateX(-50%); }
         #zzz-bubble { position: absolute; top: -20px; right: -15px; font-size: 10px; color: #fff; font-weight: bold; opacity: 0; transition: opacity 0.5s; }
@@ -80,240 +130,73 @@
         @keyframes spin { 0% { transform: translateX(-50%) rotateY(0deg); } 100% { transform: translateX(-50%) rotateY(360deg); } }
         @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(4px); } }
 
-        #article-modal { display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(5, 5, 8, 0.96); z-index: 1000; opacity: 0; transition: opacity 0.4s ease-out; overflow-y: auto; }
+        /* === Modal === */
+        #article-modal { display: none; position: fixed; inset: 0; background: rgba(5, 5, 8, 0.96); z-index: 1000; opacity: 0; transition: opacity 0.4s ease-out; overflow-y: auto; }
         #article-modal.active { opacity: 1; }
         .article-content { max-width: 800px; margin: 60px auto; padding: 40px; background: rgba(20, 25, 35, 0.4); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; }
         .close-btn { position: fixed; top: 30px; right: 50px; font-size: 32px; cursor: pointer; color: #888; z-index: 1100; }
         .close-btn:hover { color: #fff; }
-        .markdown-body { line-height: 1.7; color: #d0d7de; }
-        .markdown-body h1 { border-bottom: 1px solid #30363d; padding-bottom: 0.3em; margin-top: 1.5em; color: #fff; }
+        
+        .markdown-body { line-height: 1.7; color: #b0b8c4; }
+        .markdown-body h1, .markdown-body h2, .markdown-body h3 { 
+            color: #ffffff; 
+            border-bottom: 1px solid #30363d; padding-bottom: 0.3em; margin-top: 1.5em; 
+        }
         .markdown-body a { color: #58a6ff; text-decoration: none; }
         .markdown-body code { background: rgba(110, 118, 129, 0.4); padding: 0.2em 0.4em; border-radius: 6px; font-family: monospace; }
         .markdown-body pre { background: #161b22; padding: 16px; border-radius: 6px; overflow: auto; }
         .markdown-body img { max-width: 100%; border-radius: 6px; }
 
-        /* Tag Capsule Styles */
-        #selected-tags-container {
-            margin-top: 8px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 6px;
-            width: 100%;
-        }
-        .tag-capsule {
-            background: rgba(100, 200, 255, 0.2);
-            border: 1px solid rgba(100, 200, 255, 0.4);
-            border-radius: 12px;
-            padding: 2px 8px;
-            font-size: 11px;
-            color: #ade;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            gap: 4px;
-            transition: all 0.2s;
-            user-select: none;
-        }
-        .tag-capsule:hover {
-            background: rgba(100, 200, 255, 0.4);
-            color: #fff;
-        }
-        .tag-capsule .remove-btn {
-            font-weight: bold;
-            color: rgba(255,255,255,0.6);
-            margin-left: 2px;
-        }
-        .tag-capsule .remove-btn:hover {
-            color: #fff;
-        }
-        
-        /* Search Dropdown Tag Style */
-        .search-item.type-tag .label-container {
-            display: flex;
-            align-items: center;
-        }
-        .search-item.type-tag .tag-capsule-preview {
-            background: rgba(100, 200, 255, 0.2);
-            border: 1px solid rgba(100, 200, 255, 0.3);
-            border-radius: 12px;
-            padding: 1px 8px;
-            color: #ade;
-            font-size: 12px;
-        }
-
-        /* --- 极简圆角悬浮预览卡片 --- */
-        #node-preview-hud {
-            position: absolute;
-            top: 0; left: 0;
-            width: 320px; /* 稍微加宽以容纳图片 */
-            max-height: 400px; /* 限制最大高度 */
-            padding: 16px;
-            
-            /* 极简深色背景 */
-            background: rgba(18, 18, 18, 0.1); /* 几乎不透明的深灰，保证阅读清晰 */
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            
-            /* 圆角与微弱边框 */
-            border-radius: 16px; /* 大圆角 */
-            border: 1px solid rgba(255, 255, 255, 0.08); /* 极淡的边框 */
-            
-            /* 交互与动画 */
-            pointer-events: none; /* 保持穿透，不影响鼠标操作 */
-            opacity: 0;
-            transform: translate(20px, -50%) scale(0.98);
-            transition: opacity 0.2s ease, transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
-            z-index: 100;
-            overflow: hidden; /* 防止内容溢出圆角 */
-            
-            /* 字体 */
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            color: #eee;
-            line-height: 1.5;
-        }
-
-        #node-preview-hud.visible {
-            opacity: 1;
-            transform: translate(20px, -50%) scale(1);
-        }
-
-        /* 标题 */
-        .hud-title {
-            font-size: 16px;
-            font-weight: 700;
-            color: #fff;
-            margin-bottom: 8px;
-            line-height: 1.3;
-        }
-
-        /* Tags */
-        .hud-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 6px;
-            margin-bottom: 12px;
-        }
-        .hud-tag {
-            font-size: 10px;
-            padding: 2px 8px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 12px; /* 胶囊圆角 */
-            color: #bbb;
-            font-weight: 500;
-        }
-
-        /* 内容预览区域 (Markdown 样式重置) */
-        .hud-markdown-content {
-            font-size: 13px;
-            color: #ccc;
-            opacity: 0.9;
-            /* 渐变遮罩，提示内容被截断 */
-            mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
-            -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
-            padding-bottom: 10px; 
-        }
-
-        /* 预览内容中的具体元素样式 */
-        .hud-markdown-content p { margin: 0 0 8px 0; }
-        .hud-markdown-content img { 
-            max-width: 100%; 
-            height: auto; 
-            border-radius: 8px; 
-            margin: 6px 0; 
-            border: 1px solid rgba(255,255,255,0.1);
-        }
-        .hud-markdown-content a { color: #58a6ff; text-decoration: none; }
-        .hud-markdown-content code { 
-            background: rgba(255,255,255,0.1); 
-            padding: 2px 4px; 
-            border-radius: 4px; 
-            font-family: monospace; 
-            font-size: 0.9em;
-        }
-        .hud-markdown-content h1, .hud-markdown-content h2, .hud-markdown-content h3 {
-            font-size: 14px; margin: 8px 0 4px; color: #fff;
-        }
+        /* Top Info */
+        #top-info-bar { position: fixed; top: 20px; left: 50%; transform: translateX(-50%); z-index: 40; pointer-events: none; opacity: 0; transition: opacity 0.3s; text-align: center; text-shadow: 0 2px 4px rgba(0,0,0,0.8); }
     </style>
 </head>
 <body>
-    <script>
-        // 0. 极速响应 Ctrl+F (Placed at top of body)
-        window.addEventListener('keydown', function(e) {
-            if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'f') {
-                // 新增优化：检测文章弹窗是否打开
-                const modal = document.getElementById('article-modal');
-                const isArticleOpen = modal && modal.classList.contains('active');
-
-                // 如果文章打开了，不拦截，允许浏览器默认搜索
-                if (isArticleOpen) {
-                    return;
-                }
-
-                // 否则（在宇宙视图），拦截并唤起自定义搜索
-                e.preventDefault();
-                e.stopPropagation(); 
-                const input = document.getElementById('search-input');
-                if(input) {
-                    input.focus();
-                    input.select();
-                }
-            }
-        }, { capture: true });
-    </script>
     <div id="3d-graph"></div>
-    <div id="helicopter-cat"><div class="cat-body-container"><div id="zzz-bubble">Zzz...</div><div class="propeller"></div><div class="cat-ear left"></div><div class="cat-ear right"></div><div class="cat-body"><div class="cat-face"><div class="eye left"></div><div class="eye right"></div></div></div></div></div>
     
-    <!-- Settings Panel (Minimalist - No Background) -->
-    <div id="settings-panel" style="position: fixed; bottom: 20px; left: 20px; z-index: 99; padding: 12px; color: #aaa; font-size: 12px; font-family: 'Segoe UI', sans-serif; transition: opacity 0.3s;">
-        
-        <!-- Controls -->
+    <div id="helicopter-cat">
+        <div class="cat-body-container">
+            <div id="zzz-bubble">Zzz...</div><div class="propeller"></div>
+            <div class="cat-ear left"></div><div class="cat-ear right"></div>
+            <div class="cat-body"><div class="cat-face"><div class="eye left"></div><div class="eye right"></div></div></div>
+        </div>
+    </div>
+    
+    <div id="settings-panel" style="position: fixed; bottom: 20px; left: 20px; z-index: 99; padding: 12px; color: #aaa; font-size: 12px; font-family: 'Segoe UI', sans-serif;">
         <div style="margin-bottom: 15px;">
-            <div style="font-weight: bold; color: #fff; margin-bottom: 6px; font-size: 12px; opacity: 0.8;">Controls</div>
+            <div style="font-weight: bold; color: #fff; margin-bottom: 6px;">Controls</div>
             <div style="display: flex; flex-direction: column; gap: 3px;">
                 <div><span style="color:#88ccff">Left Mouse</span> &nbsp; Rotate / Drag</div>
+                <div><span style="color:#88ccff">Double Click</span> Open Note</div>
                 <div><span style="color:#88ccff">Wheel</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Zoom</div>
-                <div><span style="color:#88ccff">Right Mouse</span> Rotate</div>
                 <div><span style="color:#ffaa00">ESC</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Reset View</div>
             </div>
         </div>
-
-        <!-- View Settings -->
         <div style="margin-bottom: 10px;">
-            <div style="font-weight: bold; color: #fff; margin-bottom: 6px; font-size: 12px; opacity: 0.8; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 8px;">Filters</div>
+            <div style="font-weight: bold; color: #fff; margin-bottom: 6px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 8px;">Filters</div>
             <div style="display: flex; flex-direction: column; gap: 4px;">
-                <div>
-                    <input type="checkbox" id="chk-index-nodes" onchange="updateGraphFilter()" style="vertical-align: middle;">
-                    <label for="chk-index-nodes" style="vertical-align: middle; cursor: pointer; color: #ccc;">Index Nodes</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="chk-md" checked onchange="updateGraphFilter()" style="vertical-align: middle;">
-                    <label for="chk-md" style="vertical-align: middle; cursor: pointer; color: #ccc;">MD Links</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="chk-tag-links" checked onchange="updateGraphFilter()" style="vertical-align: middle;">
-                    <label for="chk-tag-links" style="vertical-align: middle; cursor: pointer; color: #ccc;">Tag Links</label>
-                </div>
+                <div><input type="checkbox" id="chk-index-nodes" onchange="Universe.updateGraphFilter()" style="vertical-align: middle;"><label for="chk-index-nodes"> Index Nodes</label></div>
+                <div><input type="checkbox" id="chk-md" checked onchange="Universe.updateGraphFilter()" style="vertical-align: middle;"><label for="chk-md"> MD Links</label></div>
+                <div><input type="checkbox" id="chk-tag-links" checked onchange="Universe.updateGraphFilter()" style="vertical-align: middle;"><label for="chk-tag-links"> Tag Links</label></div>
             </div>
         </div>
-
-        <!-- Credits -->
-        <div style="margin-top: 12px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 8px; opacity: 0.6; font-size: 11px;">
-            Created by fs
-        </div>
+        <div style="margin-top: 12px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 8px; opacity: 0.6; font-size: 11px;">Created by fs</div>
     </div>
 
-    <!-- Top Info Bar -->
-    <div id="top-info-bar" style="position: fixed; top: 20px; left: 50%; transform: translateX(-50%); z-index: 40; pointer-events: none; opacity: 0; transition: opacity 0.3s; text-align: center; text-shadow: 0 2px 4px rgba(0,0,0,0.8);">
+    <div id="top-info-bar">
         <div id="info-title" style="font-size: 24px; font-weight: bold; color: #fff; letter-spacing: 1px;"></div>
         <div id="info-tag" style="font-size: 14px; color: #88ccff; margin-top: 4px; font-family: monospace;"></div>
     </div>
     
-<!-- 星星悬浮预览卡片 HUD -->
+    <!-- [UPDATED HUD STRUCTURE] -->
     <div id="node-preview-hud">
-        <div class="hud-title" id="hud-title"></div>
-        <div class="hud-tags" id="hud-tags"></div>
-        <!-- 容器 ID 变为 hud-content 以便渲染 Markdown -->
-        <div class="hud-markdown-content" id="hud-content"></div>
+        <div class="hud-header">
+            <div class="hud-title" id="hud-title"></div>
+            <div class="hud-tags" id="hud-tags"></div>
+        </div>
+        <div class="hud-scroll-frame">
+            <div class="hud-markdown-content" id="hud-content"></div>
+        </div>
     </div>
 
     <div class="search-wrapper">
@@ -324,1358 +207,841 @@
         <div id="selected-tags-container"></div>
         <div id="search-results"></div>
     </div>
-    <div id="article-modal"><div class="close-btn" onclick="closeArticle()">&times;</div><div class="article-content markdown-body" id="markdown-container"></div></div>
+
+    <div id="article-modal"><div class="close-btn" onclick="Universe.closeArticle()">&times;</div><div class="article-content markdown-body" id="markdown-container"></div></div>
     
     <script>
-        // 定义全局变量和状态
-        let gData = null; // Store full data globally
-        let allTags = new Set(); // Global Tag Registry
-        let selectedTags = new Set(); // Current Tag Filter
-        let activeLookup = {}; // 独立的全局查找表，解耦 Node 对象
-        let isNodeDragging = false; // Track node drag state
-
-        // Helper to check if mouse is over search UI
-        function isMouseOverSearch() {
-            return !!document.querySelector('.search-wrapper:hover');
-        }
-
-// --- 更新悬浮预览卡片 (富文本版) ---
-        function updatePreviewCard(node) {
-            const hud = document.getElementById('node-preview-hud');
-            const hudTitle = document.getElementById('hud-title');
-            const hudTags = document.getElementById('hud-tags');
-            const hudContent = document.getElementById('hud-content');
-
-            // 1. 隐藏条件：无节点、文章已打开、正在搜索、或正在拖拽节点
-            if (!node || modal.classList.contains('active') || isMouseOverSearch() || isNodeDragging) {
-                hud.classList.remove('visible');
-                return;
-            }
-
-            // 2. 设置标题
-            hudTitle.innerText = node.label || 'Unknown Node';
+        /**
+         * Universe Logic - Final Polish
+         * - Fixes Camera Dragging on Node Drag
+         * - Proper Image Fading in HUD
+         * - Enhanced Transparency for HUD
+         */
+        const Universe = {
+            // === Core Data ===
+            data: null,
+            graph: null,
+            maxDegree: 1,
             
-            // 3. 设置 Tags
-            const tags = (node.all_tags && node.all_tags.length > 0) ? node.all_tags : [node.group || 'Note'];
-            hudTags.innerHTML = tags.slice(0, 4).map(t => `<span class="hud-tag">#${t}</span>`).join('');
-
-            // 4. 解析 Markdown 内容 (保留图片和链接)
-            let rawContent = node.content || (node.data && node.data.content) || "";
+            // Index & Sets
+            allTags: new Set(),
+            selectedTags: new Set(),
+            activeLookup: {},
+            highlightNodes: new Set(),
+            highlightLinks: new Set(),
             
-            if (rawContent) {
-                // 为了性能和显示效果，只截取前 600 个字符进行渲染预览
-                // 这样既能显示开头的图片，又不会把整个长文渲染出来
-                let sliceLimit = 600;
-                let trimmedContent = rawContent.length > sliceLimit ? rawContent.substring(0, sliceLimit) + "\n\n..." : rawContent;
-                
-                // 使用 marked 解析 Markdown
-                hudContent.innerHTML = marked.parse(trimmedContent);
-            } else {
-                hudContent.innerHTML = "<span style='opacity:0.5; font-style:italic;'>No preview available</span>";
-            }
-
-            // 5. 计算位置 (保持吸附逻辑不变)
-            if (Graph) {
-                const coords = Graph.graph2ScreenCoords(node.x, node.y, node.z);
-                
-                let leftPos = coords.x + 25; // 偏移量
-                let topPos = coords.y;
-
-                // 边界检测：防止超出屏幕右侧
-                if (leftPos + 340 > window.innerWidth) { // 340 = width + padding
-                    leftPos = coords.x - 345; 
-                }
-
-                // 边界检测：防止超出屏幕底部
-                if (topPos + 300 > window.innerHeight) {
-                    topPos = window.innerHeight - 300;
-                }
-                // 边界检测：防止超出屏幕顶部
-                if (topPos < 100) {
-                    topPos = 100;
-                }
-
-                hud.style.left = `${leftPos}px`;
-                hud.style.top = `${topPos}px`;
-                hud.classList.add('visible');
-            }
-        }
-
-        // 统一的高亮模式设置函数
-        function setHighlightMode(node) {
-            hoverNode = node || null; 
-            updateCatExcitement(); // 触发全状态检查
+            // Interaction State
+            hoverNode: null,      
+            selectedNode: null,   
+            isNodeDragging: false,
+            lastClickNode: null,  
+            lastClickTime: 0,     
             
-            highlightNodes.clear(); highlightLinks.clear();
+            searchIndex: -1,
+            searchResultsList: [],
             
-            // Top Info Bar Update
-            const infoBar = document.getElementById('top-info-bar');
-            if(node) {
-                document.getElementById('info-title').innerText = node.label;
-                
-                let displayTags = '';
-                if (node.all_tags && node.all_tags.length > 0) {
-                    displayTags = node.all_tags.map(t => `#${t}`).join(' ');
-                } else if(node.group) {
-                        displayTags = `#${node.group}`;
-                }
-                document.getElementById('info-tag').innerText = displayTags;
-                
-                infoBar.style.opacity = 1;
-            } else {
-                infoBar.style.opacity = 0;
-            }
+            // Visuals
+            skybox: null,
+            zoomVelocity: 0,
+            mouseScreenPos: new THREE.Vector2(),
             
-            if (node) {
-                highlightNodes.add(node);
-                
-                // 使用全局查找表 activeLookup
-                const entry = activeLookup[node.id];
-                if(entry) {
-                    const { nodes } = Graph.graphData();
-                    entry.neighbors.forEach(nid => {
-                        const neighborNode = nodes.find(n => n.id === nid);
-                        if(neighborNode) highlightNodes.add(neighborNode);
+            // Flight System
+            globalStartPos: null,
+            flyState: {
+                active: false,
+                startPos: new THREE.Vector3(), endPos: new THREE.Vector3(),
+                startTarget: new THREE.Vector3(), endTarget: new THREE.Vector3(),
+                startTime: 0, duration: 0
+            },
+
+            // === 1. Init ===
+            init() {
+                this.initGraph();
+                this.initCat();
+                this.initEvents();
+                this.loadData();
+                this.animate();
+            },
+
+            // === 2. Graph Setup ===
+            initGraph() {
+                const el = document.getElementById('3d-graph');
+                this.graph = ForceGraph3D()(el)
+                    .showNavInfo(false)
+                    .backgroundColor('rgba(0,0,0,0)')
+                    .nodeLabel(null)
+                    
+                    // Node Visuals
+                    .nodeThreeObject(node => {
+                        const degree = node.neighbors?.length || 0;
+                        let color = this.getStarColor(degree);
+                        node.color = color;
+                        const group = new THREE.Group();
+                        
+                        // Core
+                        const core = this.createCoreSprite(color);
+                        const coreSize = 12;
+                        core.scale.set(coreSize, coreSize, 1);
+                        group.add(core); group.core = core;
+
+                        // Rays
+                        const cross = this.createCrossSprite(color, degree);
+                        const crossSize = 12 * (1 + (degree/this.maxDegree)*0.5);
+                        cross.scale.set(crossSize, crossSize, 1);
+                        group.add(cross); group.cross = cross;
+
+                        // Animation Data
+                        group.userData = { 
+                            phase: Math.random()*Math.PI*2, 
+                            baseScaleCore: coreSize, baseScaleCross: crossSize,
+                            currentOpacity: 1.0, speed: 0.5+Math.random() 
+                        };
+                        
+                        // Labels
+                        const text = new SpriteText(node.label); 
+                        text.color = '#fff'; text.textHeight = 4; text.center = new THREE.Vector2(0.5, 4.0);
+                        text.material.transparent = true; text.material.opacity = 0; text.material.depthWrite = false;
+                        group.add(text); group.text = text; 
+                        
+                        const tagStr = (node.all_tags && node.all_tags.length > 0) ? node.all_tags.map(t=>`#${t}`).join(' ') : `#${node.group||''}`;
+                        const subText = new SpriteText(tagStr);
+                        subText.color = '#88a'; subText.textHeight = 2.5; subText.center = new THREE.Vector2(0.5, 8.0);
+                        subText.material.transparent = true; subText.material.opacity = 0; subText.material.depthWrite = false;
+                        group.add(subText); group.subText = subText;
+
+                        node.__threeObj = group;
+                        return group;
+                    })
+                    // Link Visuals
+                    .linkThreeObject(link => {
+                        const geo = new THREE.BufferGeometry();
+                        geo.setAttribute('position', new THREE.BufferAttribute(new Float32Array(6), 3));
+                        
+                        // Color: Tag=Blue, MD=Orange
+                        let colorArr;
+                        let opacity = 0.15;
+                        if (link.type === 'tag_group') { 
+                            colorArr = [0.1, 0.5, 1.0,  0.1, 0.5, 1.0]; 
+                            opacity = 0.1; 
+                        } else {
+                            colorArr = [1.0, 0.6, 0.1,  1.0, 0.6, 0.1]; 
+                            opacity = 0.3; 
+                        }
+
+                        geo.setAttribute('color', new THREE.BufferAttribute(new Float32Array(colorArr), 3));
+                        if (link.isReverse) opacity = 0;
+                        
+                        const mat = new THREE.LineBasicMaterial({ vertexColors: true, transparent: true, opacity: opacity });
+                        const line = new THREE.Line(geo, mat); 
+                        line.frustumCulled = false; 
+                        link.__lineObj = line; return line;
+                    })
+                    .linkPositionUpdate((line, { start, end }) => {
+                        const p = line.geometry.attributes.position.array;
+                        p[0]=start.x; p[1]=start.y; p[2]=start.z; p[3]=end.x; p[4]=end.y; p[5]=end.z;
+                        line.geometry.attributes.position.needsUpdate = true; return true; 
+                    })
+                    // Interactions
+                    .onNodeHover(this.handleNodeHover.bind(this))
+                    .onNodeClick(this.handleNodeClick.bind(this))
+                    // [FIX] Disable controls when dragging a node
+                    .onNodeDrag(() => { 
+                        this.isNodeDragging = true; 
+                        if(this.graph.controls()) this.graph.controls().enabled = false;
+                    })
+                    .onNodeDragEnd(() => { 
+                        this.isNodeDragging = false; 
+                        if(this.graph.controls()) this.graph.controls().enabled = true;
+                    })
+                    .onBackgroundClick(() => {
+                        this.selectedNode = null; 
+                        this.hoverNode = null; 
+                        this.setHighlightMode(null);
+                        this.updatePreviewCard(null, false);
+                        document.getElementById('search-results').classList.remove('active');
                     });
-                    entry.links.forEach(l => highlightLinks.add(l));
-                }
-            }
 
-            // 动态更新粒子流向
-            Graph.linkDirectionalParticles(link => (highlightLinks.has(link) && link.type !== 'tag_group') ? 3 : 0);
-            Graph.linkDirectionalParticleWidth(link => highlightLinks.has(link) ? 1.5 : 0);
-            Graph.linkDirectionalParticleColor(link => link.sourceNode ? link.sourceNode.color : '#ffffff'); 
-            Graph.linkDirectionalParticleSpeed(link => 0.005);
-        }
-
-        function updateGraphFilter() {
-            if(!gData || !Graph) return;
-            
-            // 1. 获取所有开关状态
-            const showMd = document.getElementById('chk-md').checked;
-            const showTagLinks = document.getElementById('chk-tag-links') ? document.getElementById('chk-tag-links').checked : true;
-            // 兼容检查索引开关
-            const chkIndex = document.getElementById('chk-index-nodes');
-            const showIndexNodes = chkIndex ? chkIndex.checked : true;
-            const indexKeywords = ['index', '目录', '索引'];
-
-            // 2. 筛选节点 (Nodes)
-            let filteredNodes = gData.nodes.filter(n => {
-                const nodeTags = (n.all_tags && n.all_tags.length > 0) ? n.all_tags : [n.group || 'default'];
+                // Physics
+                this.graph.d3Force('charge').strength(-120); 
+                this.graph.d3Force('link')
+                    .distance(link => link.type === 'tag_group' ? 40 : 100)
+                    .strength(link => link.type === 'tag_group' ? 0.05 : 1);
                 
-                // 过滤索引节点
-                if (!showIndexNodes) {
-                    if (nodeTags.some(tag => indexKeywords.includes(tag.toLowerCase()))) return false;
-                }
+                // Controls
+                const controls = this.graph.controls();
+                controls.enablePan = false;
+                controls.enableZoom = false; 
+                controls.minDistance = 50;
+                controls.maxDistance = 7000;
+            },
 
-                // 过滤标签 (Tags)
-                if (selectedTags.size > 0) {
-                    for (let t of selectedTags) {
-                         if (!nodeTags.includes(t)) return false;
-                    }
-                }
-                return true;
-            });
-            const filteredNodeIds = new Set(filteredNodes.map(n => n.id));
-            
-            // 3. 筛选链接 (Links)
-            let filteredLinks = gData.links.filter(l => {
-                const sId = (typeof l.source === 'object') ? l.source.id : l.source;
-                const tId = (typeof l.target === 'object') ? l.target.id : l.target;
-                
-                // 两端节点必须都在
-                if (!filteredNodeIds.has(sId) || !filteredNodeIds.has(tId)) return false;
+            // === 3. Data Loading ===
+            loadData() {
+                fetch('./posts_data.json').then(r => r.json()).then(data => {
+                    const map = {};
+                    this.allTags.clear();
+                    const { pinyin } = window.pinyinPro || { pinyin: (s) => s };
 
-                // 根据类型筛选
-                if (l.type === 'md') return showMd;
-                if (l.type === 'tag_group') return showTagLinks;
-                return true; 
-            });
+                    data.nodes.forEach(n => {
+                        n.neighbors = []; map[n.id] = n;
+                        n._py_full = pinyin(n.label, { toneType: 'none', nonZh: 'consecutive', v: true }).replace(/\s+/g, '').toLowerCase();
+                        n._py_head = pinyin(n.label, { pattern: 'first', toneType: 'none', nonZh: 'consecutive' }).replace(/\s+/g, '').toLowerCase();
+                        (n.all_tags && n.all_tags.length ? n.all_tags : [n.group || 'default']).forEach(t => this.allTags.add(t));
+                    });
 
-            // --- 核心：纯动态色温计算 ---
+                    window.searchableTags = Array.from(this.allTags).map(tag => ({
+                        label: tag,
+                        _py_full: pinyin(tag, { toneType: 'none', nonZh: 'consecutive', v: true }).replace(/\s+/g, '').toLowerCase(),
+                        _py_head: pinyin(tag, { pattern: 'first', toneType: 'none', nonZh: 'consecutive' }).replace(/\s+/g, '').toLowerCase()
+                    }));
 
-            // A. 重新统计当前可见连接数
-            // Map<NodeID, Count>
-            const currentDegrees = new Map();
-            filteredNodes.forEach(n => currentDegrees.set(n.id, 0));
-            
-            const getID = (n) => (typeof n === 'object') ? n.id : n;
+                    data.links.forEach(l => {
+                        if(!l.type) l.type = 'md';
+                        const a = map[l.source], b = map[l.target];
+                        if(a && b) { 
+                            a.neighbors.push(b); b.neighbors.push(a);
+                            l.sourceNode = a; l.targetNode = b; 
+                        }
+                    });
 
-            filteredLinks.forEach(link => {
+                    this.maxDegree = Math.max(...data.nodes.map(n => n.neighbors.length), 1);
+                    this.data = data; 
 
-                const sId = getID(link.source);
-                const tId = getID(link.target);
-                
-                if (currentDegrees.has(sId)) currentDegrees.set(sId, currentDegrees.get(sId) + 1);
-                if (currentDegrees.has(tId)) currentDegrees.set(tId, currentDegrees.get(tId) + 1);
-            });
-
-            // B. 找出当前的“最高热度” (Dynamic Max Degree)
-            let newMaxDegree = 0;
-            for (let d of currentDegrees.values()) {
-                if (d > newMaxDegree) newMaxDegree = d;
-            }
-            // 【修复】设置一个最低阈值 (比如 10 或 20)，防止当连接数极少时，单个节点的大小比例失控爆炸
-            maxDegree = Math.max(newMaxDegree, 20);
-
-            // C. 重新上色 (根据 degree / maxDegree 的比例)
-            filteredNodes.forEach(node => {
-                const degree = currentDegrees.get(node.id) || 0;
-                // 这里的 getStarColor 会使用上面更新过的 maxDegree 全局变量
-                const newColor = getStarColor(degree);
-                
-                node.color = newColor; 
-                
-                // 刷新 3D 材质
-                if (node.__threeObj) {
-                    const group = node.__threeObj;
-                    
-                    // 核心
-                    if (group.core) {
-                        const newSprite = createCoreSprite(newColor);
-                        if(group.core.material.map) group.core.material.map.dispose();
-                        group.core.material.map = newSprite.material.map;
-                    }
-                    // 光芒
-                    if (group.cross) {
-                        const newCross = createCrossSprite(newColor, degree);
-                        if(group.cross.material.map) group.cross.material.map.dispose();
-                        group.cross.material.map = newCross.material.map;
-                    }
-                    
-                    // 刷新呼吸大小基准 (让大节点呼吸幅度更大)
-                    const coreSize = 12;
-                    const crossSize = 12 * (1 + (degree / maxDegree) * 0.5);
-                    
-                    group.userData.baseScaleCore = coreSize;
-                    group.userData.baseScaleCross = crossSize;
-                }
-            });
-
-            // 4. 更新图表数据
-            Graph.graphData({
-                nodes: filteredNodes,
-                links: filteredLinks
-            });
-
-            // 5. 调整物理引擎
-            Graph.d3Force('charge').strength(-120);
-
-            // 6. 重建高亮索引
-            activeLookup = {}; 
-            filteredLinks.forEach(link => {
-                const sId = getID(link.source);
-                const tId = getID(link.target);
-                if(!activeLookup[sId]) activeLookup[sId] = { neighbors: [], links: [] };
-                if(!activeLookup[tId]) activeLookup[tId] = { neighbors: [], links: [] };
-                activeLookup[sId].neighbors.push(tId); activeLookup[sId].links.push(link);
-                activeLookup[tId].neighbors.push(sId); activeLookup[tId].links.push(link);
-            });
-            
-            // 7. 刷新连线颜色
-            setTimeout(() => {
-                const currentLinks = Graph.graphData().links.filter(l => l.type !== 'tag_group');
-                currentLinks.forEach(link => {
-                    if(link.__lineObj && link.sourceNode && link.targetNode) {
-                        const c1 = new THREE.Color(link.sourceNode.color), c2 = new THREE.Color(link.targetNode.color);
-                        const attr = link.__lineObj.geometry.attributes.color;
-                        attr.setXYZ(0, c1.r, c1.g, c1.b); attr.setXYZ(1, c1.r, c1.g, c1.b);
-                        attr.setXYZ(3, c2.r, c2.g, c2.b); attr.setXYZ(4, c2.r, c2.g, c2.b);
-                        attr.needsUpdate = true;
-                    }
-                });
-            }, 100);
-        }
-
-        // MD 链接劫持系统
-        document.getElementById('markdown-container').addEventListener('click', function(e) {
-            if(e.target.tagName === 'A') {
-                e.preventDefault();
-                const href = e.target.getAttribute('href');
-                
-                // 1. 尝试作为内部链接处理
-                // 去掉路径前缀 ./posts/ 等，保留文件名
-                let targetId = href.split('/').pop(); 
-                // 尝试匹配 graph 中的 ID (通常是 filename.md)
-                const { nodes } = Graph.graphData();
-                let targetNode = nodes.find(n => n.id === targetId || n.id === targetId + '.md');
-                
-                // 2. 如果没找到，尝试模糊匹配 (比如链接写的是 title)
-                if(!targetNode) {
-                    const cleanRef = decodeURIComponent(targetId).replace(/\.md$/i, '').toLowerCase();
-                    targetNode = nodes.find(n => n.label.toLowerCase() === cleanRef || n.id.toLowerCase().includes(cleanRef));
-                }
-
-                if(targetNode) {
-                    console.log('Jumping to internal link:', targetNode.label);
-                    // 关闭当前文章，飞行并在飞行结束后打开新文章
-                    // 稍微缩短一点飞行时间，体验更流畅
-                    const cam = Graph.camera();
-                    const startPos = { x: cam.position.x, y: cam.position.y, z: cam.position.z };
-                    
-                    // 视觉上的“飞越”
-                    closeArticle(); 
-                    
-                    // 重新打开
                     setTimeout(() => {
-                         jumpToNode(targetNode.id, true);
-                    }, 300); // 等待 modal 关闭动画的一半
-                } else {
-                    // 外部链接，新标签页打开
-                    window.open(href, '_blank');
-                }
-            }
-        });
+                        const c = this.graph.camera().position;
+                        this.globalStartPos = c.clone();
+                        this.initSkybox();
+                    }, 1000);
 
-        let Graph, maxDegree = 1;
-        let highlightNodes = new Set(), highlightLinks = new Set();
-        // 添加全局 skybox 变量以便跟随
-        let hoverNode = null, initialCameraPos = null, starryParticles = null, skybox = null;
-        let selectedNode = null;
-        let globalStartPos = null; // 宇宙初始最佳视角
+                    this.updateGraphFilter();
+                });
+            },
 
-        // 惯性缩放系统变量
-        let zoomVelocity = 0;
-        let zoomPivot = null;
-        let mouseScreenPos = new THREE.Vector2(0, 0);
-        let isMouseDown = false; // Track mouse state
+            // === 4. Visual Generation ===
+            getStarColor(degree) {
+                const t = Math.pow(degree / Math.max(this.maxDegree, 20), 0.7); 
+                const c1 = new THREE.Color(0xff1133), c2 = new THREE.Color(0xffaa00), c3 = new THREE.Color(0x00ccff);
+                return (t < 0.4 ? c1.lerp(c2, t * 2.5) : c2.lerp(c3, (t - 0.4) * 1.6)).getStyle();
+            },
 
-        // 自定义飞行系统状态
-        const flyState = {
-            active: false,
-            startPos: new THREE.Vector3(),
-            endPos: new THREE.Vector3(),
-            startTarget: new THREE.Vector3(),
-            endTarget: new THREE.Vector3(),
-            startTime: 0,
-            duration: 0
-        };
+            createCoreSprite(color) {
+                const canvas = document.createElement('canvas'); canvas.width = 64; canvas.height = 64;
+                const ctx = canvas.getContext('2d');
+                const grad = ctx.createRadialGradient(32, 32, 2, 32, 32, 30);
+                grad.addColorStop(0, 'rgba(255,255,255,1)'); grad.addColorStop(0.4, color); grad.addColorStop(1, 'rgba(0,0,0,0)');
+                ctx.fillStyle = grad; ctx.beginPath(); ctx.arc(32, 32, 30, 0, Math.PI*2); ctx.fill();
+                return new THREE.Sprite(new THREE.SpriteMaterial({ map: new THREE.CanvasTexture(canvas), transparent: true, blending: THREE.AdditiveBlending, depthWrite: false }));
+            },
 
-        const modal = document.getElementById('article-modal');
-        const box = document.getElementById('markdown-container');
-        
-        // 核心交互：打开文章
-        function openArticle(node) {
-            if(!node) return;
-            let content = node.content || (node.data && node.data.content) || "# No Content";
-            
-            // --- 公式保护逻辑 ---
-            const mathBlocks = [];
-            // 保护块级公式 $$...$$
-            content = content.replace(/(\$\$[\s\S]*?\$\$)/g, (match) => {
-                mathBlocks.push(match);
-                return `MATHBLOCKPLACEHOLDER${mathBlocks.length - 1}ENDMATHBLOCK`;
-            });
-            // 保护行内公式 $...$ (排除转义的 \$)
-            content = content.replace(/((?<!\\)\$[^\n$]+?(?<!\\)\$)/g, (match) => {
-                mathBlocks.push(match);
-                return `MATHBLOCKPLACEHOLDER${mathBlocks.length - 1}ENDMATHBLOCK`;
-            });
-
-            // Markdown 解析
-            let html = marked.parse(content);
-
-            // 还原公式
-            // 使用更鲁棒的正则，防止 marked 对纯文本占位符进行意外格式化
-            html = html.replace(/MATHBLOCKPLACEHOLDER(\d+)ENDMATHBLOCK/g, (match, id) => {
-                return mathBlocks[id];
-            });
-
-            box.innerHTML = html;
-            modal.style.display = 'block';
-            modal.offsetHeight; // Force reflow
-            modal.classList.add('active');
-
-            // 触发 MathJax 渲染
-            if(window.MathJax) {
-                // 重置 MathJax 状态并渲染新内容
-                MathJax.typesetPromise([box]).catch(err => console.log('MathJax error:', err));
-            }
-            
-            // 打开文章时，让猫猫睡觉，避免遮挡
-            const cat = document.getElementById('helicopter-cat');
-            if(cat) cat.classList.add('hidden');
-        }
-        function closeArticle() {
-            modal.classList.remove('active');
-            setTimeout(() => { modal.style.display = 'none'; }, 400);
-            // Camera position reset removed to keep focus on the star
-            
-            // 唤醒猫猫
-            const cat = document.getElementById('helicopter-cat');
-            if(cat) cat.classList.remove('hidden');
-        }
-        document.addEventListener('keydown', e => { 
-            if(e.key==='Escape') {
-                if(modal.classList.contains('active')) {
-                    closeArticle();
-                } else if(Graph && globalStartPos) {
-                    // 回到宇宙最佳视角(使用自定义飞行系统)
-                    startFly(
-                        globalStartPos, 
-                        {x:0, y:0, z:0}, 
-                        2000
-                    );
-                }
-            }
-        });
-
-        // 色温算法 (高饱和度)
-        function getStarColor(degree) {
-            const t = Math.pow(degree / maxDegree, 0.7); 
-            // Saturation Boosted: Red -> Orange -> Cyan/Blue
-            const c1 = new THREE.Color(0xff1133), c2 = new THREE.Color(0xffaa00), c3 = new THREE.Color(0x00ccff);
-            if (t < 0.4) return c1.clone().lerp(c2, t * 2.5).getStyle();
-            else return c2.clone().lerp(c3, (t - 0.4) * 1.6).getStyle();
-        }
-
-        // 视觉生成器 1: 核心光球
-        function createCoreSprite(color) {
-            const canvas = document.createElement('canvas'); canvas.width = 64; canvas.height = 64;
-            const ctx = canvas.getContext('2d'); const c = 32;
-            const grad = ctx.createRadialGradient(c, c, 2, c, c, 30);
-            grad.addColorStop(0, 'rgba(255,255,255,1)'); grad.addColorStop(0.4, color); grad.addColorStop(1, 'rgba(0,0,0,0)');
-            ctx.fillStyle = grad; ctx.beginPath(); ctx.arc(c, c, 30, 0, Math.PI*2); ctx.fill();
-            const mat = new THREE.SpriteMaterial({ map: new THREE.CanvasTexture(canvas), transparent: true, blending: THREE.AdditiveBlending, depthWrite: false });
-            return new THREE.Sprite(mat);
-        }
-
-        // 视觉生成器 2: 十字光芒
-        function createCrossSprite(color, degree) {
-            const canvas = document.createElement('canvas'); canvas.width = 256; canvas.height = 256; 
-            const ctx = canvas.getContext('2d'); const c = 128;
-            ctx.globalCompositeOperation = 'lighter';
-            
-            // 确保 maxDegree 有值，防止除以0
-            const safeMax = (typeof maxDegree !== 'undefined' && maxDegree > 0) ? maxDegree : 1;
-            const rayScale = 0.8 + (degree / safeMax) * 0.5;
-            
-            const drawRay = (w, h, a) => {
-                const g = ctx.createLinearGradient(0, c-h, 0, c+h);
-                g.addColorStop(0,'rgba(0,0,0,0)'); g.addColorStop(0.5,`rgba(255,255,255,${a})`); g.addColorStop(1,'rgba(0,0,0,0)');
-                ctx.fillStyle = g; ctx.fillRect(c-w/2, c-h, w, h*2);
-            };
-            drawRay(4, 100*rayScale, 0.9);
-            ctx.save(); ctx.translate(c, c); ctx.rotate(Math.PI/2); ctx.translate(-c, -c); 
-            drawRay(4, 80*rayScale, 0.9); ctx.restore();
-            
-            const mat = new THREE.SpriteMaterial({ map: new THREE.CanvasTexture(canvas), transparent: true, blending: THREE.AdditiveBlending, depthWrite: false });
-            return new THREE.Sprite(mat);
-        }
-
-        // 初始化图表
-        Graph = ForceGraph3D()(document.getElementById('3d-graph'))
-            // .jsonUrl('./posts_data.json')//注释后可以解决loading...的问题
-            .showNavInfo(false) // 禁用默认的底部导航提示
-            .backgroundColor('rgba(0,0,0,0)') // 透明背景，使用 CSS 的深空渐变
-            .nodeLabel(null)
-            .linkThreeObject(link => {
-                const geo = new THREE.BufferGeometry();
-                geo.setAttribute('position', new THREE.BufferAttribute(new Float32Array(6), 3));
-                
-                // 默认颜色 (灰色)
-                let colorArr = [0.5,0.5,0.5, 0.5,0.5,0.5];
-                let opacity = 0.15;
-
-                // 特殊链接样式
-                if (link.type === 'tag_group') {
-                    // Tag链式连接：使用淡蓝色，且透明度更低，模拟星座连线
-                    colorArr = [0.2, 0.4, 0.6, 0.2, 0.4, 0.6]; 
-                    opacity = 0.1; 
-                }
-
-                geo.setAttribute('color', new THREE.BufferAttribute(new Float32Array(colorArr), 3));
-                // 反向链接完全透明，不干扰视觉，只提供粒子路径
-                if (link.isReverse) opacity = 0;
-                
-                const mat = new THREE.LineBasicMaterial({ vertexColors: true, transparent: true, opacity: opacity });
-                const line = new THREE.Line(geo, mat); 
-                line.frustumCulled = false; // 关键修复：防止近距离观察时连线因视锥体误判而消失
-                link.__lineObj = line; return line;
-            })
-            .linkPositionUpdate((line, { start, end }) => {
-                const p = line.geometry.attributes.position.array;
-                p[0]=start.x; p[1]=start.y; p[2]=start.z; p[3]=end.x; p[4]=end.y; p[5]=end.z;
-                line.geometry.attributes.position.needsUpdate = true; return true; 
-            })
-            .nodeThreeObject(node => {
-                const degree = (node.neighbors && node.neighbors.length) || 0;
-                let color = getStarColor(degree); node.color = color; 
-                const group = new THREE.Group();
-                
-                // 1. 核心球体
-                const core = createCoreSprite(color);
-                const coreSize = 12; 
-                core.scale.set(coreSize, coreSize, 1);
-                group.add(core); group.core = core;
-
-                // 2. 十字光芒 (独立，以便动态缩放)
-                const cross = createCrossSprite(color, degree);
-                const crossSize = 12 * (1 + (degree/maxDegree)*0.5);
-                cross.scale.set(crossSize, crossSize, 1);
-                group.add(cross); group.cross = cross;
-
-                // 共享状态
-                group.userData = { 
-                    phase: Math.random()*Math.PI*2, 
-                    baseScaleCore: coreSize,
-                    baseScaleCross: crossSize,
-                    currentOpacity: 1.0, 
-                    speed: 0.5+Math.random() 
+            createCrossSprite(color, degree) {
+                const canvas = document.createElement('canvas'); canvas.width = 256; canvas.height = 256; 
+                const ctx = canvas.getContext('2d'); 
+                ctx.globalCompositeOperation = 'lighter';
+                const safeMax = Math.max(this.maxDegree, 1);
+                const rayScale = 0.8 + (degree / safeMax) * 0.5;
+                const drawRay = (w, h) => {
+                    const g = ctx.createLinearGradient(0, 128-h, 0, 128+h);
+                    g.addColorStop(0,'rgba(0,0,0,0)'); g.addColorStop(0.5,`rgba(255,255,255,0.9)`); g.addColorStop(1,'rgba(0,0,0,0)');
+                    ctx.fillStyle = g; ctx.fillRect(128-w/2, 128-h, w, h*2);
                 };
-                
-                // 标题 (白色)
-                const text = new SpriteText(node.label); 
-                text.color = '#fff'; text.textHeight = 4; 
-                // Fix: 使用 center 属性代替 position.y，确保文字始终在并在屏幕空间下方
-                // (0.5, 4.0) means anchor is horizontal-center and vertical-offset (pushed up relative to text)
-                text.center = new THREE.Vector2(0.5, 4.0);
-                text.material.transparent = true; text.material.opacity = 0; text.material.depthWrite = false;
-                group.add(text); group.text = text; 
-                
-                // Tag 标签 (灰色，小字体，显示所有Tags)
-                // 优先使用 all_tags 数组，如果没有则回退到 group
-                let tagStr = '';
-                if (node.all_tags && node.all_tags.length > 0) {
-                    tagStr = node.all_tags.map(t => `#${t}`).join(' ');
-                } else if (node.group && node.group !== 'default') {
-                    tagStr = `#${node.group}`;
-                }
-                
-                const subText = new SpriteText(tagStr);
-                subText.color = '#88a'; subText.textHeight = 2.5;
-                // Tag 紧随标题下方
-                subText.center = new THREE.Vector2(0.5, 8.0);
-                subText.material.transparent = true; subText.material.opacity = 0; subText.material.depthWrite = false;
-                group.add(subText); group.subText = subText;
+                drawRay(4, 100*rayScale);
+                ctx.translate(128, 128); ctx.rotate(Math.PI/2); ctx.translate(-128, -128); drawRay(4, 80*rayScale);
+                return new THREE.Sprite(new THREE.SpriteMaterial({ map: new THREE.CanvasTexture(canvas), transparent: true, blending: THREE.AdditiveBlending, depthWrite: false }));
+            },
 
-                return group;
-            })
-            .onNodeHover(node => {
-                if(modal.classList.contains('active')) return;
-                if(isMouseOverSearch()) return; 
+            // === 5. Interaction & Logic ===
+            
+            handleNodeHover(node) {
+                if(document.getElementById('article-modal').classList.contains('active')) return;
+                
+                // Ignore 3D hover if interacting with search UI
+                if (document.querySelector('.search-wrapper:hover')) return;
 
-                // --- 触发悬浮卡片更新 ---
-                updatePreviewCard(node);
-
+                // 1. HUD logic
                 if (node) {
-                    setHighlightMode(node);
+                    this.hoverNode = node;
+                    this.updatePreviewCard(node, true);
                 } else {
-                    // Fallback to selectedNode if exists (persist highlight)
-                    if (selectedNode) {
-                        setHighlightMode(selectedNode);
-                        document.body.style.cursor = 'default'; // Correct cursor for background
-                    } else {
-                        setHighlightMode(null);
-                    }
+                    this.hoverNode = null;
+                    if (!this.isNodeDragging) this.updatePreviewCard(null, false);
                 }
-            })
-            .onNodeDrag(() => { isNodeDragging = true; })
-            .onNodeDragEnd(() => { isNodeDragging = false; })
-            .onNodeClick(node => {
+
+                // 2. Highlight logic
+                if (node) {
+                    this.setHighlightMode(node);
+                } else if (this.selectedNode) {
+                    this.setHighlightMode(this.selectedNode);
+                } else {
+                    this.setHighlightMode(null);
+                }
+            },
+
+            handleNodeClick(node) {
                 if(!node) return;
                 
-                // Check view status BEFORE updating selection (to determine action)
-                // 锁定判断逻辑：需要同时满足 1.已选中 2.距离合适 3.视角居中
-                const isSelected = (selectedNode && selectedNode.id === node.id);
-                
-                const cam = Graph.camera();
-                const nodePos = new THREE.Vector3(node.x, node.y, node.z);
-                const camPos = new THREE.Vector3(cam.position.x, cam.position.y, cam.position.z);
-                
-                // 1. Distance Check
-                const dist = camPos.distanceTo(nodePos);
-                const isDistOk = Math.abs(dist - 300) < 40; // Allow slight tolerance around 300 (280-340)
-                
-                // 2. Centered Check (Angle)
-                const viewDir = new THREE.Vector3();
-                cam.getWorldDirection(viewDir); // Camera look direction
-                const toNodeDir = nodePos.clone().sub(camPos).normalize();
-                const angle = viewDir.angleTo(toNodeDir);
-                const isCentered = angle < 0.15; // Approx 8.5 degrees tolerance
-
-                // Always activate visual selection first
-                selectedNode = node;
-                setHighlightMode(node);
-
-                if (isSelected && isDistOk && isCentered) {
-                    openArticle(node);
-                } else {
-                    // Focus Mode: Pull back/Center
-                    flyTo(node, 1200);
-                }
-            })
-            .onBackgroundClick(() => {
-                selectedNode = null;
-                setHighlightMode(null); // Clear highlight manually
-                // Close search if active
-                const sr = document.getElementById('search-results');
-                if (sr.classList.contains('active')) {
-                    sr.classList.remove('active');
-                    document.getElementById('search-input').blur();
-                }
-            });
-
-        // 数据处理
-        fetch('./posts_data.json').then(r => r.json()).then(data => {
-            const map = {};
-            allTags.clear();
-
-            // --- 新增：获取拼音处理函数 ---
-            // 确保库已加载，如果没加载则提供回退防止报错
-            const { pinyin } = window.pinyinPro || { pinyin: (s) => s };
-            
-            // 辅助函数：生成拼音元数据
-            const getPinyinData = (str) => {
-                if(!str) return { full: '', head: '' };
-                // 全拼 (toneType: none 去除声调, nonZh: consecutive 保持非中文连续)
-                // replace(/\s+/g, '') 去除空格，支持 "Bo Ke" 搜 "boke"
-                const full = pinyin(str, { toneType: 'none', nonZh: 'consecutive', v: true }).replace(/\s+/g, '').toLowerCase();
-                // 首字母
-                const head = pinyin(str, { pattern: 'first', toneType: 'none', nonZh: 'consecutive' }).replace(/\s+/g, '').toLowerCase();
-                return { full, head };
-            };
-
-            // 1. 建立索引 & 收集所有 Tag & 生成拼音
-            data.nodes.forEach(n => { 
-                n.neighbors = []; 
-                map[n.id] = n; 
-                
-                // --- 新增：预计算节点的拼音 ---
-                const pyObj = getPinyinData(n.label);
-                n._py_full = pyObj.full; // 全拼
-                n._py_head = pyObj.head; // 首字母
-
-                // 仅收集 Tag 供搜索使用
-                const tagsToProcess = (n.all_tags && n.all_tags.length > 0) ? n.all_tags : [n.group || 'default'];
-                tagsToProcess.forEach(tag => allTags.add(tag));
-            });
-
-            // --- 新增：将 allTags Set 转换为带拼音的对象数组，供搜索使用 ---
-            window.searchableTags = Array.from(allTags).map(tag => {
-                const py = getPinyinData(tag);
-                return {
-                    label: tag,
-                    _py_full: py.full,
-                    _py_head: py.head
-                };
-            });
-
-            // 2. 处理实体链接 & 预处理 (MD Link & Tag Link)
-            // 此时 data.links 已经包含后端生成的 type: 'tag_group' 链接
-            data.links.forEach(l => {
-                // 默认类型归为 md (如果后端未指定) -- 虽然目前后端都指定了
-                if(!l.type) l.type = 'md';
-            });
-
-            data.links.forEach(l => {
-                // Pre-resolve objects for ForceGraph
-                const a = map[l.source], b = map[l.target];
-                if(a && b) { 
-                    // 所有 MD 和 Tag 链接都参与邻居统计
-                    a.neighbors.push(b); 
-                    b.neighbors.push(a);
-                    l.sourceNode = a; l.targetNode = b; 
-                }
-            });
-
-            maxDegree = 0; data.nodes.forEach(n => { if(n.neighbors.length > maxDegree) maxDegree = n.neighbors.length; });
-            if(maxDegree < 1) maxDegree = 1;
-
-            // Save to Global
-            gData = data;
-
-            // Initialize Layout via Filter function
-            // 4. 定制聚类力
-            Graph.d3Force('charge').strength(-120); 
-            // 针对 Tag 组连接 (链式) 设置较弱的拉力，避免图谱过于僵硬
-            Graph.d3Force('link')
-                .distance(link => link.type === 'tag_group' ? 40 : 100)
-                .strength(link => link.type === 'tag_group' ? 0.05 : 1);
-            
-            // 5. 自定义鼠标缩放 (Zoom to Cursor) & 交互限制
-            Graph.enableNodeDrag(true); // 恢复左键拖动星星
-            
-            const controls = Graph.controls();
-            controls.enablePan = false;  // 禁用右键平移，防止迷失
-            controls.enableZoom = false; // 禁用原生缩放，接管滚轮
-            
-            // 限制相机活动范围 (参考 Far=8000)
-            controls.minDistance = 50;   // 最近能看多近
-            controls.maxDistance = 7000; // 最远能拉多远 (限制在球体内)
-
-            // 记录初始最佳视角
-            setTimeout(() => {
-                const c = Graph.camera().position;
-                globalStartPos = { x: c.x, y: c.y, z: c.z };
-            }, 1000);
-
-            // 记录鼠标位置供动画帧使用
-            document.addEventListener('mousemove', (e) => {
-                mouseScreenPos.x = (e.clientX / window.innerWidth) * 2 - 1;
-                mouseScreenPos.y = -(e.clientY / window.innerHeight) * 2 + 1;
-            });
-
-            // 辅助函数：用户交互时立即停止相机自动飞行，防止冲突卡顿
-            function stopCameraAnimation() {
-                // 核心修复：立即手动终止自定义飞行循环
-                flyState.active = false;
-                
-                // 强制清零惯性缩放
-                zoomVelocity = 0;
-                
-                if (!Graph) return;
-
-                // 1. 获取当前状态
-                const cam = Graph.camera();
-                const controls = Graph.controls();
-                
-                // 2. 停止 ForceGraph 内部可能存在的任何过渡
-                // 原理：将相机目标设为"当前位置"，时间设为0，强行结束之前的 Tween
-                const currentPos = cam.position.clone();
-                const currentTarget = controls.target.clone();
-                
-                Graph.cameraPosition(
-                    { x: currentPos.x, y: currentPos.y, z: currentPos.z },
-                    { x: currentTarget.x, y: currentTarget.y, z: currentTarget.z },
-                    0
-                );
-                
-                // 3. 强制 Controls 同步，防止这一帧出现跳变
-                controls.update();
-            }
-
-            // 监听交互事件以打断自动飞行
-            const graphEl = document.getElementById('3d-graph');
-            // 注意：使用 Capture 捕获模式，确保在 OrbitControls 响应之前就停止动画
-            graphEl.addEventListener('mousedown', (e) => { isMouseDown = true; stopCameraAnimation(); }, true);
-            graphEl.addEventListener('mouseup', () => { isMouseDown = false; }, true);
-            graphEl.addEventListener('touchstart', stopCameraAnimation, { passive: true, capture: true });
-
-            document.addEventListener('wheel', (e) => {
-                if(modal.classList.contains('active') || e.target.closest('.search-wrapper')) return;
-                
-                stopCameraAnimation(); // 滚轮介入优先权最高
-                
-                e.preventDefault();
-                // 累加动力，而不是直接位移
-                // 方向修正：deltaY > 0 是向下滚(拉近/拉远取决于习惯)，通常滚轮向下是View变大(离得更远)
-                // 这里设定：滚轮向下(正) -> 远离 -> Velocity > 0
-                const sensitivity = 0.0008; 
-                zoomVelocity += e.deltaY * sensitivity;
-            }, { passive: false });
-
-            updateGraphFilter(); // Initial Render
-        });
-
-        // 动画循环
-        function animateFrame() {
-            requestAnimationFrame(animateFrame);
-            
-            // 0. 天空盒位置锁定 (核心修复：防止拉远穿帮)
-            // 让天空球永远跟随着相机移动，从而达到"无限大"的错觉
-            if (skybox && Graph.camera()) {
-                skybox.position.copy(Graph.camera().position);
-            }
-
-            // --- 新增：如果当前有高亮节点且不是选中模式，实时更新卡片位置 ---
-            // 这样当你拖拽场景时，卡片会牢牢吸附在星星旁边
-            if (hoverNode && !modal.classList.contains('active')) {
-                updatePreviewCard(hoverNode);
-            } else if (!hoverNode) {
-                // 双重保险，没悬停时隐藏
-                document.getElementById('node-preview-hud').classList.remove('visible');
-            }
-
-            // 1. 处理自定义平滑飞行
-            if (flyState.active) {
                 const now = Date.now();
-                const elapsed = now - flyState.startTime;
-                
-                if (elapsed >= flyState.duration) {
-                    flyState.active = false;
-                    // Ensure final state
-                    Graph.camera().position.copy(flyState.endPos);
-                    Graph.controls().target.copy(flyState.endTarget);
-                    Graph.controls().update();
+                if (this.lastClickNode && this.lastClickNode.id === node.id && (now - this.lastClickTime < 300)) {
+                    // Double Click
+                    this.openArticle(node);
                 } else {
-                    const progress = easeInOutCubic(elapsed / flyState.duration);
-                    
-                    // Lerp Position
-                    const newPos = new THREE.Vector3().lerpVectors(flyState.startPos, flyState.endPos, progress);
-                    Graph.camera().position.copy(newPos);
-                    
-                    // Lerp Target (LookAt)
-                    const newTarget = new THREE.Vector3().lerpVectors(flyState.startTarget, flyState.endTarget, progress);
-                    Graph.controls().target.copy(newTarget);
-                    
-                    Graph.controls().update();
+                    // Single Click
+                    this.selectedNode = node;
+                    this.setHighlightMode(node);
+                    this.flyTo(node, 1200);
                 }
-            }
-            
-            // A. 处理惯性缩放
-            if (Math.abs(zoomVelocity) > 0.0001) {
-                const cam = Graph.camera();
-                const target = Graph.controls().target;
-
-                // 1. 实时计算当前锚点 (Real-time pivot)
-                let currentPivot = null;
                 
-                if (hoverNode) {
-                    currentPivot = new THREE.Vector3(hoverNode.x, hoverNode.y, hoverNode.z);
-                } else {
-                    const raycaster = new THREE.Raycaster();
-                    raycaster.setFromCamera(mouseScreenPos, cam);
-                    const planeNormal = new THREE.Vector3();
-                    cam.getWorldDirection(planeNormal);
-                    const planeAtTarget = new THREE.Plane().setFromNormalAndCoplanarPoint(planeNormal, target);
-                    const intersect = new THREE.Vector3();
-                    raycaster.ray.intersectPlane(planeAtTarget, intersect);
-                    if(intersect) currentPivot = intersect;
-                }
+                this.lastClickNode = node;
+                this.lastClickTime = now;
+            },
 
-                if (currentPivot) {
-                    // 2. 应用缩放 (无限制版)
-                    const factor = 1 + zoomVelocity;
+            setHighlightMode(node) {
+                this.highlightNodes.clear(); this.highlightLinks.clear();
+                const infoBar = document.getElementById('top-info-bar');
+                
+                if(node) {
+                    document.getElementById('info-title').innerText = node.label;
+                    let displayTags = (node.all_tags||[]).map(t => `#${t}`).join(' ') || `#${node.group}`;
+                    document.getElementById('info-tag').innerText = displayTags;
+                    infoBar.style.opacity = 1;
                     
-                    const camVec = cam.position.clone().sub(currentPivot).multiplyScalar(factor);
-                    const tgtVec = target.clone().sub(currentPivot).multiplyScalar(factor);
+                    this.highlightNodes.add(node);
                     
-                    const nextPos = currentPivot.clone().add(camVec);
-                    const nextTarget = currentPivot.clone().add(tgtVec);
-                    
-                    // 增加边界限制：仅当新位置在允许半径内时才应用
-                    // 参考 controls.maxDistance (7000)
-                    if (nextPos.length() < 7000 && nextPos.length() > 50) {
-                        cam.position.copy(nextPos);
-                        target.copy(nextTarget);
-                        Graph.controls().update();
+                    // 1. Neighbors
+                    const lookup = this.activeLookup[node.id];
+                    if(lookup) {
+                        lookup.neighbors.forEach(nid => {
+                            const n = this.data.nodes.find(x => x.id === nid);
+                            if(n) this.highlightNodes.add(n);
+                        });
                     }
-                }
 
-                // 3. 阻尼衰减
-                zoomVelocity *= 0.85; 
-                if (Math.abs(zoomVelocity) < 0.0001) {
-                    zoomVelocity = 0;
-                }
-            }
-
-            const { nodes, links } = Graph.graphData();
-            if(!nodes || nodes.length === 0) return;
-            
-            const camPos = Graph.camera().position;
-            const camDist = Math.hypot(camPos.x, camPos.y, camPos.z);
-            const time = Date.now() * 0.002;
-            const isHovering = (hoverNode !== null);
-
-            // 粒子系统Shader接管了背景消隐，此处仅处理Graph逻辑
-
-            const isModalOpen = modal.classList.contains('active');
-
-            nodes.forEach(node => {
-                const group = node.__threeObj; if (!group) return;
-                const dist = Math.hypot(node.x-camPos.x, node.y-camPos.y, node.z-camPos.z);
-                
-                // 标题 & Tag LOD (文章打开时强制隐藏)
-                let textOp = 0;
-                if(!isModalOpen) {
-                    if(isHovering) { if(highlightNodes.has(node)) textOp = 1; }
-                    // 增加可视距离：从 200 提升到 500，且衰减更平缓
-                    else { 
-                        if(dist < 500) textOp = 1 - (dist - 150)/350; 
+                    // 2. Global Tags
+                    const targetTags = node.all_tags && node.all_tags.length > 0 ? node.all_tags : [node.group];
+                    if (targetTags && targetTags.length > 0) {
+                        this.data.nodes.forEach(n => {
+                            const nTags = n.all_tags || [n.group];
+                            if (targetTags.some(t => nTags.includes(t))) {
+                                this.highlightNodes.add(n);
+                            }
+                        });
                     }
-                    if(textOp<0)textOp=0; if(textOp>1)textOp=1;
-                }
-                // 平滑过渡
-                group.text.material.opacity += (textOp - group.text.material.opacity) * 0.15;
-                // Tag比标题稍微淡一点，或者同步
-                group.subText.material.opacity = group.text.material.opacity * 0.7;
-                
-                // 本体消隐
-                let targetOp = (isHovering && !highlightNodes.has(node)) ? 0.1 : 1.0;
-                group.userData.currentOpacity += (targetOp - group.userData.currentOpacity) * 0.1;
-                const op = group.userData.currentOpacity;
-                
-                // 应用透明度
-                group.core.material.opacity = op;
-                group.cross.material.opacity = op;
-                
-                // 呼吸 & 动态缩放
-                if(op > 0.5) {
-                    const timeS = Math.sin(time * group.userData.speed + group.userData.phase);
-                    
-                    // 1. Core: 仅呼吸
-                    const sCore = 1 + timeS * 0.08;
-                    const bCore = group.userData.baseScaleCore;
-                    group.core.scale.set(bCore*sCore, bCore*sCore, 1);
-                    
-                    // 2. Cross: 呼吸 + 适度距离补偿
-                    // 调整为最大放大 5 倍，且增长曲线更平缓 (dist/300)
-                    // 这样远处的星星十字不会显得喧宾夺主
-                    const distFactor = 1 + Math.min(dist / 300, 5.0); 
-                    
-                    const sCross = sCore * distFactor;
-                    const bCross = group.userData.baseScaleCross;
-                    group.cross.scale.set(bCross*sCross, bCross*sCross, 1);
-                }
-            });
-            
-            links.forEach(link => {
-                const line = link.__lineObj; if(!line) return;
-                let t = 0.3;
-                if(isHovering) t = highlightLinks.has(link) ? 0.8 : 0.02;
-                line.material.opacity += (t - line.material.opacity) * 0.1;
-            });
-        }
-        animateFrame();
 
-        // 搜索系统
-        const searchInput = document.getElementById('search-input');
-        const searchResults = document.getElementById('search-results');
-
-        // Global click to close search from anywhere
-        document.addEventListener('click', (e) => {
-            const wrapper = document.querySelector('.search-wrapper');
-            if (searchResults.classList.contains('active') && !wrapper.contains(e.target)) {
-                searchResults.classList.remove('active');
-                searchInput.blur();
-            }
-        });
-
-        let searchIndex = -1;
-
-        // 核心飞行函数
-        function startFly(endPos, endTarget, duration = 1500) {
-            if (!Graph) return;
-            const cam = Graph.camera();
-            const controls = Graph.controls();
-
-            flyState.startPos.copy(cam.position);
-            flyState.startTarget.copy(controls.target);
-            
-            // Handle raw object input for endPos
-            if (endPos.x !== undefined) flyState.endPos.set(endPos.x, endPos.y, endPos.z);
-            else flyState.endPos.copy(endPos);
-
-            // Handle raw object input for endTarget
-            if (endTarget.x !== undefined) flyState.endTarget.set(endTarget.x, endTarget.y, endTarget.z);
-            else flyState.endTarget.copy(endTarget);
-            
-            flyState.startTime = Date.now();
-            flyState.duration = duration;
-            flyState.active = true;
-        }
-
-        // Cubic Ease InOut
-        function easeInOutCubic(t) {
-            return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
-        }
-
-        function flyTo(node, duration = 1500) {
-            const cam = Graph.camera();
-            const nodePos = new THREE.Vector3(node.x, node.y, node.z);
-            const camPos = new THREE.Vector3(cam.position.x, cam.position.y, cam.position.z);
-            
-            // Desired direction
-            let dir = new THREE.Vector3().subVectors(camPos, nodePos).normalize();
-            if (dir.lengthSq() < 0.001) dir.set(0, 0, 1);
-            
-            const dist = 300;
-            const targetPos = nodePos.clone().add(dir.multiplyScalar(dist));
-            
-            // Start custom flight
-            startFly(targetPos, nodePos, duration);
-        }
-
-        function jumpToNode(id, openDoc = false) {
-            const { nodes } = Graph.graphData();
-            const node = nodes.find(n => n.id === id);
-            if(node) {
-                selectedNode = node; 
-                
-                // 执行平滑飞行
-                flyTo(node, 1200);
-                
-                // Highlight Mode
-                setHighlightMode(node);
-                
-                if(openDoc) {
-                    setTimeout(() => openArticle(node), 1200);
-                    searchInput.value = ''; searchResults.classList.remove('active');
-                }
-            }
-        }
-
-        // Tag Mangement System
-        function toggleTag(tagName) {
-            if (selectedTags.has(tagName)) {
-                selectedTags.delete(tagName);
-            } else {
-                selectedTags.add(tagName);
-            }
-            renderSelectedTags();
-            updateGraphFilter();
-            searchInput.value = ''; 
-            searchResults.classList.remove('active');
-            searchInput.focus();
-        }
-
-        function removeTag(tagName) {
-            selectedTags.delete(tagName);
-            renderSelectedTags();
-            updateGraphFilter();
-        }
-
-        function renderSelectedTags() {
-            const container = document.getElementById('selected-tags-container');
-            container.innerHTML = Array.from(selectedTags).map(tag => `
-                <div class="tag-capsule" onclick="removeTag('${tag}')">
-                    <span>#${tag}</span>
-                    <span class="remove-btn">&times;</span>
-                </div>
-            `).join('');
-        }
-
-        searchInput.addEventListener('input', (e) => {
-            const val = e.target.value.toLowerCase().trim();
-            // 移除所有空格，支持 "bei jing" 搜 "beijing"
-            const searchVal = val.replace(/\s+/g, '');
-
-            if(!val) { searchResults.classList.remove('active'); return; }
-            
-            // 1. Search Tags (支持拼音)
-            const validTags = (window.searchableTags || []).filter(t => {
-                // 已选中的不显示
-                if (selectedTags.has(t.label)) return false;
-                
-                // 匹配逻辑：中文原名 || 全拼 || 首字母
-                return t.label.toLowerCase().includes(val) || 
-                       (t._py_full && t._py_full.includes(searchVal)) || 
-                       (t._py_head && t._py_head.includes(searchVal));
-            }).map(t => ({ 
-                type: 'tag', 
-                label: t.label, 
-                id: `TAG_${t.label}`, 
-                score: 30 // High priority for tags
-            }));
-
-            // 2. Search Nodes (Only in current graph view)
-            const nodeMatches = Graph.graphData().nodes.map(n => {
-                let score = 0;
-                const label = (n.label||'').toLowerCase();
-                const id = (n.id||'').toLowerCase();
-                const pyFull = n._py_full || '';
-                const pyHead = n._py_head || '';
-
-                // 原始匹配
-                if(label === val) score += 50; // 精确匹配
-                else if(label.startsWith(val)) score += 30;
-                else if(label.includes(val)) score += 10;
-                
-                // ID/文件名匹配
-                if(id.includes(val)) score += 15;
-
-                // --- 拼音匹配 ---
-                if (searchVal.length > 0) {
-                    // 全拼匹配 (如 "yuzhou" -> "宇宙")
-                    if (pyFull.startsWith(searchVal)) score += 25;
-                    else if (pyFull.includes(searchVal)) score += 8;
-
-                    // 首字母匹配 (如 "yz" -> "宇宙")
-                    if (pyHead.startsWith(searchVal)) score += 20;
-                    else if (pyHead.includes(searchVal)) score += 5;
-                }
-
-                return { type: 'node', n, score, id: n.id };
-            }).filter(o => o.score > 0);
-
-            // Merge & Sort
-            const allMatches = [...validTags, ...nodeMatches].sort((a,b)=>b.score-a.score).slice(0, 10);
-
-            if(allMatches.length > 0) {
-                searchResults.innerHTML = allMatches.map((m, idx) => {
-                    if (m.type === 'tag') {
-                        return `
-                        <div class="search-item type-tag" data-type="tag" data-val="${m.label}" data-idx="${idx}">
-                            <div class="label-container">
-                                <span class="tag-capsule-preview">#${m.label}</span>
-                            </div>
-                            <span class="search-tag-indicator">Tag Filter</span>
-                        </div>`;
-                    } else {
-                        return `
-                        <div class="search-item type-node" data-type="node" data-id="${m.n.id}" data-idx="${idx}">
-                            <span class="label">${m.n.label}</span>
-                            <span class="search-tag" style="font-family: monospace; opacity: 0.6;">${m.n.id}</span>
-                        </div>`;
-                    }
-                }).join('');
-                searchResults.classList.add('active');
-                
-                document.querySelectorAll('.search-item').forEach(el => {
-                    el.addEventListener('mouseenter', () => { // Hover Preview
-                        searchIndex = parseInt(el.dataset.idx);
-                        updateSelection();
-                        // Only jump if it's a node
-                        if (el.dataset.type === 'node') {
-                             jumpToNode(el.dataset.id, false); 
+                    // 3. Highlight existing links between highlighted nodes
+                    this.data.links.forEach(l => {
+                        const sNode = l.sourceNode || l.source;
+                        const tNode = l.targetNode || l.target;
+                        if (this.highlightNodes.has(sNode) && this.highlightNodes.has(tNode)) {
+                            this.highlightLinks.add(l);
                         }
                     });
-                    el.addEventListener('click', () => {
-                        if (el.dataset.type === 'tag') {
-                            toggleTag(el.dataset.val);
-                        } else {
-                            jumpToNode(el.dataset.id, true);
-                        }
-                    }); // Click Confirm
+
+                } else {
+                    infoBar.style.opacity = 0;
+                }
+
+                // Update particles
+                this.graph.linkDirectionalParticles(link => (this.highlightLinks.has(link) && link.type !== 'tag_group') ? 3 : 0);
+                this.graph.linkDirectionalParticleWidth(link => this.highlightLinks.has(link) ? 1.5 : 0);
+                this.graph.linkDirectionalParticleColor(link => {
+                    if (link.type === 'tag_group') return '#1188ff'; 
+                    return '#ffaa00'; 
                 });
-            } else searchResults.classList.remove('active');
-            searchIndex = -1;
-        });
+            },
 
-        searchInput.addEventListener('keydown', (e) => {
-            const items = document.querySelectorAll('.search-item');
-            if(!searchResults.classList.contains('active')) return;
-            if(e.key === 'ArrowDown' || e.key === 'ArrowUp') {
-                e.preventDefault();
-                searchIndex = (e.key === 'ArrowDown') ? (searchIndex+1)%items.length : (searchIndex-1+items.length)%items.length;
-                updateSelection();
-                // Preview logic on arrow keys
-                if(items[searchIndex] && items[searchIndex].dataset.type === 'node') {
-                    jumpToNode(items[searchIndex].dataset.id, false);
+            updateGraphFilter() {
+                if(!this.data || !this.graph) return;
+                const showMd = document.getElementById('chk-md').checked;
+                const showTagLinks = document.getElementById('chk-tag-links').checked;
+                const showIndex = document.getElementById('chk-index-nodes').checked;
+
+                let fNodes = this.data.nodes.filter(n => {
+                    const tags = n.all_tags || [n.group];
+                    if (!showIndex && tags.some(t => ['index', '目录'].includes(t))) return false;
+                    if (this.selectedTags.size > 0 && !tags.some(t => this.selectedTags.has(t))) return false;
+                    return true;
+                });
+                const fNodeIds = new Set(fNodes.map(n => n.id));
+
+                let fLinks = this.data.links.filter(l => {
+                    const s = l.source.id || l.source;
+                    const t = l.target.id || l.target;
+                    if (!fNodeIds.has(s) || !fNodeIds.has(t)) return false;
+                    return l.type === 'tag_group' ? showTagLinks : showMd;
+                });
+
+                const counts = {};
+                fLinks.forEach(l => {
+                    const s = l.source.id||l.source, t = l.target.id||l.target;
+                    counts[s] = (counts[s]||0)+1; counts[t] = (counts[t]||0)+1;
+                });
+                let currMax = Math.max(...Object.values(counts), 20);
+
+                fNodes.forEach(n => {
+                    const d = counts[n.id] || 0;
+                    n.color = this.getStarColor(d);
+                    if(n.__threeObj) {
+                        const g = n.__threeObj;
+                        const core = this.createCoreSprite(n.color);
+                        const cross = this.createCrossSprite(n.color, d);
+                        g.core.material.map.dispose(); g.core.material.map = core.material.map;
+                        g.cross.material.map.dispose(); g.cross.material.map = cross.material.map;
+                        g.userData.baseScaleCross = 12 * (1 + (d/currMax)*0.5);
+                    }
+                });
+
+                this.graph.graphData({ nodes: fNodes, links: fLinks });
+                
+                this.activeLookup = {};
+                fLinks.forEach(l => {
+                    const s = l.source.id||l.source, t = l.target.id||l.target;
+                    [s,t].forEach(id => {
+                        if(!this.activeLookup[id]) this.activeLookup[id] = {neighbors:[], links:[]};
+                    });
+                    this.activeLookup[s].neighbors.push(t); this.activeLookup[s].links.push(l);
+                    this.activeLookup[t].neighbors.push(s); this.activeLookup[t].links.push(l);
+                });
+
+                setTimeout(() => {
+                    fLinks.forEach(l => {
+                        if(l.__lineObj && l.sourceNode && l.targetNode) {
+                            let cArr;
+                            if (l.type === 'tag_group') cArr = [0.1, 0.5, 1.0];
+                            else cArr = [1.0, 0.6, 0.1];
+                            const attr = l.__lineObj.geometry.attributes.color;
+                            attr.setXYZ(0,cArr[0],cArr[1],cArr[2]); attr.setXYZ(1,cArr[0],cArr[1],cArr[2]);
+                            attr.setXYZ(3,cArr[0],cArr[1],cArr[2]); attr.setXYZ(4,cArr[0],cArr[1],cArr[2]);
+                            attr.needsUpdate = true;
+                        }
+                    });
+                }, 100);
+            },
+
+            // === 6. UI & Search ===
+            handleSearch(val) {
+                const res = document.getElementById('search-results');
+                if(!val) { res.classList.remove('active'); return; }
+                val = val.toLowerCase().trim(); const sVal = val.replace(/\s+/g,'');
+
+                const tags = window.searchableTags.filter(t => 
+                    !this.selectedTags.has(t.label) && 
+                    (t.label.toLowerCase().includes(val) || t._py_full.includes(sVal) || t._py_head.includes(sVal))
+                ).map(t => ({ type:'tag', val:t.label, score:30 }));
+
+                const nodes = this.graph.graphData().nodes.map(n => {
+                    let s = 0;
+                    if(n.label === val) s+=50; 
+                    else if(n.label.includes(val)) s+=10;
+                    if(n._py_full.includes(sVal) || n._py_head.includes(sVal)) s+=15;
+                    return { type:'node', val:n, score:s, id:n.id };
+                }).filter(i => i.score > 0);
+
+                const all = [...tags, ...nodes].sort((a,b)=>b.score-a.score).slice(0,10);
+                this.searchResultsList = all; 
+                
+                if(all.length) {
+                    res.innerHTML = all.map((m,i) => `
+                        <div class="search-item" data-idx="${i}" onclick="Universe.confirmSearch(${i})">
+                            ${m.type==='tag' ? 
+                            `<div class="tag-capsule">#${m.val}</div><span>Tag</span>` : 
+                            `<span>${m.val.label}</span><span style="opacity:0.5;font-size:10px">${m.val.id}</span>`}
+                        </div>`).join('');
+                    res.classList.add('active');
+                    
+                    document.querySelectorAll('.search-item').forEach((el, i) => {
+                         el.onmouseenter = () => this.highlightByIndex(i);
+                    });
+                } else res.classList.remove('active');
+            },
+
+            highlightByIndex(index) {
+                this.searchIndex = index;
+                const items = document.querySelectorAll('.search-item');
+                items.forEach(e => e.classList.remove('selected'));
+                if (items[index]) {
+                    items[index].classList.add('selected');
+                    items[index].scrollIntoView({block: 'nearest'});
                 }
-            } else if(e.key === 'Enter') {
-                e.preventDefault();
-                const target = searchIndex >= 0 ? items[searchIndex] : items[0];
-                if(target) {
-                    if (target.dataset.type === 'tag') {
-                        toggleTag(target.dataset.val);
+
+                const item = this.searchResultsList[index];
+                if (item && item.type === 'node') {
+                    // Lock and Fly
+                    const node = item.val;
+                    this.selectedNode = node;
+                    this.setHighlightMode(node);
+                    
+                    // Trick HUD into tracking it even though mouse isn't there
+                    this.hoverNode = node; 
+                    this.updatePreviewCard(node, true);
+                    
+                    this.flyTo(node, 1000);
+                }
+            },
+
+            confirmSearch(idx) {
+                const item = this.searchResultsList[idx];
+                if(!item) return;
+                if(item.type === 'tag') {
+                    this.toggleTag(item.val);
+                } else {
+                    this.jumpToNode(item.val.id, true);
+                }
+                document.getElementById('search-input').value='';
+                document.getElementById('search-results').classList.remove('active');
+            },
+
+            toggleTag(tag) {
+                this.selectedTags.has(tag) ? this.selectedTags.delete(tag) : this.selectedTags.add(tag);
+                document.getElementById('selected-tags-container').innerHTML = Array.from(this.selectedTags).map(t => 
+                    `<div class="tag-capsule" onclick="Universe.toggleTag('${t}')">#${t} &times;</div>`
+                ).join('');
+                this.updateGraphFilter();
+            },
+
+            updatePreviewCard(node, show) {
+                const hud = document.getElementById('node-preview-hud');
+                
+                if(!node || !show) {
+                    hud.classList.remove('visible');
+                    return;
+                }
+                
+                document.getElementById('hud-title').innerText = node.label;
+                const tags = node.all_tags || [node.group];
+                document.getElementById('hud-tags').innerHTML = tags.slice(0,4).map(t=>`<span class="hud-tag">#${t}</span>`).join('');
+                
+                let content = node.content || node.data?.content || "";
+                const previewText = content.length > 300 ? content.substring(0,300)+"..." : content;
+                document.getElementById('hud-content').innerHTML = marked.parse(previewText); 
+
+                hud.classList.add('visible');
+                // Initial placement
+                this.updateHUDPosition(node);
+            },
+
+            updateHUDPosition(node) {
+                if(!node) return;
+                const hud = document.getElementById('node-preview-hud');
+                const coords = this.graph.graph2ScreenCoords(node.x, node.y, node.z);
+                
+                let x = coords.x + 25;
+                let y = coords.y;
+                
+                // Bounds checking
+                if(x + 340 > window.innerWidth) x = coords.x - 350;
+                if(y + 250 > window.innerHeight) y = window.innerHeight - 250;
+                if(y < 80) y = 80;
+                
+                hud.style.left = `${x}px`; 
+                hud.style.top = `${y}px`;
+            },
+
+            // === 7. Animation & Camera ===
+            stopCameraAnimation() {
+                this.flyState.active = false;
+                this.zoomVelocity = 0;
+            },
+
+            startFly(endPos, endTarget, duration) {
+                const cam = this.graph.camera();
+                const controls = this.graph.controls();
+                this.flyState.startPos.copy(cam.position);
+                this.flyState.startTarget.copy(controls.target);
+                this.flyState.endPos.copy(endPos);
+                this.flyState.endTarget.copy(endTarget);
+                this.flyState.startTime = Date.now();
+                this.flyState.duration = duration;
+                this.flyState.active = true;
+            },
+
+            flyTo(node, duration = 1500) {
+                const cam = this.graph.camera();
+                const nodePos = new THREE.Vector3(node.x, node.y, node.z);
+                const dir = new THREE.Vector3().subVectors(cam.position, nodePos).normalize();
+                if (dir.lengthSq() < 0.001) dir.set(0, 0, 1);
+                
+                const targetPos = nodePos.clone().add(dir.multiplyScalar(300));
+                this.startFly(targetPos, nodePos, duration);
+            },
+
+            jumpToNode(id, openDoc) {
+                const n = this.data.nodes.find(x => x.id === id);
+                if(n) {
+                    this.selectedNode = n; // Lock
+                    this.setHighlightMode(n);
+                    this.flyTo(n, 1200);
+                    if(openDoc) {
+                        setTimeout(() => this.openArticle(n), 1200);
+                    }
+                }
+            },
+
+            animate() {
+                requestAnimationFrame(() => this.animate());
+                
+                if (this.skybox && this.graph.camera()) {
+                    this.skybox.position.copy(this.graph.camera().position);
+                }
+
+                if (this.flyState.active) {
+                    const elapsed = Date.now() - this.flyState.startTime;
+                    if (elapsed >= this.flyState.duration) {
+                        this.flyState.active = false;
+                        this.graph.camera().position.copy(this.flyState.endPos);
+                        this.graph.controls().target.copy(this.flyState.endTarget);
                     } else {
-                        jumpToNode(target.dataset.id, true);
+                        const t = elapsed / this.flyState.duration;
+                        const ease = t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+                        this.graph.camera().position.lerpVectors(this.flyState.startPos, this.flyState.endPos, ease);
+                        this.graph.controls().target.lerpVectors(this.flyState.startTarget, this.flyState.endTarget, ease);
                     }
+                    this.graph.controls().update();
                 }
-            }
-        });
-        function updateSelection() {
-            const items = document.querySelectorAll('.search-item');
-            items.forEach(el => el.classList.remove('selected'));
-            if(items[searchIndex]) { items[searchIndex].classList.add('selected'); items[searchIndex].scrollIntoView({block:'nearest'}); }
-        }
 
-        // Prevent graph rotation when hovering search
-        const searchWrapper = document.querySelector('.search-wrapper');
-        searchWrapper.addEventListener('mouseenter', () => {
-            if(Graph && Graph.controls()) Graph.controls().enabled = false;
-        });
-        searchWrapper.addEventListener('mouseleave', () => {
-             if(Graph && Graph.controls()) Graph.controls().enabled = true;
-        });
-        // Failsafe: Ensure controls are enabled if mouse is not over search (e.g. after layout change)
-        document.addEventListener('mousemove', (e) => {
-             // Only interfere if we are NOT dragging a node. 
-             // If dragging, let the library manage controls (it disables them).
-             if(Graph && Graph.controls() && !isNodeDragging) {
-                 const isOver = e.target.closest('.search-wrapper');
-                 if(isOver) {
-                     Graph.controls().enabled = false;
-                 } else {
-                     Graph.controls().enabled = true;
-                 }
-             }
-        });
+                // Continuous HUD update
+                const hud = document.getElementById('node-preview-hud');
+                if (hud.classList.contains('visible') && this.hoverNode) {
+                    this.updateHUDPosition(this.hoverNode);
+                }
 
-        // 背景星空 (安全视距优化版)
-        setTimeout(() => {
-            if(Graph.camera()) {
-                // 设置合理的远裁切面 (Skybox R=4000, Stars R=4000, Far=8000 足够安全)
-                // 之前 Far=30000 且 Skybox=30000 容易导致 Z-fighting 或被切除闪烁
-                Graph.camera().far = 16000;
-                Graph.camera().updateProjectionMatrix();
-            }
-
-            const geo = new THREE.BufferGeometry();
-            const pos = [], cols = [];
-            
-            // 将星星范围压缩到 600 -> 3500，确保在视锥体内
-            for(let i=0; i<8000; i++) {
-                const r = 4000 * Math.pow(Math.random(), 0.5); 
-                const theta = Math.random()*Math.PI*2, phi = Math.acos(2*Math.random()-1);
-                pos.push(r*Math.sin(phi)*Math.cos(theta), r*Math.sin(phi)*Math.sin(theta), r*Math.cos(phi));
-                
-                const c = new THREE.Color().setHSL(0.6, 0.2, 0.7 + Math.random() * 1.3); 
-                cols.push(c.r, c.g, c.b);
-            }
-            geo.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
-            geo.setAttribute('color', new THREE.Float32BufferAttribute(cols, 3));
-
-            // 简化 Shader 逻辑，仅使用标准材质配合纹理，性能更好
-            // 手绘一个圆形光晕纹理，不用 shader 动态算
-            const canvas = document.createElement('canvas'); canvas.width = 32; canvas.height = 32;
-            const ctx = canvas.getContext('2d');
-            const g = ctx.createRadialGradient(16,16,0,16,16,16);
-            g.addColorStop(0, 'rgba(255,255,255,1)'); g.addColorStop(1, 'rgba(255,255,255,0)');
-            ctx.fillStyle = g; ctx.fillRect(0,0,32,32);
-            
-            const tex = new THREE.CanvasTexture(canvas);
-
-            const mat = new THREE.PointsMaterial({
-                size: 4, // 稍微调小一点，显得更远
-                map: tex,
-                vertexColors: true,
-                transparent: true,
-                opacity: 0.8, // 提高不透明度，让旋转时的视差更明显
-                sizeAttenuation: true,
-                depthWrite: false,
-                blending: THREE.AdditiveBlending
-            });
-            
-            starryParticles = new THREE.Points(geo, mat);
-            starryParticles.renderOrder = 10; // 星星在天空球之前渲染
-            Graph.scene().add(starryParticles);
-
-            // --- 极简深空背景 (无限远天空盒) ---
-            const skyMat = new THREE.ShaderMaterial({
-                side: THREE.BackSide, 
-                depthWrite: false, // 不写入深度，永远在背景
-                // 无限远技术核心：
-                // 1. gl_Position.z = gl_Position.w 强制推到远裁剪面
-                // 2. 只需要方向，不需要实际距离
-                vertexShader: `
-                    varying vec3 vP; 
-                    void main(){ 
-                        vP = position; 
-                        vec4 pos = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
-                        // 强制 Z 深度为最大值 (w)，确保渲染在所有物体之后
-                        gl_Position = pos.xyww;
+                if (Math.abs(this.zoomVelocity) > 0.0001) {
+                    const cam = this.graph.camera();
+                    const target = this.graph.controls().target;
+                    
+                    let pivot = this.hoverNode ? new THREE.Vector3(this.hoverNode.x, this.hoverNode.y, this.hoverNode.z) : target.clone();
+                    const factor = 1 + this.zoomVelocity;
+                    const newPos = pivot.clone().add(cam.position.clone().sub(pivot).multiplyScalar(factor));
+                    
+                    if (newPos.distanceTo(pivot) < 7000 && newPos.distanceTo(pivot) > 50) {
+                        cam.position.copy(newPos);
+                        this.graph.controls().update();
                     }
-                `,
-                fragmentShader: `
-                    varying vec3 vP;
-                    // 简单的伪随机抖动函数
-                    float random(vec2 st) { return fract(sin(dot(st.xy, vec2(12.9898,78.233))) * 43758.5453123); }
+                    this.zoomVelocity *= 0.85; 
+                }
 
-                    void main() {
-                        vec3 d = normalize(vP);
-                        
-                        // 1. 基底
-                        vec3 c = vec3(0.03, 0.03, 0.05); 
-                        
-                        // 2. 广域蓝色流
-                        float g1 = (d.y + 1.0) * 0.5; 
-                        // 使用 cubic 平滑插值而非线性插值，减少条带感
-                        g1 = g1 * g1 * (3.0 - 2.0 * g1);
-                        c += vec3(0.02, 0.04, 0.12) * g1; 
-                        
-                        // 3. 广域紫色流
-                        float g2 = (dot(d, normalize(vec3(1.0, 0.2, -0.5))) + 1.0) * 0.5;
-                        g2 = g2 * g2 * (3.0 - 2.0 * g2);
-                        c += vec3(0.05, 0.01, 0.03) * g2; 
+                const { nodes, links } = this.graph.graphData();
+                if(!nodes) return;
+                
+                const camPos = this.graph.camera().position;
+                const time = Date.now() * 0.002;
+                const isHovering = (this.hoverNode !== null);
+                const isModalOpen = document.getElementById('article-modal').classList.contains('active');
 
-                        // 4. Dithering (抖动) 核心修复色带
-                        // 在最终颜色上叠加极其微小的随机噪声，打破色阶
-                        float noise = (random(gl_FragCoord.xy) - 0.5) / 255.0;
-                        c += vec3(noise);
-
-                        gl_FragColor = vec4(c, 1.0);
+                nodes.forEach(node => {
+                    const group = node.__threeObj; if (!group) return;
+                    const dist = Math.hypot(node.x-camPos.x, node.y-camPos.y, node.z-camPos.z);
+                    
+                    let textOp = 0;
+                    if(!isModalOpen) {
+                        if(isHovering) { if(this.highlightNodes.has(node)) textOp = 1; }
+                        else if(this.selectedNode) { if(this.highlightNodes.has(node)) textOp = 1; } // Keep selected visible
+                        else { if(dist < 500) textOp = 1 - (dist - 150)/350; }
                     }
-                `
-            });
+                    group.text.material.opacity += (textOp - group.text.material.opacity) * 0.15;
+                    group.subText.material.opacity = group.text.material.opacity * 0.7;
+                    
+                    // Dim non-highlighted nodes if something is focused
+                    const isFocusMode = isHovering || this.selectedNode;
+                    let targetOp = (isFocusMode && !this.highlightNodes.has(node)) ? 0.1 : 1.0;
+                    group.userData.currentOpacity += (targetOp - group.userData.currentOpacity) * 0.1;
+                    
+                    group.core.material.opacity = group.cross.material.opacity = group.userData.currentOpacity;
+                    
+                    if(group.userData.currentOpacity > 0.5) {
+                        const s = Math.sin(time * group.userData.speed + group.userData.phase);
+                        const sCore = 1 + s * 0.08;
+                        const distFactor = 1 + Math.min(dist / 300, 5.0); 
+                        
+                        group.core.scale.setScalar(group.userData.baseScaleCore * sCore);
+                        group.cross.scale.setScalar(group.userData.baseScaleCross * sCore * distFactor);
+                    }
+                });
+                
+                links.forEach(l => {
+                    const line = l.__lineObj; if(!line) return;
+                    let t = l.type==='tag_group' ? 0.15 : 0.3; 
+                    if(isHovering || this.selectedNode) t = this.highlightLinks.has(l) ? 0.8 : 0.02;
+                    line.material.opacity += (t - line.material.opacity) * 0.1;
+                });
+            },
+
+            // === 8. Skybox & Effects ===
+            initSkybox() {
+                const geo = new THREE.BufferGeometry();
+                const pos = [], cols = [];
+                for(let i=0; i<8000; i++) {
+                    const r = 4000 * Math.pow(Math.random(), 0.5); 
+                    const theta = Math.random()*Math.PI*2, phi = Math.acos(2*Math.random()-1);
+                    pos.push(r*Math.sin(phi)*Math.cos(theta), r*Math.sin(phi)*Math.sin(theta), r*Math.cos(phi));
+                    const c = new THREE.Color().setHSL(0.6, 0.2, 0.7 + Math.random() * 1.3); 
+                    cols.push(c.r, c.g, c.b);
+                }
+                geo.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
+                geo.setAttribute('color', new THREE.Float32BufferAttribute(cols, 3));
+                
+                const canvas = document.createElement('canvas'); canvas.width = 32; canvas.height = 32;
+                const ctx = canvas.getContext('2d');
+                const g = ctx.createRadialGradient(16,16,0,16,16,16);
+                g.addColorStop(0, 'rgba(255,255,255,1)'); g.addColorStop(1, 'rgba(255,255,255,0)');
+                ctx.fillStyle = g; ctx.fillRect(0,0,32,32);
+                
+                const stars = new THREE.Points(geo, new THREE.PointsMaterial({
+                    size: 4, map: new THREE.CanvasTexture(canvas), vertexColors: true,
+                    transparent: true, opacity: 0.8, sizeAttenuation: true, depthWrite: false, blending: THREE.AdditiveBlending
+                }));
+                this.graph.scene().add(stars);
+
+                const skyMat = new THREE.ShaderMaterial({
+                    side: THREE.BackSide, depthWrite: false,
+                    vertexShader: `varying vec3 vP; void main(){ vP = position; gl_Position = (projectionMatrix * modelViewMatrix * vec4(position, 1.0)).xyww; }`,
+                    fragmentShader: `
+                        varying vec3 vP;
+                        float random(vec2 st) { return fract(sin(dot(st.xy, vec2(12.9898,78.233))) * 43758.5453123); }
+                        void main() {
+                            vec3 d = normalize(vP);
+                            vec3 c = vec3(0.03, 0.03, 0.05); 
+                            c += vec3(0.02, 0.04, 0.12) * pow((d.y + 1.0) * 0.5, 2.0) * (3.0 - 2.0 * ((d.y + 1.0) * 0.5)); 
+                            c += vec3(0.05, 0.01, 0.03) * pow((dot(d, normalize(vec3(1.0, 0.2, -0.5))) + 1.0) * 0.5, 2.0);
+                            c += (random(gl_FragCoord.xy) - 0.5) / 255.0;
+                            gl_FragColor = vec4(c, 1.0);
+                        }
+                    `
+                });
+                this.skybox = new THREE.Mesh(new THREE.SphereGeometry(5000, 32, 32), skyMat);
+                this.skybox.renderOrder = -999;
+                this.graph.scene().add(this.skybox);
+                
+                this.graph.camera().far = 16000;
+                this.graph.camera().updateProjectionMatrix();
+            },
+
+            // === 9. Misc & Cat ===
+            initCat() {
+                const cat = document.getElementById('helicopter-cat');
+                const body = cat.querySelector('.cat-body-container');
+                const eyes = document.querySelectorAll('.eye');
+                let cx = window.innerWidth/2, cy = window.innerHeight/2;
+                let rot = 0;
+                
+                const blink = () => {
+                    eyes.forEach(e => e.classList.add('closed'));
+                    setTimeout(() => eyes.forEach(e => e.classList.remove('closed')), 200);
+                    setTimeout(blink, 2000 + Math.random()*3000);
+                };
+                setTimeout(blink, 2000);
+
+                const loop = () => {
+                    const targetX = this.mouseScreenPos.x ? (this.mouseScreenPos.x + 1)/2 * window.innerWidth + 20 : cx;
+                    const targetY = this.mouseScreenPos.y ? (-this.mouseScreenPos.y + 1)/2 * window.innerHeight + 20 : cy;
+                    
+                    cx += (targetX - cx) * 0.12;
+                    cy += (targetY - cy) * 0.12;
+                    rot += ((targetX - cx) * -1.5 - rot) * 0.1;
+                    
+                    cat.style.left = cx + 'px';
+                    cat.style.top = cy + 'px';
+                    body.style.transform = `rotate(${Math.max(-25, Math.min(25, rot))}deg)`;
+
+                    const activeEl = document.querySelector('a:hover, button:hover, .tag-capsule:hover, .search-item:hover');
+                    if (this.hoverNode || activeEl) cat.classList.add('excited'); else cat.classList.remove('excited');
+                    
+                    requestAnimationFrame(loop);
+                };
+                loop();
+            },
             
-            // 创建天空盒并赋值给全局变量
-            skybox = new THREE.Mesh(new THREE.SphereGeometry(5000, 32, 32), skyMat);
-            skybox.frustumCulled = false; // 永不裁剪
-            skybox.renderOrder = -999;    // 最先渲染
-            Graph.scene().add(skybox);
+            openArticle(node) {
+                const modal = document.getElementById('article-modal');
+                let content = node.content || node.data?.content || "# No Content";
+                const mathBlocks = [];
+                content = content.replace(/(\$\$[\s\S]*?\$\$)|((?<!\\)\$[^\n$]+?(?<!\\)\$)/g, m => {
+                    mathBlocks.push(m); return `MATHBLOCK_${mathBlocks.length-1}_END`;
+                });
+                document.getElementById('markdown-container').innerHTML = marked.parse(content).replace(/MATHBLOCK_(\d+)_END/g, (_,i) => mathBlocks[i]);
+                
+                modal.style.display = 'block'; modal.offsetHeight; modal.classList.add('active');
+                if(window.MathJax) MathJax.typesetPromise([modal]);
+                document.getElementById('helicopter-cat').style.opacity = '0';
+            },
 
-        }, 1500);
+            closeArticle() {
+                const modal = document.getElementById('article-modal');
+                modal.classList.remove('active');
+                setTimeout(() => modal.style.display = 'none', 400);
+                document.getElementById('helicopter-cat').style.opacity = '1';
+            },
 
-        // 全局交互状态管理
-        let isInteractionHover = false;
-        
-        // 统一检测猫猫是否应该兴奋
-        function updateCatExcitement() {
-            const cat = document.getElementById('helicopter-cat');
-            if(!cat) return;
-            // 只要有 hoveredNode 或者 鼠标在 interactive 元素上，就兴奋
-            if(hoverNode || isInteractionHover) {
-                cat.classList.add('excited');
-            } else {
-                cat.classList.remove('excited');
+            initEvents() {
+                window.onresize = () => this.graph.width(window.innerWidth).height(window.innerHeight);
+                
+                document.addEventListener('mousemove', e => {
+                    this.mouseScreenPos.set((e.clientX / window.innerWidth) * 2 - 1, -(e.clientY / window.innerHeight) * 2 + 1);
+                    if(this.graph.controls()) this.graph.controls().enabled = !e.target.closest('.search-wrapper');
+                });
+                
+                document.addEventListener('wheel', e => {
+                    if(document.getElementById('article-modal').classList.contains('active') || e.target.closest('.search-wrapper')) return;
+                    this.stopCameraAnimation(); 
+                    e.preventDefault();
+                    this.zoomVelocity += e.deltaY * 0.0008; 
+                }, { passive: false });
+
+                document.getElementById('3d-graph').addEventListener('mousedown', () => this.stopCameraAnimation(), true);
+
+                window.addEventListener('keydown', e => {
+                    if(e.key === 'Escape') {
+                        if(document.getElementById('article-modal').classList.contains('active')) {
+                            this.closeArticle();
+                        } else if(this.selectedNode) {
+                            // Unlock on ESC
+                            this.selectedNode = null;
+                            this.setHighlightMode(null);
+                        } else if(this.globalStartPos) {
+                            this.startFly(this.globalStartPos, {x:0,y:0,z:0}, 2000);
+                        }
+                    }
+                    if((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'f') {
+                        if(!document.getElementById('article-modal').classList.contains('active')) {
+                            e.preventDefault(); document.getElementById('search-input').focus();
+                        }
+                    }
+                    
+                    const res = document.getElementById('search-results');
+                    if(res.classList.contains('active') && this.searchResultsList.length > 0) {
+                        if(e.key === 'ArrowDown') { 
+                            e.preventDefault(); 
+                            this.highlightByIndex((this.searchIndex + 1) % this.searchResultsList.length);
+                        }
+                        if(e.key === 'ArrowUp') { 
+                            e.preventDefault(); 
+                            this.highlightByIndex((this.searchIndex - 1 + this.searchResultsList.length) % this.searchResultsList.length);
+                        }
+                        if(e.key === 'Enter') { 
+                            e.preventDefault(); 
+                            this.confirmSearch(Math.max(0, this.searchIndex)); 
+                        }
+                    }
+                });
+
+                document.getElementById('markdown-container').addEventListener('click', e => {
+                    if(e.target.tagName === 'A') {
+                        const href = e.target.getAttribute('href');
+                        if(!href.startsWith('http')) {
+                            e.preventDefault();
+                            const targetId = href.split('/').pop();
+                            const node = this.data.nodes.find(n => n.id === targetId || n.id === targetId+'.md' || n.label === decodeURIComponent(targetId).replace('.md',''));
+                            if(node) {
+                                this.closeArticle();
+                                setTimeout(() => this.jumpToNode(node.id, true), 300);
+                            }
+                        } else { window.open(href, '_blank'); }
+                    }
+                });
+
+                document.getElementById('search-input').addEventListener('input', (e) => this.handleSearch(e.target.value));
             }
-        }
+        };
 
-        // 监听 DOM 元素交互 (Markdown 链接, 按钮, 关闭X 等)
-        const interactiveSelectors = 'a, button, .close-btn, .tag-capsule, .search-item, .clickable, input, .cat-interactive';
-        document.body.addEventListener('mouseover', (e) => {
-            if(e.target.closest(interactiveSelectors)) {
-                isInteractionHover = true;
-                updateCatExcitement();
-            }
-        });
-        document.body.addEventListener('mouseout', (e) => {
-            // 稍微延迟判断，防止在相邻元素移动时闪烁，或者检查 relatedTarget
-            if(!e.relatedTarget || !e.relatedTarget.closest(interactiveSelectors)) {
-                isInteractionHover = false;
-                updateCatExcitement();
-            }
-        });
-
-        // 猫猫跟随系统 (作为伙伴跟随在鼠标右下角)
-        const cat = document.getElementById('helicopter-cat');
-        if(cat) {
-            const body = cat.querySelector('.cat-body-container');
-            const lEye = cat.querySelector('.eye.left'), rEye = cat.querySelector('.eye.right'), zzz = document.getElementById('zzz-bubble');
-            
-            // mx, my: 鼠标真实位置
-            // cx, cy: 猫猫当前位置 (Lerped)
-            let mx=window.innerWidth/2, my=window.innerHeight/2;
-            let cx=mx, cy=my;
-            let rot=0, sleeping=false, lastT=Date.now();
-            
-            document.addEventListener('mousemove', e=>{ 
-                mx = e.clientX; 
-                my = e.clientY; 
-                lastT = Date.now(); 
-                if(sleeping) wake(); 
-            });
-            
-            function wake() { sleeping=false; lEye.classList.remove('closed'); rEye.classList.remove('closed'); zzz.classList.remove('active'); blink(); }
-            function sleep() { sleeping=true; lEye.classList.add('closed'); rEye.classList.add('closed'); zzz.classList.add('active'); }
-            function blink() { if(sleeping)return; lEye.classList.add('closed'); rEye.classList.add('closed'); setTimeout(()=>{if(!sleeping){lEye.classList.remove('closed');rEye.classList.remove('closed')}}, 200); setTimeout(blink, 2000+Math.random()*3000); }
-            setTimeout(blink,2000);
-
-            function loop() {
-                if(!sleeping && Date.now()-lastT>5000) sleep();
-                
-                // 目标位置：鼠标右下角 24px 处
-                const targetX = mx + 24;
-                const targetY = my + 24;
-
-                // 简单的 Lerp 跟随，系数 0.12 比较跟手但有弹性
-                cx += (targetX - cx) * 0.12;
-                cy += (targetY - cy) * 0.12;
-
-                cat.style.left = cx + 'px';
-                cat.style.top = cy + 'px';
-                
-                // 根据水平移动速度计算倾斜
-                // 此时 cx 在追赶 targetX(即 mx), 所以 vx = (mx - cx) 也可以
-                // 但实际上直接用当前帧位移更准确: velocity = current_cx - prev_cx (这里简化处理)
-                let vx = (targetX - cx); 
-                
-                // 限制倾斜角度
-                let tr = Math.max(-25, Math.min(25, vx * -1.5));
-                
-                rot += (tr - rot) * 0.1;
-                
-                // 将旋转应用在内部容器
-                body.style.transform = `rotate(${rot}deg)`;
-                
-                requestAnimationFrame(loop);
-            }
-            loop();
-        }
-        window.onresize = () => Graph.width(window.innerWidth).height(window.innerHeight);
+        Universe.init();
     </script>
 </body>
 </html>
