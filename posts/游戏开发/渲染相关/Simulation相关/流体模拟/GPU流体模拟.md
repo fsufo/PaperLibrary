@@ -12,7 +12,7 @@ https://developer.nvidia.com/gpugems/gpugems/part-vi-beyond-triangles/chapter-38
 
 ---
 
-[![GPU Gems](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/5ead74a61f.jpg)](https://developer.nvidia.com/gpugems)
+![GPU Gems](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/5ead74a61f.jpg)
 
 ## [GPU Gems](https://developer.nvidia.com/gpugems)
 
@@ -183,17 +183,17 @@ But since Equation 2 enforces that ![alt text](../../../../笔记图床/游戏�
 
 which is a Poisson equation (see Section 38.2.3) for the pressure of the fluid, sometimes called the _Poisson-pressure equation_. This means that after we arrive at our divergent velocity, **w**, we can solve Equation 10 for _p_, and then use **w** and _p_ to compute the new divergence-free field, **u**, using Equation 8. We'll return to this later.
 
-Now we need a way to compute **w**. To do this, let's return to our comparison of vectors and vector fields. From the definition of the dot product, we know that we can find the projection of a vector **r** onto a unit vector  by computing the dot product of **r** and . The dot product is a projection operator for vectors that maps a vector **r** onto its component in the direction of . We can use the Helmholtz-Hodge Decomposition Theorem to define a projection operator, [](https://developer.download.nvidia.com/books/gpugems/p.jpg'\))![p.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/ce0b4f7ceb.jpg) , that projects a vector field **w** onto its divergence-free component, **u**. If we apply [![p.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/ce0b4f7ceb.jpg)](https://developer.download.nvidia.com/books/gpugems/p.jpg) to Equation 7, we get:
+Now we need a way to compute **w**. To do this, let's return to our comparison of vectors and vector fields. From the definition of the dot product, we know that we can find the projection of a vector **r** onto a unit vector  by computing the dot product of **r** and . The dot product is a projection operator for vectors that maps a vector **r** onto its component in the direction of . We can use the Helmholtz-Hodge Decomposition Theorem to define a projection operator,![p.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/ce0b4f7ceb.jpg) , that projects a vector field **w** onto its divergence-free component, **u**. If we apply ![p.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/ce0b4f7ceb.jpg)] to Equation 7, we get:
 
 ![646equ01.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/8c1906436f.jpg)
 
-But by the definition of [![p.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/ce0b4f7ceb.jpg)](https://developer.download.nvidia.com/books/gpugems/p.jpg) , [![p.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/ce0b4f7ceb.jpg)](https://developer.download.nvidia.com/books/gpugems/p.jpg) **w** = [![p.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/ce0b4f7ceb.jpg)](https://developer.download.nvidia.com/books/gpugems/p.jpg) **u** = **u**. Therefore, [![p.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/ce0b4f7ceb.jpg)](https://developer.download.nvidia.com/books/gpugems/p.jpg) (![alt text](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/image-5.png)_p_) = 0. Now let's use these ideas to simplify the Navier-Stokes equations.
+But by the definition of ![p.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/ce0b4f7ceb.jpg), ![p.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/ce0b4f7ceb.jpg) **w** = ![p.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/ce0b4f7ceb.jpg) **u** = **u**. Therefore, ![p.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/ce0b4f7ceb.jpg) (![alt text](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/image-5.png)_p_) = 0. Now let's use these ideas to simplify the Navier-Stokes equations.
 
 First, we apply our projection operator to both sides of Equation 1:
 
 ![646equ02.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/fb814f0b0b.jpg)
 
-Because **u** is divergence-free, so is the derivative on the left-hand side, so [![p.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/ce0b4f7ceb.jpg)](https://developer.download.nvidia.com/books/gpugems/p.jpg) ( **u**/_![U2202.GIF](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/fc9aa8cb43.gif)t_) =  **u**/_![U2202.GIF](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/fc9aa8cb43.gif)t_. Also, [](https://developer.download.nvidia.com/books/gpugems/p.jpg'\))![p.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/ce0b4f7ceb.jpg) (![alt text](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/image-5.png)_p_) = 0, so the pressure term drops out. We're left with the following equation:
+Because **u** is divergence-free, so is the derivative on the left-hand side, so ![p.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/ce0b4f7ceb.jpg) ( **u**/_![U2202.GIF](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/fc9aa8cb43.gif)t_) =  **u**/_![U2202.GIF](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/fc9aa8cb43.gif)t_. Also, [](https://developer.download.nvidia.com/books/gpugems/p.jpg'\))![p.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/ce0b4f7ceb.jpg) (![alt text](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/image-5.png)_p_) = 0, so the pressure term drops out. We're left with the following equation:
 
 **Equation 11**
 
@@ -201,13 +201,13 @@ Because **u** is divergence-free, so is the derivative on the left-hand side, so
 
 The great thing about this equation is that it symbolically encapsulates our entire algorithm for simulating fluid flow. We first compute what's inside the parentheses on the right-hand side. From left to right, we compute the advection, diffusion, and force terms. Application of these three steps results in a divergent velocity field, **w**, to which we apply our projection operator to get a new divergence-free field, **u**. To do so, we solve Equation 10 for _p_, and then subtract the gradient of _p_ from **w**, as in Equation 8.
 
-In a typical implementation, the various components are not computed and added together, as in Equation 11. Instead, the solution is found via composition of transformations on the state; in other words, each component is a step that takes a field as input, and produces a new field as output. We can define an operator [![s.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/48bb92c8dc.jpg)](https://developer.download.nvidia.com/books/gpugems/s.jpg) that is equivalent to the solution of Equation 11 over a single time step. The operator is defined as the composition of operators for advection ( [![a.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/06821804fb.jpg)](https://developer.download.nvidia.com/books/gpugems/a.jpg) ), diffusion ( [![d.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/8ed024450d.jpg)](https://developer.download.nvidia.com/books/gpugems/d.jpg) ), force application ( [![f.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/f2dc9ca22e.jpg)](https://developer.download.nvidia.com/books/gpugems/f.jpg) ), and projection ( [![p.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/ce0b4f7ceb.jpg)](https://developer.download.nvidia.com/books/gpugems/p.jpg) ):
+In a typical implementation, the various components are not computed and added together, as in Equation 11. Instead, the solution is found via composition of transformations on the state; in other words, each component is a step that takes a field as input, and produces a new field as output. We can define an operator ![s.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/48bb92c8dc.jpg) that is equivalent to the solution of Equation 11 over a single time step. The operator is defined as the composition of operators for advection ( ![a.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/06821804fb.jpg) ), diffusion ( ![d.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/8ed024450d.jpg) ), force application ( ![f.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/f2dc9ca22e.jpg) ), and projection ( ![p.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/ce0b4f7ceb.jpg) ):
 
 **Equation 12**
 
 ![646equ04.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/8aa15d1d26.jpg)
 
-Thus, a step of the simulation algorithm can be expressed [![su.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/b3d84bcc0f.jpg)](https://developer.download.nvidia.com/books/gpugems/su.jpg) The operators are applied right to left; first advection, followed by diffusion, force application, and projection. Note that time is omitted here for clarity, but in practice, the time step must be used in the computation of each operator. Now let's look more closely at the advection and diffusion steps, and then approach the solution of Poisson equations.
+Thus, a step of the simulation algorithm can be expressed ![su.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/b3d84bcc0f.jpg) The operators are applied right to left; first advection, followed by diffusion, force application, and projection. Note that time is omitted here for clarity, but in practice, the time step must be used in the computation of each operator. Now let's look more closely at the advection and diffusion steps, and then approach the solution of Poisson equations.
 
 #### Advection
 
@@ -227,8 +227,7 @@ The solution is to invert the problem and use an implicit method (Stam 1999). Ra
 
 Not only can we easily implement this method on the GPU, but as Stam showed, it is stable for arbitrary time steps and velocities. Figure 38-3 depicts the advection computation at the cell marked with a double circle. Tracing the velocity field back in time leads to the green **x**. The four grid values nearest the green **x** (connected by a green square in the figure) are bilinearly interpolated, and the result is written to the starting grid cell.
 
-[![fig38-03.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/7ad4856660.jpg)](https://developer.download.nvidia.com/books/gpugems/fig38-03.jpg)
-
+![fig38-03.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/7ad4856660.jpg)
 [Figure 38-3](https://developer.download.nvidia.com/books/gpugems/fig38-03.jpg) Computing Fluid Advection
 
 #### Viscous Diffusion
@@ -309,7 +308,7 @@ Fundamental to any computer are its memory and processing models, so any applica
 
 Our simulation represents data on a two-dimensional grid. The natural representation for this grid on the CPU is an array. The analog of an array on the GPU is a texture. Although textures are not as flexible as arrays, their flexibility is improving as graphics hardware evolves. Textures on current GPUs support all the basic operations necessary to implement a fluid simulation. Because textures usually have three or four color channels, they provide a natural data structure for vector data types with two to four components. Alternatively, multiple scalar fields can be stored in a single texture. The most basic operation is an array (or memory) read, which is accomplished by using a texture lookup. Thus, the GPU analog of an array offset is a texture coordinate. We need at least two textures to represent the state of the fluid: one for velocity and one for pressure. In order to visualize the flow, we maintain an additional texture that contains a quantity carried by the fluid. We can think of this as "ink." Figure 38-4 shows examples of these textures, as well as an additional texture for vorticity, described in Section 38.5.1.
 
-[![fig38-04.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/9f5311d317.jpg)](https://developer.download.nvidia.com/books/gpugems/fig38-04.jpg)
+![fig38-04.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/9f5311d317.jpg)
 
 [Figure 38-4](https://developer.download.nvidia.com/books/gpugems/fig38-04.jpg) The State Fields of a Fluid Simulation, Stored in Textures
 
@@ -334,8 +333,7 @@ We break down the steps of our simulation into what we call _slab operations_ (_
 
 There are two types of fragments to process in any slab operation: interior fragments and boundary fragments. Our 2D grid reserves a single-cell perimeter to store and compute boundary conditions. Typically, a different computation is performed on the interior and at the boundaries. To update the interior fragments, we render a quadrilateral that covers all but a one-pixel border on the perimeter of the frame buffer. We render four line primitives to update the boundary cells. We apply separate fragment programs to interior and border fragments. See Figure 38-5.
 
-[![fig38-05.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/40fe406bc2.jpg)](https://developer.download.nvidia.com/books/gpugems/fig38-05.jpg)
-
+![fig38-05.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/40fe406bc2.jpg)
 [Figure 38-5](https://developer.download.nvidia.com/books/gpugems/fig38-05.jpg) Primitives Used to Update the Interior and Boundaries of the Grid
 
 #### 38.3.3 Implementation in Fragment Programs
@@ -533,8 +531,7 @@ void boundary(half2 coords
 
 Figure 38-6 demonstrates how this program works. The x parameter represents the texture (velocity or pressure field) from which we read interior values. The offset parameter contains the correct offset to the interior cells adjacent to the current boundary. The coords parameter contains the position in texture coordinates of the fragment being processed, so adding offset to it addresses a neighboring texel. At each boundary, we set offset to adjust our texture coordinates to the texel just inside the boundary. For the left boundary, we set it to (1, 0), so that it addresses the texel just to the right; for the bottom boundary, we use (0, 1); and so on. The scale parameter can be used to scale the value we copy to the boundary. For velocity boundaries, scale is set to -1, and for pressure it is set to 1, so that we correctly implement Equations 17 and 18, respectively.
 
-[![fig38-06.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/851c88a89d.jpg)](https://developer.download.nvidia.com/books/gpugems/fig38-06.jpg)
-
+![fig38-06.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/851c88a89d.jpg)
 [Figure 38-6](https://developer.download.nvidia.com/books/gpugems/fig38-06.jpg) Boundary Conditions on an MxN Grid
 
 ## 38.4 Applications
@@ -585,7 +582,7 @@ By adding a source of smoke density and temperature (possibly representing a smo
 
 As demonstrated in Harris et al. 2003, a more complex simulation can be used to simulate clouds on the GPU. A sequence of stills from a 2D GPU cloud simulation is shown in Figure 38-7. The cloud simulator combines fluid simulation with a thermodynamic simulation (including buoyancy), as well as a simulation of water condensation and evaporation. A 128x128 cloud simulation runs at over 80 iterations per second on an NVIDIA GeForce FX 5950 Ultra GPU.
 
-[![fig38-07.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/87b2af909b.jpg)](https://developer.download.nvidia.com/books/gpugems/fig38-07.jpg)
+![fig38-07.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/87b2af909b.jpg)
 
 [Figure 38-7](https://developer.download.nvidia.com/books/gpugems/fig38-07.jpg) Cloud Simulation
 
@@ -599,7 +596,7 @@ The motion of smoke, air and other low-viscosity fluids typically contains rotat
 
 ![662equ01.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/e061300d69.jpg)
 
-Here, [![662equ02.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/4f07569989.jpg)](https://developer.download.nvidia.com/books/gpugems/662equ02.jpg) The vectors in this vector field point from areas of lower vorticity to areas of higher vorticity. From these vectors we compute a force that can be used to restore an approximation of the dissipated vorticity:
+Here, ![662equ02.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/4f07569989.jpg) The vectors in this vector field point from areas of lower vorticity to areas of higher vorticity. From these vectors we compute a force that can be used to restore an approximation of the dissipated vorticity:
 
 ![663equ01.jpg](../../../../笔记图床/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟/10f9b58f35.jpg)
 
