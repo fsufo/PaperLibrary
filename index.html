@@ -99,6 +99,7 @@
         /* Scroll Frame with Mask for Content */
         .hud-scroll-frame {
             flex-grow: 1; overflow: hidden; position: relative;
+            /* Fade out at the bottom */
             -webkit-mask-image: linear-gradient(to bottom, black 65%, transparent 100%);
             mask-image: linear-gradient(to bottom, black 65%, transparent 100%);
         }
@@ -209,9 +210,11 @@
     
     <script>
         /**
-         * Universe Logic - Refined Interaction
-         * - Fixes Keyboard Search Focus being stolen by passing stars (blockHover)
-         * - Fixes Search Dropdown re-opening on focus
+         * Universe Logic - Final Ultimate Version
+         * - Hash Routing (#NodeID) for Back/Forward and Sharing
+         * - Improved Search Ranking & Interaction
+         * - Enhanced Visuals (Blurry HUD, Fade Mask)
+         * - Robust Link Handling (External in new tab)
          */
         const Universe = {
             // === Core Data ===
@@ -233,7 +236,7 @@
             lastClickNode: null,  
             lastClickTime: 0,
             
-            // [NEW] Prevents mouse hover from overriding keyboard selection until mouse moves
+            // Prevents mouse hover from overriding keyboard selection until mouse moves
             blockHover: false, 
             
             searchIndex: -1,
@@ -343,6 +346,7 @@
                     // Interactions
                     .onNodeHover(this.handleNodeHover.bind(this))
                     .onNodeClick(this.handleNodeClick.bind(this))
+                    // Disable controls when dragging a node
                     .onNodeDrag(() => { 
                         this.isNodeDragging = true; 
                         if(this.graph.controls()) this.graph.controls().enabled = false;
@@ -412,6 +416,20 @@
                     }, 1000);
 
                     this.updateGraphFilter();
+
+                    // === Hash Routing Check ===
+                    setTimeout(() => {
+                        const hash = window.location.hash.substring(1);
+                        if (hash) {
+                            const noteId = decodeURIComponent(hash);
+                            const targetNode = this.data.nodes.find(n => n.id === noteId);
+                            
+                            if (targetNode) {
+                                console.log("Auto-opening from Hash:", targetNode.label);
+                                this.jumpToNode(targetNode.id, true);
+                            }
+                        }
+                    }, 1500); 
                 });
             },
 
@@ -452,10 +470,10 @@
             handleNodeHover(node) {
                 if(document.getElementById('article-modal').classList.contains('active')) return;
                 
-                // [FIX] Ignore 3D hover if interacting with search UI
+                // Ignore 3D hover if interacting with search UI
                 if (document.querySelector('.search-wrapper:hover')) return;
 
-                // [FIX] If blockHover is true (keyboard nav active), ignore passing stars
+                // Ignore passing stars if keyboard nav is active
                 if (this.blockHover) return;
 
                 // 1. HUD logic
@@ -516,7 +534,7 @@
                         });
                     }
 
-                    // 2. Global Tags
+                    // 2. Global Tags (Clustering)
                     const targetTags = node.all_tags && node.all_tags.length > 0 ? node.all_tags : [node.group];
                     if (targetTags && targetTags.length > 0) {
                         this.data.nodes.forEach(n => {
@@ -527,7 +545,7 @@
                         });
                     }
 
-                    // 3. Highlight existing links
+                    // 3. Highlight existing links between highlighted nodes
                     this.data.links.forEach(l => {
                         const sNode = l.sourceNode || l.source;
                         const tNode = l.targetNode || l.target;
@@ -622,51 +640,42 @@
                 const res = document.getElementById('search-results');
                 if(!val) { res.classList.remove('active'); return; }
                 
-                // 统一转换为小写，移除空格
                 const originalVal = val.trim();
                 val = originalVal.toLowerCase(); 
                 const sVal = val.replace(/\s+/g,'');
 
-                // 1. 搜索 Tags
+                // 1. Tags
                 const tags = window.searchableTags.filter(t => 
                     !this.selectedTags.has(t.label) && 
                     (t.label.toLowerCase().includes(val) || t._py_full.includes(sVal) || t._py_head.includes(sVal))
                 ).map(t => {
-                    // Tag 评分逻辑
-                    let s = 30; // 基础分
-                    if (t.label.toLowerCase().startsWith(val)) s += 20; // 前缀优先
-                    if (t.label === originalVal) s += 50; // 完全匹配
+                    let s = 30;
+                    if (t.label.toLowerCase().startsWith(val)) s += 20;
+                    if (t.label === originalVal) s += 50;
                     return { type:'tag', val:t.label, score:s };
                 });
 
-                // 2. 搜索 Nodes (核心修复)
+                // 2. Nodes (Weighted)
                 const nodes = this.graph.graphData().nodes.map(n => {
                     let s = 0;
-                    const labelLower = n.label.toLowerCase(); // 预先转小写
+                    const labelLower = n.label.toLowerCase(); 
 
-                    // A. 标题匹配
-                    if (labelLower === val) {
-                        s += 100; // 绝对完全匹配
-                    } else if (labelLower.startsWith(val)) {
-                        s += 60;  // 【核心修复】开头匹配权重很高 (Games101 vs Blog)
-                    } else if (labelLower.includes(val)) {
-                        s += 10;  // 仅仅是包含
-                    }
+                    // Title Match
+                    if (labelLower === val) s += 100;
+                    else if (labelLower.startsWith(val)) s += 60;
+                    else if (labelLower.includes(val)) s += 10;
 
-                    // B. 拼音匹配
+                    // Pinyin Match
                     if (n._py_full.includes(sVal) || n._py_head.includes(sVal)) {
                         s += 15;
-                        // 如果拼音也是以输入开头的，额外加分
-                        if (n._py_full.startsWith(sVal) || n._py_head.startsWith(sVal)) {
-                            s += 10; 
-                        }
+                        if (n._py_full.startsWith(sVal) || n._py_head.startsWith(sVal)) s += 10; 
                     }
 
                     return { type:'node', val:n, score:s, id:n.id };
                 }).filter(i => i.score > 0);
 
-                // 3. 排序并取前 15 个（稍微增加显示数量）
-                const all = [...tags, ...nodes].sort((a,b) => b.score - a.score).slice(0, 15);
+                // Sort and Limit (30 items)
+                const all = [...tags, ...nodes].sort((a,b) => b.score - a.score).slice(0, 30);
                 this.searchResultsList = all; 
                 
                 if(all.length) {
@@ -674,7 +683,6 @@
                         <div class="search-item" data-idx="${i}" onclick="Universe.confirmSearch(${i})">
                             ${m.type==='tag' ? 
                             `<div class="tag-capsule">#${m.val}</div><span>Tag</span>` : 
-                            // 下面这一行加入了 text-align:right 和 margin-left:auto
                             `<span>${m.val.label}</span><span style="opacity:0.5;font-size:10px;text-align:right;margin-left:auto;">${m.val.id}</span>`}
                         </div>`).join('');
                     res.classList.add('active');
@@ -696,16 +704,13 @@
 
                 const item = this.searchResultsList[index];
                 if (item && item.type === 'node') {
-                    // Lock and Fly
                     const node = item.val;
                     this.selectedNode = node;
                     this.setHighlightMode(node);
-                    
-                    // Trick HUD into tracking it even though mouse isn't there
                     this.hoverNode = node; 
                     this.updatePreviewCard(node, true);
                     
-                    // [FIX] Block passive hover during keyboard nav
+                    // Block passive hover
                     this.blockHover = true;
 
                     this.flyTo(node, 1000);
@@ -722,7 +727,6 @@
                 }
                 document.getElementById('search-input').value='';
                 document.getElementById('search-results').classList.remove('active');
-                // Unlock hover after selection
                 this.blockHover = false;
             },
 
@@ -751,7 +755,6 @@
                 document.getElementById('hud-content').innerHTML = marked.parse(previewText); 
 
                 hud.classList.add('visible');
-                // Initial placement
                 this.updateHUDPosition(node);
             },
 
@@ -763,7 +766,6 @@
                 let x = coords.x + 25;
                 let y = coords.y;
                 
-                // Bounds checking
                 if(x + 340 > window.innerWidth) x = coords.x - 350;
                 if(y + 250 > window.innerHeight) y = window.innerHeight - 250;
                 if(y < 80) y = 80;
@@ -803,7 +805,7 @@
             jumpToNode(id, openDoc) {
                 const n = this.data.nodes.find(x => x.id === id);
                 if(n) {
-                    this.selectedNode = n; // Lock
+                    this.selectedNode = n;
                     this.setHighlightMode(n);
                     this.flyTo(n, 1200);
                     if(openDoc) {
@@ -870,13 +872,12 @@
                     let textOp = 0;
                     if(!isModalOpen) {
                         if(isHovering) { if(this.highlightNodes.has(node)) textOp = 1; }
-                        else if(this.selectedNode) { if(this.highlightNodes.has(node)) textOp = 1; } // Keep selected visible
+                        else if(this.selectedNode) { if(this.highlightNodes.has(node)) textOp = 1; } 
                         else { if(dist < 500) textOp = 1 - (dist - 150)/350; }
                     }
                     group.text.material.opacity += (textOp - group.text.material.opacity) * 0.15;
                     group.subText.material.opacity = group.text.material.opacity * 0.7;
                     
-                    // Dim non-highlighted nodes if something is focused
                     const isFocusMode = isHovering || this.selectedNode;
                     let targetOp = (isFocusMode && !this.highlightNodes.has(node)) ? 0.1 : 1.0;
                     group.userData.currentOpacity += (targetOp - group.userData.currentOpacity) * 0.1;
@@ -987,6 +988,12 @@
             },
             
             openArticle(node) {
+                // Update Hash Routing
+                const newHash = `#${node.id}`;
+                if (window.location.hash !== encodeURI(newHash)) {
+                    window.history.pushState(null, '', newHash);
+                }
+
                 const modal = document.getElementById('article-modal');
                 let content = node.content || node.data?.content || "# No Content";
                 const mathBlocks = [];
@@ -1000,7 +1007,14 @@
                 document.getElementById('helicopter-cat').style.opacity = '0';
             },
 
-            closeArticle() {
+            closeArticle(isFromHistory = false) {
+                // Clear Hash if not navigating history
+                if (!isFromHistory) {
+                    if (window.location.hash) {
+                        window.history.pushState(null, '', window.location.pathname + window.location.search);
+                    }
+                }
+
                 const modal = document.getElementById('article-modal');
                 modal.classList.remove('active');
                 setTimeout(() => modal.style.display = 'none', 400);
@@ -1010,39 +1024,15 @@
             initEvents() {
                 window.onresize = () => this.graph.width(window.innerWidth).height(window.innerHeight);
                 
-                document.getElementById('markdown-container').addEventListener('click', e => {
-                    const link = e.target.closest('a'); // 获取点击的链接
-                    if (!link) return;
-
-                    const href = link.getAttribute('href');
+                document.addEventListener('mousemove', e => {
+                    this.mouseScreenPos.set((e.clientX / window.innerWidth) * 2 - 1, -(e.clientY / window.innerHeight) * 2 + 1);
+                    if(this.graph.controls()) this.graph.controls().enabled = !e.target.closest('.search-wrapper');
                     
-                    // --- 核心修改开始 ---
-                    
-                    // 情况1：如果是网页链接 (http开头)，新标签页打开
-                    if (href.startsWith('http') || href.startsWith('//')) {
-                        e.preventDefault();          // 阻止在本页跳转
-                        window.open(href, '_blank'); // 在新标签页打开
-                        return;
-                    }
-
-                    // 情况2：如果是内部链接，保持原有的“飞向星星”逻辑
-                    e.preventDefault(); // 阻止浏览器刷新页面
-                    
-                    // (原有的查找星星逻辑)
-                    const targetId = href.split('/').pop();
-                    const node = this.data.nodes.find(n => 
-                        n.id === targetId || 
-                        n.id === targetId + '.md' || 
-                        n.label === decodeURIComponent(targetId).replace('.md', '')
-                    );
-                    
-                    if (node) {
-                        this.closeArticle();
-                        setTimeout(() => this.jumpToNode(node.id, true), 300);
-                    }
+                    // Unlock passive hover
+                    this.blockHover = false;
                 });
                 
-                // [FIX] Add focus/click listener to search input
+                // Search Input Events
                 const searchInput = document.getElementById('search-input');
                 const triggerSearch = () => { if(searchInput.value.trim().length > 0) this.handleSearch(searchInput.value); };
                 searchInput.addEventListener('focus', triggerSearch);
@@ -1062,7 +1052,6 @@
                         if(document.getElementById('article-modal').classList.contains('active')) {
                             this.closeArticle();
                         } else if(this.selectedNode) {
-                            // Unlock on ESC
                             this.selectedNode = null;
                             this.setHighlightMode(null);
                         } else if(this.globalStartPos) {
@@ -1092,18 +1081,45 @@
                     }
                 });
 
+                // Routing & Link Handling
+                window.addEventListener('popstate', () => {
+                    const hash = window.location.hash.substring(1);
+                    if (hash) {
+                        const id = decodeURIComponent(hash);
+                        const node = this.data.nodes.find(n => n.id === id);
+                        if (node && (!this.selectedNode || this.selectedNode.id !== node.id)) {
+                             this.jumpToNode(node.id, true);
+                        }
+                    } else {
+                        if (document.getElementById('article-modal').classList.contains('active')) {
+                            this.closeArticle(true);
+                        }
+                    }
+                });
+
                 document.getElementById('markdown-container').addEventListener('click', e => {
-                    if(e.target.tagName === 'A') {
-                        const href = e.target.getAttribute('href');
-                        if(!href.startsWith('http')) {
-                            e.preventDefault();
-                            const targetId = href.split('/').pop();
-                            const node = this.data.nodes.find(n => n.id === targetId || n.id === targetId+'.md' || n.label === decodeURIComponent(targetId).replace('.md',''));
-                            if(node) {
-                                this.closeArticle();
-                                setTimeout(() => this.jumpToNode(node.id, true), 300);
-                            }
-                        } else { window.open(href, '_blank'); }
+                    const link = e.target.closest('a');
+                    if (!link) return;
+
+                    const href = link.getAttribute('href');
+                    
+                    if (href.startsWith('http') || href.startsWith('//')) {
+                        e.preventDefault();
+                        window.open(href, '_blank');
+                        return;
+                    }
+
+                    e.preventDefault(); 
+                    const targetId = href.split('/').pop();
+                    const node = this.data.nodes.find(n => 
+                        n.id === targetId || 
+                        n.id === targetId + '.md' || 
+                        n.label === decodeURIComponent(targetId).replace('.md', '')
+                    );
+                    
+                    if (node) {
+                        this.closeArticle();
+                        setTimeout(() => this.jumpToNode(node.id, true), 300);
                     }
                 });
 
