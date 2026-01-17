@@ -1010,12 +1010,36 @@
             initEvents() {
                 window.onresize = () => this.graph.width(window.innerWidth).height(window.innerHeight);
                 
-                document.addEventListener('mousemove', e => {
-                    this.mouseScreenPos.set((e.clientX / window.innerWidth) * 2 - 1, -(e.clientY / window.innerHeight) * 2 + 1);
-                    if(this.graph.controls()) this.graph.controls().enabled = !e.target.closest('.search-wrapper');
+                document.getElementById('markdown-container').addEventListener('click', e => {
+                    const link = e.target.closest('a'); // 获取点击的链接
+                    if (!link) return;
+
+                    const href = link.getAttribute('href');
                     
-                    // [FIX] Physical mouse movement unlocks the hover state
-                    this.blockHover = false;
+                    // --- 核心修改开始 ---
+                    
+                    // 情况1：如果是网页链接 (http开头)，新标签页打开
+                    if (href.startsWith('http') || href.startsWith('//')) {
+                        e.preventDefault();          // 阻止在本页跳转
+                        window.open(href, '_blank'); // 在新标签页打开
+                        return;
+                    }
+
+                    // 情况2：如果是内部链接，保持原有的“飞向星星”逻辑
+                    e.preventDefault(); // 阻止浏览器刷新页面
+                    
+                    // (原有的查找星星逻辑)
+                    const targetId = href.split('/').pop();
+                    const node = this.data.nodes.find(n => 
+                        n.id === targetId || 
+                        n.id === targetId + '.md' || 
+                        n.label === decodeURIComponent(targetId).replace('.md', '')
+                    );
+                    
+                    if (node) {
+                        this.closeArticle();
+                        setTimeout(() => this.jumpToNode(node.id, true), 300);
+                    }
                 });
                 
                 // [FIX] Add focus/click listener to search input
