@@ -11,6 +11,9 @@
     <script src="https://unpkg.com/3d-force-graph@1.73.1/dist/3d-force-graph.min.js"></script>
     <script src="https://unpkg.com/three-spritetext@1.8.2/dist/three-spritetext.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- Highlight.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <script src="https://unpkg.com/pinyin-pro"></script>
     
     <!-- MathJax -->
@@ -144,6 +147,7 @@
         .markdown-body a { color: #58a6ff; text-decoration: none; }
         .markdown-body code { background: rgba(110, 118, 129, 0.4); padding: 0.2em 0.4em; border-radius: 6px; font-family: monospace; }
         .markdown-body pre { background: #161b22; padding: 16px; border-radius: 6px; overflow: auto; }
+        .markdown-body pre code { background: transparent; padding: 0; border-radius: 0; }
         .markdown-body img { max-width: 100%; border-radius: 6px; }
 
         /* Top Info */
@@ -752,7 +756,11 @@
                 
                 let content = node.content || node.data?.content || "";
                 const previewText = content.length > 300 ? content.substring(0,300)+"..." : content;
-                document.getElementById('hud-content').innerHTML = marked.parse(previewText); 
+                const hudContent = document.getElementById('hud-content');
+                hudContent.innerHTML = marked.parse(previewText);
+                hudContent.querySelectorAll('pre code').forEach((block) => {
+                     hljs.highlightElement(block);
+                });
 
                 hud.classList.add('visible');
                 this.updateHUDPosition(node);
@@ -1000,7 +1008,11 @@
                 content = content.replace(/(\$\$[\s\S]*?\$\$)|((?<!\\)\$[^\n$]+?(?<!\\)\$)/g, m => {
                     mathBlocks.push(m); return `MATHBLOCK_${mathBlocks.length-1}_END`;
                 });
-                document.getElementById('markdown-container').innerHTML = marked.parse(content).replace(/MATHBLOCK_(\d+)_END/g, (_,i) => mathBlocks[i]);
+                const container = document.getElementById('markdown-container');
+                container.innerHTML = marked.parse(content).replace(/MATHBLOCK_(\d+)_END/g, (_,i) => mathBlocks[i]);
+                container.querySelectorAll('pre code').forEach((block) => {
+                     hljs.highlightElement(block);
+                });
                 
                 modal.style.display = 'block'; modal.offsetHeight; modal.classList.add('active');
                 if(window.MathJax) MathJax.typesetPromise([modal]);
