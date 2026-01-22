@@ -12,6 +12,13 @@ https://www.desmos.com/calculator?lang=zh-CN
 ![1768290285214](../../笔记图床/游戏开发/实用Tools文档/在线实用工具OnlineTools/1768290285214.png)
 
 ---
+### wolframalpha 积分函数求解(可以求积分)
+
+https://www.wolframalpha.com/
+
+![1768805608047](../../笔记图床/游戏开发/实用Tools文档/在线实用工具OnlineTools/1768805608047.png)
+
+---
 
 ### Academo 2D函数可视化
 
