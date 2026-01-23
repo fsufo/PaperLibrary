@@ -325,13 +325,13 @@
                         
                         // Color: Tag=Blue, MD=Orange
                         let colorArr;
-                        let opacity = 0.15;
+                        let opacity = 0.6; // Increased Base Opacity
                         if (link.type === 'tag_group') { 
                             colorArr = [0.1, 0.5, 1.0,  0.1, 0.5, 1.0]; 
-                            opacity = 0.1; 
+                            opacity = 0.25; // Increased Tag Link Opacity (was 0.1)
                         } else {
                             colorArr = [1.0, 0.6, 0.1,  1.0, 0.6, 0.1]; 
-                            opacity = 0.3; 
+                            opacity = 0.6; // Increased MD Link Opacity (was 0.3)
                         }
 
                         geo.setAttribute('color', new THREE.BufferAttribute(new Float32Array(colorArr), 3));
@@ -904,7 +904,7 @@
                 
                 links.forEach(l => {
                     const line = l.__lineObj; if(!line) return;
-                    let t = l.type==='tag_group' ? 0.15 : 0.3; 
+                    let t = l.type==='tag_group' ? 0.25 : 0.6; // Increased from 0.15/0.3
                     if(isHovering || this.selectedNode) t = this.highlightLinks.has(l) ? 0.8 : 0.02;
                     line.material.opacity += (t - line.material.opacity) * 0.1;
                 });
