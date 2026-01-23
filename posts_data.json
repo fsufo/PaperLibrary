@@ -19,6 +19,8 @@
         "siggraph",
         "渲染",
         "shadertoy",
+        "fog",
+        "解析积分",
         "games",
         "games101",
         "NS方程",
@@ -29,7 +31,7 @@
         "GitHub",
         "单词"
       ],
-      "content": "# 全部笔记大纲\n\n#目录\n\n> 自动生成位置: 笔记目录[脚本生成]\n\n### [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n#GDC #paper #siggraph #渲染\n\n---\n\n### [渲染相关网页链接.md](posts/游戏开发/渲染相关/渲染相关网页链接.md)\n#渲染\n\n---\n\n### [渲染文档汇总.md](posts/游戏开发/渲染相关/渲染文档汇总.md)\n#paper #渲染\n\n---\n\n### [ShaderToy.md](posts/游戏开发/渲染相关/ShaderToy.md)\n#shadertoy #渲染\n\n---\n\n### [Games101解析.md](posts/游戏开发/渲染相关/Games/Games101解析.md)\n#games #games101\n\n---\n\n### [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n#NS方程 #Simulation #流体模拟 #渲染\n\n---\n\n### [实用开发工具Tools.md](posts/游戏开发/实用Tools文档/实用开发工具Tools.md)\n#tools\n\n---\n\n### [在线实用工具OnlineTools.md](posts/游戏开发/实用Tools文档/在线实用工具OnlineTools.md)\n#tools\n\n---\n\n### [Blender.md](posts/游戏开发/Blender相关/Blender.md)\n#Blender\n\n---\n\n### [GitHub好项目.md](posts/游戏开发/GitHub相关/GitHub好项目.md)\n#GitHub\n\n---\n\n### [四六级高频词汇.md](posts/语言/English/四六级高频词汇.md)\n#单词\n\n---\n\n",
+      "content": "# 全部笔记大纲\n\n#目录\n\n> 自动生成位置: 笔记目录[脚本生成]\n\n### [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n#GDC #paper #siggraph #渲染\n\n---\n\n### [渲染相关网页链接.md](posts/游戏开发/渲染相关/渲染相关网页链接.md)\n#渲染\n\n---\n\n### [渲染文档汇总.md](posts/游戏开发/渲染相关/渲染文档汇总.md)\n#paper #渲染\n\n---\n\n### [ShaderToy.md](posts/游戏开发/渲染相关/ShaderToy.md)\n#shadertoy #渲染\n\n---\n\n### [解析高度雾.md](posts/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾.md)\n#fog #解析积分\n\n---\n\n### [Games101解析.md](posts/游戏开发/渲染相关/Games/Games101解析.md)\n#games #games101\n\n---\n\n### [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n#NS方程 #Simulation #流体模拟 #渲染\n\n---\n\n### [实用开发工具Tools.md](posts/游戏开发/实用Tools文档/实用开发工具Tools.md)\n#tools\n\n---\n\n### [在线实用工具OnlineTools.md](posts/游戏开发/实用Tools文档/在线实用工具OnlineTools.md)\n#tools\n\n---\n\n### [Blender.md](posts/游戏开发/Blender相关/Blender.md)\n#Blender\n\n---\n\n### [GitHub好项目.md](posts/游戏开发/GitHub相关/GitHub好项目.md)\n#GitHub\n\n---\n\n### [四六级高频词汇.md](posts/语言/English/四六级高频词汇.md)\n#单词\n\n---\n\n",
       "val": 1
     },
     {
@@ -43,6 +45,7 @@
         "GitHub",
         "NS方程",
         "Simulation",
+        "fog",
         "games",
         "games101",
         "paper",
@@ -51,9 +54,10 @@
         "tools",
         "单词",
         "流体模拟",
-        "渲染"
+        "渲染",
+        "解析积分"
       ],
-      "content": "# 标签索引\n\n#目录\n\n## #Blender\n- [Blender.md](posts/游戏开发/Blender相关/Blender.md)\n\n## #GDC\n- [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n\n## #GitHub\n- [GitHub好项目.md](posts/游戏开发/GitHub相关/GitHub好项目.md)\n\n## #NS方程\n- [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n\n## #Simulation\n- [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n\n## #games\n- [Games101解析.md](posts/游戏开发/渲染相关/Games/Games101解析.md)\n\n## #games101\n- [Games101解析.md](posts/游戏开发/渲染相关/Games/Games101解析.md)\n\n## #paper\n- [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n- [渲染文档汇总.md](posts/游戏开发/渲染相关/渲染文档汇总.md)\n\n## #shadertoy\n- [ShaderToy.md](posts/游戏开发/渲染相关/ShaderToy.md)\n\n## #siggraph\n- [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n\n## #tools\n- [实用开发工具Tools.md](posts/游戏开发/实用Tools文档/实用开发工具Tools.md)\n- [在线实用工具OnlineTools.md](posts/游戏开发/实用Tools文档/在线实用工具OnlineTools.md)\n\n## #单词\n- [四六级高频词汇.md](posts/语言/English/四六级高频词汇.md)\n\n## #流体模拟\n- [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n\n## #渲染\n- [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n- [渲染相关网页链接.md](posts/游戏开发/渲染相关/渲染相关网页链接.md)\n- [渲染文档汇总.md](posts/游戏开发/渲染相关/渲染文档汇总.md)\n- [ShaderToy.md](posts/游戏开发/渲染相关/ShaderToy.md)\n- [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n\n",
+      "content": "# 标签索引\n\n#目录\n\n## #Blender\n- [Blender.md](posts/游戏开发/Blender相关/Blender.md)\n\n## #GDC\n- [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n\n## #GitHub\n- [GitHub好项目.md](posts/游戏开发/GitHub相关/GitHub好项目.md)\n\n## #NS方程\n- [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n\n## #Simulation\n- [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n\n## #fog\n- [解析高度雾.md](posts/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾.md)\n\n## #games\n- [Games101解析.md](posts/游戏开发/渲染相关/Games/Games101解析.md)\n\n## #games101\n- [Games101解析.md](posts/游戏开发/渲染相关/Games/Games101解析.md)\n\n## #paper\n- [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n- [渲染文档汇总.md](posts/游戏开发/渲染相关/渲染文档汇总.md)\n\n## #shadertoy\n- [ShaderToy.md](posts/游戏开发/渲染相关/ShaderToy.md)\n\n## #siggraph\n- [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n\n## #tools\n- [实用开发工具Tools.md](posts/游戏开发/实用Tools文档/实用开发工具Tools.md)\n- [在线实用工具OnlineTools.md](posts/游戏开发/实用Tools文档/在线实用工具OnlineTools.md)\n\n## #单词\n- [四六级高频词汇.md](posts/语言/English/四六级高频词汇.md)\n\n## #流体模拟\n- [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n\n## #渲染\n- [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n- [渲染相关网页链接.md](posts/游戏开发/渲染相关/渲染相关网页链接.md)\n- [渲染文档汇总.md](posts/游戏开发/渲染相关/渲染文档汇总.md)\n- [ShaderToy.md](posts/游戏开发/渲染相关/ShaderToy.md)\n- [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n\n## #解析积分\n- [解析高度雾.md](posts/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾.md)\n\n",
       "val": 1
     },
     {
@@ -102,6 +106,17 @@
       "val": 1
     },
     {
+      "id": "解析高度雾",
+      "label": "解析高度雾",
+      "group": "fog",
+      "all_tags": [
+        "fog",
+        "解析积分"
+      ],
+      "content": "# 解析积分高度雾\n#fog #解析积分\n\nhttps://iquilezles.org/articles/fog/\n\n### Intro\n\n---\n\nFog is very popular element in computer graphics, so popular that in fact we are always introduced to it early in textbooks or tutorials. However these textbooks, tutorials and even APIs only go as far as a simple distance based color blending, and stop there. Even advanced demos, interactive applications and games go no further that the simple color blending. Hopefully one can do much better and introduce some extra beauty and/or realism to the images with very little additional work on top of the basic idea.  \n  \n  \n\n### Colored fog\n\n---\n\nTraditionally fog is introduced as being the visual element that gives distance cues in an image. And indeed the fog quickly helps us understand the distances and therefore scale of objects, and the world itself.  \n  \n\n![1769051378951](posts/笔记图床/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾/1769051378951.png)\nWithout fog it's not easy to tell the scale of the terrain\n\n![1769051407549](posts/笔记图床/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾/1769051407549.png)\nWith fog we immediately understand the size the terrain\n\nHowever we should note that fog can also provide more information than that. For example, the color of the fog can tell us about the location of the sun in the sky, through variation in its hue. This also increases the realism to the image. A simple way to do this is to change the typical bluish fog color to something yellowish when the view vector aligns with the sun direction. This gives a very natural light dispersion effect. One would argue that such an effect shouldn't be called fog but scattering, and I agree, but in the end of the day one simply has to modify a bit the fog equation to get the effect done.  \n  \n``` cpp\nvec3 applyFog( in vec3  col, // color of pixel\n               in float t )  // distance to point\n{\n    float fogAmount = 1.0 - exp(-t*b);\n    vec3  fogColor  = vec3(0.5,0.6,0.7);\n    return mix( col, fogColor, fogAmount );\n}\n```\n\n```cpp\nvec3 applyFog( in vec3  col,   // color of pixel\n               in float t,     // distance to point\n               in vec3  rd,    // camera to point\n               in vec3  lig )  // sun direction\n{\n    float fogAmount = 1.0 - exp(-t*b);\n    float sunAmount = max( dot(rd, lig), 0.0 );\n    vec3  fogColor  = mix( vec3(0.5,0.6,0.7), // blue\n                           vec3(1.0,0.9,0.7), // yellow\n                           pow(sunAmount,8.0) );\n    return mix( col, fogColor, fogAmount );\n}\n```\n\nvec3 applyFog( in vec3 col, // color of pixel in float t, // distance to point in vec3 rd, // camera to point in vec3 lig ) // sun direction { float fogAmount = 1.0 - exp(-t\\*b); float sunAmount = max( dot(rd, lig), 0.0 ); vec3 fogColor = mix( vec3(0.5,0.6,0.7), // blue vec3(1.0,0.9,0.7), // yellow pow(sunAmount,8.0) ); return mix( col, fogColor, fogAmount ); }\n\n  \nThe effect can be done much more sophisticated. For example the exponent of the dot product between the sun and view vectors (which of course controls the influence of the directional color gradient) can be varyied with distance too. With the right settings one can fake glowing/blooming and other light scattering effects without actually doing any multipass or render to texture but a simple change to the fog equation. Color can change with altitude too, or any other parameters you might think of.  \n  \n  \n![1769051448196](posts/笔记图床/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾/1769051448196.png)\nRegular monocrhome fog\n\n![1769051456979](posts/笔记图床/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾/1769051456979.png)\nColored fog based on sun direction\n\n  \nAnother variation of the technique that we can develop starts by first splitting the usual mix() command in its two parts, ie, replace  \n  \n``` cpp\nfinalColor = mix( pixelColor, fogColor, 1.0-exp(-distance*b) );\n```\n  \nwith  \n  \n``` cpp\nfinalColor = pixelColor*exp(-distance*b) + fogColor*(1.0-exp(-distance*b));\n```\n  \n  \nThen, according to classic CG atmospheric scattering papers, the first term could be interpreted as the absortion of light due to scattering or \"extinction\", and the second term can be interpreted as the \"inscattering\". We note that this way of expressing fog is more powerfull, because now we can choose independent fallof parameters _**b**_ for the extinction and inscattering. Furthermore, we can have not one or two, but up to six different coefficients - three for the rgb channels of the extintion color and three for the rgb colored version of the inscattering.  \n  \n``` cpp\nvec3 extColor = vec3( exp(-distance*be.x), exp(-distance*be.y) exp(-distance*be.z) );\nvec3 insColor = vec3( exp(-distance*bi.x), exp(-distance*bi.y) exp(-distance*bi.z) );\nfinalColor = pixelColor*(1.0-extColor) + fogColor*insColor;\n```\n  \n  \nThis way of doing fog, combined with the sun direction coloring and other tricks can give you a very powerfull and simple fog system, yet very compact and fast. It's also quite intuitive, and you don't have to deal with tons of physics, maths and magic constants for Mie and Rayleight spectral constants and stuff. Simple and controlable is the win.  \n  \n  \n\n### Non constant density\n\n---\n\nThe original and simple fog formula has two parameters: the color and the density (which I called _**b**_ in the shader code above). Same way we modified it to have non constant color, we can also modify it so it doesn't have constant density. I'm gonna follow Crytek's trick in this one, but you can play and get some cool results with your own formulas too, although the derivation in that case might be a bit more complex.  \n  \nReal atmosphere is less dense in the height athmosphere than at the sea level. We can model that density variation with an exponential. The good thing of the exponential function is that the solution to the formulas is analytical. Let's see. We start with this exponential density function, which depends on the height _**y**_ of our point:  \n\n$$\nd(y) = a⋅e^{-b⋅y}\n$$\n  \nThe parameter **_b_** controls, of course, the fallof of this density. Now, as our ray traverses the atmosphere from the camera to the point, it will be accumulating opacity as it traverses the athmosphere. The amount of fog it gathers in each of these infinite amount of infinitelly little steps is driven by the fog density (that we just defined) at those points. So we have to add them all together. But of course, adding an infinte amount of ridiculosuly small things is called \"integral\" in maths. So, given our ray  \n  \n$$\nr(t) = o_y + t⋅k_y  \n$$\n  \nwe have that the total amount of fog is  \n  \n![1769051680998](posts/笔记图床/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾/1769051680998.png)\n  \nwhere _**T**_ is the distance from the camera to the point. This integral can be solved analytically, giving  \n  \n![1769051688836](posts/笔记图床/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾/1769051688836.png)\n  \nso that our non-constant-density-fog shader is  \n\nvec3 applyFog( in vec3 col, // color of pixel in float t, // distnace to point in vec3 ro, // camera position in vec3 rd ) // camera to point vector { float fogAmount = (a/b) \\* exp(-ro.y\\*b) \\* (1.0\\-exp(-t\\*rd.y\\*b))/rd.y; vec3 fogColor = vec3(0.5,0.6,0.7); return mix( col, fogColor, fogAmount ); }\n\n  \nwhich means that by adding no more than one division to the original formula we can get some cool height based fog (note that the rest of the formula is constant for a given frame).  \n\n![1769051482758](posts/笔记图床/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾/1769051482758.png)\nThe integral of the fog density function d(y) over the ray gives the final amount of fog\n\n  \n  \n![1769051496008](posts/笔记图床/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾/1769051496008.png)\nNote low altitude parts get extra fog\n\n![1769051503743](posts/笔记图床/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾/1769051503743.png)\nWithout height based fog\n\n  \nAgain, there are many variations that one can add to this constanst-vertical-exponential-fallof-density-function shader.  \n  \n![1769051515755](posts/笔记图床/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾/1769051515755.png)\nA raymarched terrain with non constant fog density  \n  \n  \n\n[inigo quilez](https://iquilezles.org) - learning computer graphics since 1994\n",
+      "val": 1
+    },
+    {
       "id": "Games101解析",
       "label": "Games101解析",
       "group": "games",
@@ -142,7 +157,7 @@
       "all_tags": [
         "tools"
       ],
-      "content": "# 在线实用工具Online Tools\n#tools\n\n---\n\n## 数学类工具Tools\n\n### Desmos 函数可视化\n\nhttps://www.desmos.com/calculator?lang=zh-CN\n\n![1768290285214](posts/笔记图床/游戏开发/实用Tools文档/在线实用工具OnlineTools/1768290285214.png)\n\n---\n\n### Academo 2D函数可视化\n\nhttps://academo.org/demos/3d-surface-plotter/?expression=x*x-y*y*x&xRange=-50%2C%2050&yRange=-50%2C%2050&resolution=48\n\n![1768290346715](posts/笔记图床/游戏开发/实用Tools文档/在线实用工具OnlineTools/1768290346715.png)\n\n---",
+      "content": "# 在线实用工具Online Tools\n#tools\n\n---\n\n## 数学类工具Tools\n\n### Desmos 函数可视化\n\nhttps://www.desmos.com/calculator?lang=zh-CN\n\n![1768290285214](posts/笔记图床/游戏开发/实用Tools文档/在线实用工具OnlineTools/1768290285214.png)\n\n---\n### wolframalpha 积分函数求解(可以求积分)\n\nhttps://www.wolframalpha.com/\n\n![1768805608047](posts/笔记图床/游戏开发/实用Tools文档/在线实用工具OnlineTools/1768805608047.png)\n\n---\n\n### Academo 2D函数可视化\n\nhttps://academo.org/demos/3d-surface-plotter/?expression=x*x-y*y*x&xRange=-50%2C%2050&yRange=-50%2C%2050&resolution=48\n\n![1768290346715](posts/笔记图床/游戏开发/实用Tools文档/在线实用工具OnlineTools/1768290346715.png)\n\n---",
       "val": 1
     },
     {
@@ -199,6 +214,11 @@
     },
     {
       "source": "All_Notes_Outline",
+      "target": "解析高度雾",
+      "type": "md"
+    },
+    {
+      "source": "All_Notes_Outline",
       "target": "Games101解析",
       "type": "md"
     },
@@ -250,6 +270,11 @@
     {
       "source": "Tag_Index",
       "target": "GPU流体模拟",
+      "type": "md"
+    },
+    {
+      "source": "Tag_Index",
+      "target": "解析高度雾",
       "type": "md"
     },
     {
@@ -330,6 +355,11 @@
     {
       "source": "Tag_Index",
       "target": "ShaderToy",
+      "type": "tag_group"
+    },
+    {
+      "source": "Tag_Index",
+      "target": "解析高度雾",
       "type": "tag_group"
     },
     {
