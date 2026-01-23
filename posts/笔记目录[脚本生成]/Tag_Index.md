@@ -8,11 +8,20 @@
 ## #GDC
 - [Paper网页链接.md](../游戏开发/渲染相关/Paper网页链接.md)
 
+## #GI
+- [SSGI.md](../游戏开发/渲染相关/GI相关/SSGI.md)
+- [PRT precompute Radiance Transfer.md](../游戏开发/渲染相关/GI相关/PRT precompute Radiance Transfer.md)
+- [RadianceCascades.md](../游戏开发/渲染相关/GI相关/RadianceCascades.md)
+- [DDGI.md](../游戏开发/渲染相关/GI相关/DDGI.md)
+
 ## #GitHub
 - [GitHub好项目.md](../游戏开发/GitHub相关/GitHub好项目.md)
 
 ## #NS方程
 - [GPU流体模拟.md](../游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)
+
+## #PRT
+- [PRT precompute Radiance Transfer.md](../游戏开发/渲染相关/GI相关/PRT precompute Radiance Transfer.md)
 
 ## #Simulation
 - [GPU流体模拟.md](../游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)

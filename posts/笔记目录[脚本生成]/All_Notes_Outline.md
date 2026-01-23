@@ -34,6 +34,26 @@
 
 ---
 
+### [SSGI.md](../游戏开发/渲染相关/GI相关/SSGI.md)
+#GI
+
+---
+
+### [PRT precompute Radiance Transfer.md](../游戏开发/渲染相关/GI相关/PRT precompute Radiance Transfer.md)
+#GI #PRT
+
+---
+
+### [RadianceCascades.md](../游戏开发/渲染相关/GI相关/RadianceCascades.md)
+#GI
+
+---
+
+### [DDGI.md](../游戏开发/渲染相关/GI相关/DDGI.md)
+#GI
+
+---
+
 ### [GPU流体模拟.md](../游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)
 #NS方程 #Simulation #流体模拟 #渲染
 
