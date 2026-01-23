@@ -1,16 +1,17 @@
 import os
 import re
+from urllib.parse import quote  # 1. 引入 URL 编码模块
 
 def generate_markdown_indexes():
     # 1. 基础配置
     root_dir = os.getcwd()
     
-    # 修改：扫描 posts 文件夹
+    # 扫描 posts 文件夹
     posts_dir = os.path.join(root_dir, "posts")
 
     # 定义输出文件夹和文件名
     output_folder_name = "笔记目录[脚本生成]"
-    # 修改：输出路径在 posts 中
+    # 输出路径在 posts 中
     output_dir = os.path.join(posts_dir, output_folder_name)
     
     output_outline_file = os.path.join(output_dir, "All_Notes_Outline.md")
@@ -30,7 +31,6 @@ def generate_markdown_indexes():
     print("正在扫描工程目录...")
 
     # 3. 遍历文件
-    # 修改：遍历 posts_dir 而不是 root_dir
     for dirpath, dirnames, filenames in os.walk(posts_dir):
         
         # 优化:如果当前遍历的目录是生成的输出目录,直接跳过
@@ -56,7 +56,14 @@ def generate_markdown_indexes():
 
             # 计算相对于"输出文件夹"的路径
             rel_path = os.path.relpath(file_path, output_dir)
+            # 统一转为正斜杠 /
             rel_path = rel_path.replace(os.sep, '/')
+            
+            # --- 修改重点: 对路径进行 URL 编码 ---
+            # 这会将空格转换为 %20，将中文转换为编码格式，确保链接点击有效
+            # safe='/' 表示不编码路径分隔符
+            rel_path = quote(rel_path, safe='/') 
+            # ----------------------------------
 
             file_info = {
                 'name': filename,
@@ -75,13 +82,12 @@ def generate_markdown_indexes():
     with open(output_outline_file, 'w', encoding='utf-8') as f:
         f.write("# 全部笔记大纲\n\n")
         
-        # --- 修改点 A: 写入自身的Tag ---
         f.write("#目录\n\n")
-        # ----------------------------
         
         f.write(f"> 自动生成位置: {output_folder_name}\n\n")
         
         for info in all_files_data:
+            # 这里的 info['path'] 已经是编码过的，支持空格
             f.write(f"### [{info['name']}]({info['path']})\n")
             if info['tags']:
                 tag_line = " ".join([f"#{t}" for t in info['tags']])
@@ -94,9 +100,7 @@ def generate_markdown_indexes():
     with open(output_tag_file, 'w', encoding='utf-8') as f:
         f.write("# 标签索引\n\n")
         
-        # --- 修改点 B: 写入自身的Tag ---
         f.write("#目录\n\n")
-        # ----------------------------
 
         sorted_tags = sorted(tag_to_files.keys())
         

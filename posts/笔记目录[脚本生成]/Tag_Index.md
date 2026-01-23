@@ -3,65 +3,65 @@
 #目录
 
 ## #Blender
-- [Blender.md](../游戏开发/Blender相关/Blender.md)
+- [Blender.md](../%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/Blender%E7%9B%B8%E5%85%B3/Blender.md)
 
 ## #GDC
-- [Paper网页链接.md](../游戏开发/渲染相关/Paper网页链接.md)
+- [Paper网页链接.md](../%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/%E6%B8%B2%E6%9F%93%E7%9B%B8%E5%85%B3/Paper%E7%BD%91%E9%A1%B5%E9%93%BE%E6%8E%A5.md)
 
 ## #GI
-- [SSGI.md](../游戏开发/渲染相关/GI相关/SSGI.md)
-- [PRT precompute Radiance Transfer.md](../游戏开发/渲染相关/GI相关/PRT precompute Radiance Transfer.md)
-- [RadianceCascades.md](../游戏开发/渲染相关/GI相关/RadianceCascades.md)
-- [DDGI.md](../游戏开发/渲染相关/GI相关/DDGI.md)
+- [DDGI.md](../%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/%E6%B8%B2%E6%9F%93%E7%9B%B8%E5%85%B3/GI%E7%9B%B8%E5%85%B3/DDGI.md)
+- [PRT precompute Radiance Transfer.md](../%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/%E6%B8%B2%E6%9F%93%E7%9B%B8%E5%85%B3/GI%E7%9B%B8%E5%85%B3/PRT%20precompute%20Radiance%20Transfer.md)
+- [RadianceCascades.md](../%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/%E6%B8%B2%E6%9F%93%E7%9B%B8%E5%85%B3/GI%E7%9B%B8%E5%85%B3/RadianceCascades.md)
+- [SSGI.md](../%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/%E6%B8%B2%E6%9F%93%E7%9B%B8%E5%85%B3/GI%E7%9B%B8%E5%85%B3/SSGI.md)
 
 ## #GitHub
-- [GitHub好项目.md](../游戏开发/GitHub相关/GitHub好项目.md)
+- [GitHub好项目.md](../%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/GitHub%E7%9B%B8%E5%85%B3/GitHub%E5%A5%BD%E9%A1%B9%E7%9B%AE.md)
 
 ## #NS方程
-- [GPU流体模拟.md](../游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)
+- [GPU流体模拟.md](../%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/%E6%B8%B2%E6%9F%93%E7%9B%B8%E5%85%B3/Simulation%E7%9B%B8%E5%85%B3/%E6%B5%81%E4%BD%93%E6%A8%A1%E6%8B%9F/GPU%E6%B5%81%E4%BD%93%E6%A8%A1%E6%8B%9F.md)
 
 ## #PRT
-- [PRT precompute Radiance Transfer.md](../游戏开发/渲染相关/GI相关/PRT precompute Radiance Transfer.md)
+- [PRT precompute Radiance Transfer.md](../%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/%E6%B8%B2%E6%9F%93%E7%9B%B8%E5%85%B3/GI%E7%9B%B8%E5%85%B3/PRT%20precompute%20Radiance%20Transfer.md)
 
 ## #Simulation
-- [GPU流体模拟.md](../游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)
+- [GPU流体模拟.md](../%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/%E6%B8%B2%E6%9F%93%E7%9B%B8%E5%85%B3/Simulation%E7%9B%B8%E5%85%B3/%E6%B5%81%E4%BD%93%E6%A8%A1%E6%8B%9F/GPU%E6%B5%81%E4%BD%93%E6%A8%A1%E6%8B%9F.md)
 
 ## #fog
-- [解析高度雾.md](../游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾.md)
+- [解析高度雾.md](../%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/%E6%B8%B2%E6%9F%93%E7%9B%B8%E5%85%B3/Fog%E5%9D%87%E5%8C%80%E4%BB%8B%E8%B4%A8%E6%B8%B2%E6%9F%93%E7%9B%B8%E5%85%B3/%E8%A7%A3%E6%9E%90%E9%AB%98%E5%BA%A6%E9%9B%BE.md)
 
 ## #games
-- [Games101解析.md](../游戏开发/渲染相关/Games/Games101解析.md)
+- [Games101解析.md](../%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/%E6%B8%B2%E6%9F%93%E7%9B%B8%E5%85%B3/Games/Games101%E8%A7%A3%E6%9E%90.md)
 
 ## #games101
-- [Games101解析.md](../游戏开发/渲染相关/Games/Games101解析.md)
+- [Games101解析.md](../%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/%E6%B8%B2%E6%9F%93%E7%9B%B8%E5%85%B3/Games/Games101%E8%A7%A3%E6%9E%90.md)
 
 ## #paper
-- [Paper网页链接.md](../游戏开发/渲染相关/Paper网页链接.md)
-- [渲染文档汇总.md](../游戏开发/渲染相关/渲染文档汇总.md)
+- [Paper网页链接.md](../%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/%E6%B8%B2%E6%9F%93%E7%9B%B8%E5%85%B3/Paper%E7%BD%91%E9%A1%B5%E9%93%BE%E6%8E%A5.md)
+- [渲染文档汇总.md](../%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/%E6%B8%B2%E6%9F%93%E7%9B%B8%E5%85%B3/%E6%B8%B2%E6%9F%93%E6%96%87%E6%A1%A3%E6%B1%87%E6%80%BB.md)
 
 ## #shadertoy
-- [ShaderToy.md](../游戏开发/渲染相关/ShaderToy.md)
+- [ShaderToy.md](../%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/%E6%B8%B2%E6%9F%93%E7%9B%B8%E5%85%B3/ShaderToy.md)
 
 ## #siggraph
-- [Paper网页链接.md](../游戏开发/渲染相关/Paper网页链接.md)
+- [Paper网页链接.md](../%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/%E6%B8%B2%E6%9F%93%E7%9B%B8%E5%85%B3/Paper%E7%BD%91%E9%A1%B5%E9%93%BE%E6%8E%A5.md)
 
 ## #tools
-- [实用开发工具Tools.md](../游戏开发/实用Tools文档/实用开发工具Tools.md)
-- [在线实用工具OnlineTools.md](../游戏开发/实用Tools文档/在线实用工具OnlineTools.md)
+- [在线实用工具OnlineTools.md](../%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/%E5%AE%9E%E7%94%A8Tools%E6%96%87%E6%A1%A3/%E5%9C%A8%E7%BA%BF%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7OnlineTools.md)
+- [实用开发工具Tools.md](../%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/%E5%AE%9E%E7%94%A8Tools%E6%96%87%E6%A1%A3/%E5%AE%9E%E7%94%A8%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7Tools.md)
 
 ## #单词
-- [四六级高频词汇.md](../语言/English/四六级高频词汇.md)
+- [四六级高频词汇.md](../%E8%AF%AD%E8%A8%80/English/%E5%9B%9B%E5%85%AD%E7%BA%A7%E9%AB%98%E9%A2%91%E8%AF%8D%E6%B1%87.md)
 
 ## #流体模拟
-- [GPU流体模拟.md](../游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)
+- [GPU流体模拟.md](../%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/%E6%B8%B2%E6%9F%93%E7%9B%B8%E5%85%B3/Simulation%E7%9B%B8%E5%85%B3/%E6%B5%81%E4%BD%93%E6%A8%A1%E6%8B%9F/GPU%E6%B5%81%E4%BD%93%E6%A8%A1%E6%8B%9F.md)
 
 ## #渲染
-- [Paper网页链接.md](../游戏开发/渲染相关/Paper网页链接.md)
-- [渲染相关网页链接.md](../游戏开发/渲染相关/渲染相关网页链接.md)
-- [渲染文档汇总.md](../游戏开发/渲染相关/渲染文档汇总.md)
-- [ShaderToy.md](../游戏开发/渲染相关/ShaderToy.md)
-- [GPU流体模拟.md](../游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)
+- [Paper网页链接.md](../%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/%E6%B8%B2%E6%9F%93%E7%9B%B8%E5%85%B3/Paper%E7%BD%91%E9%A1%B5%E9%93%BE%E6%8E%A5.md)
+- [ShaderToy.md](../%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/%E6%B8%B2%E6%9F%93%E7%9B%B8%E5%85%B3/ShaderToy.md)
+- [渲染文档汇总.md](../%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/%E6%B8%B2%E6%9F%93%E7%9B%B8%E5%85%B3/%E6%B8%B2%E6%9F%93%E6%96%87%E6%A1%A3%E6%B1%87%E6%80%BB.md)
+- [渲染相关网页链接.md](../%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/%E6%B8%B2%E6%9F%93%E7%9B%B8%E5%85%B3/%E6%B8%B2%E6%9F%93%E7%9B%B8%E5%85%B3%E7%BD%91%E9%A1%B5%E9%93%BE%E6%8E%A5.md)
+- [GPU流体模拟.md](../%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/%E6%B8%B2%E6%9F%93%E7%9B%B8%E5%85%B3/Simulation%E7%9B%B8%E5%85%B3/%E6%B5%81%E4%BD%93%E6%A8%A1%E6%8B%9F/GPU%E6%B5%81%E4%BD%93%E6%A8%A1%E6%8B%9F.md)
 
 ## #解析积分
-- [解析高度雾.md](../游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾.md)
+- [解析高度雾.md](../%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/%E6%B8%B2%E6%9F%93%E7%9B%B8%E5%85%B3/Fog%E5%9D%87%E5%8C%80%E4%BB%8B%E8%B4%A8%E6%B8%B2%E6%9F%93%E7%9B%B8%E5%85%B3/%E8%A7%A3%E6%9E%90%E9%AB%98%E5%BA%A6%E9%9B%BE.md)
 
