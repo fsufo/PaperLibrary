@@ -88,3 +88,11 @@ https://sfumecjf.github.io/cmake-examples-Chinese/
 
 ---
 
+### SSGI
+
+[SSGI.md](../渲染相关/GI相关/SSGI.md)
+
+![1769156623012](../../笔记图床/游戏开发/GitHub相关/GitHub好项目/1769156623012.png)
+
+---
+
