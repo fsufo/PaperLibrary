@@ -25,6 +25,7 @@
         "games101",
         "GI",
         "PRT",
+        "截帧",
         "NS方程",
         "Simulation",
         "流体模拟",
@@ -33,7 +34,7 @@
         "GitHub",
         "单词"
       ],
-      "content": "# 全部笔记大纲\n\n#目录\n\n> 自动生成位置: 笔记目录[脚本生成]\n\n### [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n#GDC #paper #siggraph #渲染\n\n---\n\n### [渲染相关网页链接.md](posts/游戏开发/渲染相关/渲染相关网页链接.md)\n#渲染\n\n---\n\n### [渲染文档汇总.md](posts/游戏开发/渲染相关/渲染文档汇总.md)\n#paper #渲染\n\n---\n\n### [ShaderToy.md](posts/游戏开发/渲染相关/ShaderToy.md)\n#shadertoy #渲染\n\n---\n\n### [解析高度雾.md](posts/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾.md)\n#fog #解析积分\n\n---\n\n### [Games101解析.md](posts/游戏开发/渲染相关/Games/Games101解析.md)\n#games #games101\n\n---\n\n### [SSGI.md](posts/游戏开发/渲染相关/GI相关/SSGI.md)\n#GI\n\n---\n\n### [PRT precompute Radiance Transfer.md](posts/游戏开发/渲染相关/GI相关/PRT%20precompute%20Radiance%20Transfer.md)\n#GI #PRT\n\n---\n\n### [RadianceCascades.md](posts/游戏开发/渲染相关/GI相关/RadianceCascades.md)\n#GI\n\n---\n\n### [DDGI.md](posts/游戏开发/渲染相关/GI相关/DDGI.md)\n#GI\n\n---\n\n### [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n#NS方程 #Simulation #流体模拟 #渲染\n\n---\n\n### [实用开发工具Tools.md](posts/游戏开发/实用Tools文档/实用开发工具Tools.md)\n#tools\n\n---\n\n### [在线实用工具OnlineTools.md](posts/游戏开发/实用Tools文档/在线实用工具OnlineTools.md)\n#tools\n\n---\n\n### [Blender.md](posts/游戏开发/Blender相关/Blender.md)\n#Blender\n\n---\n\n### [GitHub好项目.md](posts/游戏开发/GitHub相关/GitHub好项目.md)\n#GitHub\n\n---\n\n### [四六级高频词汇.md](posts/语言/English/四六级高频词汇.md)\n#单词\n\n---\n\n",
+      "content": "# 全部笔记大纲\n\n#目录\n\n> 自动生成位置: 笔记目录[脚本生成]\n\n### [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n#GDC #paper #siggraph #渲染\n\n---\n\n### [渲染相关网页链接.md](posts/游戏开发/渲染相关/渲染相关网页链接.md)\n#渲染\n\n---\n\n### [渲染文档汇总.md](posts/游戏开发/渲染相关/渲染文档汇总.md)\n#paper #渲染\n\n---\n\n### [ShaderToy.md](posts/游戏开发/渲染相关/ShaderToy.md)\n#shadertoy #渲染\n\n---\n\n### [解析高度雾.md](posts/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾.md)\n#fog #解析积分\n\n---\n\n### [Games101解析.md](posts/游戏开发/渲染相关/Games/Games101解析.md)\n#games #games101\n\n---\n\n### [SSGI.md](posts/游戏开发/渲染相关/GI相关/SSGI.md)\n#GI\n\n---\n\n### [PRT precompute Radiance Transfer.md](posts/游戏开发/渲染相关/GI相关/PRT%20precompute%20Radiance%20Transfer.md)\n#GI #PRT\n\n---\n\n### [RadianceCascades.md](posts/游戏开发/渲染相关/GI相关/RadianceCascades.md)\n#GI\n\n---\n\n### [DDGI.md](posts/游戏开发/渲染相关/GI相关/DDGI.md)\n#GI\n\n---\n\n### [知名游戏截帧分析.md](posts/游戏开发/渲染相关/截帧分析/知名游戏截帧分析.md)\n#截帧\n\n---\n\n### [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n#NS方程 #Simulation #流体模拟 #渲染\n\n---\n\n### [实用开发工具Tools.md](posts/游戏开发/实用Tools文档/实用开发工具Tools.md)\n#tools\n\n---\n\n### [在线实用工具OnlineTools.md](posts/游戏开发/实用Tools文档/在线实用工具OnlineTools.md)\n#tools\n\n---\n\n### [Blender.md](posts/游戏开发/Blender相关/Blender.md)\n#Blender\n\n---\n\n### [GitHub好项目.md](posts/游戏开发/GitHub相关/GitHub好项目.md)\n#GitHub\n\n---\n\n### [四六级高频词汇.md](posts/语言/English/四六级高频词汇.md)\n#单词\n\n---\n\n",
       "val": 1
     },
     {
@@ -57,11 +58,12 @@
         "siggraph",
         "tools",
         "单词",
+        "截帧",
         "流体模拟",
         "渲染",
         "解析积分"
       ],
-      "content": "# 标签索引\n\n#目录\n\n## #Blender\n- [Blender.md](posts/游戏开发/Blender相关/Blender.md)\n\n## #GDC\n- [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n\n## #GI\n- [SSGI.md](posts/游戏开发/渲染相关/GI相关/SSGI.md)\n- [PRT precompute Radiance Transfer.md](posts/游戏开发/渲染相关/GI相关/PRT%20precompute%20Radiance%20Transfer.md)\n- [RadianceCascades.md](posts/游戏开发/渲染相关/GI相关/RadianceCascades.md)\n- [DDGI.md](posts/游戏开发/渲染相关/GI相关/DDGI.md)\n\n## #GitHub\n- [GitHub好项目.md](posts/游戏开发/GitHub相关/GitHub好项目.md)\n\n## #NS方程\n- [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n\n## #PRT\n- [PRT precompute Radiance Transfer.md](posts/游戏开发/渲染相关/GI相关/PRT%20precompute%20Radiance%20Transfer.md)\n\n## #Simulation\n- [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n\n## #fog\n- [解析高度雾.md](posts/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾.md)\n\n## #games\n- [Games101解析.md](posts/游戏开发/渲染相关/Games/Games101解析.md)\n\n## #games101\n- [Games101解析.md](posts/游戏开发/渲染相关/Games/Games101解析.md)\n\n## #paper\n- [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n- [渲染文档汇总.md](posts/游戏开发/渲染相关/渲染文档汇总.md)\n\n## #shadertoy\n- [ShaderToy.md](posts/游戏开发/渲染相关/ShaderToy.md)\n\n## #siggraph\n- [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n\n## #tools\n- [实用开发工具Tools.md](posts/游戏开发/实用Tools文档/实用开发工具Tools.md)\n- [在线实用工具OnlineTools.md](posts/游戏开发/实用Tools文档/在线实用工具OnlineTools.md)\n\n## #单词\n- [四六级高频词汇.md](posts/语言/English/四六级高频词汇.md)\n\n## #流体模拟\n- [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n\n## #渲染\n- [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n- [渲染相关网页链接.md](posts/游戏开发/渲染相关/渲染相关网页链接.md)\n- [渲染文档汇总.md](posts/游戏开发/渲染相关/渲染文档汇总.md)\n- [ShaderToy.md](posts/游戏开发/渲染相关/ShaderToy.md)\n- [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n\n## #解析积分\n- [解析高度雾.md](posts/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾.md)\n\n",
+      "content": "# 标签索引\n\n#目录\n\n## #Blender\n- [Blender.md](posts/游戏开发/Blender相关/Blender.md)\n\n## #GDC\n- [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n\n## #GI\n- [SSGI.md](posts/游戏开发/渲染相关/GI相关/SSGI.md)\n- [PRT precompute Radiance Transfer.md](posts/游戏开发/渲染相关/GI相关/PRT%20precompute%20Radiance%20Transfer.md)\n- [RadianceCascades.md](posts/游戏开发/渲染相关/GI相关/RadianceCascades.md)\n- [DDGI.md](posts/游戏开发/渲染相关/GI相关/DDGI.md)\n\n## #GitHub\n- [GitHub好项目.md](posts/游戏开发/GitHub相关/GitHub好项目.md)\n\n## #NS方程\n- [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n\n## #PRT\n- [PRT precompute Radiance Transfer.md](posts/游戏开发/渲染相关/GI相关/PRT%20precompute%20Radiance%20Transfer.md)\n\n## #Simulation\n- [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n\n## #fog\n- [解析高度雾.md](posts/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾.md)\n\n## #games\n- [Games101解析.md](posts/游戏开发/渲染相关/Games/Games101解析.md)\n\n## #games101\n- [Games101解析.md](posts/游戏开发/渲染相关/Games/Games101解析.md)\n\n## #paper\n- [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n- [渲染文档汇总.md](posts/游戏开发/渲染相关/渲染文档汇总.md)\n\n## #shadertoy\n- [ShaderToy.md](posts/游戏开发/渲染相关/ShaderToy.md)\n\n## #siggraph\n- [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n\n## #tools\n- [实用开发工具Tools.md](posts/游戏开发/实用Tools文档/实用开发工具Tools.md)\n- [在线实用工具OnlineTools.md](posts/游戏开发/实用Tools文档/在线实用工具OnlineTools.md)\n\n## #单词\n- [四六级高频词汇.md](posts/语言/English/四六级高频词汇.md)\n\n## #截帧\n- [知名游戏截帧分析.md](posts/游戏开发/渲染相关/截帧分析/知名游戏截帧分析.md)\n\n## #流体模拟\n- [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n\n## #渲染\n- [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n- [渲染相关网页链接.md](posts/游戏开发/渲染相关/渲染相关网页链接.md)\n- [渲染文档汇总.md](posts/游戏开发/渲染相关/渲染文档汇总.md)\n- [ShaderToy.md](posts/游戏开发/渲染相关/ShaderToy.md)\n- [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n\n## #解析积分\n- [解析高度雾.md](posts/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾.md)\n\n",
       "val": 1
     },
     {
@@ -138,7 +140,7 @@
       "all_tags": [
         "GI"
       ],
-      "content": "# SSGI\n\n#GI\n\n---\n\n## Unity SSGi\t\n\n### github 链接\n\nhttps://github.com/haolange/Unity_ScreenSpaceLighting_Old\n\n![1769156444863](posts/笔记图床/游戏开发/渲染相关/GI相关/SSGI/1769156444863.png)\n![1769156454650](posts/笔记图床/游戏开发/渲染相关/GI相关/SSGI/1769156454650.png)\n\n### 知乎文章链接\n\nhttps://zhuanlan.zhihu.com/p/64630152\n",
+      "content": "# SSGI\n#GI\n\n---\n\n## Unity SSGi\n\n### github 链接\n\nhttps://github.com/haolange/Unity_ScreenSpaceLighting_Old\n\n![1769156444863](posts/笔记图床/游戏开发/渲染相关/GI相关/SSGI/1769156444863.png)\n![1769156454650](posts/笔记图床/游戏开发/渲染相关/GI相关/SSGI/1769156454650.png)\n\n### 知乎文章链接\nhttps://zhuanlan.zhihu.com/p/64630152",
       "val": 1
     },
     {
@@ -149,7 +151,7 @@
         "GI",
         "PRT"
       ],
-      "content": "# PRT precompute Radiance Transfer\n#GI #PRT\n\n---\n\n### 全境封锁 Global Illumination in Tom Clancy's The Division\n\nhttps://www.youtube.com/watch?v=04YUZ3bWAyg\n\n![1769156993985](posts/笔记图床/游戏开发/渲染相关/GI相关/PRT%20precompute%20Radiance%20Transfer/1769156993985.png)\n\n### 知乎文章PRT\nhttps://zhuanlan.zhihu.com/p/51179426\n\n![1769157027621](posts/笔记图床/游戏开发/渲染相关/GI相关/PRT%20precompute%20Radiance%20Transfer/1769157027621.png)",
+      "content": "# PRT precompute Radiance Transfer\n\n#GI #PRT\n\n---\n\n### 全境封锁 Global Illumination in Tom Clancy's The \tDivision\n\nhttps://www.youtube.com/watch?v=04YUZ3bWAyg\n\n![1769156993985](posts/笔记图床/游戏开发/渲染相关/GI相关/PRT%20precompute%20Radiance%20Transfer/1769156993985.png)\n\n### 知乎文章PRT\n\nhttps://zhuanlan.zhihu.com/p/51179426\n\n![1769157027621](posts/笔记图床/游戏开发/渲染相关/GI相关/PRT%20precompute%20Radiance%20Transfer/1769157027621.png)\n",
       "val": 1
     },
     {
@@ -170,6 +172,16 @@
         "GI"
       ],
       "content": "# DDGI\n#GI\n\n---\n### DDGI Nvida GDC\n\nhttps://www.youtube.com/watch?v=LRWWa4SwKuw&t=1s\n\n![1769158181144](posts/笔记图床/游戏开发/渲染相关/GI相关/DDGI/1769158181144.png)\n\n### DDGI Code & Paper\n\nhttps://jcgt.org/published/0008/02/01/\n\n![1769158268228](posts/笔记图床/游戏开发/渲染相关/GI相关/DDGI/1769158268228.png)\n![1769158276933](posts/笔记图床/游戏开发/渲染相关/GI相关/DDGI/1769158276933.png)",
+      "val": 1
+    },
+    {
+      "id": "知名游戏截帧分析",
+      "label": "知名游戏截帧分析",
+      "group": "截帧",
+      "all_tags": [
+        "截帧"
+      ],
+      "content": "# 知名游戏截帧分析\n#截帧\n\n---\n\n## 游戏截帧分析\n\nhttps://mamoniem.com/category/behind-the-pretty-frames/\n\n![1769395776377](posts/笔记图床/游戏开发/渲染相关/截帧分析/知名游戏截帧分析/1769395776377.png)",
       "val": 1
     },
     {
@@ -289,6 +301,11 @@
     },
     {
       "source": "All_Notes_Outline",
+      "target": "知名游戏截帧分析",
+      "type": "md"
+    },
+    {
+      "source": "All_Notes_Outline",
       "target": "GPU流体模拟",
       "type": "md"
     },
@@ -390,6 +407,11 @@
     {
       "source": "Tag_Index",
       "target": "四六级高频词汇",
+      "type": "md"
+    },
+    {
+      "source": "Tag_Index",
+      "target": "知名游戏截帧分析",
       "type": "md"
     },
     {
@@ -480,6 +502,11 @@
     {
       "source": "Tag_Index",
       "target": "PRT precompute Radiance Transfer",
+      "type": "tag_group"
+    },
+    {
+      "source": "Tag_Index",
+      "target": "知名游戏截帧分析",
       "type": "tag_group"
     },
     {
