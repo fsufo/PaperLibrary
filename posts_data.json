@@ -21,6 +21,8 @@
         "shadertoy",
         "fog",
         "解析积分",
+        "shader",
+        "webgl",
         "games",
         "games101",
         "GI",
@@ -34,7 +36,7 @@
         "GitHub",
         "单词"
       ],
-      "content": "# 全部笔记大纲\n\n#目录\n\n> 自动生成位置: 笔记目录[脚本生成]\n\n### [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n#GDC #paper #siggraph #渲染\n\n---\n\n### [渲染相关网页链接.md](posts/游戏开发/渲染相关/渲染相关网页链接.md)\n#渲染\n\n---\n\n### [渲染文档汇总.md](posts/游戏开发/渲染相关/渲染文档汇总.md)\n#paper #渲染\n\n---\n\n### [ShaderToy.md](posts/游戏开发/渲染相关/ShaderToy.md)\n#shadertoy #渲染\n\n---\n\n### [解析高度雾.md](posts/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾.md)\n#fog #解析积分\n\n---\n\n### [Games101解析.md](posts/游戏开发/渲染相关/Games/Games101解析.md)\n#games #games101\n\n---\n\n### [SSGI.md](posts/游戏开发/渲染相关/GI相关/SSGI.md)\n#GI\n\n---\n\n### [PRT precompute Radiance Transfer.md](posts/游戏开发/渲染相关/GI相关/PRT%20precompute%20Radiance%20Transfer.md)\n#GI #PRT\n\n---\n\n### [RadianceCascades.md](posts/游戏开发/渲染相关/GI相关/RadianceCascades.md)\n#GI\n\n---\n\n### [DDGI.md](posts/游戏开发/渲染相关/GI相关/DDGI.md)\n#GI\n\n---\n\n### [知名游戏截帧分析.md](posts/游戏开发/渲染相关/截帧分析/知名游戏截帧分析.md)\n#截帧\n\n---\n\n### [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n#NS方程 #Simulation #流体模拟 #渲染\n\n---\n\n### [实用开发工具Tools.md](posts/游戏开发/实用Tools文档/实用开发工具Tools.md)\n#tools\n\n---\n\n### [在线实用工具OnlineTools.md](posts/游戏开发/实用Tools文档/在线实用工具OnlineTools.md)\n#tools\n\n---\n\n### [Blender.md](posts/游戏开发/Blender相关/Blender.md)\n#Blender\n\n---\n\n### [GitHub好项目.md](posts/游戏开发/GitHub相关/GitHub好项目.md)\n#GitHub\n\n---\n\n### [四六级高频词汇.md](posts/语言/English/四六级高频词汇.md)\n#单词\n\n---\n\n",
+      "content": "# 全部笔记大纲\n\n#目录\n\n> 自动生成位置: 笔记目录[脚本生成]\n\n### [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n#GDC #paper #siggraph #渲染\n\n---\n\n### [渲染相关网页链接.md](posts/游戏开发/渲染相关/渲染相关网页链接.md)\n#渲染\n\n---\n\n### [渲染文档汇总.md](posts/游戏开发/渲染相关/渲染文档汇总.md)\n#paper #渲染\n\n---\n\n### [ShaderToy.md](posts/游戏开发/渲染相关/ShaderToy.md)\n#shadertoy #渲染\n\n---\n\n### [解析高度雾.md](posts/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾.md)\n#fog #解析积分\n\n---\n\n### [几个比较好的WebGL项目.md](posts/游戏开发/渲染相关/WebGL相关/几个比较好的WebGL项目.md)\n#shader #webgl\n\n---\n\n### [Games101解析.md](posts/游戏开发/渲染相关/Games/Games101解析.md)\n#games #games101\n\n---\n\n### [SSGI.md](posts/游戏开发/渲染相关/GI相关/SSGI.md)\n#GI\n\n---\n\n### [PRT precompute Radiance Transfer.md](posts/游戏开发/渲染相关/GI相关/PRT%20precompute%20Radiance%20Transfer.md)\n#GI #PRT\n\n---\n\n### [RadianceCascades.md](posts/游戏开发/渲染相关/GI相关/RadianceCascades.md)\n#GI\n\n---\n\n### [DDGI.md](posts/游戏开发/渲染相关/GI相关/DDGI.md)\n#GI\n\n---\n\n### [知名游戏截帧分析.md](posts/游戏开发/渲染相关/截帧分析/知名游戏截帧分析.md)\n#截帧\n\n---\n\n### [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n#NS方程 #Simulation #流体模拟 #渲染\n\n---\n\n### [实用开发工具Tools.md](posts/游戏开发/实用Tools文档/实用开发工具Tools.md)\n#tools\n\n---\n\n### [在线实用工具OnlineTools.md](posts/游戏开发/实用Tools文档/在线实用工具OnlineTools.md)\n#tools\n\n---\n\n### [Blender.md](posts/游戏开发/Blender相关/Blender.md)\n#Blender\n\n---\n\n### [GitHub好项目.md](posts/游戏开发/GitHub相关/GitHub好项目.md)\n#GitHub\n\n---\n\n### [四六级高频词汇.md](posts/语言/English/四六级高频词汇.md)\n#单词\n\n---\n\n",
       "val": 1
     },
     {
@@ -54,16 +56,18 @@
         "games",
         "games101",
         "paper",
+        "shader",
         "shadertoy",
         "siggraph",
         "tools",
+        "webgl",
         "单词",
         "截帧",
         "流体模拟",
         "渲染",
         "解析积分"
       ],
-      "content": "# 标签索引\n\n#目录\n\n## #Blender\n- [Blender.md](posts/游戏开发/Blender相关/Blender.md)\n\n## #GDC\n- [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n\n## #GI\n- [SSGI.md](posts/游戏开发/渲染相关/GI相关/SSGI.md)\n- [PRT precompute Radiance Transfer.md](posts/游戏开发/渲染相关/GI相关/PRT%20precompute%20Radiance%20Transfer.md)\n- [RadianceCascades.md](posts/游戏开发/渲染相关/GI相关/RadianceCascades.md)\n- [DDGI.md](posts/游戏开发/渲染相关/GI相关/DDGI.md)\n\n## #GitHub\n- [GitHub好项目.md](posts/游戏开发/GitHub相关/GitHub好项目.md)\n\n## #NS方程\n- [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n\n## #PRT\n- [PRT precompute Radiance Transfer.md](posts/游戏开发/渲染相关/GI相关/PRT%20precompute%20Radiance%20Transfer.md)\n\n## #Simulation\n- [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n\n## #fog\n- [解析高度雾.md](posts/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾.md)\n\n## #games\n- [Games101解析.md](posts/游戏开发/渲染相关/Games/Games101解析.md)\n\n## #games101\n- [Games101解析.md](posts/游戏开发/渲染相关/Games/Games101解析.md)\n\n## #paper\n- [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n- [渲染文档汇总.md](posts/游戏开发/渲染相关/渲染文档汇总.md)\n\n## #shadertoy\n- [ShaderToy.md](posts/游戏开发/渲染相关/ShaderToy.md)\n\n## #siggraph\n- [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n\n## #tools\n- [实用开发工具Tools.md](posts/游戏开发/实用Tools文档/实用开发工具Tools.md)\n- [在线实用工具OnlineTools.md](posts/游戏开发/实用Tools文档/在线实用工具OnlineTools.md)\n\n## #单词\n- [四六级高频词汇.md](posts/语言/English/四六级高频词汇.md)\n\n## #截帧\n- [知名游戏截帧分析.md](posts/游戏开发/渲染相关/截帧分析/知名游戏截帧分析.md)\n\n## #流体模拟\n- [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n\n## #渲染\n- [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n- [渲染相关网页链接.md](posts/游戏开发/渲染相关/渲染相关网页链接.md)\n- [渲染文档汇总.md](posts/游戏开发/渲染相关/渲染文档汇总.md)\n- [ShaderToy.md](posts/游戏开发/渲染相关/ShaderToy.md)\n- [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n\n## #解析积分\n- [解析高度雾.md](posts/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾.md)\n\n",
+      "content": "# 标签索引\n\n#目录\n\n## #Blender\n- [Blender.md](posts/游戏开发/Blender相关/Blender.md)\n\n## #GDC\n- [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n\n## #GI\n- [SSGI.md](posts/游戏开发/渲染相关/GI相关/SSGI.md)\n- [PRT precompute Radiance Transfer.md](posts/游戏开发/渲染相关/GI相关/PRT%20precompute%20Radiance%20Transfer.md)\n- [RadianceCascades.md](posts/游戏开发/渲染相关/GI相关/RadianceCascades.md)\n- [DDGI.md](posts/游戏开发/渲染相关/GI相关/DDGI.md)\n\n## #GitHub\n- [GitHub好项目.md](posts/游戏开发/GitHub相关/GitHub好项目.md)\n\n## #NS方程\n- [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n\n## #PRT\n- [PRT precompute Radiance Transfer.md](posts/游戏开发/渲染相关/GI相关/PRT%20precompute%20Radiance%20Transfer.md)\n\n## #Simulation\n- [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n\n## #fog\n- [解析高度雾.md](posts/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾.md)\n\n## #games\n- [Games101解析.md](posts/游戏开发/渲染相关/Games/Games101解析.md)\n\n## #games101\n- [Games101解析.md](posts/游戏开发/渲染相关/Games/Games101解析.md)\n\n## #paper\n- [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n- [渲染文档汇总.md](posts/游戏开发/渲染相关/渲染文档汇总.md)\n\n## #shader\n- [几个比较好的WebGL项目.md](posts/游戏开发/渲染相关/WebGL相关/几个比较好的WebGL项目.md)\n\n## #shadertoy\n- [ShaderToy.md](posts/游戏开发/渲染相关/ShaderToy.md)\n\n## #siggraph\n- [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n\n## #tools\n- [实用开发工具Tools.md](posts/游戏开发/实用Tools文档/实用开发工具Tools.md)\n- [在线实用工具OnlineTools.md](posts/游戏开发/实用Tools文档/在线实用工具OnlineTools.md)\n\n## #webgl\n- [几个比较好的WebGL项目.md](posts/游戏开发/渲染相关/WebGL相关/几个比较好的WebGL项目.md)\n\n## #单词\n- [四六级高频词汇.md](posts/语言/English/四六级高频词汇.md)\n\n## #截帧\n- [知名游戏截帧分析.md](posts/游戏开发/渲染相关/截帧分析/知名游戏截帧分析.md)\n\n## #流体模拟\n- [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n\n## #渲染\n- [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n- [渲染相关网页链接.md](posts/游戏开发/渲染相关/渲染相关网页链接.md)\n- [渲染文档汇总.md](posts/游戏开发/渲染相关/渲染文档汇总.md)\n- [ShaderToy.md](posts/游戏开发/渲染相关/ShaderToy.md)\n- [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n\n## #解析积分\n- [解析高度雾.md](posts/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾.md)\n\n",
       "val": 1
     },
     {
@@ -123,6 +127,17 @@
       "val": 1
     },
     {
+      "id": "几个比较好的WebGL项目",
+      "label": "几个比较好的WebGL项目",
+      "group": "webgl",
+      "all_tags": [
+        "webgl",
+        "shader"
+      ],
+      "content": "# 几个比较好的WebGL项目\n#webgl #shader\n\n---\n\n## Google swissgl WebGL\n\nhttps://github.com/google/swissgl\n\n![1769595336154](posts/笔记图床/游戏开发/渲染相关/WebGL相关/几个比较好的WebGL项目/1769595336154.png)\n\nhttps://google.github.io/swissgl\n\n![1769595381055](posts/笔记图床/游戏开发/渲染相关/WebGL相关/几个比较好的WebGL项目/1769595381055.png)\n\n---\n\n## Evan Wallace WebGL Graphics\n\nhttps://madebyevan.com/\n\n### WebGL Water (2010)\n\n![1769594467565](posts/笔记图床/游戏开发/渲染相关/WebGL相关/几个比较好的WebGL项目/1769594467565.png)\n\nThis project was an experiment in realtime water rendering with WebGL. The focus was on the rendering aspect, not on the simulation, so the behavior of the water isn't that realistic. The water heightfield is simulated using a floating-point texture and the caustics are rendered using the GLSL derivative functions.\n\n[View demo...](../../../../../webgl-water)\n\n### WebGL Path Tracing (2010)\n\n![1769594476890](posts/笔记图床/游戏开发/渲染相关/WebGL相关/几个比较好的WebGL项目/1769594476890.png)\n\nPath tracing is a realistic lighting algorithm that simulates light bouncing around a scene. This path tracer uses WebGL for realtime performance and supports diffuse, mirrored, and glossy surfaces.\n\n[View demo...](../../../../../webgl-path-tracing)\n\n### WebGL Image Filters (2011)\n\n![1769594485088](posts/笔记图床/游戏开发/渲染相关/WebGL相关/几个比较好的WebGL项目/1769594485088.png)\n\nAdjust your photos in your browser in realtime with ten different image filters. This uses WebGL for speed, is entirely client-side, and is [open source on GitHub](https://github.com/evanw/webgl-filter). It was coded from scratch in 24 hours for HackNY, a hackathon in NYC, where it won second place.\n\n[View demo...](https://evanw.github.io/webgl-filter/)\n\n### Shader Articles (2015)\n\n![1769594498153](posts/笔记图床/游戏开发/渲染相关/WebGL相关/几个比较好的WebGL项目/1769594498153.png)\n\nA collection of interesting bits of shader code. All demos use WebGL and run in all major browsers.\n\n[View demos...](../../../../../shaders)\n",
+      "val": 1
+    },
+    {
       "id": "Games101解析",
       "label": "Games101解析",
       "group": "games",
@@ -151,7 +166,7 @@
         "GI",
         "PRT"
       ],
-      "content": "# PRT precompute Radiance Transfer\n\n#GI #PRT\n\n---\n\n### 全境封锁 Global Illumination in Tom Clancy's The \tDivision\n\nhttps://www.youtube.com/watch?v=04YUZ3bWAyg\n\n![1769156993985](posts/笔记图床/游戏开发/渲染相关/GI相关/PRT%20precompute%20Radiance%20Transfer/1769156993985.png)\n\n### 知乎文章PRT\n\nhttps://zhuanlan.zhihu.com/p/51179426\n\n![1769157027621](posts/笔记图床/游戏开发/渲染相关/GI相关/PRT%20precompute%20Radiance%20Transfer/1769157027621.png)\n",
+      "content": "# PRT precompute Radiance Transfer\n\n#GI #PRT\n\n---\n\n### 全境封锁 Global Illumination in Tom Clancy's The Division\n\nhttps://www.youtube.com/watch?v=04YUZ3bWAyg\n\n![1769156993985](posts/笔记图床/游戏开发/渲染相关/GI相关/PRT%20precompute%20Radiance%20Transfer/1769156993985.png)\n\n### 知乎文章PRT\n\nhttps://zhuanlan.zhihu.com/p/51179426\n\n![1769157027621](posts/笔记图床/游戏开发/渲染相关/GI相关/PRT%20precompute%20Radiance%20Transfer/1769157027621.png)\n",
       "val": 1
     },
     {
@@ -276,6 +291,11 @@
     },
     {
       "source": "All_Notes_Outline",
+      "target": "几个比较好的WebGL项目",
+      "type": "md"
+    },
+    {
+      "source": "All_Notes_Outline",
       "target": "Games101解析",
       "type": "md"
     },
@@ -387,6 +407,11 @@
     {
       "source": "Tag_Index",
       "target": "渲染文档汇总",
+      "type": "md"
+    },
+    {
+      "source": "Tag_Index",
+      "target": "几个比较好的WebGL项目",
       "type": "md"
     },
     {
@@ -472,6 +497,11 @@
     {
       "source": "Tag_Index",
       "target": "解析高度雾",
+      "type": "tag_group"
+    },
+    {
+      "source": "Tag_Index",
+      "target": "几个比较好的WebGL项目",
       "type": "tag_group"
     },
     {
