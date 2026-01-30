@@ -24,7 +24,7 @@ https://github.com/rin-miku/SimpleVolumetricLighting
 
 ---
 
-### 波函数坍塌
+### 波函数坍缩
 
 https://github.com/marian42/wavefunctioncollapse
 
@@ -93,6 +93,14 @@ https://sfumecjf.github.io/cmake-examples-Chinese/
 [SSGI.md](../渲染相关/GI相关/SSGI.md)
 
 ![1769156623012](../../笔记图床/游戏开发/GitHub相关/GitHub好项目/1769156623012.png)
+
+---
+
+### 变量名命名神器
+
+https://github.com/unbug/codelf?tab=readme-ov-file
+
+![1769755082161](../../笔记图床/游戏开发/GitHub相关/GitHub好项目/1769755082161.png)
 
 ---
 
