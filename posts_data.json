@@ -14,32 +14,52 @@
       "group": "目录",
       "all_tags": [
         "目录",
-        "GDC",
-        "paper",
-        "siggraph",
-        "渲染",
+        "ai",
+        "ai编程",
+        "编程",
+        "mcp",
+        "renderdoc",
+        "p",
+        "tools",
+        "pixelart",
+        "像素",
+        "UI",
+        "界面",
+        "GitHub",
+        "marchingcubes",
+        "波函数坍缩",
+        "波函数坍缩算法",
+        "程序化生成",
         "shadertoy",
-        "raytracing",
-        "光追",
-        "fog",
-        "解析积分",
-        "shader",
-        "webgl",
-        "games",
-        "games101",
+        "渲染",
+        "paper",
+        "GDC",
+        "siggraph",
+        "hdr",
+        "lookdev",
+        "截帧",
         "GI",
         "PRT",
-        "截帧",
+        "games",
+        "games101",
+        "fog",
+        "解析积分",
+        "raytracing",
+        "光追",
         "NS方程",
         "Simulation",
         "流体模拟",
-        "tools",
-        "p",
+        "shader",
+        "webgl",
         "Blender",
-        "GitHub",
+        "pytoch",
+        "tensor",
+        "机器学习",
+        "深度学习",
+        "神经网络",
         "单词"
       ],
-      "content": "# 全部笔记大纲\n\n#目录\n\n> 自动生成位置: 笔记目录[脚本生成]\n\n### [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n#GDC #paper #siggraph #渲染\n\n---\n\n### [渲染相关网页链接.md](posts/游戏开发/渲染相关/渲染相关网页链接.md)\n#渲染\n\n---\n\n### [渲染文档汇总.md](posts/游戏开发/渲染相关/渲染文档汇总.md)\n#paper #渲染\n\n---\n\n### [ShaderToy.md](posts/游戏开发/渲染相关/ShaderToy.md)\n#shadertoy #渲染\n\n---\n\n### [RayTracing.md](posts/游戏开发/渲染相关/RayTracing相关/RayTracing.md)\n#raytracing #光追\n\n---\n\n### [解析高度雾.md](posts/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾.md)\n#fog #解析积分\n\n---\n\n### [几个比较好的WebGL项目.md](posts/游戏开发/渲染相关/WebGL相关/几个比较好的WebGL项目.md)\n#shader #webgl\n\n---\n\n### [Games101解析.md](posts/游戏开发/渲染相关/Games/Games101解析.md)\n#games #games101\n\n---\n\n### [SSGI.md](posts/游戏开发/渲染相关/GI相关/SSGI.md)\n#GI\n\n---\n\n### [PRT precompute Radiance Transfer.md](posts/游戏开发/渲染相关/GI相关/PRT%20precompute%20Radiance%20Transfer.md)\n#GI #PRT\n\n---\n\n### [RadianceCascades.md](posts/游戏开发/渲染相关/GI相关/RadianceCascades.md)\n#GI\n\n---\n\n### [DDGI.md](posts/游戏开发/渲染相关/GI相关/DDGI.md)\n#GI\n\n---\n\n### [知名游戏截帧分析.md](posts/游戏开发/渲染相关/截帧分析/知名游戏截帧分析.md)\n#截帧\n\n---\n\n### [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n#NS方程 #Simulation #流体模拟 #渲染\n\n---\n\n### [实用开发工具Tools.md](posts/游戏开发/实用Tools文档/实用开发工具Tools.md)\n#tools\n\n---\n\n### [在线实用工具OnlineTools.md](posts/游戏开发/实用Tools文档/在线实用工具OnlineTools.md)\n#p #tools\n\n---\n\n### [Blender.md](posts/游戏开发/Blender相关/Blender.md)\n#Blender\n\n---\n\n### [GitHub好项目.md](posts/游戏开发/GitHub相关/GitHub好项目.md)\n#GitHub\n\n---\n\n### [四六级高频词汇.md](posts/语言/English/四六级高频词汇.md)\n#单词\n\n---\n\n",
+      "content": "# 全部笔记大纲\n\n#目录\n\n> 自动生成位置: 笔记目录[脚本生成]\n\n### [AI编程.md](posts/游戏开发/AI编程相关/AI编程.md)\n#ai #ai编程 #编程\n\n---\n\n### [RenderDoc-打造自己AI工作流.md](posts/游戏开发/AI编程相关/RenderDoc-AI工作流/RenderDoc-打造自己AI工作流.md)\n#ai #mcp #renderdoc\n\n---\n\n### [在线实用工具OnlineTools.md](posts/游戏开发/实用Tools文档/在线实用工具OnlineTools.md)\n#p #tools\n\n---\n\n### [实用开发工具Tools.md](posts/游戏开发/实用Tools文档/实用开发工具Tools.md)\n#tools\n\n---\n\n### [PixelArt 像素艺术.md](posts/游戏开发/设计相关/PixelArt%20像素艺术.md)\n#pixelart #像素\n\n---\n\n### [UI界面设计.md](posts/游戏开发/设计相关/UI界面设计.md)\n#UI #界面\n\n---\n\n### [GitHub好项目.md](posts/游戏开发/GitHub相关/GitHub好项目.md)\n#GitHub\n\n---\n\n### [Marching Cubes 波函数坍缩算法.md](posts/游戏开发/程序化生成相关/Marching%20Cubes%20波函数坍缩算法.md)\n#marchingcubes #波函数坍缩 #波函数坍缩算法 #程序化生成\n\n---\n\n### [ShaderToy.md](posts/游戏开发/渲染相关/ShaderToy.md)\n#shadertoy #渲染\n\n---\n\n### [渲染文档汇总.md](posts/游戏开发/渲染相关/渲染文档汇总.md)\n#paper #渲染\n\n---\n\n### [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n#GDC #paper #siggraph #渲染\n\n---\n\n### [渲染相关网页链接.md](posts/游戏开发/渲染相关/渲染相关网页链接.md)\n#渲染\n\n---\n\n### [LookDev.md](posts/游戏开发/渲染相关/LookDev/LookDev.md)\n#hdr #lookdev\n\n---\n\n### [知名游戏截帧分析.md](posts/游戏开发/渲染相关/截帧分析/知名游戏截帧分析.md)\n#截帧\n\n---\n\n### [RadianceCascades.md](posts/游戏开发/渲染相关/GI相关/RadianceCascades.md)\n#GI\n\n---\n\n### [PRT precompute Radiance Transfer.md](posts/游戏开发/渲染相关/GI相关/PRT%20precompute%20Radiance%20Transfer.md)\n#GI #PRT\n\n---\n\n### [DDGI.md](posts/游戏开发/渲染相关/GI相关/DDGI.md)\n#GI\n\n---\n\n### [SSGI.md](posts/游戏开发/渲染相关/GI相关/SSGI.md)\n#GI\n\n---\n\n### [Games101解析.md](posts/游戏开发/渲染相关/Games/Games101解析.md)\n#games #games101\n\n---\n\n### [解析高度雾.md](posts/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾.md)\n#fog #解析积分\n\n---\n\n### [RayTracing.md](posts/游戏开发/渲染相关/RayTracing相关/RayTracing.md)\n#raytracing #光追\n\n---\n\n### [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n#NS方程 #Simulation #流体模拟 #渲染\n\n---\n\n### [几个比较好的WebGL项目.md](posts/游戏开发/渲染相关/WebGL相关/几个比较好的WebGL项目.md)\n#shader #webgl\n\n---\n\n### [Blender.md](posts/游戏开发/Blender相关/Blender.md)\n#Blender\n\n---\n\n### [机器学习神经网络.md](posts/游戏开发/机器学习相关/机器学习神经网络.md)\n#ai #pytoch #tensor #机器学习 #深度学习 #神经网络\n\n---\n\n### [四六级高频词汇.md](posts/语言/English/四六级高频词汇.md)\n#单词\n\n---\n\n",
       "val": 1
     },
     {
@@ -55,25 +75,155 @@
         "NS方程",
         "PRT",
         "Simulation",
+        "UI",
+        "ai",
+        "ai编程",
         "fog",
         "games",
         "games101",
+        "hdr",
+        "lookdev",
+        "marchingcubes",
+        "mcp",
         "p",
         "paper",
+        "pixelart",
+        "pytoch",
         "raytracing",
+        "renderdoc",
         "shader",
         "shadertoy",
         "siggraph",
+        "tensor",
         "tools",
         "webgl",
+        "像素",
         "光追",
         "单词",
         "截帧",
+        "机器学习",
+        "波函数坍缩",
+        "波函数坍缩算法",
         "流体模拟",
+        "深度学习",
         "渲染",
+        "界面",
+        "神经网络",
+        "程序化生成",
+        "编程",
         "解析积分"
       ],
-      "content": "# 标签索引\n\n#目录\n\n## #Blender\n- [Blender.md](posts/游戏开发/Blender相关/Blender.md)\n\n## #GDC\n- [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n\n## #GI\n- [SSGI.md](posts/游戏开发/渲染相关/GI相关/SSGI.md)\n- [PRT precompute Radiance Transfer.md](posts/游戏开发/渲染相关/GI相关/PRT%20precompute%20Radiance%20Transfer.md)\n- [RadianceCascades.md](posts/游戏开发/渲染相关/GI相关/RadianceCascades.md)\n- [DDGI.md](posts/游戏开发/渲染相关/GI相关/DDGI.md)\n\n## #GitHub\n- [GitHub好项目.md](posts/游戏开发/GitHub相关/GitHub好项目.md)\n\n## #NS方程\n- [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n\n## #PRT\n- [PRT precompute Radiance Transfer.md](posts/游戏开发/渲染相关/GI相关/PRT%20precompute%20Radiance%20Transfer.md)\n\n## #Simulation\n- [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n\n## #fog\n- [解析高度雾.md](posts/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾.md)\n\n## #games\n- [Games101解析.md](posts/游戏开发/渲染相关/Games/Games101解析.md)\n\n## #games101\n- [Games101解析.md](posts/游戏开发/渲染相关/Games/Games101解析.md)\n\n## #p\n- [在线实用工具OnlineTools.md](posts/游戏开发/实用Tools文档/在线实用工具OnlineTools.md)\n\n## #paper\n- [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n- [渲染文档汇总.md](posts/游戏开发/渲染相关/渲染文档汇总.md)\n\n## #raytracing\n- [RayTracing.md](posts/游戏开发/渲染相关/RayTracing相关/RayTracing.md)\n\n## #shader\n- [几个比较好的WebGL项目.md](posts/游戏开发/渲染相关/WebGL相关/几个比较好的WebGL项目.md)\n\n## #shadertoy\n- [ShaderToy.md](posts/游戏开发/渲染相关/ShaderToy.md)\n\n## #siggraph\n- [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n\n## #tools\n- [实用开发工具Tools.md](posts/游戏开发/实用Tools文档/实用开发工具Tools.md)\n- [在线实用工具OnlineTools.md](posts/游戏开发/实用Tools文档/在线实用工具OnlineTools.md)\n\n## #webgl\n- [几个比较好的WebGL项目.md](posts/游戏开发/渲染相关/WebGL相关/几个比较好的WebGL项目.md)\n\n## #光追\n- [RayTracing.md](posts/游戏开发/渲染相关/RayTracing相关/RayTracing.md)\n\n## #单词\n- [四六级高频词汇.md](posts/语言/English/四六级高频词汇.md)\n\n## #截帧\n- [知名游戏截帧分析.md](posts/游戏开发/渲染相关/截帧分析/知名游戏截帧分析.md)\n\n## #流体模拟\n- [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n\n## #渲染\n- [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n- [渲染相关网页链接.md](posts/游戏开发/渲染相关/渲染相关网页链接.md)\n- [渲染文档汇总.md](posts/游戏开发/渲染相关/渲染文档汇总.md)\n- [ShaderToy.md](posts/游戏开发/渲染相关/ShaderToy.md)\n- [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n\n## #解析积分\n- [解析高度雾.md](posts/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾.md)\n\n",
+      "content": "# 标签索引\n\n#目录\n\n## #Blender\n- [Blender.md](posts/游戏开发/Blender相关/Blender.md)\n\n## #GDC\n- [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n\n## #GI\n- [RadianceCascades.md](posts/游戏开发/渲染相关/GI相关/RadianceCascades.md)\n- [PRT precompute Radiance Transfer.md](posts/游戏开发/渲染相关/GI相关/PRT%20precompute%20Radiance%20Transfer.md)\n- [DDGI.md](posts/游戏开发/渲染相关/GI相关/DDGI.md)\n- [SSGI.md](posts/游戏开发/渲染相关/GI相关/SSGI.md)\n\n## #GitHub\n- [GitHub好项目.md](posts/游戏开发/GitHub相关/GitHub好项目.md)\n\n## #NS方程\n- [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n\n## #PRT\n- [PRT precompute Radiance Transfer.md](posts/游戏开发/渲染相关/GI相关/PRT%20precompute%20Radiance%20Transfer.md)\n\n## #Simulation\n- [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n\n## #UI\n- [UI界面设计.md](posts/游戏开发/设计相关/UI界面设计.md)\n\n## #ai\n- [AI编程.md](posts/游戏开发/AI编程相关/AI编程.md)\n- [RenderDoc-打造自己AI工作流.md](posts/游戏开发/AI编程相关/RenderDoc-AI工作流/RenderDoc-打造自己AI工作流.md)\n- [机器学习神经网络.md](posts/游戏开发/机器学习相关/机器学习神经网络.md)\n\n## #ai编程\n- [AI编程.md](posts/游戏开发/AI编程相关/AI编程.md)\n\n## #fog\n- [解析高度雾.md](posts/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾.md)\n\n## #games\n- [Games101解析.md](posts/游戏开发/渲染相关/Games/Games101解析.md)\n\n## #games101\n- [Games101解析.md](posts/游戏开发/渲染相关/Games/Games101解析.md)\n\n## #hdr\n- [LookDev.md](posts/游戏开发/渲染相关/LookDev/LookDev.md)\n\n## #lookdev\n- [LookDev.md](posts/游戏开发/渲染相关/LookDev/LookDev.md)\n\n## #marchingcubes\n- [Marching Cubes 波函数坍缩算法.md](posts/游戏开发/程序化生成相关/Marching%20Cubes%20波函数坍缩算法.md)\n\n## #mcp\n- [RenderDoc-打造自己AI工作流.md](posts/游戏开发/AI编程相关/RenderDoc-AI工作流/RenderDoc-打造自己AI工作流.md)\n\n## #p\n- [在线实用工具OnlineTools.md](posts/游戏开发/实用Tools文档/在线实用工具OnlineTools.md)\n\n## #paper\n- [渲染文档汇总.md](posts/游戏开发/渲染相关/渲染文档汇总.md)\n- [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n\n## #pixelart\n- [PixelArt 像素艺术.md](posts/游戏开发/设计相关/PixelArt%20像素艺术.md)\n\n## #pytoch\n- [机器学习神经网络.md](posts/游戏开发/机器学习相关/机器学习神经网络.md)\n\n## #raytracing\n- [RayTracing.md](posts/游戏开发/渲染相关/RayTracing相关/RayTracing.md)\n\n## #renderdoc\n- [RenderDoc-打造自己AI工作流.md](posts/游戏开发/AI编程相关/RenderDoc-AI工作流/RenderDoc-打造自己AI工作流.md)\n\n## #shader\n- [几个比较好的WebGL项目.md](posts/游戏开发/渲染相关/WebGL相关/几个比较好的WebGL项目.md)\n\n## #shadertoy\n- [ShaderToy.md](posts/游戏开发/渲染相关/ShaderToy.md)\n\n## #siggraph\n- [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n\n## #tensor\n- [机器学习神经网络.md](posts/游戏开发/机器学习相关/机器学习神经网络.md)\n\n## #tools\n- [在线实用工具OnlineTools.md](posts/游戏开发/实用Tools文档/在线实用工具OnlineTools.md)\n- [实用开发工具Tools.md](posts/游戏开发/实用Tools文档/实用开发工具Tools.md)\n\n## #webgl\n- [几个比较好的WebGL项目.md](posts/游戏开发/渲染相关/WebGL相关/几个比较好的WebGL项目.md)\n\n## #像素\n- [PixelArt 像素艺术.md](posts/游戏开发/设计相关/PixelArt%20像素艺术.md)\n\n## #光追\n- [RayTracing.md](posts/游戏开发/渲染相关/RayTracing相关/RayTracing.md)\n\n## #单词\n- [四六级高频词汇.md](posts/语言/English/四六级高频词汇.md)\n\n## #截帧\n- [知名游戏截帧分析.md](posts/游戏开发/渲染相关/截帧分析/知名游戏截帧分析.md)\n\n## #机器学习\n- [机器学习神经网络.md](posts/游戏开发/机器学习相关/机器学习神经网络.md)\n\n## #波函数坍缩\n- [Marching Cubes 波函数坍缩算法.md](posts/游戏开发/程序化生成相关/Marching%20Cubes%20波函数坍缩算法.md)\n\n## #波函数坍缩算法\n- [Marching Cubes 波函数坍缩算法.md](posts/游戏开发/程序化生成相关/Marching%20Cubes%20波函数坍缩算法.md)\n\n## #流体模拟\n- [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n\n## #深度学习\n- [机器学习神经网络.md](posts/游戏开发/机器学习相关/机器学习神经网络.md)\n\n## #渲染\n- [ShaderToy.md](posts/游戏开发/渲染相关/ShaderToy.md)\n- [渲染文档汇总.md](posts/游戏开发/渲染相关/渲染文档汇总.md)\n- [Paper网页链接.md](posts/游戏开发/渲染相关/Paper网页链接.md)\n- [渲染相关网页链接.md](posts/游戏开发/渲染相关/渲染相关网页链接.md)\n- [GPU流体模拟.md](posts/游戏开发/渲染相关/Simulation相关/流体模拟/GPU流体模拟.md)\n\n## #界面\n- [UI界面设计.md](posts/游戏开发/设计相关/UI界面设计.md)\n\n## #神经网络\n- [机器学习神经网络.md](posts/游戏开发/机器学习相关/机器学习神经网络.md)\n\n## #程序化生成\n- [Marching Cubes 波函数坍缩算法.md](posts/游戏开发/程序化生成相关/Marching%20Cubes%20波函数坍缩算法.md)\n\n## #编程\n- [AI编程.md](posts/游戏开发/AI编程相关/AI编程.md)\n\n## #解析积分\n- [解析高度雾.md](posts/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾.md)\n\n",
+      "val": 1
+    },
+    {
+      "id": "AI编程",
+      "label": "AI编程",
+      "group": "ai",
+      "all_tags": [
+        "ai",
+        "编程",
+        "ai编程"
+      ],
+      "content": "# AI编程\n#ai #编程 #ai编程\n\n---\n\n## AI Agent Skills 简介\n\n### 一文讲清楚Claude Agent Skills篇，如何自定义Skills\n\nhttps://zhuanlan.zhihu.com/p/1987456533315999135\n\n---\n\n## GitHub Skills\n\n### claude-plugins-official\n\nhttps://github.com/anthropics/claude-plugins-official/tree/main\n\n---",
+      "val": 1
+    },
+    {
+      "id": "RenderDoc-打造自己AI工作流",
+      "label": "RenderDoc-打造自己AI工作流",
+      "group": "renderdoc",
+      "all_tags": [
+        "renderdoc",
+        "ai",
+        "mcp"
+      ],
+      "content": "# RenderDoc — 打造自己AI工作流\n#renderdoc #ai #mcp\n---\n\n## 目录\n\n- [RenderDoc — 打造自己AI工作流](posts/游戏开发/AI编程相关/RenderDoc-AI工作流#renderdoc--打造自己ai工作流)\n  - [#renderdoc #ai #mcp](posts/游戏开发/AI编程相关/RenderDoc-AI工作流#renderdoc-ai-mcp)\n  - [目录](posts/游戏开发/AI编程相关/RenderDoc-AI工作流#目录)\n  - [1.前言](posts/游戏开发/AI编程相关/RenderDoc-AI工作流#1前言)\n  - [2.效果展示](posts/游戏开发/AI编程相关/RenderDoc-AI工作流#2效果展示)\n    - [2.1渲染流程](posts/游戏开发/AI编程相关/RenderDoc-AI工作流#21渲染流程)\n    - [2.2GPU地形系统](posts/游戏开发/AI编程相关/RenderDoc-AI工作流#22gpu地形系统)\n    - [2.3光照计算](posts/游戏开发/AI编程相关/RenderDoc-AI工作流#23光照计算)\n    - [2.4自动导入Unity](posts/游戏开发/AI编程相关/RenderDoc-AI工作流#24自动导入unity)\n  - [3.简单介绍MCP](posts/游戏开发/AI编程相关/RenderDoc-AI工作流#3简单介绍mcp)\n  - [4. 安装RenderDoc MCP](posts/游戏开发/AI编程相关/RenderDoc-AI工作流#4-安装renderdoc-mcp)\n    - [4.1安装环境](posts/游戏开发/AI编程相关/RenderDoc-AI工作流#41安装环境)\n    - [4.2安装扩展](posts/游戏开发/AI编程相关/RenderDoc-AI工作流#42安装扩展)\n    - [4.3安装MCP服务端](posts/游戏开发/AI编程相关/RenderDoc-AI工作流#43安装mcp服务端)\n    - [4.4配置AI MCP](posts/游戏开发/AI编程相关/RenderDoc-AI工作流#44配置ai-mcp)\n  - [相关链接](posts/游戏开发/AI编程相关/RenderDoc-AI工作流#相关链接)\n\n---\n\n## 1.前言\n\n自写这个文章([RenderDoc食用姿势](https://zhuanlan.zhihu.com/p/686281571))以来，已经发生了翻天复地的变化，现在在AI加持下已经可以快速的分析还原了，全部都可以自动化。具体做法是AI + RenderDoc MCP就可以了，好了此文已终结。\n\n**GitHub项目地址**: https://github.com/halby24/RenderDocMCP\n\n下面就开始水文章了....\n\n文章配图在这: https://github.com/Straw1997/Document/tree/main/%E7%9F%A5%E4%B9%8E/RenderDoc-%E6%89%93%E9%80%A0%E8%87%AA%E5%B7%B1AI%E5%B7%A5%E4%BD%9C%E6%B5%81\n\n---\n\n## 2.效果展示\n\n我们就以这帧终末地为例，我是用的AI是augment的sonnet4.6\n\n![P1. 终末地某帧](posts/笔记图床/游戏开发/AI编程相关/RenderDoc-AI工作流/RenderDoc-打造自己AI工作流/P1_终末地某帧.jpg)\n\n### 2.1渲染流程\n\n可以直接让AI绘制这帧的大概渲染流程。\n\n![P2.终末地渲染流程](posts/笔记图床/游戏开发/AI编程相关/RenderDoc-AI工作流/RenderDoc-打造自己AI工作流/P2_终末地渲染流程.jpg)\n\n![P3.终末地渲染流程图](posts/笔记图床/游戏开发/AI编程相关/RenderDoc-AI工作流/RenderDoc-打造自己AI工作流/P3_终末地渲染流程图.jpg)\n\n### 2.2GPU地形系统\n\n还可以让他分析某个效果所使用到的技术，例如GPU地形系统\n\n![P4.GPU地形系统](posts/笔记图床/游戏开发/AI编程相关/RenderDoc-AI工作流/RenderDoc-打造自己AI工作流/P4_GPU地形系统.jpg)\n\n### 2.3光照计算\n\n还可以让他反编译shader，直接提取光照计算的具体公式流程\n\n![P5.光照计算](posts/笔记图床/游戏开发/AI编程相关/RenderDoc-AI工作流/RenderDoc-打造自己AI工作流/P5_光照计算.jpg)\n\n### 2.4自动导入Unity\n\n另外我们还可以安装unity mcp，让AI直接导出角色渲染相关依赖的资产，导入到unity中反编译相关shader，在unity中创建对应的urp shader，并创建材质，给上对应的贴图和参数，再把角色放到场景中，可谓是一条龙服务。\n\n![P6.第一次unity导入](posts/笔记图床/游戏开发/AI编程相关/RenderDoc-AI工作流/RenderDoc-打造自己AI工作流/P6_第一次unity导入.jpg)\n\n经过漫长的等待，第一次导出是这样的，一些shader是写出来了，但是贴图啥的给的有问题，后面让他进行检查修改。\n\n后面又试了几次，可能选的范围太大了，中间穿插了一些其他模型，还有外描边之类的，就先这样把，积分花的我肉疼....\n\n---\n\n## 3.简单介绍MCP\n\n在安装这些之前我们先了解下MCP是什么\n\n![P8.MCP](posts/笔记图床/游戏开发/AI编程相关/RenderDoc-AI工作流/RenderDoc-打造自己AI工作流/P8_MCP.jpg)\n\n图片截取自: https://www.youtube.com/watch?v=McNRkd5CxFY\n\n嗯，就是这样MCP（[Model Context Protocol](https://www.google.com/search?q=Model+Context+Protocol)，模型上下文协议)，作为AI访问其他工具的中间层，可以直接让AI去控制这些工具，也就是有了RenderDoc MCP，AI就可以控制读取RenderDoc，有了unity MCP，AI就可以控制读取unity，当然这也取决于MCP服务给开放的内容，嗯 接下来就简单了 安装这俩个MCP就好了。\n\n所以我们安装MCP的步骤基本就是：\n\n1. 对应工具安装插件用于控制\n2. 安装对应MCP服务端进行通信\n3. 对AI客户端配置MCP服务让他链接访问\n\n---\n\n## 4. 安装RenderDoc MCP\n\n**GitHub项目地址**: https://github.com/halby24/RenderDocMCP\n\nReadme已经告诉怎么安装了，但这里为了水文章，就在翻译一下\n\n### 4.1安装环境\n\n首先你需要python环境和Node.js，直接网站一搜安装。\n\n然后需要安装uv，打开命令行输入，安装完后需要关闭，后面打开新的命令行\n\n```bash\npython -m pip install uv\n```\n\n### 4.2安装扩展\n\n然后在你下载的根目录运行命令行，执行以下命令安装扩展\n\n```bash\npython scripts/install_extension.py\n```\n\n![P9.RenderDocMCP安装扩展](posts/笔记图床/游戏开发/AI编程相关/RenderDoc-AI工作流/RenderDoc-打造自己AI工作流/P9_RenderDocMCP安装扩展.jpg)\n\n然后打开RenderDoc，打开`Tools` -> `Manage Extensions`，开启 `RenderDoc MCP Bridge`\n\n![P10.RenderDocMCP安装扩展2](posts/笔记图床/游戏开发/AI编程相关/RenderDoc-AI工作流/RenderDoc-打造自己AI工作流/P10_RenderDocMCP安装扩展2.jpg)\n\n如果你是自己编译的RenderDoc，或者其他人的学习版，很有可能没有这个选项，因为他不会去AppData里去找对应的插件，需要手动进行复制\n\n```\nC:\\Users\\xxx\\AppData\\Roaming\\qrenderdoc\\extensions\\\n```\n\n![P11.RenderDocMCP插件](posts/笔记图床/游戏开发/AI编程相关/RenderDoc-AI工作流/RenderDoc-打造自己AI工作流/P11_RenderDocMCP插件.jpg)\n\n复制到renderDoc执行目录下的extensions文件夹，没有的话手动创建一下。还需要去原版的RenderDoc拷贝这两个文件PySide2、shiboken2\n\n![P12.RenderDocMCP环境依赖](posts/笔记图床/游戏开发/AI编程相关/RenderDoc-AI工作流/RenderDoc-打造自己AI工作流/P12_RenderDocMCP环境依赖.jpg)\n\n### 4.3安装MCP服务端\n\n打开命令行cd到Github下载的那个目录，运行命令\n\n```bash\nuv tool install .\n```\n\n它会下载和编译服务端代码，并在你的系统里注册一个名为 `renderdoc-mcp` 的全局命令\n\n### 4.4配置AI MCP\n\n找到你的AI MCP服务，通过JSON添加。我这里使用的是Rider 的Augment插件\n\n```json\n{\n  \"mcpServers\": {\n    \"renderdoc\": {\n      \"command\": \"renderdoc-mcp\",\n      \"args\": []\n    }\n  }\n}\n```\n\n如果他没有设置环境变量的话，你可以使用绝对路径，用户名那里需要改成自己的\n\n```json\n{\n  \"mcpServers\": {\n    \"renderdoc\": {\n      \"command\": \"C:/Users/用户名/.local/bin/renderdoc-mcp.exe\",\n      \"args\": []\n    }\n  }\n}\n```\n\n![P13.Rider Augment MCP添加](posts/笔记图床/游戏开发/AI编程相关/RenderDoc-AI工作流/RenderDoc-打造自己AI工作流/P13_Rider_Augment_MCP添加.jpg)\n\n添加完成后，打开你的RenderDoc，打开之前捕获的一帧，或者开启游戏从新捕获啥的，左边的点应该会变绿表示链接成功，然后就可以快乐的用AI对他下指令了。\n\n---\n\n## 相关链接\n\n- RenderDoc MCP GitHub: https://github.com/halby24/RenderDocMCP\n- Unity MCP GitHub: https://github.com/quazaai/UnityMCPIntegration\n- MCP介绍视频: https://www.youtube.com/watch?v=McNRkd5CxFY\n\n---\n\n**整理时间**: 2026-03-06  \n**整理工具**: Chrome MCP + AI Assistant\n",
+      "val": 1
+    },
+    {
+      "id": "在线实用工具OnlineTools",
+      "label": "在线实用工具OnlineTools",
+      "group": "tools",
+      "all_tags": [
+        "tools"
+      ],
+      "content": "# 在线实用工具Online Tools\n#tools\n\n---\n\n## 数学类工具Tools\n\n### Desmos 函数可视化\n\nhttps://www.desmos.com/calculator?lang=zh-CN\n\n![1768290285214](posts/笔记图床/游戏开发/实用Tools文档/在线实用工具OnlineTools/1768290285214.png)\n\n---\n### wolframalpha 积分函数求解(可以求积分)\n\nhttps://www.wolframalpha.com/\n\n![1768805608047](posts/笔记图床/游戏开发/实用Tools文档/在线实用工具OnlineTools/1768805608047.png)\n\n---\n\n### Academo 2D函数可视化\n\nhttps://academo.org/demos/3d-surface-plotter/?expression=x*x-y*y*x&xRange=-50%2C%2050&yRange=-50%2C%2050&resolution=48\n\n![1768290346715](posts/笔记图床/游戏开发/实用Tools文档/在线实用工具OnlineTools/1768290346715.png)\n\n---\n\n### 注释生成网站\n\nhttp://patorjk.com/software/taag/#p=display&h=0&f=Big&t=SDF\n\n![1769657872978](posts/笔记图床/游戏开发/实用Tools文档/在线实用工具OnlineTools/1769657872978.png)\n\n---",
+      "val": 1
+    },
+    {
+      "id": "实用开发工具Tools",
+      "label": "实用开发工具Tools",
+      "group": "tools",
+      "all_tags": [
+        "tools"
+      ],
+      "content": "# 实用开发工具Tools\n\n#tools\n\n---\n\n## Texture array\n\n### PVRTexTool\n\nhttps://developer.imaginationtech.com/downloads/\n\n![1768288536886](posts/笔记图床/游戏开发/实用Tools文档/实用开发工具Tools/1768288536886.png)\n![1768288287631](posts/笔记图床/游戏开发/实用Tools文档/实用开发工具Tools/1768288287631.png)\n\n---\n\n## cubemap cmftStudio\n\nhttps://github.com/dariomanesku/cmftStudio?tab=readme-ov-file\n\n![1768289069259](posts/笔记图床/游戏开发/实用Tools文档/实用开发工具Tools/1768289069259.png)\n\n---\n\n## vsCode 插件\n\n![1768289494796](posts/笔记图床/游戏开发/实用Tools文档/实用开发工具Tools/1768289494796.png)\n![1768289563585](posts/笔记图床/游戏开发/实用Tools文档/实用开发工具Tools/1768289563585.png)\n\n---\n\n## 油猴脚本\n\n### 网页复制公式 (公式上双击左键复制公式)\n\nhttps://github.com/3plus10i/TexCopyer\n\n![1768458898176](posts/笔记图床/游戏开发/实用Tools文档/实用开发工具Tools/1768458898176.png)\n\n---\n",
+      "val": 1
+    },
+    {
+      "id": "PixelArt 像素艺术",
+      "label": "PixelArt 像素艺术",
+      "group": "像素",
+      "all_tags": [
+        "像素",
+        "pixelart"
+      ],
+      "content": "# PixelArt 像素艺术\n#像素 #pixelart  \n\n---\n\n## Pixel Art AI\n\n### Retro Diffusion\n\nhttps://www.retrodiffusion.ai/\n\n![1769999799024](posts/笔记图床/游戏开发/设计相关/PixelArt%20像素艺术/1769999799024.png)\n\n#### GitHub\n\nhttps://github.com/Retro-Diffusion/api-examples\n\n---",
+      "val": 1
+    },
+    {
+      "id": "UI界面设计",
+      "label": "UI界面设计",
+      "group": "UI",
+      "all_tags": [
+        "UI",
+        "界面"
+      ],
+      "content": "# UI 界面设计\n#UI #界面\n\n---\n\n## Game Interface\n\n### 各类游戏界面\n\nhttps://interfaceingame.com/games/\n\n![1769755599950](posts/笔记图床/游戏开发/设计相关/UI界面设计/1769755599950.png)\n\n---\n\n## 色调\n\n### Poline 色调板生成器\n\nhttps://meodai.github.io/poline/?utm_source=ridd-tweet&utm_medium=ridd&utm_campaign=ridd\n\n![1769755989010](posts/笔记图床/游戏开发/设计相关/UI界面设计/1769755989010.png)\n\n---",
+      "val": 1
+    },
+    {
+      "id": "GitHub好项目",
+      "label": "GitHub好项目",
+      "group": "GitHub",
+      "all_tags": [
+        "GitHub"
+      ],
+      "content": "# GitHub\n\n#GitHub\n\n---\n\n## 好的git项目\n\n---\n\n### Blender 相关\n\n[BlenderGitHub md 文档](posts/游戏开发/Blender相关/Blender.md)\n\n![Blender](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768274526885.png)\n\n---\n\n### Volumetric fog\n\nhttps://github.com/rin-miku/SimpleVolumetricLighting\n\n![1768271723435](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768271723435.png)\n\n---\n\n### 波函数坍缩\n\nhttps://github.com/marian42/wavefunctioncollapse\n\n![1768271936593](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768271936593.png)\n\nhttps://github.com/mxgmn/WaveFunctionCollapse\n\n![1768272040866](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768272040866.png)\n\n---\n\n### Mix and jam\n\nhttps://github.com/mixandjam\n\n![1768272159047](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768272159047.png)\n\n---\n\n### ScreenSpaceLensFlareTest\n\nhttps://github.com/keijiro/ScreenSpaceLensFlareTest\n\n![1768272414589](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768272414589.png)\n\n---\n\n### Sebastian Lague\n\nhttps://github.com/SebLague\n\n![1768272522699](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768272522699.png)\n\n---\n\n### GTAO (AmplifyOcclusion)\n\nhttps://github.com/AmplifyCreations/AmplifyOcclusion\n\n![1768272673870](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768272673870.png)\n\n![1768272689502](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768272689502.png)\n\n---\n\n### 预积分大气散射 Brunetons-Improved-Atmospheric-Scattering\n\nhttps://github.com/Scrawk/Brunetons-Improved-Atmospheric-Scattering/tree/master\n\n![1768272781524](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768272781524.png)\n\n---\n\n### Cmake Tutorial (cmake-examples-Chinese)\n\nhttps://github.com/SFUMECJF/cmake-examples-Chinese\n\nhttps://sfumecjf.github.io/cmake-examples-Chinese/\n\n![1768272873336](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768272873336.png)\n\n---\n\n### SSGI\n\n[SSGI.md](posts/游戏开发/渲染相关/GI相关/SSGI.md)\n\n![1769156623012](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1769156623012.png)\n\n---\n\n### 变量名命名神器\n\nhttps://github.com/unbug/codelf?tab=readme-ov-file\n\n![1769755082161](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1769755082161.png)\n\n---\n\n",
+      "val": 1
+    },
+    {
+      "id": "Marching Cubes 波函数坍缩算法",
+      "label": "Marching Cubes 波函数坍缩算法",
+      "group": "marchingcubes",
+      "all_tags": [
+        "marchingcubes",
+        "波函数坍缩算法",
+        "程序化生成"
+      ],
+      "content": "# Marching Cubes & 波函数坍缩算法\n#marchingcubes #波函数坍缩算法 #程序化生成\n\n---\n\n## Marching Cubes\n\n### Local\n\n[Local波函数坍缩](posts/游戏开发/GitHub相关/GitHub好项目.md#波函数坍缩)\n\n### youtube\n\nhttps://www.youtube.com/watch?v=M3iI2l0ltbE\n\n![1769741902258](posts/笔记图床/游戏开发/程序化生成相关/Marching%20Cubes%20波函数坍缩算法/1769741902258.png)\n\n### GitHub\n\nhttps://github.com/SebLague/Marching-Cubes\n\n![1769742006857](posts/笔记图床/游戏开发/程序化生成相关/Marching%20Cubes%20波函数坍缩算法/1769742006857.png)\n\n---\n\n## 波函数坍缩算法\n\nhttps://oskarstalberg.com/game/house/index.html\n\n![1769741850334](posts/笔记图床/游戏开发/程序化生成相关/Marching%20Cubes%20波函数坍缩算法/1769741850334.png)\n\n### GitHub\n\nhttps://github.com/3deric/block_building?tab=readme-ov-file\n\n![1769741819367](posts/笔记图床/游戏开发/程序化生成相关/Marching%20Cubes%20波函数坍缩算法/1769741819367.png)",
+      "val": 1
+    },
+    {
+      "id": "ShaderToy",
+      "label": "ShaderToy",
+      "group": "shadertoy",
+      "all_tags": [
+        "shadertoy",
+        "渲染"
+      ],
+      "content": "# ShaderToy\n#shadertoy #渲染\n\n---\n\n## ShaderToy 有意思的链接\n\n### 油画绘图\n\nhttps://www.shadertoy.com/view/NlSBW3\n\n![1768372892751](posts/笔记图床/游戏开发/渲染相关/ShaderToy/1768372892751.png)\n\n---\n\n### 科幻球体\n\nhttps://www.shadertoy.com/view/fdGfW1\n\n![1768372960166](posts/笔记图床/游戏开发/渲染相关/ShaderToy/1768372960166.png)\n\n---\n\n### 简易模糊\n\nhttps://www.shadertoy.com/view/MsdGD2\n\n![1768372993805](posts/笔记图床/游戏开发/渲染相关/ShaderToy/1768372993805.png)\n\n---\n\n### 双线性柔和滤波\n\nhttps://www.shadertoy.com/view/XsfGDn\n\n![1768373013441](posts/笔记图床/游戏开发/渲染相关/ShaderToy/1768373013441.png)\n\n---\n\n### Noise库\n\nhttps://www.shadertoy.com/view/MslGR8\n\n![1768373046814](posts/笔记图床/游戏开发/渲染相关/ShaderToy/1768373046814.png)\n\n---\n\n### 梯度场\n\nhttps://www.shadertoy.com/view/4syGWK\n\n![1768373057421](posts/笔记图床/游戏开发/渲染相关/ShaderToy/1768373057421.png)\n\n---",
+      "val": 1
+    },
+    {
+      "id": "渲染文档汇总",
+      "label": "渲染文档汇总",
+      "group": "paper",
+      "all_tags": [
+        "paper",
+        "渲染"
+      ],
+      "content": "# 渲染文档汇总\n\n## [总文档索引](posts/游戏开发/文档总索引.md)\n\n#paper #渲染\n\n---\n\n## BasePaper\n\n[\\[bluenoise\\]\\[BasePaper\\]\\[1988\\]dither_abstract.pdf](posts/paper/BasePaper/[bluenoise][BasePaper][1988]dither_abstract.pdf)\n\n---\n\n## GDC2025\n\n### Design\n\n[AbouAssi_Simon_TeachingNixTo.pdf](posts/paper/GDC2025/Design/AbouAssi_Simon_TeachingNixTo.pdf)\n\n[An_ChengNan_Honkai+Star+Rail.pdf](posts/paper/GDC2025/Design/An_ChengNan_Honkai+Star+Rail.pdf)\n\n[Burangulov_Boris_Its_Gonna_Hurt.pdf](posts/paper/GDC2025/Design/Burangulov_Boris_Its_Gonna_Hurt.pdf)\n\n[Clayman_Ian_BringingSurvivorTo.pdf](posts/paper/GDC2025/Design/Clayman_Ian_BringingSurvivorTo.pdf)\n\n[EstebanFajardo_JazzPlatformingInPennysBigBreakaway.pdf](posts/paper/GDC2025/Design/EstebanFajardo_JazzPlatformingInPennysBigBreakaway.pdf)\n\n[Fortier_Alicia_BearHugsAnd.pdf](posts/paper/GDC2025/Design/Fortier_Alicia_BearHugsAnd.pdf)\n\n[Grant_Elyot_Designing+10,000+Puzzles.pdf](posts/paper/GDC2025/Design/Grant_Elyot_Designing+10,000+Puzzles.pdf)\n\n[Holdwick_Kyle_User-Generated Compassion.pdf](posts/paper/GDC2025/Design/Holdwick_Kyle_User-Generated%20Compassion.pdf)\n\n[Jeldrez_Emilio_TheImportanceOfAccessible.pdf](posts/paper/GDC2025/Design/Jeldrez_Emilio_TheImportanceOfAccessible.pdf)\n\n[K_K_Experimental+Games+Showcase.pdf](posts/paper/GDC2025/Design/K_K_Experimental+Games+Showcase.pdf)\n\n[Moberly&amp;Dollarhyde_Lis&amp;Kate_DesigningRelationshipsHow.pdf](posts/paper/GDC2025/Design/Moberly&Dollarhyde_Lis&Kate_DesigningRelationshipsHow.pdf)\n\n[Mol+and+Politopoulos_Angus+and+Aris_Avoiding+the+Historical.pdf](posts/paper/GDC2025/Design/Mol+and+Politopoulos_Angus+and+Aris_Avoiding+the+Historical.pdf)\n\n[Perry_Jon_HowTabletopDesign.pdf](posts/paper/GDC2025/Design/Perry_Jon_HowTabletopDesign.pdf)\n\n[ReineAbbasThe+Dark+Side.pdf](posts/paper/GDC2025/Design/ReineAbbasThe+Dark+Side.pdf)\n\n[Rose_Tabby_VR_Is_For.pdf](posts/paper/GDC2025/Design/Rose_Tabby_VR_Is_For.pdf)\n\n### Game Narrative\n\n[Grave_Gerben_By+Any+Other.pdf](posts/paper/GDC2025/Game%20Narrative/Grave_Gerben_By+Any+Other.pdf)\n\n[Horneman_Jurie_Get_serious_about.pdf](posts/paper/GDC2025/Game%20Narrative/Horneman_Jurie_Get_serious_about.pdf)\n\n[Khan_Ayesha_Prepare+Recording+Scripts.pdf](posts/paper/GDC2025/Game%20Narrative/Khan_Ayesha_Prepare+Recording+Scripts.pdf)\n\n[PlayableStories_GDC25_Presentation-LaurenBond.pdf](posts/paper/GDC2025/Game%20Narrative/PlayableStories_GDC25_Presentation-LaurenBond.pdf)\n\n[Ruhl_Ashley_LaborOfLove.pdf](posts/paper/GDC2025/Game%20Narrative/Ruhl_Ashley_LaborOfLove.pdf)\n\n### Independent Games\n\n[Boozayaangool_Tanat_Comedy+Through+Patterns.pdf](posts/paper/GDC2025/Independent%20Games/Boozayaangool_Tanat_Comedy+Through+Patterns.pdf)\n\n[Fan_Monica_Gameplay+System+Design.pdf](posts/paper/GDC2025/Independent%20Games/Fan_Monica_Gameplay+System+Design.pdf)\n\n[Gittins_Renee_You+Are+Not.pdf](posts/paper/GDC2025/Independent%20Games/Gittins_Renee_You+Are+Not.pdf)\n\n[Hackett_Matt_Content-Ready_Game_Development.pdf](posts/paper/GDC2025/Independent%20Games/Hackett_Matt_Content-Ready_Game_Development.pdf)\n\n[KhanCostaSmithShiraishi_ShahrinJenKaitlinLola_MicrotalksSolvingProduction.pdf](posts/paper/GDC2025/Independent%20Games/KhanCostaSmithShiraishi_ShahrinJenKaitlinLola_MicrotalksSolvingProduction.pdf)\n\n[Loiterman_Jonathan_Fundraising_Boot_Camp.pdf.pdf](posts/paper/GDC2025/Independent%20Games/Loiterman_Jonathan_Fundraising_Boot_Camp.pdf.pdf)\n\n[Meetings+Make+Games!+Fostering+Empathy+and+Focus+in+Collaborative+Discussion.pptx.pdf](posts/paper/GDC2025/Independent%20Games/Meetings+Make+Games!+Fostering+Empathy+and+Focus+in+Collaborative+Discussion.pptx.pdf)\n\n[Merry_Tina_MakingRoom (1).pdf](posts/paper/GDC2025/Independent%20Games/Merry_Tina_MakingRoom%20(1).pdf)\n\n[Merry_Tina_MakingRoom.pdf](posts/paper/GDC2025/Independent%20Games/Merry_Tina_MakingRoom.pdf)\n\n[Pink_Hot_SexSellsOr.pdf](posts/paper/GDC2025/Independent%20Games/Pink_Hot_SexSellsOr.pdf)\n\n### Programming\n\n[AzzouniTarik_MarcottePhilippe_StreamliningBotDevelopment.pdf](posts/paper/GDC2025/Programming/AzzouniTarik_MarcottePhilippe_StreamliningBotDevelopment.pdf)\n\n[Bryan_Keiren_Nodes+and+Native.pdf](posts/paper/GDC2025/Programming/Bryan_Keiren_Nodes+and+Native.pdf)\n\n[Cao_Luyan_DecodingLightNeural.pdf](posts/paper/GDC2025/Programming/Cao_Luyan_DecodingLightNeural.pdf)\n\n[Celmer_Maciej_Heat+MaxTac+Blockades.pdf](posts/paper/GDC2025/Programming/Celmer_Maciej_Heat+MaxTac+Blockades.pdf)\n\n[Eidukonis_Kasparas_GPU+Raytracing+for.pdf](posts/paper/GDC2025/Programming/Eidukonis_Kasparas_GPU+Raytracing+for.pdf)\n\n[Graham_Rez_The_Human_Cost.pdf](posts/paper/GDC2025/Programming/Graham_Rez_The_Human_Cost.pdf)\n\n[Hein_Bettina_Developing_A_Stats-Based.pdf](posts/paper/GDC2025/Programming/Hein_Bettina_Developing_A_Stats-Based.pdf)\n\n[Jiao_Hang_Delta+Force+Performant.pdf](posts/paper/GDC2025/Programming/Jiao_Hang_Delta+Force+Performant.pdf)\n\n[Kogelnig_Richard_NavigatingExpansiveWorlds.pdf](posts/paper/GDC2025/Programming/Kogelnig_Richard_NavigatingExpansiveWorlds.pdf)\n\n[Li_Xiaosheng_Smash+the+Scene.pdf](posts/paper/GDC2025/Programming/Li_Xiaosheng_Smash+the+Scene.pdf)\n\n[Linda_Liu_TwitchChatSafety.pdf](posts/paper/GDC2025/Programming/Linda_Liu_TwitchChatSafety.pdf)\n\n[Marko_Matej_CombiningGOAPandMBTs.pdf](posts/paper/GDC2025/Programming/Marko_Matej_CombiningGOAPandMBTs.pdf)\n\n[Mejerwall_Marie_Growing_an_AI.pdf](posts/paper/GDC2025/Programming/Mejerwall_Marie_Growing_an_AI.pdf)\n\n[Mengfei_Li+Eggy+Party+Server.pdf](posts/paper/GDC2025/Programming/Mengfei_Li+Eggy+Party+Server.pdf)\n\n[Molnar_Gabor_Dressed_to_Quest.pdf](posts/paper/GDC2025/Programming/Molnar_Gabor_Dressed_to_Quest.pdf)\n\n[Moufarek_Alexandre_SIMA_Developing_AI_Agents.pdf](posts/paper/GDC2025/Programming/Moufarek_Alexandre_SIMA_Developing_AI_Agents.pdf)\n\n[Oberberger_Max_Advanced+Graphics+Summit.pdf](posts/paper/GDC2025/Programming/Oberberger_Max_Advanced+Graphics+Summit.pdf)\n\n[Palko_Martin_Revolutionizing_Texture_Pipelines.pdf](posts/paper/GDC2025/Programming/Palko_Martin_Revolutionizing_Texture_Pipelines.pdf)\n\n[Palmer-Campbell_Etienne_MissionKontrolRevolutionizing.pdf](posts/paper/GDC2025/Programming/Palmer-Campbell_Etienne_MissionKontrolRevolutionizing.pdf)\n\n[Pierre_Guillaume_A_Series_of.pdf](posts/paper/GDC2025/Programming/Pierre_Guillaume_A_Series_of.pdf)\n\n[Rodopoulos_Isadora_Making+Delightful+Tools.pdf](posts/paper/GDC2025/Programming/Rodopoulos_Isadora_Making+Delightful+Tools.pdf)\n\n[Santarra_Trevor_MultiagentPlanningFor.pdf](posts/paper/GDC2025/Programming/Santarra_Trevor_MultiagentPlanningFor.pdf)\n\n### Visual Arts\n\n[ANDRZEJCZAK_ADAM_GAUSSIAN_SPLATTING_WITH+2025-03-31+01.32.18.pdf](posts/paper/GDC2025/Visual%20Arts/ANDRZEJCZAK_ADAM_GAUSSIAN_SPLATTING_WITH+2025-03-31+01.32.18.pdf)\n\n[Afonseca_Bruno_VFX_Tricks_That.pdf](posts/paper/GDC2025/Visual%20Arts/Afonseca_Bruno_VFX_Tricks_That.pdf)\n\n[Graham_Rez_The_Human_Cost.pdf](posts/paper/GDC2025/Visual%20Arts/Graham_Rez_The_Human_Cost.pdf)\n\n[Graham_Rez_The_Simplest_AI.pdf](posts/paper/GDC2025/Visual%20Arts/Graham_Rez_The_Simplest_AI.pdf)\n\n[Hsieh_ChihYu_MathButMake.pdf](posts/paper/GDC2025/Visual%20Arts/Hsieh_ChihYu_MathButMake.pdf)\n\n[Kogelnig_Richard_NavigatingExpansiveWorlds.pdf](posts/paper/GDC2025/Visual%20Arts/Kogelnig_Richard_NavigatingExpansiveWorlds.pdf)\n\n[Lasses_Andreas_NoBrakesMachine.pdf](posts/paper/GDC2025/Visual%20Arts/Lasses_Andreas_NoBrakesMachine.pdf)\n\n[fox_marielle_evolvingworldsfrom.pdf](posts/paper/GDC2025/Visual%20Arts/fox_marielle_evolvingworldsfrom.pdf)\n\n---\n\n## GI\n\n[\\[GI\\]\\[Lumen\\]\\[UE5\\]\\[Siggraph2021\\]Radiance Caching for real-time Global Illumination (SIGGRAPH 2021).pptx](posts/paper/GI/[GI][Lumen][UE5][Siggraph2021]Radiance%20Caching%20for%20real-time%20Global%20Illumination%20(SIGGRAPH%202021).pptx)\n\n[\\[paper\\]\\[Nvida\\]svgf.pdf](posts/paper/GI/[paper][Nvida]svgf.pdf)\n\n[\\[使命召唤\\]\\[Call of duty\\]\\[Siggraph\\]\\[GI\\]Silvennoinen - SIGGRAPH 2021 Advances_slim.pptx](posts/paper/GI/[使命召唤][Call%20of%20duty][Siggraph][GI]Silvennoinen%20-%20SIGGRAPH%202021%20Advances_slim.pptx)\n\n[\\[战神GDC2019\\]_SMS_JoshHobson_The_Indirect_Lighting_Pipeline_of_GodofWar.pptx](posts/paper/GI/[战神GDC2019]_SMS_JoshHobson_The_Indirect_Lighting_Pipeline_of_GodofWar.pptx)\n\n---\n\n## PBR\n\n[PBR相关学术链接.txt](posts/paper/PBR/PBR相关学术链接.txt)\n\n[RTR4-CN.pdf](posts/paper/PBR/RTR4-CN.pdf)\n\n[\\[2016高光抗锯齿\\]NDFFiltering.pdf](posts/paper/PBR/[2016高光抗锯齿]NDFFiltering.pdf)\n\n[\\[2017高光抗锯齿\\]Error Reduction and Simplification for Shading Anti-Aliasing.pdf](posts/paper/PBR/[2017高光抗锯齿]Error%20Reduction%20and%20Simplification%20for%20Shading%20Anti-Aliasing.pdf)\n\n[\\[COD\\]\\[高光抗锯齿\\]MaterialAdvancesInWWII.pdf](posts/paper/PBR/[COD][高光抗锯齿]MaterialAdvancesInWWII.pdf)\n\n[\\[Normal Pack\\]\\[paper2014\\] A Survey of Efficient Representations for Independent Unit Vectors.pdf](posts/paper/PBR/[Normal%20Pack][paper2014]%20A%20Survey%20of%20Efficient%20Representations%20for%20Independent%20Unit%20Vectors.pdf)\n\n[\\[paper2008\\]\\[重要性采样\\]\\[Real-time Shading with Filtered Importance Sampling\\]2008-egsr-fis-final-embedded.pdf](posts/paper/PBR/[paper2008][重要性采样][Real-time%20Shading%20with%20Filtered%20Importance%20Sampling]2008-egsr-fis-final-embedded.pdf)\n\n[\\[皮肤渲染\\]\\[3S\\]\\[Siggraph2011\\]Penner - Pre-Integrated Skin Rendering (Siggraph 2011 Advances in Real-Time Rendering Course).pptx](posts/paper/PBR/[皮肤渲染][3S][Siggraph2011]Penner%20-%20Pre-Integrated%20Skin%20Rendering%20(Siggraph%202011%20Advances%20in%20Real-Time%20Rendering%20Course).pptx)\n\n[\\[薄膜衍射\\]\\[Thin film\\]\\[paper2017\\]A Practical Extension to Microfacet Theory for the Modeling of Varying Iridescence.pdf](posts/paper/PBR/[薄膜衍射][Thin%20film][paper2017]A%20Practical%20Extension%20to%20Microfacet%20Theory%20for%20the%20Modeling%20of%20Varying%20Iridescence.pdf)\n\n[course_notes_moving_frostbite_to_pbr_v32.pdf](posts/paper/PBR/course_notes_moving_frostbite_to_pbr_v32.pdf)\n\n[realtime_rendering_4ed.pdf](posts/paper/PBR/realtime_rendering_4ed.pdf)\n\n[<Real-Time Rendering 3rd> 提炼总结.pdf](posts/paper/PBR/《Real-Time%20Rendering%203rd》%20提炼总结.pdf)\n\n---\n\n## Particle\n\n[\\[粒子阴影&amp;CacheAO\\]\\[GDC2013\\]\\[Nvida\\]BAVOIL_ParticleShadowsAndCacheEfficientPost.pdf](posts/paper/Particle/[粒子阴影&CacheAO][GDC2013][Nvida]BAVOIL_ParticleShadowsAndCacheEfficientPost.pdf)\n\n---\n\n## ScreenSpace & SDF\n\n### AO\n\n[AO相关学术链接.txt](posts/paper/ScreenSpace%20&%20SDF/AO/AO相关学术链接.txt)\n\n[\\[GTAO_paper\\]Practical-Realtime-Strategies-for-Accurate-Indirect-Occlusion.pdf](posts/paper/ScreenSpace%20&%20SDF/AO/[GTAO_paper]Practical-Realtime-Strategies-for-Accurate-Indirect-Occlusion.pdf)\n\n[\\[GTAO_paper\\]Practical_Real_Time_Strategies_for_Accurate_Indirect_Occlusion_NEW VERSION_COLOR.pdf](posts/paper/ScreenSpace%20&%20SDF/AO/[GTAO_paper]Practical_Real_Time_Strategies_for_Accurate_Indirect_Occlusion_NEW%20VERSION_COLOR.pdf)\n\n[\\[SDF AO\\]\\[UE\\]\\[Siggraph2015\\]DynamicOcclusionWithSignedDistanceFields.ppt](posts/paper/ScreenSpace%20&%20SDF/AO/[SDF%20AO][UE][Siggraph2015]DynamicOcclusionWithSignedDistanceFields.ppt)\n\n### SSR\n\n[\\[SSR\\]\\[Siggraph2017\\]PixelProjectedReflectionsAC_v_1.92.pptx](posts/paper/ScreenSpace%20&%20SDF/SSR/[SSR][Siggraph2017]PixelProjectedReflectionsAC_v_1.92.pptx)\n\n[\\[SSR\\]\\[paper\\]efficient_gpu_ss_ray_tracing.pdf](posts/paper/ScreenSpace%20&%20SDF/SSR/[SSR][paper]efficient_gpu_ss_ray_tracing.pdf)\n\n### SuperResolution&AA\n\n[\\[FSR\\]\\[Siggraph\\]Unity AMD FSR - SIGGRAPH 2021.pptx](posts/paper/ScreenSpace%20&%20SDF/SuperResolution&AA/[FSR][Siggraph]Unity%20AMD%20FSR%20-%20SIGGRAPH%202021.pptx)\n\n### 景深Bokeh\n\n[\\[景深\\]\\[bokeh\\]\\[SIGGRAPH 2018\\]A Life of a Bokeh - SIGGRAPH 2018.pptx](posts/paper/ScreenSpace%20&%20SDF/景深Bokeh/[景深][bokeh][SIGGRAPH%202018]A%20Life%20of%20a%20Bokeh%20-%20SIGGRAPH%202018.pptx)\n\n---\n\n## Simulation(Fluid)\n\n[\\[流体模拟\\]\\[Nvida\\]\\[Screen Space Fluid Rendering\\]Direct3D_Effects.pdf](posts/paper/Simulation(Fluid)/[流体模拟][Nvida][Screen%20Space%20Fluid%20Rendering]Direct3D_Effects.pdf)\n\n---\n\n## Volumetric\n\n[Volumetric网页文章.txt](posts/paper/Volumetric/Volumetric网页文章.txt)\n\n[\\[Frostbit\\]\\[Siggraph16\\]\\[Atmosphere\\]\\[Volumetric\\]\\[Cloud\\]\\[T0\\]Physically Based Sky, Atmosphere and Cloud Rendering in Frostbite Sebastien Hillaire.pdf](posts/paper/Volumetric/[Frostbit][Siggraph16][Atmosphere][Volumetric][Cloud][T0]Physically%20Based%20Sky,%20Atmosphere%20and%20Cloud%20Rendering%20in%20Frostbite%20Sebastien%20Hillaire.pdf)\n\n[\\[Unity\\]Brunetons-Improved-Atmospheric-Scattering.zip](posts/paper/Volumetric/[Unity]Brunetons-Improved-Atmospheric-Scattering.zip)\n\n[\\[Volumetric fog\\]\\[Ubisoft\\]bwronski_volumetric_fog_siggraph2014.pptx](posts/paper/Volumetric/[Volumetric%20fog][Ubisoft]bwronski_volumetric_fog_siggraph2014.pptx)\n\n[\\[Volumetric fog\\]\\[frostbit\\]\\[Siggraph2015\\]Frostbite PB and unified volumetrics.pdf](posts/paper/Volumetric/[Volumetric%20fog][frostbit][Siggraph2015]Frostbite%20PB%20and%20unified%20volumetrics.pdf)\n\n[\\[Volumetric fog\\]\\[frostbit\\]\\[Siggraph2015\\]Frostbite PB and unified volumetrics.pptx](posts/paper/Volumetric/[Volumetric%20fog][frostbit][Siggraph2015]Frostbite%20PB%20and%20unified%20volumetrics.pptx)\n\n[\\[paper\\]Night Rendering.pdf](posts/paper/Volumetric/[paper]Night%20Rendering.pdf)\n\n[\\[paper\\]\\[2016\\]\\[PreComputedAtmosphere\\]A Qualitative and Quantitative Evaluation of 8 Clear Sky Models.pdf](posts/paper/Volumetric/[paper][2016][PreComputedAtmosphere]A%20Qualitative%20and%20Quantitative%20Evaluation%20of%208%20Clear%20Sky%20Models.pdf)\n\n[\\[paper\\]\\[siggraph\\]A Physically-Based Night Sky Model.pdf](posts/paper/Volumetric/[paper][siggraph]A%20Physically-Based%20Night%20Sky%20Model.pdf)\n\n---\n\n## tessellation\n\n[PN-AEN-Triangles-Whitepaper.pdf](posts/paper/tessellation/PN-AEN-Triangles-Whitepaper.pdf)\n\n---\n\n## 工业界paper\n\n### Crytek (CryEngine)\n\n[\\[FarCry5\\]\\[Terrain Rendering\\]\\[GDC2018\\]GDC2018_TerrainRenderingFarCry5.pdf](posts/paper/工业界paper/Crytek%20(CryEngine)/[FarCry5][Terrain%20Rendering][GDC2018]GDC2018_TerrainRenderingFarCry5.pdf)\n\n[\\[Farcry5\\]\\[Rendering\\]\\[Siggraph2018\\]The Challenges of Rendering an Open World in Far Cry 5.pptx](posts/paper/工业界paper/Crytek%20(CryEngine)/[Farcry5][Rendering][Siggraph2018]The%20Challenges%20of%20Rendering%20an%20Open%20World%20in%20Far%20Cry%205.pptx)\n\n[\\[Farcry6\\]\\[Weather\\]\\[GDC2022\\]FarCry6_SimulatingTropicalWeather_Weick_Colin_Zhou_Emily.pdf](posts/paper/工业界paper/Crytek%20(CryEngine)/[Farcry6][Weather][GDC2022]FarCry6_SimulatingTropicalWeather_Weick_Colin_Zhou_Emily.pdf)\n\n### Epic\n\n[\\[Atmosphere\\]\\[Epic\\]\\[Eurographics\\]A Scalable and Production Ready Sky and Atmosphere Rendering Technique.pdf](posts/paper/工业界paper/Epic/[Atmosphere][Epic][Eurographics]A%20Scalable%20and%20Production%20Ready%20Sky%20and%20Atmosphere%20Rendering%20Technique.pdf)\n\n[\\[MegaLights\\]\\[UE5\\]\\[Epic\\]\\[Siggraph\\]\\[2025\\]MegaLights_Stochastic_Direct_Lighting_2025.pdf](posts/paper/工业界paper/Epic/[MegaLights][UE5][Epic][Siggraph][2025]MegaLights_Stochastic_Direct_Lighting_2025.pdf)\n\n[\\[TAA\\]\\[UE\\]\\[Epic\\]\\[Siggraph\\]HighQualityTemporalSupersampling.pdf](posts/paper/工业界paper/Epic/[TAA][UE][Epic][Siggraph]HighQualityTemporalSupersampling.pdf)\n\n### Guerrilla Game(地平线)(杀戮地带)\n\n[\\[地平线\\]\\[GPU-based Procedural Placement\\]\\[GDC2017\\]\\[Horizon zero dawn\\]_VanMuijden_GPUBasedProceduralPlacementInHorizonZeroDawn.pptx](posts/paper/工业界paper/Guerrilla%20Game(地平线)(杀戮地带)/[地平线][GPU-based%20Procedural%20Placement][GDC2017][Horizon%20zero%20dawn]_VanMuijden_GPUBasedProceduralPlacementInHorizonZeroDawn.pptx)\n\n[\\[地平线\\]\\[Tools Pipeline\\]\\[Horizon zero dawn\\]\\[GDC2017\\]_Sumaili_VanDerSteen_CreatingAToolsPipelineForHorizonZeroDawn.pptx](posts/paper/工业界paper/Guerrilla%20Game(地平线)(杀戮地带)/[地平线][Tools%20Pipeline][Horizon%20zero%20dawn][GDC2017]_Sumaili_VanDerSteen_CreatingAToolsPipelineForHorizonZeroDawn.pptx)\n\n[\\[地平线\\]\\[volumetric cloud\\]\\[Eurographics2018\\]\\[Horizon zero dawn\\]Nubis - Realtime Volumetric Cloudscapes In A Nutshell.pptx](posts/paper/工业界paper/Guerrilla%20Game(地平线)(杀戮地带)/[地平线][volumetric%20cloud][Eurographics2018][Horizon%20zero%20dawn]Nubis%20-%20Realtime%20Volumetric%20Cloudscapes%20In%20A%20Nutshell.pptx)\n\n[\\[地平线\\]\\[volumetric cloud\\]\\[Siggraph2017\\]\\[Horizon zero dawn\\]Nubis - Authoring Realtime Volumetric Cloudscapes with the Decima Engine - Final.pptx](posts/paper/工业界paper/Guerrilla%20Game(地平线)(杀戮地带)/[地平线][volumetric%20cloud][Siggraph2017][Horizon%20zero%20dawn]Nubis%20-%20Authoring%20Realtime%20Volumetric%20Cloudscapes%20with%20the%20Decima%20Engine%20-%20Final.pptx)\n\n[\\[地平线\\]\\[volumetric cloud\\]\\[Siggraph2023\\]\\[Horizon Forbidden West\\]Nubis3 Methods (and madness) to model and render immersive real-time voxel-based clouds.pptx](posts/paper/工业界paper/Guerrilla%20Game(地平线)(杀戮地带)/[地平线][volumetric%20cloud][Siggraph2023][Horizon%20Forbidden%20West]Nubis3%20Methods%20(and%20madness)%20to%20model%20and%20render%20immersive%20real-time%20voxel-based%20clouds.pptx)\n\n[\\[地平线\\]\\[volumetric cloud\\]\\[siggraph2015\\]\\[Horizon zero dawn\\]Siggraph15_Schneider_Real-Time_Volumetric_Cloudscapes_of_Horizon_Zero_Dawn.pptx](posts/paper/工业界paper/Guerrilla%20Game(地平线)(杀戮地带)/[地平线][volumetric%20cloud][siggraph2015][Horizon%20zero%20dawn]Siggraph15_Schneider_Real-Time_Volumetric_Cloudscapes_of_Horizon_Zero_Dawn.pptx)\n\n[\\[地平线\\]\\[渲染\\]\\[rendering\\]\\[Siggraph2017\\]DecimaSiggraph2017.pdf](posts/paper/工业界paper/Guerrilla%20Game(地平线)(杀戮地带)/[地平线][渲染][rendering][Siggraph2017]DecimaSiggraph2017.pdf)\n\n[\\[地平线\\]\\[渲染\\]\\[rendering\\]\\[Siggraph2017\\]DecimaSiggraph2017.pptx](posts/paper/工业界paper/Guerrilla%20Game(地平线)(杀戮地带)/[地平线][渲染][rendering][Siggraph2017]DecimaSiggraph2017.pptx)\n\n[\\[杀戮地带2\\]Develop07_Valient_DeferredRenderingInKillzone2.pdf](posts/paper/工业界paper/Guerrilla%20Game(地平线)(杀戮地带)/[杀戮地带2]Develop07_Valient_DeferredRenderingInKillzone2.pdf)\n\n[\\[杀戮地带2\\]\\[GDC2009\\]_Valient_Rendering_Technology_Of_Killzone_2.pptx](posts/paper/工业界paper/Guerrilla%20Game(地平线)(杀戮地带)/[杀戮地带2][GDC2009]_Valient_Rendering_Technology_Of_Killzone_2.pptx)\n\n[\\[杀戮地带shadow fall\\]Drobot_Lighting_of_Killzone_Shadow_Fall.pptx](posts/paper/工业界paper/Guerrilla%20Game(地平线)(杀戮地带)/[杀戮地带shadow%20fall]Drobot_Lighting_of_Killzone_Shadow_Fall.pptx)\n\n[\\[杀戮地带shadow fall\\]\\[GDC2014\\]_Valient_Killzone_Graphics.pptx](posts/paper/工业界paper/Guerrilla%20Game(地平线)(杀戮地带)/[杀戮地带shadow%20fall][GDC2014]_Valient_Killzone_Graphics.pptx)\n\n[\\[杀戮地带shadow fall\\]\\[GDC2014\\]_VanderSteen_MayaRendering.pptx](posts/paper/工业界paper/Guerrilla%20Game(地平线)(杀戮地带)/[杀戮地带shadow%20fall][GDC2014]_VanderSteen_MayaRendering.pptx)\n\n[\\[杀戮地带shadow fall\\]\\[Siggraph2014\\]_ProductionAndVisualFX.pdf](posts/paper/工业界paper/Guerrilla%20Game(地平线)(杀戮地带)/[杀戮地带shadow%20fall][Siggraph2014]_ProductionAndVisualFX.pdf)\n\n\n### Housemarque(Returnal)\n\n[\\[GDC\\]\\[2023\\]\\[Returnal\\]Never The Same Twice - Procedural World Handling in &#39;Returnal&#39;.pdf](posts/paper/工业界paper/Housemarque(Returnal)/[GDC][2023][Returnal]Never%20The%20Same%20Twice%20-%20Procedural%20World%20Handling%20in%20'Returnal'.pdf)\n\n[\\[GDC\\]\\[2023\\]\\[Returnal\\]\\[翻译\\]Never The Same Twice - Procedural World Handling in &#39;Returnal&#39;.pdf](posts/paper/工业界paper/Housemarque(Returnal)/[GDC][2023][Returnal][翻译]Never%20The%20Same%20Twice%20-%20Procedural%20World%20Handling%20in%20'Returnal'.pdf)\n\n### NetEase\n\n[20180803_手游指令优化.pptx](posts/paper/工业界paper/NetEase/20180803_手游指令优化.pptx)\n\n[Candela3.0.pdf](posts/paper/工业界paper/NetEase/Candela3.0.pdf)\n\n[Further into Game Engine.pptx](posts/paper/工业界paper/NetEase/Further%20into%20Game%20Engine.pptx)\n\n[程序沙龙(广州,直播)第320期_<光遇>引擎及渲染介绍.pdf](posts/paper/工业界paper/NetEase/程序沙龙（广州，直播）第320期——《光遇》引擎及渲染介绍.pdf)\n\n### Playdead (地狱边境)(Inside)\n\n[\\[inside\\]\\[rendering\\]\\[GDC2016\\]Gjoel_Svendsen_Rendering_of_Inside.pdf](posts/paper/工业界paper/Playdead%20(地狱边境)(Inside)/[inside][rendering][GDC2016]Gjoel_Svendsen_Rendering_of_Inside.pdf)\n\n### RockStar(GTA)(大镖客)\n\n[\\[大镖客\\]\\[Atmosphere\\]\\[Siggraph2019\\]\\[Rockstar\\]Creating the Atmospheric World of Red Dead Redemption 2.pptx](posts/paper/工业界paper/RockStar(GTA)(大镖客)/[大镖客][Atmosphere][Siggraph2019][Rockstar]Creating%20the%20Atmospheric%20World%20of%20Red%20Dead%20Redemption%202.pptx)\n\n### SuckerPunch(对马岛)\n\n[\\[对马岛之魂\\]\\[Rendering\\]\\[GI\\]\\[Siggraph2021\\]\\[Ghost of Tsushima\\]jpatry_advances2021_ghost of tsushima.pdf](posts/paper/工业界paper/SuckerPunch(对马岛)/[对马岛之魂][Rendering][GI][Siggraph2021][Ghost%20of%20Tsushima]jpatry_advances2021_ghost%20of%20tsushima.pdf)\n\n### id Software (Doom)\n\n[\\[毁灭战士\\]\\[Doom\\]\\[Siggraph2020\\]RenderingDoomEternal_compressed.pptx](posts/paper/工业界paper/id%20Software%20(Doom)/[毁灭战士][Doom][Siggraph2020]RenderingDoomEternal_compressed.pptx)\n\n### 动视暴雪Activision Blizzard(CoD)\n\n[GDC21_Terrain_of_CoD.pptx](posts/paper/工业界paper/动视暴雪Activision%20Blizzard（CoD）/GDC21_Terrain_of_CoD.pptx)\n\n[\\[GDC2013\\]\\[Character Rendering\\]\\[Activision Blizzard\\]GDC13_Next-Generation-Character-Rendering-v6.pptx](posts/paper/工业界paper/动视暴雪Activision%20Blizzard（CoD）/[GDC2013][Character%20Rendering][Activision%20Blizzard]GDC13_Next-Generation-Character-Rendering-v6.pptx)\n\n### 索尼 SIE Santa Monica Studio (战神)\n\n[\\[战神\\]\\[Interactive Wind &amp; Vegetation\\]\\[GDC2019\\]\\[God of war\\]SMS_SeanFeeley_Interactive_Wind_and_Vegetation_in_God_of_War.pptx](posts/paper/工业界paper/索尼%20SIE%20Santa%20Monica%20Studio%20(战神)/[战神][Interactive%20Wind%20&%20Vegetation][GDC2019][God%20of%20war]SMS_SeanFeeley_Interactive_Wind_and_Vegetation_in_God_of_War.pptx)\n\n[\\[战神\\]\\[wind Simulation\\]\\[GDC2019\\]\\[God of war\\]_SMS_Rupert_Renard_Wind_Simulation_in_God_of_War.pptx](posts/paper/工业界paper/索尼%20SIE%20Santa%20Monica%20Studio%20(战神)/[战神][wind%20Simulation][GDC2019][God%20of%20war]_SMS_Rupert_Renard_Wind_Simulation_in_God_of_War.pptx)\n\n### 育碧(刺客信条)\n\n[\\[Raytracing\\]\\[Siggraph\\]\\[2025\\]Advances 2025 - Raytracing the world of Assassin&#39;s Creed Shadows.pdf](posts/paper/工业界paper/育碧（刺客信条）/[Raytracing][Siggraph][2025]Advances%202025%20-%20Raytracing%20the%20world%20of%20Assassin's%20Creed%20Shadows.pdf)\n\n### 腾讯 Tencent\n\n[\\[GDC\\]\\[2024\\]\\[三角洲\\]Delta Force Techniques From Unified Production Pipeline to Cross-Platform Runtime Support (Presented by Tencent Games).pdf](posts/paper/工业界paper/腾讯%20Tencent/[GDC][2024][三角洲]Delta%20Force%20Techniques%20From%20Unified%20Production%20Pipeline%20to%20Cross-Platform%20Runtime%20Support%20(Presented%20by%20Tencent%20Games).pdf)\n\n### 顽皮狗Naughty Dog\n\n[Uncharted4_NaughtyDog_TechArt_Final.pptx](posts/paper/工业界paper/顽皮狗Naughty%20Dog/Uncharted4_NaughtyDog_TechArt_Final.pptx)\n\n[Uncharted4_Rendering rapids in Uncharted 4.pptx](posts/paper/工业界paper/顽皮狗Naughty%20Dog/Uncharted4_Rendering%20rapids%20in%20Uncharted%204.pptx)\n\n[Uncharted4_TAA_s16_Ke.pptx](posts/paper/工业界paper/顽皮狗Naughty%20Dog/Uncharted4_TAA_s16_Ke.pptx)\n\n[Uncharted4_The Process of Creating Volumetric-based Materials in Uncharted 4.pptx](posts/paper/工业界paper/顽皮狗Naughty%20Dog/Uncharted4_The%20Process%20of%20Creating%20Volumetric-based%20Materials%20in%20Uncharted%204.pptx)\n\n[\\[Uncharted 4\\]\\[Siggraph2016\\]Uncharted4_Volumetric Global Illumination at Treyarch.pptx](posts/paper/工业界paper/顽皮狗Naughty%20Dog/[Uncharted%204][Siggraph2016]Uncharted4_Volumetric%20Global%20Illumination%20at%20Treyarch.pptx)\n\n[\\[the last of us patr 2\\]\\[Siggraph2020\\]LightingTechTlou2.pptx](posts/paper/工业界paper/顽皮狗Naughty%20Dog/[the%20last%20of%20us%20patr%202][Siggraph2020]LightingTechTlou2.pptx)\n\n[\\[the last of us patr 2\\]\\[Siggraph2020\\]Volumetrics.pptx](posts/paper/工业界paper/顽皮狗Naughty%20Dog/[the%20last%20of%20us%20patr%202][Siggraph2020]Volumetrics.pptx)\n\n[uncharted4_s16_ramy_final.pptx](posts/paper/工业界paper/顽皮狗Naughty%20Dog/uncharted4_s16_ramy_final.pptx)\n\n---\n\n## 源码\n\n### FrostbiteEngine\n\n[FrostbiteEngine.zip](posts/paper/源码/FrostbiteEngine/FrostbiteEngine.zip)\n\n[no_pass_gtav_source.zip](posts/paper/源码/no_pass_gtav_source.zip)\n\n---\n\n## 资源制作\n\n### 植被\n\n[\\[alpha_mip\\]alpha_distribution.pdf](posts/paper/资源制作/植被/[alpha_mip]alpha_distribution.pdf)\n\n[\\[地平线\\]\\[植被\\]\\[Horizon zero dawn\\]gilbert_sanders_between_tech_and.pdf](posts/paper/资源制作/植被/[地平线][植被][Horizon%20zero%20dawn]gilbert_sanders_between_tech_and.pdf)\n",
       "val": 1
     },
     {
@@ -100,79 +250,34 @@
       "val": 1
     },
     {
-      "id": "渲染文档汇总",
-      "label": "渲染文档汇总",
-      "group": "paper",
+      "id": "LookDev",
+      "label": "LookDev",
+      "group": "hdr",
       "all_tags": [
-        "paper",
-        "渲染"
+        "hdr",
+        "lookdev"
       ],
-      "content": "# 渲染文档汇总\n\n## [总文档索引](posts/游戏开发/文档总索引.md)\n\n#paper #渲染\n\n---\n\n## BasePaper\n\n[\\[bluenoise\\]\\[BasePaper\\]\\[1988\\]dither_abstract.pdf](posts/paper/BasePaper/[bluenoise][BasePaper][1988]dither_abstract.pdf)\n\n---\n\n## GDC2025\n\n### Design\n\n[AbouAssi_Simon_TeachingNixTo.pdf](posts/paper/GDC2025/Design/AbouAssi_Simon_TeachingNixTo.pdf)\n\n[An_ChengNan_Honkai+Star+Rail.pdf](posts/paper/GDC2025/Design/An_ChengNan_Honkai+Star+Rail.pdf)\n\n[Burangulov_Boris_Its_Gonna_Hurt.pdf](posts/paper/GDC2025/Design/Burangulov_Boris_Its_Gonna_Hurt.pdf)\n\n[Clayman_Ian_BringingSurvivorTo.pdf](posts/paper/GDC2025/Design/Clayman_Ian_BringingSurvivorTo.pdf)\n\n[EstebanFajardo_JazzPlatformingInPennysBigBreakaway.pdf](posts/paper/GDC2025/Design/EstebanFajardo_JazzPlatformingInPennysBigBreakaway.pdf)\n\n[Fortier_Alicia_BearHugsAnd.pdf](posts/paper/GDC2025/Design/Fortier_Alicia_BearHugsAnd.pdf)\n\n[Grant_Elyot_Designing+10,000+Puzzles.pdf](posts/paper/GDC2025/Design/Grant_Elyot_Designing+10,000+Puzzles.pdf)\n\n[Holdwick_Kyle_User-Generated Compassion.pdf](posts/paper/GDC2025/Design/Holdwick_Kyle_User-Generated%20Compassion.pdf)\n\n[Jeldrez_Emilio_TheImportanceOfAccessible.pdf](posts/paper/GDC2025/Design/Jeldrez_Emilio_TheImportanceOfAccessible.pdf)\n\n[K_K_Experimental+Games+Showcase.pdf](posts/paper/GDC2025/Design/K_K_Experimental+Games+Showcase.pdf)\n\n[Moberly&amp;Dollarhyde_Lis&amp;Kate_DesigningRelationshipsHow.pdf](posts/paper/GDC2025/Design/Moberly&Dollarhyde_Lis&Kate_DesigningRelationshipsHow.pdf)\n\n[Mol+and+Politopoulos_Angus+and+Aris_Avoiding+the+Historical.pdf](posts/paper/GDC2025/Design/Mol+and+Politopoulos_Angus+and+Aris_Avoiding+the+Historical.pdf)\n\n[Perry_Jon_HowTabletopDesign.pdf](posts/paper/GDC2025/Design/Perry_Jon_HowTabletopDesign.pdf)\n\n[ReineAbbasThe+Dark+Side.pdf](posts/paper/GDC2025/Design/ReineAbbasThe+Dark+Side.pdf)\n\n[Rose_Tabby_VR_Is_For.pdf](posts/paper/GDC2025/Design/Rose_Tabby_VR_Is_For.pdf)\n\n### Game Narrative\n\n[Grave_Gerben_By+Any+Other.pdf](posts/paper/GDC2025/Game%20Narrative/Grave_Gerben_By+Any+Other.pdf)\n\n[Horneman_Jurie_Get_serious_about.pdf](posts/paper/GDC2025/Game%20Narrative/Horneman_Jurie_Get_serious_about.pdf)\n\n[Khan_Ayesha_Prepare+Recording+Scripts.pdf](posts/paper/GDC2025/Game%20Narrative/Khan_Ayesha_Prepare+Recording+Scripts.pdf)\n\n[PlayableStories_GDC25_Presentation-LaurenBond.pdf](posts/paper/GDC2025/Game%20Narrative/PlayableStories_GDC25_Presentation-LaurenBond.pdf)\n\n[Ruhl_Ashley_LaborOfLove.pdf](posts/paper/GDC2025/Game%20Narrative/Ruhl_Ashley_LaborOfLove.pdf)\n\n### Independent Games\n\n[Boozayaangool_Tanat_Comedy+Through+Patterns.pdf](posts/paper/GDC2025/Independent%20Games/Boozayaangool_Tanat_Comedy+Through+Patterns.pdf)\n\n[Fan_Monica_Gameplay+System+Design.pdf](posts/paper/GDC2025/Independent%20Games/Fan_Monica_Gameplay+System+Design.pdf)\n\n[Gittins_Renee_You+Are+Not.pdf](posts/paper/GDC2025/Independent%20Games/Gittins_Renee_You+Are+Not.pdf)\n\n[Hackett_Matt_Content-Ready_Game_Development.pdf](posts/paper/GDC2025/Independent%20Games/Hackett_Matt_Content-Ready_Game_Development.pdf)\n\n[KhanCostaSmithShiraishi_ShahrinJenKaitlinLola_MicrotalksSolvingProduction.pdf](posts/paper/GDC2025/Independent%20Games/KhanCostaSmithShiraishi_ShahrinJenKaitlinLola_MicrotalksSolvingProduction.pdf)\n\n[Loiterman_Jonathan_Fundraising_Boot_Camp.pdf.pdf](posts/paper/GDC2025/Independent%20Games/Loiterman_Jonathan_Fundraising_Boot_Camp.pdf.pdf)\n\n[Meetings+Make+Games!+Fostering+Empathy+and+Focus+in+Collaborative+Discussion.pptx.pdf](posts/paper/GDC2025/Independent%20Games/Meetings+Make+Games!+Fostering+Empathy+and+Focus+in+Collaborative+Discussion.pptx.pdf)\n\n[Merry_Tina_MakingRoom (1).pdf](posts/paper/GDC2025/Independent%20Games/Merry_Tina_MakingRoom%20(1).pdf)\n\n[Merry_Tina_MakingRoom.pdf](posts/paper/GDC2025/Independent%20Games/Merry_Tina_MakingRoom.pdf)\n\n[Pink_Hot_SexSellsOr.pdf](posts/paper/GDC2025/Independent%20Games/Pink_Hot_SexSellsOr.pdf)\n\n### Programming\n\n[AzzouniTarik_MarcottePhilippe_StreamliningBotDevelopment.pdf](posts/paper/GDC2025/Programming/AzzouniTarik_MarcottePhilippe_StreamliningBotDevelopment.pdf)\n\n[Bryan_Keiren_Nodes+and+Native.pdf](posts/paper/GDC2025/Programming/Bryan_Keiren_Nodes+and+Native.pdf)\n\n[Cao_Luyan_DecodingLightNeural.pdf](posts/paper/GDC2025/Programming/Cao_Luyan_DecodingLightNeural.pdf)\n\n[Celmer_Maciej_Heat+MaxTac+Blockades.pdf](posts/paper/GDC2025/Programming/Celmer_Maciej_Heat+MaxTac+Blockades.pdf)\n\n[Eidukonis_Kasparas_GPU+Raytracing+for.pdf](posts/paper/GDC2025/Programming/Eidukonis_Kasparas_GPU+Raytracing+for.pdf)\n\n[Graham_Rez_The_Human_Cost.pdf](posts/paper/GDC2025/Programming/Graham_Rez_The_Human_Cost.pdf)\n\n[Hein_Bettina_Developing_A_Stats-Based.pdf](posts/paper/GDC2025/Programming/Hein_Bettina_Developing_A_Stats-Based.pdf)\n\n[Jiao_Hang_Delta+Force+Performant.pdf](posts/paper/GDC2025/Programming/Jiao_Hang_Delta+Force+Performant.pdf)\n\n[Kogelnig_Richard_NavigatingExpansiveWorlds.pdf](posts/paper/GDC2025/Programming/Kogelnig_Richard_NavigatingExpansiveWorlds.pdf)\n\n[Li_Xiaosheng_Smash+the+Scene.pdf](posts/paper/GDC2025/Programming/Li_Xiaosheng_Smash+the+Scene.pdf)\n\n[Linda_Liu_TwitchChatSafety.pdf](posts/paper/GDC2025/Programming/Linda_Liu_TwitchChatSafety.pdf)\n\n[Marko_Matej_CombiningGOAPandMBTs.pdf](posts/paper/GDC2025/Programming/Marko_Matej_CombiningGOAPandMBTs.pdf)\n\n[Mejerwall_Marie_Growing_an_AI.pdf](posts/paper/GDC2025/Programming/Mejerwall_Marie_Growing_an_AI.pdf)\n\n[Mengfei_Li+Eggy+Party+Server.pdf](posts/paper/GDC2025/Programming/Mengfei_Li+Eggy+Party+Server.pdf)\n\n[Molnar_Gabor_Dressed_to_Quest.pdf](posts/paper/GDC2025/Programming/Molnar_Gabor_Dressed_to_Quest.pdf)\n\n[Moufarek_Alexandre_SIMA_Developing_AI_Agents.pdf](posts/paper/GDC2025/Programming/Moufarek_Alexandre_SIMA_Developing_AI_Agents.pdf)\n\n[Oberberger_Max_Advanced+Graphics+Summit.pdf](posts/paper/GDC2025/Programming/Oberberger_Max_Advanced+Graphics+Summit.pdf)\n\n[Palko_Martin_Revolutionizing_Texture_Pipelines.pdf](posts/paper/GDC2025/Programming/Palko_Martin_Revolutionizing_Texture_Pipelines.pdf)\n\n[Palmer-Campbell_Etienne_MissionKontrolRevolutionizing.pdf](posts/paper/GDC2025/Programming/Palmer-Campbell_Etienne_MissionKontrolRevolutionizing.pdf)\n\n[Pierre_Guillaume_A_Series_of.pdf](posts/paper/GDC2025/Programming/Pierre_Guillaume_A_Series_of.pdf)\n\n[Rodopoulos_Isadora_Making+Delightful+Tools.pdf](posts/paper/GDC2025/Programming/Rodopoulos_Isadora_Making+Delightful+Tools.pdf)\n\n[Santarra_Trevor_MultiagentPlanningFor.pdf](posts/paper/GDC2025/Programming/Santarra_Trevor_MultiagentPlanningFor.pdf)\n\n### Visual Arts\n\n[ANDRZEJCZAK_ADAM_GAUSSIAN_SPLATTING_WITH+2025-03-31+01.32.18.pdf](posts/paper/GDC2025/Visual%20Arts/ANDRZEJCZAK_ADAM_GAUSSIAN_SPLATTING_WITH+2025-03-31+01.32.18.pdf)\n\n[Afonseca_Bruno_VFX_Tricks_That.pdf](posts/paper/GDC2025/Visual%20Arts/Afonseca_Bruno_VFX_Tricks_That.pdf)\n\n[Graham_Rez_The_Human_Cost.pdf](posts/paper/GDC2025/Visual%20Arts/Graham_Rez_The_Human_Cost.pdf)\n\n[Graham_Rez_The_Simplest_AI.pdf](posts/paper/GDC2025/Visual%20Arts/Graham_Rez_The_Simplest_AI.pdf)\n\n[Hsieh_ChihYu_MathButMake.pdf](posts/paper/GDC2025/Visual%20Arts/Hsieh_ChihYu_MathButMake.pdf)\n\n[Kogelnig_Richard_NavigatingExpansiveWorlds.pdf](posts/paper/GDC2025/Visual%20Arts/Kogelnig_Richard_NavigatingExpansiveWorlds.pdf)\n\n[Lasses_Andreas_NoBrakesMachine.pdf](posts/paper/GDC2025/Visual%20Arts/Lasses_Andreas_NoBrakesMachine.pdf)\n\n[fox_marielle_evolvingworldsfrom.pdf](posts/paper/GDC2025/Visual%20Arts/fox_marielle_evolvingworldsfrom.pdf)\n\n---\n\n## GI\n\n[\\[GI\\]\\[Lumen\\]\\[UE5\\]\\[Siggraph2021\\]Radiance Caching for real-time Global Illumination (SIGGRAPH 2021).pptx](posts/paper/GI/[GI][Lumen][UE5][Siggraph2021]Radiance%20Caching%20for%20real-time%20Global%20Illumination%20(SIGGRAPH%202021).pptx)\n\n[\\[paper\\]\\[Nvida\\]svgf.pdf](posts/paper/GI/[paper][Nvida]svgf.pdf)\n\n[\\[使命召唤\\]\\[Call of duty\\]\\[Siggraph\\]\\[GI\\]Silvennoinen - SIGGRAPH 2021 Advances_slim.pptx](posts/paper/GI/[使命召唤][Call%20of%20duty][Siggraph][GI]Silvennoinen%20-%20SIGGRAPH%202021%20Advances_slim.pptx)\n\n[\\[战神GDC2019\\]_SMS_JoshHobson_The_Indirect_Lighting_Pipeline_of_GodofWar.pptx](posts/paper/GI/[战神GDC2019]_SMS_JoshHobson_The_Indirect_Lighting_Pipeline_of_GodofWar.pptx)\n\n---\n\n## PBR\n\n[PBR相关学术链接.txt](posts/paper/PBR/PBR相关学术链接.txt)\n\n[RTR4-CN.pdf](posts/paper/PBR/RTR4-CN.pdf)\n\n[\\[2016高光抗锯齿\\]NDFFiltering.pdf](posts/paper/PBR/[2016高光抗锯齿]NDFFiltering.pdf)\n\n[\\[2017高光抗锯齿\\]Error Reduction and Simplification for Shading Anti-Aliasing.pdf](posts/paper/PBR/[2017高光抗锯齿]Error%20Reduction%20and%20Simplification%20for%20Shading%20Anti-Aliasing.pdf)\n\n[\\[COD\\]\\[高光抗锯齿\\]MaterialAdvancesInWWII.pdf](posts/paper/PBR/[COD][高光抗锯齿]MaterialAdvancesInWWII.pdf)\n\n[\\[Normal Pack\\]\\[paper2014\\] A Survey of Efficient Representations for Independent Unit Vectors.pdf](posts/paper/PBR/[Normal%20Pack][paper2014]%20A%20Survey%20of%20Efficient%20Representations%20for%20Independent%20Unit%20Vectors.pdf)\n\n[\\[paper2008\\]\\[重要性采样\\]\\[Real-time Shading with Filtered Importance Sampling\\]2008-egsr-fis-final-embedded.pdf](posts/paper/PBR/[paper2008][重要性采样][Real-time%20Shading%20with%20Filtered%20Importance%20Sampling]2008-egsr-fis-final-embedded.pdf)\n\n[\\[皮肤渲染\\]\\[3S\\]\\[Siggraph2011\\]Penner - Pre-Integrated Skin Rendering (Siggraph 2011 Advances in Real-Time Rendering Course).pptx](posts/paper/PBR/[皮肤渲染][3S][Siggraph2011]Penner%20-%20Pre-Integrated%20Skin%20Rendering%20(Siggraph%202011%20Advances%20in%20Real-Time%20Rendering%20Course).pptx)\n\n[\\[薄膜衍射\\]\\[Thin film\\]\\[paper2017\\]A Practical Extension to Microfacet Theory for the Modeling of Varying Iridescence.pdf](posts/paper/PBR/[薄膜衍射][Thin%20film][paper2017]A%20Practical%20Extension%20to%20Microfacet%20Theory%20for%20the%20Modeling%20of%20Varying%20Iridescence.pdf)\n\n[course_notes_moving_frostbite_to_pbr_v32.pdf](posts/paper/PBR/course_notes_moving_frostbite_to_pbr_v32.pdf)\n\n[realtime_rendering_4ed.pdf](posts/paper/PBR/realtime_rendering_4ed.pdf)\n\n[<Real-Time Rendering 3rd> 提炼总结.pdf](posts/paper/PBR/《Real-Time%20Rendering%203rd》%20提炼总结.pdf)\n\n---\n\n## Particle\n\n[\\[粒子阴影&amp;CacheAO\\]\\[GDC2013\\]\\[Nvida\\]BAVOIL_ParticleShadowsAndCacheEfficientPost.pdf](posts/paper/Particle/[粒子阴影&CacheAO][GDC2013][Nvida]BAVOIL_ParticleShadowsAndCacheEfficientPost.pdf)\n\n---\n\n## ScreenSpace & SDF\n\n### AO\n\n[AO相关学术链接.txt](posts/paper/ScreenSpace%20&%20SDF/AO/AO相关学术链接.txt)\n\n[\\[GTAO_paper\\]Practical-Realtime-Strategies-for-Accurate-Indirect-Occlusion.pdf](posts/paper/ScreenSpace%20&%20SDF/AO/[GTAO_paper]Practical-Realtime-Strategies-for-Accurate-Indirect-Occlusion.pdf)\n\n[\\[GTAO_paper\\]Practical_Real_Time_Strategies_for_Accurate_Indirect_Occlusion_NEW VERSION_COLOR.pdf](posts/paper/ScreenSpace%20&%20SDF/AO/[GTAO_paper]Practical_Real_Time_Strategies_for_Accurate_Indirect_Occlusion_NEW%20VERSION_COLOR.pdf)\n\n[\\[SDF AO\\]\\[UE\\]\\[Siggraph2015\\]DynamicOcclusionWithSignedDistanceFields.ppt](posts/paper/ScreenSpace%20&%20SDF/AO/[SDF%20AO][UE][Siggraph2015]DynamicOcclusionWithSignedDistanceFields.ppt)\n\n### SSR\n\n[\\[SSR\\]\\[Siggraph2017\\]PixelProjectedReflectionsAC_v_1.92.pptx](posts/paper/ScreenSpace%20&%20SDF/SSR/[SSR][Siggraph2017]PixelProjectedReflectionsAC_v_1.92.pptx)\n\n[\\[SSR\\]\\[paper\\]efficient_gpu_ss_ray_tracing.pdf](posts/paper/ScreenSpace%20&%20SDF/SSR/[SSR][paper]efficient_gpu_ss_ray_tracing.pdf)\n\n### SuperResolution&AA\n\n[\\[FSR\\]\\[Siggraph\\]Unity AMD FSR - SIGGRAPH 2021.pptx](posts/paper/ScreenSpace%20&%20SDF/SuperResolution&AA/[FSR][Siggraph]Unity%20AMD%20FSR%20-%20SIGGRAPH%202021.pptx)\n\n### 景深Bokeh\n\n[\\[景深\\]\\[bokeh\\]\\[SIGGRAPH 2018\\]A Life of a Bokeh - SIGGRAPH 2018.pptx](posts/paper/ScreenSpace%20&%20SDF/景深Bokeh/[景深][bokeh][SIGGRAPH%202018]A%20Life%20of%20a%20Bokeh%20-%20SIGGRAPH%202018.pptx)\n\n---\n\n## Simulation(Fluid)\n\n[\\[流体模拟\\]\\[Nvida\\]\\[Screen Space Fluid Rendering\\]Direct3D_Effects.pdf](posts/paper/Simulation(Fluid)/[流体模拟][Nvida][Screen%20Space%20Fluid%20Rendering]Direct3D_Effects.pdf)\n\n---\n\n## Volumetric\n\n[Volumetric网页文章.txt](posts/paper/Volumetric/Volumetric网页文章.txt)\n\n[\\[Frostbit\\]\\[Siggraph16\\]\\[Atmosphere\\]\\[Volumetric\\]\\[Cloud\\]\\[T0\\]Physically Based Sky, Atmosphere and Cloud Rendering in Frostbite Sebastien Hillaire.pdf](posts/paper/Volumetric/[Frostbit][Siggraph16][Atmosphere][Volumetric][Cloud][T0]Physically%20Based%20Sky,%20Atmosphere%20and%20Cloud%20Rendering%20in%20Frostbite%20Sebastien%20Hillaire.pdf)\n\n[\\[Unity\\]Brunetons-Improved-Atmospheric-Scattering.zip](posts/paper/Volumetric/[Unity]Brunetons-Improved-Atmospheric-Scattering.zip)\n\n[\\[Volumetric fog\\]\\[Ubisoft\\]bwronski_volumetric_fog_siggraph2014.pptx](posts/paper/Volumetric/[Volumetric%20fog][Ubisoft]bwronski_volumetric_fog_siggraph2014.pptx)\n\n[\\[Volumetric fog\\]\\[frostbit\\]\\[Siggraph2015\\]Frostbite PB and unified volumetrics.pdf](posts/paper/Volumetric/[Volumetric%20fog][frostbit][Siggraph2015]Frostbite%20PB%20and%20unified%20volumetrics.pdf)\n\n[\\[Volumetric fog\\]\\[frostbit\\]\\[Siggraph2015\\]Frostbite PB and unified volumetrics.pptx](posts/paper/Volumetric/[Volumetric%20fog][frostbit][Siggraph2015]Frostbite%20PB%20and%20unified%20volumetrics.pptx)\n\n[\\[paper\\]Night Rendering.pdf](posts/paper/Volumetric/[paper]Night%20Rendering.pdf)\n\n[\\[paper\\]\\[2016\\]\\[PreComputedAtmosphere\\]A Qualitative and Quantitative Evaluation of 8 Clear Sky Models.pdf](posts/paper/Volumetric/[paper][2016][PreComputedAtmosphere]A%20Qualitative%20and%20Quantitative%20Evaluation%20of%208%20Clear%20Sky%20Models.pdf)\n\n[\\[paper\\]\\[siggraph\\]A Physically-Based Night Sky Model.pdf](posts/paper/Volumetric/[paper][siggraph]A%20Physically-Based%20Night%20Sky%20Model.pdf)\n\n---\n\n## tessellation\n\n[PN-AEN-Triangles-Whitepaper.pdf](posts/paper/tessellation/PN-AEN-Triangles-Whitepaper.pdf)\n\n---\n\n## 工业界paper\n\n### Crytek (CryEngine)\n\n[\\[FarCry5\\]\\[Terrain Rendering\\]\\[GDC2018\\]GDC2018_TerrainRenderingFarCry5.pdf](posts/paper/工业界paper/Crytek%20(CryEngine)/[FarCry5][Terrain%20Rendering][GDC2018]GDC2018_TerrainRenderingFarCry5.pdf)\n\n[\\[Farcry5\\]\\[Rendering\\]\\[Siggraph2018\\]The Challenges of Rendering an Open World in Far Cry 5.pptx](posts/paper/工业界paper/Crytek%20(CryEngine)/[Farcry5][Rendering][Siggraph2018]The%20Challenges%20of%20Rendering%20an%20Open%20World%20in%20Far%20Cry%205.pptx)\n\n[\\[Farcry6\\]\\[Weather\\]\\[GDC2022\\]FarCry6_SimulatingTropicalWeather_Weick_Colin_Zhou_Emily.pdf](posts/paper/工业界paper/Crytek%20(CryEngine)/[Farcry6][Weather][GDC2022]FarCry6_SimulatingTropicalWeather_Weick_Colin_Zhou_Emily.pdf)\n\n### Epic\n\n[\\[Atmosphere\\]\\[Epic\\]\\[Eurographics\\]A Scalable and Production Ready Sky and Atmosphere Rendering Technique.pdf](posts/paper/工业界paper/Epic/[Atmosphere][Epic][Eurographics]A%20Scalable%20and%20Production%20Ready%20Sky%20and%20Atmosphere%20Rendering%20Technique.pdf)\n\n[\\[MegaLights\\]\\[UE5\\]\\[Epic\\]\\[Siggraph\\]\\[2025\\]MegaLights_Stochastic_Direct_Lighting_2025.pdf](posts/paper/工业界paper/Epic/[MegaLights][UE5][Epic][Siggraph][2025]MegaLights_Stochastic_Direct_Lighting_2025.pdf)\n\n[\\[TAA\\]\\[UE\\]\\[Epic\\]\\[Siggraph\\]HighQualityTemporalSupersampling.pdf](posts/paper/工业界paper/Epic/[TAA][UE][Epic][Siggraph]HighQualityTemporalSupersampling.pdf)\n\n### Guerrilla Game(地平线)(杀戮地带)\n\n[\\[地平线\\]\\[GPU-based Procedural Placement\\]\\[GDC2017\\]\\[Horizon zero dawn\\]_VanMuijden_GPUBasedProceduralPlacementInHorizonZeroDawn.pptx](posts/paper/工业界paper/Guerrilla%20Game(地平线)(杀戮地带)/[地平线][GPU-based%20Procedural%20Placement][GDC2017][Horizon%20zero%20dawn]_VanMuijden_GPUBasedProceduralPlacementInHorizonZeroDawn.pptx)\n\n[\\[地平线\\]\\[Tools Pipeline\\]\\[Horizon zero dawn\\]\\[GDC2017\\]_Sumaili_VanDerSteen_CreatingAToolsPipelineForHorizonZeroDawn.pptx](posts/paper/工业界paper/Guerrilla%20Game(地平线)(杀戮地带)/[地平线][Tools%20Pipeline][Horizon%20zero%20dawn][GDC2017]_Sumaili_VanDerSteen_CreatingAToolsPipelineForHorizonZeroDawn.pptx)\n\n[\\[地平线\\]\\[volumetric cloud\\]\\[Eurographics2018\\]\\[Horizon zero dawn\\]Nubis - Realtime Volumetric Cloudscapes In A Nutshell.pptx](posts/paper/工业界paper/Guerrilla%20Game(地平线)(杀戮地带)/[地平线][volumetric%20cloud][Eurographics2018][Horizon%20zero%20dawn]Nubis%20-%20Realtime%20Volumetric%20Cloudscapes%20In%20A%20Nutshell.pptx)\n\n[\\[地平线\\]\\[volumetric cloud\\]\\[Siggraph2017\\]\\[Horizon zero dawn\\]Nubis - Authoring Realtime Volumetric Cloudscapes with the Decima Engine - Final.pptx](posts/paper/工业界paper/Guerrilla%20Game(地平线)(杀戮地带)/[地平线][volumetric%20cloud][Siggraph2017][Horizon%20zero%20dawn]Nubis%20-%20Authoring%20Realtime%20Volumetric%20Cloudscapes%20with%20the%20Decima%20Engine%20-%20Final.pptx)\n\n[\\[地平线\\]\\[volumetric cloud\\]\\[Siggraph2023\\]\\[Horizon Forbidden West\\]Nubis3 Methods (and madness) to model and render immersive real-time voxel-based clouds.pptx](posts/paper/工业界paper/Guerrilla%20Game(地平线)(杀戮地带)/[地平线][volumetric%20cloud][Siggraph2023][Horizon%20Forbidden%20West]Nubis3%20Methods%20(and%20madness)%20to%20model%20and%20render%20immersive%20real-time%20voxel-based%20clouds.pptx)\n\n[\\[地平线\\]\\[volumetric cloud\\]\\[siggraph2015\\]\\[Horizon zero dawn\\]Siggraph15_Schneider_Real-Time_Volumetric_Cloudscapes_of_Horizon_Zero_Dawn.pptx](posts/paper/工业界paper/Guerrilla%20Game(地平线)(杀戮地带)/[地平线][volumetric%20cloud][siggraph2015][Horizon%20zero%20dawn]Siggraph15_Schneider_Real-Time_Volumetric_Cloudscapes_of_Horizon_Zero_Dawn.pptx)\n\n[\\[地平线\\]\\[渲染\\]\\[rendering\\]\\[Siggraph2017\\]DecimaSiggraph2017.pdf](posts/paper/工业界paper/Guerrilla%20Game(地平线)(杀戮地带)/[地平线][渲染][rendering][Siggraph2017]DecimaSiggraph2017.pdf)\n\n[\\[地平线\\]\\[渲染\\]\\[rendering\\]\\[Siggraph2017\\]DecimaSiggraph2017.pptx](posts/paper/工业界paper/Guerrilla%20Game(地平线)(杀戮地带)/[地平线][渲染][rendering][Siggraph2017]DecimaSiggraph2017.pptx)\n\n[\\[杀戮地带2\\]Develop07_Valient_DeferredRenderingInKillzone2.pdf](posts/paper/工业界paper/Guerrilla%20Game(地平线)(杀戮地带)/[杀戮地带2]Develop07_Valient_DeferredRenderingInKillzone2.pdf)\n\n[\\[杀戮地带2\\]\\[GDC2009\\]_Valient_Rendering_Technology_Of_Killzone_2.pptx](posts/paper/工业界paper/Guerrilla%20Game(地平线)(杀戮地带)/[杀戮地带2][GDC2009]_Valient_Rendering_Technology_Of_Killzone_2.pptx)\n\n[\\[杀戮地带shadow fall\\]Drobot_Lighting_of_Killzone_Shadow_Fall.pptx](posts/paper/工业界paper/Guerrilla%20Game(地平线)(杀戮地带)/[杀戮地带shadow%20fall]Drobot_Lighting_of_Killzone_Shadow_Fall.pptx)\n\n[\\[杀戮地带shadow fall\\]\\[GDC2014\\]_Valient_Killzone_Graphics.pptx](posts/paper/工业界paper/Guerrilla%20Game(地平线)(杀戮地带)/[杀戮地带shadow%20fall][GDC2014]_Valient_Killzone_Graphics.pptx)\n\n[\\[杀戮地带shadow fall\\]\\[GDC2014\\]_VanderSteen_MayaRendering.pptx](posts/paper/工业界paper/Guerrilla%20Game(地平线)(杀戮地带)/[杀戮地带shadow%20fall][GDC2014]_VanderSteen_MayaRendering.pptx)\n\n[\\[杀戮地带shadow fall\\]\\[Siggraph2014\\]_ProductionAndVisualFX.pdf](posts/paper/工业界paper/Guerrilla%20Game(地平线)(杀戮地带)/[杀戮地带shadow%20fall][Siggraph2014]_ProductionAndVisualFX.pdf)\n\n\n### Housemarque(Returnal)\n\n[\\[GDC\\]\\[2023\\]\\[Returnal\\]Never The Same Twice - Procedural World Handling in &#39;Returnal&#39;.pdf](posts/paper/工业界paper/Housemarque(Returnal)/[GDC][2023][Returnal]Never%20The%20Same%20Twice%20-%20Procedural%20World%20Handling%20in%20'Returnal'.pdf)\n\n[\\[GDC\\]\\[2023\\]\\[Returnal\\]\\[翻译\\]Never The Same Twice - Procedural World Handling in &#39;Returnal&#39;.pdf](posts/paper/工业界paper/Housemarque(Returnal)/[GDC][2023][Returnal][翻译]Never%20The%20Same%20Twice%20-%20Procedural%20World%20Handling%20in%20'Returnal'.pdf)\n\n### NetEase\n\n[20180803_手游指令优化.pptx](posts/paper/工业界paper/NetEase/20180803_手游指令优化.pptx)\n\n[Candela3.0.pdf](posts/paper/工业界paper/NetEase/Candela3.0.pdf)\n\n[Further into Game Engine.pptx](posts/paper/工业界paper/NetEase/Further%20into%20Game%20Engine.pptx)\n\n[程序沙龙(广州,直播)第320期_<光遇>引擎及渲染介绍.pdf](posts/paper/工业界paper/NetEase/程序沙龙（广州，直播）第320期——《光遇》引擎及渲染介绍.pdf)\n\n### Playdead (地狱边境)(Inside)\n\n[\\[inside\\]\\[rendering\\]\\[GDC2016\\]Gjoel_Svendsen_Rendering_of_Inside.pdf](posts/paper/工业界paper/Playdead%20(地狱边境)(Inside)/[inside][rendering][GDC2016]Gjoel_Svendsen_Rendering_of_Inside.pdf)\n\n### RockStar(GTA)(大镖客)\n\n[\\[大镖客\\]\\[Atmosphere\\]\\[Siggraph2019\\]\\[Rockstar\\]Creating the Atmospheric World of Red Dead Redemption 2.pptx](posts/paper/工业界paper/RockStar(GTA)(大镖客)/[大镖客][Atmosphere][Siggraph2019][Rockstar]Creating%20the%20Atmospheric%20World%20of%20Red%20Dead%20Redemption%202.pptx)\n\n### SuckerPunch(对马岛)\n\n[\\[对马岛之魂\\]\\[Rendering\\]\\[GI\\]\\[Siggraph2021\\]\\[Ghost of Tsushima\\]jpatry_advances2021_ghost of tsushima.pdf](posts/paper/工业界paper/SuckerPunch(对马岛)/[对马岛之魂][Rendering][GI][Siggraph2021][Ghost%20of%20Tsushima]jpatry_advances2021_ghost%20of%20tsushima.pdf)\n\n### id Software (Doom)\n\n[\\[毁灭战士\\]\\[Doom\\]\\[Siggraph2020\\]RenderingDoomEternal_compressed.pptx](posts/paper/工业界paper/id%20Software%20(Doom)/[毁灭战士][Doom][Siggraph2020]RenderingDoomEternal_compressed.pptx)\n\n### 动视暴雪Activision Blizzard(CoD)\n\n[GDC21_Terrain_of_CoD.pptx](posts/paper/工业界paper/动视暴雪Activision%20Blizzard（CoD）/GDC21_Terrain_of_CoD.pptx)\n\n[\\[GDC2013\\]\\[Character Rendering\\]\\[Activision Blizzard\\]GDC13_Next-Generation-Character-Rendering-v6.pptx](posts/paper/工业界paper/动视暴雪Activision%20Blizzard（CoD）/[GDC2013][Character%20Rendering][Activision%20Blizzard]GDC13_Next-Generation-Character-Rendering-v6.pptx)\n\n### 索尼 SIE Santa Monica Studio (战神)\n\n[\\[战神\\]\\[Interactive Wind &amp; Vegetation\\]\\[GDC2019\\]\\[God of war\\]SMS_SeanFeeley_Interactive_Wind_and_Vegetation_in_God_of_War.pptx](posts/paper/工业界paper/索尼%20SIE%20Santa%20Monica%20Studio%20(战神)/[战神][Interactive%20Wind%20&%20Vegetation][GDC2019][God%20of%20war]SMS_SeanFeeley_Interactive_Wind_and_Vegetation_in_God_of_War.pptx)\n\n[\\[战神\\]\\[wind Simulation\\]\\[GDC2019\\]\\[God of war\\]_SMS_Rupert_Renard_Wind_Simulation_in_God_of_War.pptx](posts/paper/工业界paper/索尼%20SIE%20Santa%20Monica%20Studio%20(战神)/[战神][wind%20Simulation][GDC2019][God%20of%20war]_SMS_Rupert_Renard_Wind_Simulation_in_God_of_War.pptx)\n\n### 育碧(刺客信条)\n\n[\\[Raytracing\\]\\[Siggraph\\]\\[2025\\]Advances 2025 - Raytracing the world of Assassin&#39;s Creed Shadows.pdf](posts/paper/工业界paper/育碧（刺客信条）/[Raytracing][Siggraph][2025]Advances%202025%20-%20Raytracing%20the%20world%20of%20Assassin's%20Creed%20Shadows.pdf)\n\n### 腾讯 Tencent\n\n[\\[GDC\\]\\[2024\\]\\[三角洲\\]Delta Force Techniques From Unified Production Pipeline to Cross-Platform Runtime Support (Presented by Tencent Games).pdf](posts/paper/工业界paper/腾讯%20Tencent/[GDC][2024][三角洲]Delta%20Force%20Techniques%20From%20Unified%20Production%20Pipeline%20to%20Cross-Platform%20Runtime%20Support%20(Presented%20by%20Tencent%20Games).pdf)\n\n### 顽皮狗Naughty Dog\n\n[Uncharted4_NaughtyDog_TechArt_Final.pptx](posts/paper/工业界paper/顽皮狗Naughty%20Dog/Uncharted4_NaughtyDog_TechArt_Final.pptx)\n\n[Uncharted4_Rendering rapids in Uncharted 4.pptx](posts/paper/工业界paper/顽皮狗Naughty%20Dog/Uncharted4_Rendering%20rapids%20in%20Uncharted%204.pptx)\n\n[Uncharted4_TAA_s16_Ke.pptx](posts/paper/工业界paper/顽皮狗Naughty%20Dog/Uncharted4_TAA_s16_Ke.pptx)\n\n[Uncharted4_The Process of Creating Volumetric-based Materials in Uncharted 4.pptx](posts/paper/工业界paper/顽皮狗Naughty%20Dog/Uncharted4_The%20Process%20of%20Creating%20Volumetric-based%20Materials%20in%20Uncharted%204.pptx)\n\n[\\[Uncharted 4\\]\\[Siggraph2016\\]Uncharted4_Volumetric Global Illumination at Treyarch.pptx](posts/paper/工业界paper/顽皮狗Naughty%20Dog/[Uncharted%204][Siggraph2016]Uncharted4_Volumetric%20Global%20Illumination%20at%20Treyarch.pptx)\n\n[\\[the last of us patr 2\\]\\[Siggraph2020\\]LightingTechTlou2.pptx](posts/paper/工业界paper/顽皮狗Naughty%20Dog/[the%20last%20of%20us%20patr%202][Siggraph2020]LightingTechTlou2.pptx)\n\n[\\[the last of us patr 2\\]\\[Siggraph2020\\]Volumetrics.pptx](posts/paper/工业界paper/顽皮狗Naughty%20Dog/[the%20last%20of%20us%20patr%202][Siggraph2020]Volumetrics.pptx)\n\n[uncharted4_s16_ramy_final.pptx](posts/paper/工业界paper/顽皮狗Naughty%20Dog/uncharted4_s16_ramy_final.pptx)\n\n---\n\n## 源码\n\n### FrostbiteEngine\n\n[FrostbiteEngine.zip](posts/paper/源码/FrostbiteEngine/FrostbiteEngine.zip)\n\n[no_pass_gtav_source.zip](posts/paper/源码/no_pass_gtav_source.zip)\n\n---\n\n## 资源制作\n\n### 植被\n\n[\\[alpha_mip\\]alpha_distribution.pdf](posts/paper/资源制作/植被/[alpha_mip]alpha_distribution.pdf)\n\n[\\[地平线\\]\\[植被\\]\\[Horizon zero dawn\\]gilbert_sanders_between_tech_and.pdf](posts/paper/资源制作/植被/[地平线][植被][Horizon%20zero%20dawn]gilbert_sanders_between_tech_and.pdf)\n",
+      "content": "# LookDev\n#hdr #lookdev\n\n---\n## PTGui\n\n\n### LookDev PTGui 处理HDR贴图 ACES\n\nhttps://caveacademy.com/wiki/onset-production/data-preparation/creating-a-hdri-light-map-in-aces/\n\n![1770795246420](posts/笔记图床/游戏开发/渲染相关/LookDev/LookDev/1770795246420.png)\n\n### PTGui tutorial part 5: stitching HDR panoramas\n\nhttps://www.youtube.com/watch?v=xuuZipXZscM\n\n![1770794976285](posts/笔记图床/游戏开发/渲染相关/LookDev/LookDev/1770794976285.png)",
       "val": 1
     },
     {
-      "id": "ShaderToy",
-      "label": "ShaderToy",
-      "group": "shadertoy",
+      "id": "知名游戏截帧分析",
+      "label": "知名游戏截帧分析",
+      "group": "截帧",
       "all_tags": [
-        "shadertoy",
-        "渲染"
+        "截帧"
       ],
-      "content": "# ShaderToy\n#shadertoy #渲染\n\n---\n\n## ShaderToy 有意思的链接\n\n### 油画绘图\n\nhttps://www.shadertoy.com/view/NlSBW3\n\n![1768372892751](posts/笔记图床/游戏开发/渲染相关/ShaderToy/1768372892751.png)\n\n---\n\n### 科幻球体\n\nhttps://www.shadertoy.com/view/fdGfW1\n\n![1768372960166](posts/笔记图床/游戏开发/渲染相关/ShaderToy/1768372960166.png)\n\n---\n\n### 简易模糊\n\nhttps://www.shadertoy.com/view/MsdGD2\n\n![1768372993805](posts/笔记图床/游戏开发/渲染相关/ShaderToy/1768372993805.png)\n\n---\n\n### 双线性柔和滤波\n\nhttps://www.shadertoy.com/view/XsfGDn\n\n![1768373013441](posts/笔记图床/游戏开发/渲染相关/ShaderToy/1768373013441.png)\n\n---\n\n### Noise库\n\nhttps://www.shadertoy.com/view/MslGR8\n\n![1768373046814](posts/笔记图床/游戏开发/渲染相关/ShaderToy/1768373046814.png)\n\n---\n\n### 梯度场\n\nhttps://www.shadertoy.com/view/4syGWK\n\n![1768373057421](posts/笔记图床/游戏开发/渲染相关/ShaderToy/1768373057421.png)\n\n---",
+      "content": "# 知名游戏截帧分析\n#截帧\n\n---\n\n## 游戏截帧分析\n\nhttps://mamoniem.com/category/behind-the-pretty-frames/\n\n![1769395776377](posts/笔记图床/游戏开发/渲染相关/截帧分析/知名游戏截帧分析/1769395776377.png)",
       "val": 1
     },
     {
-      "id": "RayTracing",
-      "label": "RayTracing",
-      "group": "光追",
-      "all_tags": [
-        "光追",
-        "raytracing"
-      ],
-      "content": "# Ray Tracing 光线追踪\n#光追 #raytracing\n\n---\n\n## Ray Tracing 教程\n\n### 光追Unity youtube 教程\n\nhttps://www.youtube.com/watch?v=Qz0KTGYJtUk\n\n![1769766976923](posts/笔记图床/游戏开发/渲染相关/RayTracing相关/RayTracing/1769766976923.png)\n\n### Unity 光追 Github 工程\n\nhttps://github.com/SebLague/Ray-Tracing/tree/Episode01",
-      "val": 1
-    },
-    {
-      "id": "解析高度雾",
-      "label": "解析高度雾",
-      "group": "fog",
-      "all_tags": [
-        "fog",
-        "解析积分"
-      ],
-      "content": "# 解析积分高度雾\n#fog #解析积分\n\nhttps://iquilezles.org/articles/fog/\n\n### Intro\n\n---\n\nFog is very popular element in computer graphics, so popular that in fact we are always introduced to it early in textbooks or tutorials. However these textbooks, tutorials and even APIs only go as far as a simple distance based color blending, and stop there. Even advanced demos, interactive applications and games go no further that the simple color blending. Hopefully one can do much better and introduce some extra beauty and/or realism to the images with very little additional work on top of the basic idea.  \n  \n  \n\n### Colored fog\n\n---\n\nTraditionally fog is introduced as being the visual element that gives distance cues in an image. And indeed the fog quickly helps us understand the distances and therefore scale of objects, and the world itself.  \n  \n\n![1769051378951](posts/笔记图床/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾/1769051378951.png)\nWithout fog it's not easy to tell the scale of the terrain\n\n![1769051407549](posts/笔记图床/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾/1769051407549.png)\nWith fog we immediately understand the size the terrain\n\nHowever we should note that fog can also provide more information than that. For example, the color of the fog can tell us about the location of the sun in the sky, through variation in its hue. This also increases the realism to the image. A simple way to do this is to change the typical bluish fog color to something yellowish when the view vector aligns with the sun direction. This gives a very natural light dispersion effect. One would argue that such an effect shouldn't be called fog but scattering, and I agree, but in the end of the day one simply has to modify a bit the fog equation to get the effect done.  \n  \n``` cpp\nvec3 applyFog( in vec3  col, // color of pixel\n               in float t )  // distance to point\n{\n    float fogAmount = 1.0 - exp(-t*b);\n    vec3  fogColor  = vec3(0.5,0.6,0.7);\n    return mix( col, fogColor, fogAmount );\n}\n```\n\n```cpp\nvec3 applyFog( in vec3  col,   // color of pixel\n               in float t,     // distance to point\n               in vec3  rd,    // camera to point\n               in vec3  lig )  // sun direction\n{\n    float fogAmount = 1.0 - exp(-t*b);\n    float sunAmount = max( dot(rd, lig), 0.0 );\n    vec3  fogColor  = mix( vec3(0.5,0.6,0.7), // blue\n                           vec3(1.0,0.9,0.7), // yellow\n                           pow(sunAmount,8.0) );\n    return mix( col, fogColor, fogAmount );\n}\n```\n\nvec3 applyFog( in vec3 col, // color of pixel in float t, // distance to point in vec3 rd, // camera to point in vec3 lig ) // sun direction { float fogAmount = 1.0 - exp(-t\\*b); float sunAmount = max( dot(rd, lig), 0.0 ); vec3 fogColor = mix( vec3(0.5,0.6,0.7), // blue vec3(1.0,0.9,0.7), // yellow pow(sunAmount,8.0) ); return mix( col, fogColor, fogAmount ); }\n\n  \nThe effect can be done much more sophisticated. For example the exponent of the dot product between the sun and view vectors (which of course controls the influence of the directional color gradient) can be varyied with distance too. With the right settings one can fake glowing/blooming and other light scattering effects without actually doing any multipass or render to texture but a simple change to the fog equation. Color can change with altitude too, or any other parameters you might think of.  \n  \n  \n![1769051448196](posts/笔记图床/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾/1769051448196.png)\nRegular monocrhome fog\n\n![1769051456979](posts/笔记图床/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾/1769051456979.png)\nColored fog based on sun direction\n\n  \nAnother variation of the technique that we can develop starts by first splitting the usual mix() command in its two parts, ie, replace  \n  \n``` cpp\nfinalColor = mix( pixelColor, fogColor, 1.0-exp(-distance*b) );\n```\n  \nwith  \n  \n``` cpp\nfinalColor = pixelColor*exp(-distance*b) + fogColor*(1.0-exp(-distance*b));\n```\n  \n  \nThen, according to classic CG atmospheric scattering papers, the first term could be interpreted as the absortion of light due to scattering or \"extinction\", and the second term can be interpreted as the \"inscattering\". We note that this way of expressing fog is more powerfull, because now we can choose independent fallof parameters _**b**_ for the extinction and inscattering. Furthermore, we can have not one or two, but up to six different coefficients - three for the rgb channels of the extintion color and three for the rgb colored version of the inscattering.  \n  \n``` cpp\nvec3 extColor = vec3( exp(-distance*be.x), exp(-distance*be.y) exp(-distance*be.z) );\nvec3 insColor = vec3( exp(-distance*bi.x), exp(-distance*bi.y) exp(-distance*bi.z) );\nfinalColor = pixelColor*(1.0-extColor) + fogColor*insColor;\n```\n  \n  \nThis way of doing fog, combined with the sun direction coloring and other tricks can give you a very powerfull and simple fog system, yet very compact and fast. It's also quite intuitive, and you don't have to deal with tons of physics, maths and magic constants for Mie and Rayleight spectral constants and stuff. Simple and controlable is the win.  \n  \n  \n\n### Non constant density\n\n---\n\nThe original and simple fog formula has two parameters: the color and the density (which I called _**b**_ in the shader code above). Same way we modified it to have non constant color, we can also modify it so it doesn't have constant density. I'm gonna follow Crytek's trick in this one, but you can play and get some cool results with your own formulas too, although the derivation in that case might be a bit more complex.  \n  \nReal atmosphere is less dense in the height athmosphere than at the sea level. We can model that density variation with an exponential. The good thing of the exponential function is that the solution to the formulas is analytical. Let's see. We start with this exponential density function, which depends on the height _**y**_ of our point:  \n\n$$\nd(y) = a⋅e^{-b⋅y}\n$$\n  \nThe parameter **_b_** controls, of course, the fallof of this density. Now, as our ray traverses the atmosphere from the camera to the point, it will be accumulating opacity as it traverses the athmosphere. The amount of fog it gathers in each of these infinite amount of infinitelly little steps is driven by the fog density (that we just defined) at those points. So we have to add them all together. But of course, adding an infinte amount of ridiculosuly small things is called \"integral\" in maths. So, given our ray  \n  \n$$\nr(t) = o_y + t⋅k_y  \n$$\n  \nwe have that the total amount of fog is  \n  \n![1769051680998](posts/笔记图床/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾/1769051680998.png)\n  \nwhere _**T**_ is the distance from the camera to the point. This integral can be solved analytically, giving  \n  \n![1769051688836](posts/笔记图床/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾/1769051688836.png)\n  \nso that our non-constant-density-fog shader is  \n\nvec3 applyFog( in vec3 col, // color of pixel in float t, // distnace to point in vec3 ro, // camera position in vec3 rd ) // camera to point vector { float fogAmount = (a/b) \\* exp(-ro.y\\*b) \\* (1.0\\-exp(-t\\*rd.y\\*b))/rd.y; vec3 fogColor = vec3(0.5,0.6,0.7); return mix( col, fogColor, fogAmount ); }\n\n  \nwhich means that by adding no more than one division to the original formula we can get some cool height based fog (note that the rest of the formula is constant for a given frame).  \n\n![1769051482758](posts/笔记图床/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾/1769051482758.png)\nThe integral of the fog density function d(y) over the ray gives the final amount of fog\n\n  \n  \n![1769051496008](posts/笔记图床/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾/1769051496008.png)\nNote low altitude parts get extra fog\n\n![1769051503743](posts/笔记图床/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾/1769051503743.png)\nWithout height based fog\n\n  \nAgain, there are many variations that one can add to this constanst-vertical-exponential-fallof-density-function shader.  \n  \n![1769051515755](posts/笔记图床/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾/1769051515755.png)\nA raymarched terrain with non constant fog density  \n  \n  \n\n[inigo quilez](https://iquilezles.org) - learning computer graphics since 1994\n",
-      "val": 1
-    },
-    {
-      "id": "几个比较好的WebGL项目",
-      "label": "几个比较好的WebGL项目",
-      "group": "webgl",
-      "all_tags": [
-        "webgl",
-        "shader"
-      ],
-      "content": "# 几个比较好的WebGL项目\n#webgl #shader\n\n---\n\n## Google swissgl WebGL\n\nhttps://github.com/google/swissgl\n\n![1769595336154](posts/笔记图床/游戏开发/渲染相关/WebGL相关/几个比较好的WebGL项目/1769595336154.png)\n\nhttps://google.github.io/swissgl\n\n![1769595381055](posts/笔记图床/游戏开发/渲染相关/WebGL相关/几个比较好的WebGL项目/1769595381055.png)\n\n---\n\n## Evan Wallace WebGL Graphics\n\nhttps://madebyevan.com/\n\n### WebGL Water (2010)\n\n![1769594467565](posts/笔记图床/游戏开发/渲染相关/WebGL相关/几个比较好的WebGL项目/1769594467565.png)\n\nThis project was an experiment in realtime water rendering with WebGL. The focus was on the rendering aspect, not on the simulation, so the behavior of the water isn't that realistic. The water heightfield is simulated using a floating-point texture and the caustics are rendered using the GLSL derivative functions.\n\n[View demo...](../../../../../webgl-water)\n\n### WebGL Path Tracing (2010)\n\n![1769594476890](posts/笔记图床/游戏开发/渲染相关/WebGL相关/几个比较好的WebGL项目/1769594476890.png)\n\nPath tracing is a realistic lighting algorithm that simulates light bouncing around a scene. This path tracer uses WebGL for realtime performance and supports diffuse, mirrored, and glossy surfaces.\n\n[View demo...](../../../../../webgl-path-tracing)\n\n### WebGL Image Filters (2011)\n\n![1769594485088](posts/笔记图床/游戏开发/渲染相关/WebGL相关/几个比较好的WebGL项目/1769594485088.png)\n\nAdjust your photos in your browser in realtime with ten different image filters. This uses WebGL for speed, is entirely client-side, and is [open source on GitHub](https://github.com/evanw/webgl-filter). It was coded from scratch in 24 hours for HackNY, a hackathon in NYC, where it won second place.\n\n[View demo...](https://evanw.github.io/webgl-filter/)\n\n### Shader Articles (2015)\n\n![1769594498153](posts/笔记图床/游戏开发/渲染相关/WebGL相关/几个比较好的WebGL项目/1769594498153.png)\n\nA collection of interesting bits of shader code. All demos use WebGL and run in all major browsers.\n\n[View demos...](../../../../../shaders)\n",
-      "val": 1
-    },
-    {
-      "id": "Games101解析",
-      "label": "Games101解析",
-      "group": "games",
-      "all_tags": [
-        "games",
-        "games101"
-      ],
-      "content": "# Games101解析\n#games #games101\n\n---\n#### 透视矫正插值和图形渲染管线总结\n\n(本篇文章同步发表于知乎专栏： [https://zhuanlan.zhihu.com/p/144331875](https://zhuanlan.zhihu.com/p/144331875) 欢迎三连关注)\n\n正如上一文章中所提到的，我们的重心坐标往往都是在屏幕空间下所得到的，如果直接使用屏幕空间下的重心坐标进行插值会造成一定的误差，与在view space下是不一样的，那么本节内容就会具体介绍如何矫正这种误差，利用屏幕空间下的重心坐标达到正确的插值。在此之后也会对到目前为止的所有内容进行总结，即[图形渲染](https://so.csdn.net/so/search?q=%E5%9B%BE%E5%BD%A2%E6%B8%B2%E6%9F%93&spm=1001.2101.3001.7020)管线。\n\n## 1 透视矫正插值(Perspective\\-Correct Interpolation)\n\n![](posts/笔记图床/游戏开发/渲染相关/Games/Games101解析/650c55be21da4675b3d4a06e74dd28cb.png)  \n(为了证明的简便性，我们利用深度值Z的线性插值进行说明，重心坐标插值可以类比得到)  \n该问题可以很简单在上图之中表现出来，简单叙述一下，在屏幕空间进行线性插值得到点c的intensity为0.5，然而对于在view space之中正确的插值结果，可以很明显看到C的intensity绝不为0.5。这也就造成了插值的误差，应该去矫正！\n\n首先先分别定义屏幕空间的比例为s，view space中为t，其余符号含义如下图所示：  \n![](posts/笔记图床/游戏开发/渲染相关/Games/Games101解析/e2a331f1206047378c86b973e12f4d9c.png)  \n为了简便证明，将点的坐标用2维表示，第一维为图中所示的x轴，第二维为z轴。  \n简而言之，我们的目标就是得出t与s的关系式，这样就可以正确的利用屏幕空间的系数s插值到正确的view space的结果，推导过程如下。\n\n由上图所示的投影所造成的三角形相似性可以轻易得出如下几个式子：\n\n$$\n\\frac{X_{1}}{Z_{1}}=\\frac{u_{1}}{d} \\Rightarrow X_{1}=\\frac{u_{1} Z_{1}}{d} \\tag{1}\n$$\n\n$$\n\\frac{X_{2}}{Z_{2}}=\\frac{u_{2}}{d} \\Rightarrow X_{2}=\\frac{u_{2} Z_{2}}{d} \\tag{2}\n$$\n\n$$\n\\frac{X_{t}}{Z_{t}}=\\frac{u_{s}}{d} \\Rightarrow Z_{t}=\\frac{d X_{t}}{u_{s}} \\tag{3}\n$$\n\n同样，分别利用 screen space 以及 view space 的线性插值可以得到以下几个式子：\n\n$$\nu_{s}=u_{1}+s\\left(u_{2}-u_{1}\\right) \\tag{4}\n$$\n\n$$\nX_{t}=X_{1}+t\\left(X_{2}-X_{1}\\right) \\tag{5}\n$$\n\n$$\nZ_{t}=Z_{1}+t\\left(Z_{2}-Z_{1}\\right) \\tag{6}\n$$\n\n将 4 式与 5 式代入 3 式得：\n\n$$\nZ_{t}=\\frac{d\\left(X_{1}+t\\left(X_{2}-X_{1}\\right)\\right)}{u_{1}+s\\left(u_{2}-u_{1}\\right)} \\tag{7}\n$$\n\n再将 1 式与 2 式代入 7 式得：\n\n$$\nZ_{t}=\\frac{d\\left(\\frac{u_{1} Z_{1}}{d}+t\\left(\\frac{u_{2} Z_{2}}{d}-\\frac{u_{1} Z_{1}}{d}\\right)\\right)}{u_{1}+s\\left(u_{2}-u_{1}\\right)}=\\frac{u_{1} Z_{1}+t\\left(u_{2} Z_{2}-u_{1} Z_{1}\\right)}{u_{1}+s\\left(u_{2}-u_{1}\\right)} \\tag{8}\n$$\n\n最后将 6 式代入 8 式的左边得到：\n\n$$\nZ_{1}+t\\left(Z_{2}-Z_{1}\\right)=\\frac{u_{1} Z_{1}+t\\left(u_{2} Z_{2}-u_{1} Z_{1}\\right)}{u_{1}+s\\left(u_{2}-u_{1}\\right)} \\tag{9}\n$$\n\n仔细观察 9 式，我们已经成功得出了 $t$ 与 $s$ 的一个关系式，其中的其它参数都是已知，因此进一步化简不在这里展开，可以得到如下 $t$ 与 $s$ 关系：\n\n$$\nt=\\frac{s Z_{1}}{s Z_{1}+(1-s) Z_{2}} \\tag{10}\n$$\n\n如此就可以利用屏幕空间下的系数得到正确插值结果了，计算如下：\n\n$$\nZ_{t}=Z_{1}+\\frac{s Z_{1}}{s Z_{1}+(1-s) Z_{2}}\\left(Z_{2}-Z_{1}\\right)=\\frac{1}{\\frac{s}{Z_{2}}+\\frac{1-s}{Z_{1}}} \\tag{11}\n$$\n\n以上证明虽然只是针对线性插值的矫正结果，对于重心坐标插值，我们可以类似类推得出：\n\n$$\nZ_t=\\frac{1}{\\frac{\\alpha}{Z_A}+\\frac{\\beta}{Z_B}+\\frac{\\gamma}{Z_C}} \\tag{12}\n$$\n\n正确得出深度的插值结果之后，再看看任意属性（法线向量，纹理坐标，view space 坐标）插值结果，依然以线性插值为例先进行推导：用 $I$ 代表任意属性\n\n$$\nI_{t}=I_{1}+t\\left(I_{2}-I_{1}\\right) \\tag{13}\n$$\n\n$$\nI_{t}=I_{1}+\\frac{s Z_{1}}{s Z_{1}+(1-s) Z_{2}}\\left(I_{2}-I_{1}\\right) \\tag{14}\n$$\n\n$$\nI_{t}=\\frac{\\frac{I_{1}}{Z_{1}}+s\\left(\\frac{I_{2}}{Z_{2}}-\\frac{I_{1}}{Z_{1}}\\right)}{\\frac{1}{Z_{t}}} \\tag{15}\n$$\n\n（建议读者自行推导一遍上述所有过程，加深记忆）\n\n不难看出插值的分母就是深度值的倒数，类推得出重心坐标任意属性的正确插值如下:\n\n$$\nI_{t}=\\frac{\\alpha\\frac{I_{A}}{Z_{A}}+\\beta\\frac{I_{B}}{Z_{B}}+\\gamma\\frac{I_{C}}{Z_{C}}}{\\frac{1}{Z_{t}}} \\tag{16}\n$$\n\n（tips: 任意属性自然包括深度值，将深度值 $z$ 代入 16 式可以得出与 12 式一样的结果）\n\n至此，我们就可以利用 16 式进行所有的属性的重心坐标插值，并且保证结果正确了！\n\n## 2 图形渲染管线总结\n\n所谓图形渲染管线指的是一系列操作的流程，这个流程具体来说就是将一堆具有三维几何信息的数据点最终转换到二维屏幕空间的像素。其实也就是本系列笔记之前的所有知识连贯起来。我们以如下图作为一个总结，再具体分步骤讲解：  \n![](posts/笔记图床/游戏开发/渲染相关/Games/Games101解析/6bc1aea1486a4352b7f068fd8ccdc2dd.png)  \n（整个图形管线的步骤可能有不同的分法，不一定就是上图所述的5部分，但整体流程一定是一样的）  \n首先来看第一个，顶点处理：  \n![](posts/笔记图床/游戏开发/渲染相关/Games/Games101解析/48f151e0605e47dc9626f9f232240b8c.png)  \n顶点处理的作用是指对所有的顶点数据进行Model，View，和Projection的变换，最终得到投影到二维平面的坐标信息(同时为了Zbuffer保留深度z值)。当然如果超出观察空间的会被剪裁掉(关于剪裁的知识因为闫老师的课并没有多提，所以本系列笔记也暂未设及到，但是会在之后进行该部分知识的补充)。  \n而第二步三角形处理也十分容易理解，就是将所有的顶点按照原几何信息，变成三角面，每个面由3个顶点组成。得到了许许多多个三角形之后，接下来的操作自然就是三角形光栅化了，这也是前几节笔记之中的重点内容之一：  \n![](posts/笔记图床/游戏开发/渲染相关/Games/Games101解析/654b009dcc6e46a69b9c83bbdc534a54.png)  \n在进行完三角形的光栅化之后，知道了哪些在三角形内的点可以被显示，那么如何确定每个像素点或者说片元(Fragement)的颜色呢？\\[注：片元可能比像素更小，如MSAA抗拒齿操作的进一步细分得到的采样点\\]。那自然就是着色了，也就是片元处理阶段应该做的。  \n![](posts/笔记图床/游戏开发/渲染相关/Games/Games101解析/9d986bf5b69341f8b8ba571c7f6132c8.png)  \n注意这阶段顶点处理也亮起来是因为我们需要顶点信息对三角形内的点进行属性插值(tips：当然也可以直接在顶点处理阶段就算出每个顶点的颜色值，如Gouraud Shading一样)。当然这一阶段也少不了Z-Buffer来帮助确定，哪些像素点应该显示在屏幕上，哪些点被遮挡了不应该显示(这一步也有不少书籍归结在最后一步中，个人感觉差求不多，重要在于理解整个过程吧)：  \n![](posts/笔记图床/游戏开发/渲染相关/Games/Games101解析/bc4133f82adc40c697560bb63a89068e.png)  \n最后一步！Framebuffer的处理，就是将所有的像素颜色信息整合在一起，输送给显示设备加以显示。这也就完成了整个图形渲染管线了。\n\n(tips:其实在片元处理阶段有一点还未叙述，我们也可以去做texture mapping，利用texture的信息来代替blinn-phong模型漫反射系数来当作颜色，这一部分的内容会在下一节笔记中叙述！)\n\n在这里简单的提一下shader program，shader program分两种，分别是对顶点以及对片元的处理，程序员可以自行编程来代替原来固定的顶点处理和片元处理从而达到各种各样令人惊叹的效果！这也就是现在的可编程渲染管线。\n\n## 总结\n\n其实对于透视校正插值这一块确实是一个小坑，不少人应该在刚学习的时候都不会注意到，包括我也是，最后也是看知乎上一些大佬的回答才找了一些资料弄明白了这一块。对于图形渲染管线来说，其实就是对光栅化的一个总结，把整个流程拎出来能够有一个更加清晰的认识。\n",
-      "val": 1
-    },
-    {
-      "id": "SSGI",
-      "label": "SSGI",
+      "id": "RadianceCascades",
+      "label": "RadianceCascades",
       "group": "GI",
       "all_tags": [
         "GI"
       ],
-      "content": "# SSGI\n#GI\n\n---\n\n## Unity SSGi\n\n### github 链接\n\nhttps://github.com/haolange/Unity_ScreenSpaceLighting_Old\n\n![1769156444863](posts/笔记图床/游戏开发/渲染相关/GI相关/SSGI/1769156444863.png)\n![1769156454650](posts/笔记图床/游戏开发/渲染相关/GI相关/SSGI/1769156454650.png)\n\n### 知乎文章链接\nhttps://zhuanlan.zhihu.com/p/64630152",
+      "content": "# RadianceCascades - A Novel Approach to Calculating Global Illumination\n#GI\n\n---\n\n### Exploring a New Approach to Realistic Lighting: Radiance Cascades\n\nhttps://www.youtube.com/watch?v=3so7xdZHKxw\n\n![1769152754921](posts/笔记图床/游戏开发/渲染相关/GI相关/RadianceCascades/1769152754921.png)\n\nhttps://tmpvar.com/poc/radiance-cascades/\n\n![1769152511632](posts/笔记图床/游戏开发/渲染相关/GI相关/RadianceCascades/1769152511632.png)\n\nhttps://www.shadertoy.com/view/mlSfRD\n\n![1769152344261](posts/笔记图床/游戏开发/渲染相关/GI相关/RadianceCascades/1769152344261.png)\n\n\n\n### 相关paper名称\nRadiance Cascades: A Novel Approach to Calculating Global Illumination[WIP]\n",
       "val": 1
     },
     {
@@ -187,16 +292,6 @@
       "val": 1
     },
     {
-      "id": "RadianceCascades",
-      "label": "RadianceCascades",
-      "group": "GI",
-      "all_tags": [
-        "GI"
-      ],
-      "content": "# RadianceCascades - A Novel Approach to Calculating Global Illumination\n#GI\n\n---\n\n### Exploring a New Approach to Realistic Lighting: Radiance Cascades\n\nhttps://www.youtube.com/watch?v=3so7xdZHKxw\n\n![1769152754921](posts/笔记图床/游戏开发/渲染相关/GI相关/RadianceCascades/1769152754921.png)\n\nhttps://tmpvar.com/poc/radiance-cascades/\n\n![1769152511632](posts/笔记图床/游戏开发/渲染相关/GI相关/RadianceCascades/1769152511632.png)\n\nhttps://www.shadertoy.com/view/mlSfRD\n\n![1769152344261](posts/笔记图床/游戏开发/渲染相关/GI相关/RadianceCascades/1769152344261.png)\n\n\n\n### 相关paper名称\nRadiance Cascades: A Novel Approach to Calculating Global Illumination[WIP]\n",
-      "val": 1
-    },
-    {
       "id": "DDGI",
       "label": "DDGI",
       "group": "GI",
@@ -207,13 +302,46 @@
       "val": 1
     },
     {
-      "id": "知名游戏截帧分析",
-      "label": "知名游戏截帧分析",
-      "group": "截帧",
+      "id": "SSGI",
+      "label": "SSGI",
+      "group": "GI",
       "all_tags": [
-        "截帧"
+        "GI"
       ],
-      "content": "# 知名游戏截帧分析\n#截帧\n\n---\n\n## 游戏截帧分析\n\nhttps://mamoniem.com/category/behind-the-pretty-frames/\n\n![1769395776377](posts/笔记图床/游戏开发/渲染相关/截帧分析/知名游戏截帧分析/1769395776377.png)",
+      "content": "# SSGI\n#GI\n\n---\n\n## Unity SSGi\n\n### github 链接\n\nhttps://github.com/haolange/Unity_ScreenSpaceLighting_Old\n\n![1769156444863](posts/笔记图床/游戏开发/渲染相关/GI相关/SSGI/1769156444863.png)\n![1769156454650](posts/笔记图床/游戏开发/渲染相关/GI相关/SSGI/1769156454650.png)\n\n### 知乎文章链接\nhttps://zhuanlan.zhihu.com/p/64630152",
+      "val": 1
+    },
+    {
+      "id": "Games101解析",
+      "label": "Games101解析",
+      "group": "games",
+      "all_tags": [
+        "games",
+        "games101"
+      ],
+      "content": "# Games101解析\n#games #games101\n\n---\n#### 透视矫正插值和图形渲染管线总结\n\n(本篇文章同步发表于知乎专栏： [https://zhuanlan.zhihu.com/p/144331875](https://zhuanlan.zhihu.com/p/144331875) 欢迎三连关注)\n\n正如上一文章中所提到的，我们的重心坐标往往都是在屏幕空间下所得到的，如果直接使用屏幕空间下的重心坐标进行插值会造成一定的误差，与在view space下是不一样的，那么本节内容就会具体介绍如何矫正这种误差，利用屏幕空间下的重心坐标达到正确的插值。在此之后也会对到目前为止的所有内容进行总结，即[图形渲染](https://so.csdn.net/so/search?q=%E5%9B%BE%E5%BD%A2%E6%B8%B2%E6%9F%93&spm=1001.2101.3001.7020)管线。\n\n## 1 透视矫正插值(Perspective\\-Correct Interpolation)\n\n![](posts/笔记图床/游戏开发/渲染相关/Games/Games101解析/650c55be21da4675b3d4a06e74dd28cb.png)  \n(为了证明的简便性，我们利用深度值Z的线性插值进行说明，重心坐标插值可以类比得到)  \n该问题可以很简单在上图之中表现出来，简单叙述一下，在屏幕空间进行线性插值得到点c的intensity为0.5，然而对于在view space之中正确的插值结果，可以很明显看到C的intensity绝不为0.5。这也就造成了插值的误差，应该去矫正！\n\n首先先分别定义屏幕空间的比例为s，view space中为t，其余符号含义如下图所示：  \n![](posts/笔记图床/游戏开发/渲染相关/Games/Games101解析/e2a331f1206047378c86b973e12f4d9c.png)  \n为了简便证明，将点的坐标用2维表示，第一维为图中所示的x轴，第二维为z轴。  \n简而言之，我们的目标就是得出t与s的关系式，这样就可以正确的利用屏幕空间的系数s插值到正确的view space的结果，推导过程如下。\n\n由上图所示的投影所造成的三角形相似性可以轻易得出如下几个式子：\n\n$$\n\\frac{X_{1}}{Z_{1}}=\\frac{u_{1}}{d} \\Rightarrow X_{1}=\\frac{u_{1} Z_{1}}{d} \\tag{1}\n$$\n\n$$\n\\frac{X_{2}}{Z_{2}}=\\frac{u_{2}}{d} \\Rightarrow X_{2}=\\frac{u_{2} Z_{2}}{d} \\tag{2}\n$$\n\n$$\n\\frac{X_{t}}{Z_{t}}=\\frac{u_{s}}{d} \\Rightarrow Z_{t}=\\frac{d X_{t}}{u_{s}} \\tag{3}\n$$\n\n同样，分别利用 screen space 以及 view space 的线性插值可以得到以下几个式子：\n\n$$\nu_{s}=u_{1}+s\\left(u_{2}-u_{1}\\right) \\tag{4}\n$$\n\n$$\nX_{t}=X_{1}+t\\left(X_{2}-X_{1}\\right) \\tag{5}\n$$\n\n$$\nZ_{t}=Z_{1}+t\\left(Z_{2}-Z_{1}\\right) \\tag{6}\n$$\n\n将 4 式与 5 式代入 3 式得：\n\n$$\nZ_{t}=\\frac{d\\left(X_{1}+t\\left(X_{2}-X_{1}\\right)\\right)}{u_{1}+s\\left(u_{2}-u_{1}\\right)} \\tag{7}\n$$\n\n再将 1 式与 2 式代入 7 式得：\n\n$$\nZ_{t}=\\frac{d\\left(\\frac{u_{1} Z_{1}}{d}+t\\left(\\frac{u_{2} Z_{2}}{d}-\\frac{u_{1} Z_{1}}{d}\\right)\\right)}{u_{1}+s\\left(u_{2}-u_{1}\\right)}=\\frac{u_{1} Z_{1}+t\\left(u_{2} Z_{2}-u_{1} Z_{1}\\right)}{u_{1}+s\\left(u_{2}-u_{1}\\right)} \\tag{8}\n$$\n\n最后将 6 式代入 8 式的左边得到：\n\n$$\nZ_{1}+t\\left(Z_{2}-Z_{1}\\right)=\\frac{u_{1} Z_{1}+t\\left(u_{2} Z_{2}-u_{1} Z_{1}\\right)}{u_{1}+s\\left(u_{2}-u_{1}\\right)} \\tag{9}\n$$\n\n仔细观察 9 式，我们已经成功得出了 $t$ 与 $s$ 的一个关系式，其中的其它参数都是已知，因此进一步化简不在这里展开，可以得到如下 $t$ 与 $s$ 关系：\n\n$$\nt=\\frac{s Z_{1}}{s Z_{1}+(1-s) Z_{2}} \\tag{10}\n$$\n\n如此就可以利用屏幕空间下的系数得到正确插值结果了，计算如下：\n\n$$\nZ_{t}=Z_{1}+\\frac{s Z_{1}}{s Z_{1}+(1-s) Z_{2}}\\left(Z_{2}-Z_{1}\\right)=\\frac{1}{\\frac{s}{Z_{2}}+\\frac{1-s}{Z_{1}}} \\tag{11}\n$$\n\n以上证明虽然只是针对线性插值的矫正结果，对于重心坐标插值，我们可以类似类推得出：\n\n$$\nZ_t=\\frac{1}{\\frac{\\alpha}{Z_A}+\\frac{\\beta}{Z_B}+\\frac{\\gamma}{Z_C}} \\tag{12}\n$$\n\n正确得出深度的插值结果之后，再看看任意属性（法线向量，纹理坐标，view space 坐标）插值结果，依然以线性插值为例先进行推导：用 $I$ 代表任意属性\n\n$$\nI_{t}=I_{1}+t\\left(I_{2}-I_{1}\\right) \\tag{13}\n$$\n\n$$\nI_{t}=I_{1}+\\frac{s Z_{1}}{s Z_{1}+(1-s) Z_{2}}\\left(I_{2}-I_{1}\\right) \\tag{14}\n$$\n\n$$\nI_{t}=\\frac{\\frac{I_{1}}{Z_{1}}+s\\left(\\frac{I_{2}}{Z_{2}}-\\frac{I_{1}}{Z_{1}}\\right)}{\\frac{1}{Z_{t}}} \\tag{15}\n$$\n\n（建议读者自行推导一遍上述所有过程，加深记忆）\n\n不难看出插值的分母就是深度值的倒数，类推得出重心坐标任意属性的正确插值如下:\n\n$$\nI_{t}=\\frac{\\alpha\\frac{I_{A}}{Z_{A}}+\\beta\\frac{I_{B}}{Z_{B}}+\\gamma\\frac{I_{C}}{Z_{C}}}{\\frac{1}{Z_{t}}} \\tag{16}\n$$\n\n（tips: 任意属性自然包括深度值，将深度值 $z$ 代入 16 式可以得出与 12 式一样的结果）\n\n至此，我们就可以利用 16 式进行所有的属性的重心坐标插值，并且保证结果正确了！\n\n## 2 图形渲染管线总结\n\n所谓图形渲染管线指的是一系列操作的流程，这个流程具体来说就是将一堆具有三维几何信息的数据点最终转换到二维屏幕空间的像素。其实也就是本系列笔记之前的所有知识连贯起来。我们以如下图作为一个总结，再具体分步骤讲解：  \n![](posts/笔记图床/游戏开发/渲染相关/Games/Games101解析/6bc1aea1486a4352b7f068fd8ccdc2dd.png)  \n（整个图形管线的步骤可能有不同的分法，不一定就是上图所述的5部分，但整体流程一定是一样的）  \n首先来看第一个，顶点处理：  \n![](posts/笔记图床/游戏开发/渲染相关/Games/Games101解析/48f151e0605e47dc9626f9f232240b8c.png)  \n顶点处理的作用是指对所有的顶点数据进行Model，View，和Projection的变换，最终得到投影到二维平面的坐标信息(同时为了Zbuffer保留深度z值)。当然如果超出观察空间的会被剪裁掉(关于剪裁的知识因为闫老师的课并没有多提，所以本系列笔记也暂未设及到，但是会在之后进行该部分知识的补充)。  \n而第二步三角形处理也十分容易理解，就是将所有的顶点按照原几何信息，变成三角面，每个面由3个顶点组成。得到了许许多多个三角形之后，接下来的操作自然就是三角形光栅化了，这也是前几节笔记之中的重点内容之一：  \n![](posts/笔记图床/游戏开发/渲染相关/Games/Games101解析/654b009dcc6e46a69b9c83bbdc534a54.png)  \n在进行完三角形的光栅化之后，知道了哪些在三角形内的点可以被显示，那么如何确定每个像素点或者说片元(Fragement)的颜色呢？\\[注：片元可能比像素更小，如MSAA抗拒齿操作的进一步细分得到的采样点\\]。那自然就是着色了，也就是片元处理阶段应该做的。  \n![](posts/笔记图床/游戏开发/渲染相关/Games/Games101解析/9d986bf5b69341f8b8ba571c7f6132c8.png)  \n注意这阶段顶点处理也亮起来是因为我们需要顶点信息对三角形内的点进行属性插值(tips：当然也可以直接在顶点处理阶段就算出每个顶点的颜色值，如Gouraud Shading一样)。当然这一阶段也少不了Z-Buffer来帮助确定，哪些像素点应该显示在屏幕上，哪些点被遮挡了不应该显示(这一步也有不少书籍归结在最后一步中，个人感觉差求不多，重要在于理解整个过程吧)：  \n![](posts/笔记图床/游戏开发/渲染相关/Games/Games101解析/bc4133f82adc40c697560bb63a89068e.png)  \n最后一步！Framebuffer的处理，就是将所有的像素颜色信息整合在一起，输送给显示设备加以显示。这也就完成了整个图形渲染管线了。\n\n(tips:其实在片元处理阶段有一点还未叙述，我们也可以去做texture mapping，利用texture的信息来代替blinn-phong模型漫反射系数来当作颜色，这一部分的内容会在下一节笔记中叙述！)\n\n在这里简单的提一下shader program，shader program分两种，分别是对顶点以及对片元的处理，程序员可以自行编程来代替原来固定的顶点处理和片元处理从而达到各种各样令人惊叹的效果！这也就是现在的可编程渲染管线。\n\n## 总结\n\n其实对于透视校正插值这一块确实是一个小坑，不少人应该在刚学习的时候都不会注意到，包括我也是，最后也是看知乎上一些大佬的回答才找了一些资料弄明白了这一块。对于图形渲染管线来说，其实就是对光栅化的一个总结，把整个流程拎出来能够有一个更加清晰的认识。\n",
+      "val": 1
+    },
+    {
+      "id": "解析高度雾",
+      "label": "解析高度雾",
+      "group": "fog",
+      "all_tags": [
+        "fog",
+        "解析积分"
+      ],
+      "content": "# 解析积分高度雾\n#fog #解析积分\n\nhttps://iquilezles.org/articles/fog/\n\n### Intro\n\n---\n\nFog is very popular element in computer graphics, so popular that in fact we are always introduced to it early in textbooks or tutorials. However these textbooks, tutorials and even APIs only go as far as a simple distance based color blending, and stop there. Even advanced demos, interactive applications and games go no further that the simple color blending. Hopefully one can do much better and introduce some extra beauty and/or realism to the images with very little additional work on top of the basic idea.  \n  \n  \n\n### Colored fog\n\n---\n\nTraditionally fog is introduced as being the visual element that gives distance cues in an image. And indeed the fog quickly helps us understand the distances and therefore scale of objects, and the world itself.  \n  \n\n![1769051378951](posts/笔记图床/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾/1769051378951.png)\nWithout fog it's not easy to tell the scale of the terrain\n\n![1769051407549](posts/笔记图床/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾/1769051407549.png)\nWith fog we immediately understand the size the terrain\n\nHowever we should note that fog can also provide more information than that. For example, the color of the fog can tell us about the location of the sun in the sky, through variation in its hue. This also increases the realism to the image. A simple way to do this is to change the typical bluish fog color to something yellowish when the view vector aligns with the sun direction. This gives a very natural light dispersion effect. One would argue that such an effect shouldn't be called fog but scattering, and I agree, but in the end of the day one simply has to modify a bit the fog equation to get the effect done.  \n  \n``` cpp\nvec3 applyFog( in vec3  col, // color of pixel\n               in float t )  // distance to point\n{\n    float fogAmount = 1.0 - exp(-t*b);\n    vec3  fogColor  = vec3(0.5,0.6,0.7);\n    return mix( col, fogColor, fogAmount );\n}\n```\n\n```cpp\nvec3 applyFog( in vec3  col,   // color of pixel\n               in float t,     // distance to point\n               in vec3  rd,    // camera to point\n               in vec3  lig )  // sun direction\n{\n    float fogAmount = 1.0 - exp(-t*b);\n    float sunAmount = max( dot(rd, lig), 0.0 );\n    vec3  fogColor  = mix( vec3(0.5,0.6,0.7), // blue\n                           vec3(1.0,0.9,0.7), // yellow\n                           pow(sunAmount,8.0) );\n    return mix( col, fogColor, fogAmount );\n}\n```\n\nvec3 applyFog( in vec3 col, // color of pixel in float t, // distance to point in vec3 rd, // camera to point in vec3 lig ) // sun direction { float fogAmount = 1.0 - exp(-t\\*b); float sunAmount = max( dot(rd, lig), 0.0 ); vec3 fogColor = mix( vec3(0.5,0.6,0.7), // blue vec3(1.0,0.9,0.7), // yellow pow(sunAmount,8.0) ); return mix( col, fogColor, fogAmount ); }\n\n  \nThe effect can be done much more sophisticated. For example the exponent of the dot product between the sun and view vectors (which of course controls the influence of the directional color gradient) can be varyied with distance too. With the right settings one can fake glowing/blooming and other light scattering effects without actually doing any multipass or render to texture but a simple change to the fog equation. Color can change with altitude too, or any other parameters you might think of.  \n  \n  \n![1769051448196](posts/笔记图床/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾/1769051448196.png)\nRegular monocrhome fog\n\n![1769051456979](posts/笔记图床/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾/1769051456979.png)\nColored fog based on sun direction\n\n  \nAnother variation of the technique that we can develop starts by first splitting the usual mix() command in its two parts, ie, replace  \n  \n``` cpp\nfinalColor = mix( pixelColor, fogColor, 1.0-exp(-distance*b) );\n```\n  \nwith  \n  \n``` cpp\nfinalColor = pixelColor*exp(-distance*b) + fogColor*(1.0-exp(-distance*b));\n```\n  \n  \nThen, according to classic CG atmospheric scattering papers, the first term could be interpreted as the absortion of light due to scattering or \"extinction\", and the second term can be interpreted as the \"inscattering\". We note that this way of expressing fog is more powerfull, because now we can choose independent fallof parameters _**b**_ for the extinction and inscattering. Furthermore, we can have not one or two, but up to six different coefficients - three for the rgb channels of the extintion color and three for the rgb colored version of the inscattering.  \n  \n``` cpp\nvec3 extColor = vec3( exp(-distance*be.x), exp(-distance*be.y) exp(-distance*be.z) );\nvec3 insColor = vec3( exp(-distance*bi.x), exp(-distance*bi.y) exp(-distance*bi.z) );\nfinalColor = pixelColor*(1.0-extColor) + fogColor*insColor;\n```\n  \n  \nThis way of doing fog, combined with the sun direction coloring and other tricks can give you a very powerfull and simple fog system, yet very compact and fast. It's also quite intuitive, and you don't have to deal with tons of physics, maths and magic constants for Mie and Rayleight spectral constants and stuff. Simple and controlable is the win.  \n  \n  \n\n### Non constant density\n\n---\n\nThe original and simple fog formula has two parameters: the color and the density (which I called _**b**_ in the shader code above). Same way we modified it to have non constant color, we can also modify it so it doesn't have constant density. I'm gonna follow Crytek's trick in this one, but you can play and get some cool results with your own formulas too, although the derivation in that case might be a bit more complex.  \n  \nReal atmosphere is less dense in the height athmosphere than at the sea level. We can model that density variation with an exponential. The good thing of the exponential function is that the solution to the formulas is analytical. Let's see. We start with this exponential density function, which depends on the height _**y**_ of our point:  \n\n$$\nd(y) = a⋅e^{-b⋅y}\n$$\n  \nThe parameter **_b_** controls, of course, the fallof of this density. Now, as our ray traverses the atmosphere from the camera to the point, it will be accumulating opacity as it traverses the athmosphere. The amount of fog it gathers in each of these infinite amount of infinitelly little steps is driven by the fog density (that we just defined) at those points. So we have to add them all together. But of course, adding an infinte amount of ridiculosuly small things is called \"integral\" in maths. So, given our ray  \n  \n$$\nr(t) = o_y + t⋅k_y  \n$$\n  \nwe have that the total amount of fog is  \n  \n![1769051680998](posts/笔记图床/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾/1769051680998.png)\n  \nwhere _**T**_ is the distance from the camera to the point. This integral can be solved analytically, giving  \n  \n![1769051688836](posts/笔记图床/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾/1769051688836.png)\n  \nso that our non-constant-density-fog shader is  \n\nvec3 applyFog( in vec3 col, // color of pixel in float t, // distnace to point in vec3 ro, // camera position in vec3 rd ) // camera to point vector { float fogAmount = (a/b) \\* exp(-ro.y\\*b) \\* (1.0\\-exp(-t\\*rd.y\\*b))/rd.y; vec3 fogColor = vec3(0.5,0.6,0.7); return mix( col, fogColor, fogAmount ); }\n\n  \nwhich means that by adding no more than one division to the original formula we can get some cool height based fog (note that the rest of the formula is constant for a given frame).  \n\n![1769051482758](posts/笔记图床/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾/1769051482758.png)\nThe integral of the fog density function d(y) over the ray gives the final amount of fog\n\n  \n  \n![1769051496008](posts/笔记图床/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾/1769051496008.png)\nNote low altitude parts get extra fog\n\n![1769051503743](posts/笔记图床/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾/1769051503743.png)\nWithout height based fog\n\n  \nAgain, there are many variations that one can add to this constanst-vertical-exponential-fallof-density-function shader.  \n  \n![1769051515755](posts/笔记图床/游戏开发/渲染相关/Fog均匀介质渲染相关/解析高度雾/1769051515755.png)\nA raymarched terrain with non constant fog density  \n  \n  \n\n[inigo quilez](https://iquilezles.org) - learning computer graphics since 1994\n",
+      "val": 1
+    },
+    {
+      "id": "RayTracing",
+      "label": "RayTracing",
+      "group": "光追",
+      "all_tags": [
+        "光追",
+        "raytracing"
+      ],
+      "content": "# Ray Tracing 光线追踪\n#光追 #raytracing\n\n---\n\n## Ray Tracing 教程\n\n### 光追Unity youtube 教程\n\nhttps://www.youtube.com/watch?v=Qz0KTGYJtUk\n\n![1769766976923](posts/笔记图床/游戏开发/渲染相关/RayTracing相关/RayTracing/1769766976923.png)\n\n### Unity 光追 Github 工程\n\nhttps://github.com/SebLague/Ray-Tracing/tree/Episode01",
       "val": 1
     },
     {
@@ -230,23 +358,14 @@
       "val": 1
     },
     {
-      "id": "实用开发工具Tools",
-      "label": "实用开发工具Tools",
-      "group": "tools",
+      "id": "几个比较好的WebGL项目",
+      "label": "几个比较好的WebGL项目",
+      "group": "webgl",
       "all_tags": [
-        "tools"
+        "webgl",
+        "shader"
       ],
-      "content": "# 实用开发工具Tools\n\n#tools\n\n---\n\n## Texture array\n\n### PVRTexTool\n\nhttps://developer.imaginationtech.com/downloads/\n\n![1768288536886](posts/笔记图床/游戏开发/实用Tools文档/实用开发工具Tools/1768288536886.png)\n![1768288287631](posts/笔记图床/游戏开发/实用Tools文档/实用开发工具Tools/1768288287631.png)\n\n---\n\n## cubemap cmftStudio\n\nhttps://github.com/dariomanesku/cmftStudio?tab=readme-ov-file\n\n![1768289069259](posts/笔记图床/游戏开发/实用Tools文档/实用开发工具Tools/1768289069259.png)\n\n---\n\n## vsCode 插件\n\n![1768289494796](posts/笔记图床/游戏开发/实用Tools文档/实用开发工具Tools/1768289494796.png)\n![1768289563585](posts/笔记图床/游戏开发/实用Tools文档/实用开发工具Tools/1768289563585.png)\n\n---\n\n## 油猴脚本\n\n### 网页复制公式 (公式上双击左键复制公式)\n\nhttps://github.com/3plus10i/TexCopyer\n\n![1768458898176](posts/笔记图床/游戏开发/实用Tools文档/实用开发工具Tools/1768458898176.png)\n\n---\n",
-      "val": 1
-    },
-    {
-      "id": "在线实用工具OnlineTools",
-      "label": "在线实用工具OnlineTools",
-      "group": "tools",
-      "all_tags": [
-        "tools"
-      ],
-      "content": "# 在线实用工具Online Tools\n#tools\n\n---\n\n## 数学类工具Tools\n\n### Desmos 函数可视化\n\nhttps://www.desmos.com/calculator?lang=zh-CN\n\n![1768290285214](posts/笔记图床/游戏开发/实用Tools文档/在线实用工具OnlineTools/1768290285214.png)\n\n---\n### wolframalpha 积分函数求解(可以求积分)\n\nhttps://www.wolframalpha.com/\n\n![1768805608047](posts/笔记图床/游戏开发/实用Tools文档/在线实用工具OnlineTools/1768805608047.png)\n\n---\n\n### Academo 2D函数可视化\n\nhttps://academo.org/demos/3d-surface-plotter/?expression=x*x-y*y*x&xRange=-50%2C%2050&yRange=-50%2C%2050&resolution=48\n\n![1768290346715](posts/笔记图床/游戏开发/实用Tools文档/在线实用工具OnlineTools/1768290346715.png)\n\n---\n\n### 注释生成网站\n\nhttp://patorjk.com/software/taag/#p=display&h=0&f=Big&t=SDF\n\n![1769657872978](posts/笔记图床/游戏开发/实用Tools文档/在线实用工具OnlineTools/1769657872978.png)\n\n---",
+      "content": "# 几个比较好的WebGL项目\n#webgl #shader\n\n---\n\n## Google swissgl WebGL\n\nhttps://github.com/google/swissgl\n\n![1769595336154](posts/笔记图床/游戏开发/渲染相关/WebGL相关/几个比较好的WebGL项目/1769595336154.png)\n\nhttps://google.github.io/swissgl\n\n![1769595381055](posts/笔记图床/游戏开发/渲染相关/WebGL相关/几个比较好的WebGL项目/1769595381055.png)\n\n---\n\n## Evan Wallace WebGL Graphics\n\nhttps://madebyevan.com/\n\n### WebGL Water (2010)\n\n![1769594467565](posts/笔记图床/游戏开发/渲染相关/WebGL相关/几个比较好的WebGL项目/1769594467565.png)\n\nThis project was an experiment in realtime water rendering with WebGL. The focus was on the rendering aspect, not on the simulation, so the behavior of the water isn't that realistic. The water heightfield is simulated using a floating-point texture and the caustics are rendered using the GLSL derivative functions.\n\n[View demo...](../../../../../webgl-water)\n\n### WebGL Path Tracing (2010)\n\n![1769594476890](posts/笔记图床/游戏开发/渲染相关/WebGL相关/几个比较好的WebGL项目/1769594476890.png)\n\nPath tracing is a realistic lighting algorithm that simulates light bouncing around a scene. This path tracer uses WebGL for realtime performance and supports diffuse, mirrored, and glossy surfaces.\n\n[View demo...](../../../../../webgl-path-tracing)\n\n### WebGL Image Filters (2011)\n\n![1769594485088](posts/笔记图床/游戏开发/渲染相关/WebGL相关/几个比较好的WebGL项目/1769594485088.png)\n\nAdjust your photos in your browser in realtime with ten different image filters. This uses WebGL for speed, is entirely client-side, and is [open source on GitHub](https://github.com/evanw/webgl-filter). It was coded from scratch in 24 hours for HackNY, a hackathon in NYC, where it won second place.\n\n[View demo...](https://evanw.github.io/webgl-filter/)\n\n### Shader Articles (2015)\n\n![1769594498153](posts/笔记图床/游戏开发/渲染相关/WebGL相关/几个比较好的WebGL项目/1769594498153.png)\n\nA collection of interesting bits of shader code. All demos use WebGL and run in all major browsers.\n\n[View demos...](../../../../../shaders)\n",
       "val": 1
     },
     {
@@ -260,13 +379,18 @@
       "val": 1
     },
     {
-      "id": "GitHub好项目",
-      "label": "GitHub好项目",
-      "group": "GitHub",
+      "id": "机器学习神经网络",
+      "label": "机器学习神经网络",
+      "group": "机器学习",
       "all_tags": [
-        "GitHub"
+        "机器学习",
+        "ai",
+        "pytoch",
+        "tensor",
+        "深度学习",
+        "神经网络"
       ],
-      "content": "# GitHub\n\n#GitHub\n\n---\n\n## 好的git项目\n\n---\n\n### Blender 相关\n\n[BlenderGitHub md 文档](posts/游戏开发/Blender相关/Blender.md)\n\n![Blender](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768274526885.png)\n\n---\n\n### Volumetric fog\n\nhttps://github.com/rin-miku/SimpleVolumetricLighting\n\n![1768271723435](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768271723435.png)\n\n---\n\n### 波函数坍缩\n\nhttps://github.com/marian42/wavefunctioncollapse\n\n![1768271936593](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768271936593.png)\n\nhttps://github.com/mxgmn/WaveFunctionCollapse\n\n![1768272040866](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768272040866.png)\n\n---\n\n### Mix and jam\n\nhttps://github.com/mixandjam\n\n![1768272159047](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768272159047.png)\n\n---\n\n### ScreenSpaceLensFlareTest\n\nhttps://github.com/keijiro/ScreenSpaceLensFlareTest\n\n![1768272414589](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768272414589.png)\n\n---\n\n### Sebastian Lague\n\nhttps://github.com/SebLague\n\n![1768272522699](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768272522699.png)\n\n---\n\n### GTAO (AmplifyOcclusion)\n\nhttps://github.com/AmplifyCreations/AmplifyOcclusion\n\n![1768272673870](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768272673870.png)\n\n![1768272689502](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768272689502.png)\n\n---\n\n### 预积分大气散射 Brunetons-Improved-Atmospheric-Scattering\n\nhttps://github.com/Scrawk/Brunetons-Improved-Atmospheric-Scattering/tree/master\n\n![1768272781524](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768272781524.png)\n\n---\n\n### Cmake Tutorial (cmake-examples-Chinese)\n\nhttps://github.com/SFUMECJF/cmake-examples-Chinese\n\nhttps://sfumecjf.github.io/cmake-examples-Chinese/\n\n![1768272873336](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1768272873336.png)\n\n---\n\n### SSGI\n\n[SSGI.md](posts/游戏开发/渲染相关/GI相关/SSGI.md)\n\n![1769156623012](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1769156623012.png)\n\n---\n\n### 变量名命名神器\n\nhttps://github.com/unbug/codelf?tab=readme-ov-file\n\n![1769755082161](posts/笔记图床/游戏开发/GitHub相关/GitHub好项目/1769755082161.png)\n\n---\n\n",
+      "content": "# 机器学习神经网络\n\n#机器学习 #ai #pytoch #tensor #深度学习 #神经网络\n\n---\n\n## 机器学习相关网页\n\n### 神经网络可视化Netron\n\nhttps://netron.app/\n\n![1770189570404](posts/笔记图床/游戏开发/机器学习相关/机器学习神经网络/1770189570404.png)\n\nhttps://github.com/lutzroeder/netron?tab=readme-ov-file\n\n![1770189598617](posts/笔记图床/游戏开发/机器学习相关/机器学习神经网络/1770189598617.png)\n\n支持onnx以及pth\n\n---\n",
       "val": 1
     },
     {
@@ -283,6 +407,56 @@
   "links": [
     {
       "source": "All_Notes_Outline",
+      "target": "AI编程",
+      "type": "md"
+    },
+    {
+      "source": "All_Notes_Outline",
+      "target": "RenderDoc-打造自己AI工作流",
+      "type": "md"
+    },
+    {
+      "source": "All_Notes_Outline",
+      "target": "在线实用工具OnlineTools",
+      "type": "md"
+    },
+    {
+      "source": "All_Notes_Outline",
+      "target": "实用开发工具Tools",
+      "type": "md"
+    },
+    {
+      "source": "All_Notes_Outline",
+      "target": "PixelArt 像素艺术",
+      "type": "md"
+    },
+    {
+      "source": "All_Notes_Outline",
+      "target": "UI界面设计",
+      "type": "md"
+    },
+    {
+      "source": "All_Notes_Outline",
+      "target": "GitHub好项目",
+      "type": "md"
+    },
+    {
+      "source": "All_Notes_Outline",
+      "target": "Marching Cubes 波函数坍缩算法",
+      "type": "md"
+    },
+    {
+      "source": "All_Notes_Outline",
+      "target": "ShaderToy",
+      "type": "md"
+    },
+    {
+      "source": "All_Notes_Outline",
+      "target": "渲染文档汇总",
+      "type": "md"
+    },
+    {
+      "source": "All_Notes_Outline",
       "target": "Paper网页链接",
       "type": "md"
     },
@@ -293,52 +467,7 @@
     },
     {
       "source": "All_Notes_Outline",
-      "target": "渲染文档汇总",
-      "type": "md"
-    },
-    {
-      "source": "All_Notes_Outline",
-      "target": "ShaderToy",
-      "type": "md"
-    },
-    {
-      "source": "All_Notes_Outline",
-      "target": "RayTracing",
-      "type": "md"
-    },
-    {
-      "source": "All_Notes_Outline",
-      "target": "解析高度雾",
-      "type": "md"
-    },
-    {
-      "source": "All_Notes_Outline",
-      "target": "几个比较好的WebGL项目",
-      "type": "md"
-    },
-    {
-      "source": "All_Notes_Outline",
-      "target": "Games101解析",
-      "type": "md"
-    },
-    {
-      "source": "All_Notes_Outline",
-      "target": "SSGI",
-      "type": "md"
-    },
-    {
-      "source": "All_Notes_Outline",
-      "target": "PRT precompute Radiance Transfer",
-      "type": "md"
-    },
-    {
-      "source": "All_Notes_Outline",
-      "target": "RadianceCascades",
-      "type": "md"
-    },
-    {
-      "source": "All_Notes_Outline",
-      "target": "DDGI",
+      "target": "LookDev",
       "type": "md"
     },
     {
@@ -348,17 +477,47 @@
     },
     {
       "source": "All_Notes_Outline",
+      "target": "RadianceCascades",
+      "type": "md"
+    },
+    {
+      "source": "All_Notes_Outline",
+      "target": "PRT precompute Radiance Transfer",
+      "type": "md"
+    },
+    {
+      "source": "All_Notes_Outline",
+      "target": "DDGI",
+      "type": "md"
+    },
+    {
+      "source": "All_Notes_Outline",
+      "target": "SSGI",
+      "type": "md"
+    },
+    {
+      "source": "All_Notes_Outline",
+      "target": "Games101解析",
+      "type": "md"
+    },
+    {
+      "source": "All_Notes_Outline",
+      "target": "解析高度雾",
+      "type": "md"
+    },
+    {
+      "source": "All_Notes_Outline",
+      "target": "RayTracing",
+      "type": "md"
+    },
+    {
+      "source": "All_Notes_Outline",
       "target": "GPU流体模拟",
       "type": "md"
     },
     {
       "source": "All_Notes_Outline",
-      "target": "实用开发工具Tools",
-      "type": "md"
-    },
-    {
-      "source": "All_Notes_Outline",
-      "target": "在线实用工具OnlineTools",
+      "target": "几个比较好的WebGL项目",
       "type": "md"
     },
     {
@@ -368,7 +527,7 @@
     },
     {
       "source": "All_Notes_Outline",
-      "target": "GitHub好项目",
+      "target": "机器学习神经网络",
       "type": "md"
     },
     {
@@ -388,7 +547,7 @@
     },
     {
       "source": "Tag_Index",
-      "target": "SSGI",
+      "target": "RadianceCascades",
       "type": "md"
     },
     {
@@ -398,12 +557,12 @@
     },
     {
       "source": "Tag_Index",
-      "target": "RadianceCascades",
+      "target": "DDGI",
       "type": "md"
     },
     {
       "source": "Tag_Index",
-      "target": "DDGI",
+      "target": "SSGI",
       "type": "md"
     },
     {
@@ -418,6 +577,26 @@
     },
     {
       "source": "Tag_Index",
+      "target": "UI界面设计",
+      "type": "md"
+    },
+    {
+      "source": "Tag_Index",
+      "target": "AI编程",
+      "type": "md"
+    },
+    {
+      "source": "Tag_Index",
+      "target": "RenderDoc-打造自己AI工作流",
+      "type": "md"
+    },
+    {
+      "source": "Tag_Index",
+      "target": "机器学习神经网络",
+      "type": "md"
+    },
+    {
+      "source": "Tag_Index",
       "target": "解析高度雾",
       "type": "md"
     },
@@ -428,12 +607,27 @@
     },
     {
       "source": "Tag_Index",
+      "target": "LookDev",
+      "type": "md"
+    },
+    {
+      "source": "Tag_Index",
+      "target": "Marching Cubes 波函数坍缩算法",
+      "type": "md"
+    },
+    {
+      "source": "Tag_Index",
       "target": "在线实用工具OnlineTools",
       "type": "md"
     },
     {
       "source": "Tag_Index",
       "target": "渲染文档汇总",
+      "type": "md"
+    },
+    {
+      "source": "Tag_Index",
+      "target": "PixelArt 像素艺术",
       "type": "md"
     },
     {
@@ -479,6 +673,11 @@
     {
       "source": "GitHub好项目",
       "target": "SSGI",
+      "type": "md"
+    },
+    {
+      "source": "Marching Cubes 波函数坍缩算法",
+      "target": "GitHub好项目",
       "type": "md"
     },
     {
@@ -488,12 +687,67 @@
     },
     {
       "source": "Tag_Index",
-      "target": "Paper网页链接",
+      "target": "AI编程",
       "type": "tag_group"
     },
     {
-      "source": "Paper网页链接",
+      "source": "AI编程",
+      "target": "RenderDoc-打造自己AI工作流",
+      "type": "tag_group"
+    },
+    {
+      "source": "RenderDoc-打造自己AI工作流",
+      "target": "机器学习神经网络",
+      "type": "tag_group"
+    },
+    {
+      "source": "Tag_Index",
+      "target": "RenderDoc-打造自己AI工作流",
+      "type": "tag_group"
+    },
+    {
+      "source": "Tag_Index",
+      "target": "在线实用工具OnlineTools",
+      "type": "tag_group"
+    },
+    {
+      "source": "在线实用工具OnlineTools",
+      "target": "实用开发工具Tools",
+      "type": "tag_group"
+    },
+    {
+      "source": "Tag_Index",
+      "target": "PixelArt 像素艺术",
+      "type": "tag_group"
+    },
+    {
+      "source": "Tag_Index",
+      "target": "UI界面设计",
+      "type": "tag_group"
+    },
+    {
+      "source": "Tag_Index",
+      "target": "GitHub好项目",
+      "type": "tag_group"
+    },
+    {
+      "source": "Tag_Index",
+      "target": "Marching Cubes 波函数坍缩算法",
+      "type": "tag_group"
+    },
+    {
+      "source": "Tag_Index",
+      "target": "ShaderToy",
+      "type": "tag_group"
+    },
+    {
+      "source": "ShaderToy",
       "target": "渲染文档汇总",
+      "type": "tag_group"
+    },
+    {
+      "source": "渲染文档汇总",
+      "target": "Paper网页链接",
       "type": "tag_group"
     },
     {
@@ -503,67 +757,22 @@
     },
     {
       "source": "渲染相关网页链接",
-      "target": "渲染文档汇总",
-      "type": "tag_group"
-    },
-    {
-      "source": "渲染文档汇总",
-      "target": "ShaderToy",
-      "type": "tag_group"
-    },
-    {
-      "source": "ShaderToy",
       "target": "GPU流体模拟",
       "type": "tag_group"
     },
     {
       "source": "Tag_Index",
-      "target": "ShaderToy",
+      "target": "渲染文档汇总",
       "type": "tag_group"
     },
     {
       "source": "Tag_Index",
-      "target": "RayTracing",
+      "target": "Paper网页链接",
       "type": "tag_group"
     },
     {
       "source": "Tag_Index",
-      "target": "解析高度雾",
-      "type": "tag_group"
-    },
-    {
-      "source": "Tag_Index",
-      "target": "几个比较好的WebGL项目",
-      "type": "tag_group"
-    },
-    {
-      "source": "Tag_Index",
-      "target": "Games101解析",
-      "type": "tag_group"
-    },
-    {
-      "source": "Tag_Index",
-      "target": "SSGI",
-      "type": "tag_group"
-    },
-    {
-      "source": "SSGI",
-      "target": "PRT precompute Radiance Transfer",
-      "type": "tag_group"
-    },
-    {
-      "source": "PRT precompute Radiance Transfer",
-      "target": "RadianceCascades",
-      "type": "tag_group"
-    },
-    {
-      "source": "RadianceCascades",
-      "target": "DDGI",
-      "type": "tag_group"
-    },
-    {
-      "source": "Tag_Index",
-      "target": "PRT precompute Radiance Transfer",
+      "target": "LookDev",
       "type": "tag_group"
     },
     {
@@ -573,17 +782,52 @@
     },
     {
       "source": "Tag_Index",
+      "target": "RadianceCascades",
+      "type": "tag_group"
+    },
+    {
+      "source": "RadianceCascades",
+      "target": "PRT precompute Radiance Transfer",
+      "type": "tag_group"
+    },
+    {
+      "source": "PRT precompute Radiance Transfer",
+      "target": "DDGI",
+      "type": "tag_group"
+    },
+    {
+      "source": "DDGI",
+      "target": "SSGI",
+      "type": "tag_group"
+    },
+    {
+      "source": "Tag_Index",
+      "target": "PRT precompute Radiance Transfer",
+      "type": "tag_group"
+    },
+    {
+      "source": "Tag_Index",
+      "target": "Games101解析",
+      "type": "tag_group"
+    },
+    {
+      "source": "Tag_Index",
+      "target": "解析高度雾",
+      "type": "tag_group"
+    },
+    {
+      "source": "Tag_Index",
+      "target": "RayTracing",
+      "type": "tag_group"
+    },
+    {
+      "source": "Tag_Index",
       "target": "GPU流体模拟",
       "type": "tag_group"
     },
     {
       "source": "Tag_Index",
-      "target": "实用开发工具Tools",
-      "type": "tag_group"
-    },
-    {
-      "source": "实用开发工具Tools",
-      "target": "在线实用工具OnlineTools",
+      "target": "几个比较好的WebGL项目",
       "type": "tag_group"
     },
     {
@@ -593,7 +837,7 @@
     },
     {
       "source": "Tag_Index",
-      "target": "GitHub好项目",
+      "target": "机器学习神经网络",
       "type": "tag_group"
     },
     {
